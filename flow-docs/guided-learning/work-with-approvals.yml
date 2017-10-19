@@ -1,0 +1,35 @@
+### YamlMime:YamlDocument
+documentType: Tutorial
+title: Usare le approvazioni
+metadata:
+  title: Usare le approvazioni | Microsoft Flow
+  description: Informazioni su come gestire l'approvazione dei documenti e dei processi in Microsoft Flow.
+  audience: Business User
+  level: Beginner
+  nextTutorialHref: administer-flows
+  nextTutorialTitle: Administer flows
+  displayType: one-column
+  author: MSFTMan
+  manager: anneta
+  ms.service: flow
+  ms.topic: get-started-article
+  ms.date: 10/04/2017
+  ms.author: deonhe
+items:
+  - durationInMinutes: 1
+    content: |
+      Informazioni su come gestire l'approvazione dei documenti e dei processi in Microsoft Flow.
+  - title: Creare una richiesta di approvazione
+    durationInMinutes: 4
+    content: |
+      > [!Video https://www.youtube.com/embed/65yz8tqnWe0?rel=0]
+
+      [!INCLUDE [learning-approval-center](../includes/learning-approval-center.md)]
+  - title: Elaborare una richiesta di approvazione
+    durationInMinutes: 7
+    content: |
+      > [!Video https://www.youtube.com/embed/-0r5ZKVEIS4?rel=0]
+
+      [!INCLUDE [learning-approval-request](../includes/learning-approval-request.md)]
+  - content: |
+      La sezione **Usare le approvazioni** dell'Apprendimento guidato di Microsoft Flow è stata completata.

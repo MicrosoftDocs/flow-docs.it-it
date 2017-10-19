@@ -1,0 +1,41 @@
+### YamlMime:YamlDocument
+documentType: LandingData
+title: Apprendimento guidato di Microsoft Flow
+metadata:
+  title: Apprendimento guidato di Microsoft Flow
+  meta.description: 'Start your learning journey with this sequenced collection of courses, and understand the extensive and powerful capabilities of Microsoft Flow.'
+  author: MSFTMan
+  manager: anneta
+  layout: LandingPage
+  ms.assetid: null
+  ms.service: flow
+  ms.tgt_pltfrm: na
+  ms.devlang: na
+  ms.topic: landing-page
+  ms.date: 10/13/2017
+  ms.author: deonhe
+abstract:
+  description: È possibile iniziare il percorso di apprendimento con questa raccolta in sequenza di corsi e ottenere informazioni sulle funzionalità complete e avanzate di Microsoft Flow.
+sections:
+  - items:
+      - type: list
+        style: cards
+        className: cardsF
+        columns: 2
+        items:
+          - html: '<p><a href="get-started#step-1">Informazioni sui concetti di base di Microsoft Flow</a> - 14 min</p><p><a href="get-started#step-2">Creare un flusso da un modello</a> - 9 min</p><p><a href="get-started#step-3">Usare l''app Microsoft Flow per dispositivi mobili</a> - 8 min</p>'
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_get-started.svg'
+            title: Introduzione
+          - html: '<p><a href="build-flows#step-1">Creare un flusso del pulsante</a> - 11 min</p><p><a href="build-flows#step-2">Ottenere notifiche</a> - 6 min</p><p><a href="build-flows#step-3">Copiare i file</a> - 4 min</p><p><a href="build-flows#step-4">Raccogliere dati</a> - 5 min</p><p><a href="build-flows#step-5">Pubblicare tweet da un flusso</a> - 15 min</p><p><a href="build-flows#step-6">Creare flussi pianificati</a> - 9 min</p><p><a href="build-flows#step-7">Convertire e archiviare documenti</a> - 14 min</p>'
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_build.svg'
+            title: Creare flussi
+          - html: '<p><a href="work-with-approvals#step-1">Creare una richiesta di approvazione</a> - 4 min</p><p><a href="work-with-approvals#step-2">Elaborare una richiesta di approvazione</a> - 7 min</p>'
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_tasks.svg'
+            title: Usare le approvazioni
+          - html: '<p><a href="administer-flows#step-1">Usare gli ambienti per gestire i flussi</a> - 8 min</p><p><a href="administer-flows#step-2">Usare i criteri di prevenzione della perdita dei dati</a> - 6 min</p>'
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_management.svg'
+            title: Amministrare i flussi
