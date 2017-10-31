@@ -39,7 +39,7 @@ Usare l'azione **Operazioni dati - Componi** (compose) per evitare di dover imme
     ![configurare l'azione componi](./media/data-operations/add-array-compose.png)
 
 > [!TIP]
-> Per farvi riferimento più semplicemente in seguito, rinominare la scheda **Componi** facendo clic sul testo "Componi" nella barra del titolo.****
+> Per farvi riferimento più semplicemente in seguito, rinominare la scheda **Componi** facendo clic sul testo "Componi" nella barra del titolo della scheda **Componi**.
 > 
 > 
 
