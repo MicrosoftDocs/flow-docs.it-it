@@ -1,9 +1,8 @@
-### YamlMime:YamlDocument
 documentType: Tutorial
 title: Introduzione
 metadata:
-  title: Attività iniziali | Microsoft Flow
-  description: 'Benvenuto nella Formazione interattiva su Microsoft Flow. Questo corso online illustra Microsoft Flow andando per ordine, per consentire di acquisire le conoscenze in modo graduale.'
+  title: "Attività iniziali | Microsoft Flow"
+  description: Benvenuto nella Formazione interattiva su Microsoft Flow. Questo corso online illustra Microsoft Flow andando per ordine, per consentire di acquisire le conoscenze in modo graduale.
   audience: Business User
   level: Beginner
   nextTutorialHref: build-flows
@@ -16,26 +15,33 @@ metadata:
   ms.date: 10/04/2017
   ms.author: deonhe
 items:
-  - durationInMinutes: 1
-    content: |
-      Benvenuto nella Formazione interattiva su Microsoft Flow. Questo corso online illustra Microsoft Flow andando per ordine, per consentire di acquisire le conoscenze in modo graduale.
-  - title: Informazioni sui concetti di base di Microsoft Flow
-    durationInMinutes: 14
-    content: |
-      > [!Video https://www.youtube.com/embed/CYR-fZc5Maw?rel=0]
+- durationInMinutes: 1
+  content: >
+    Benvenuto nella Formazione interattiva su Microsoft Flow. Questo corso online illustra Microsoft Flow andando per ordine, per consentire di acquisire le conoscenze in modo graduale.
+  ms.openlocfilehash: 7b5bcbbe1a53feb773b940aae32b295cec5feba8
+  ms.sourcegitcommit: 01325305b9d2cf964acac9feb6cca0af66db7440
+  ms.translationtype: HT
+  ms.contentlocale: it-IT
+  ms.lasthandoff: 11/07/2017
+- title: Informazioni sui concetti di base di Microsoft Flow
+  durationInMinutes: 14
+  content: >
+    > [!Video https://www.youtube.com/embed/CYR-fZc5Maw?rel=0]
 
-      [!INCLUDE [learning-introduce-flow](../includes/learning-introduce-flow.md)]
-  - title: Creare un flusso da un modello
-    durationInMinutes: 9
-    content: |
-      > [!Video https://www.youtube.com/embed/D46qE7FuShM?rel=0]
 
-      [!INCLUDE [learning-create-a-flow](../includes/learning-create-a-flow.md)]
-  - title: Usare l'app Microsoft Flow per dispositivi mobili
-    durationInMinutes: 8
-    content: |
-      > [!Video https://www.youtube.com/embed/o80hRMpb0_4?rel=0]
+    [!INCLUDE [learning-introduce-flow](../includes/learning-introduce-flow.md)]
+- title: Creare un flusso da un modello
+  durationInMinutes: 9
+  content: >
+    > [!Video https://www.youtube.com/embed/D46qE7FuShM?rel=0]
 
-      [!INCLUDE [learning-mobile-app](../includes/learning-mobile-app.md)]
-  - content: |
-      La sezione **Introduzione** dell'Apprendimento guidato di Microsoft Flow è stata completata.
+
+    [!INCLUDE [learning-create-a-flow](../includes/learning-create-a-flow.md)]
+- title: Usare l'app Microsoft Flow per dispositivi mobili
+  durationInMinutes: 8
+  content: >
+    > [!Video https://www.youtube.com/embed/o80hRMpb0_4?rel=0]
+
+
+    [!INCLUDE [learning-mobile-app](../includes/learning-mobile-app.md)]
+- content: "La sezione **Introduzione** dell'Apprendimento guidato di Microsoft Flow è stata completata.\0"

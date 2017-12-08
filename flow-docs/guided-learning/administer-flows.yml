@@ -1,4 +1,3 @@
-### YamlMime:YamlDocument
 documentType: Tutorial
 title: Amministrare i flussi
 metadata:
@@ -14,20 +13,26 @@ metadata:
   ms.date: 10/04/2017
   ms.author: deonhe
 items:
-  - durationInMinutes: 1
-    content: |
-      Informazioni su come usare gli ambienti e i criteri di protezione dati per gestire origini dati e flussi.
-  - title: Usare gli ambienti per gestire i flussi
-    durationInMinutes: 8
-    content: |
-      > [!Video https://www.youtube.com/embed/wnScBLz7css?rel=0]
+- durationInMinutes: 1
+  content: >
+    Informazioni su come usare gli ambienti e i criteri di protezione dati per gestire origini dati e flussi.
+  ms.openlocfilehash: 52eb25087beb258481be25a560c84093d025021a
+  ms.sourcegitcommit: 01325305b9d2cf964acac9feb6cca0af66db7440
+  ms.translationtype: HT
+  ms.contentlocale: it-IT
+  ms.lasthandoff: 11/07/2017
+- title: Usare gli ambienti per gestire i flussi
+  durationInMinutes: 8
+  content: >
+    > [!Video https://www.youtube.com/embed/wnScBLz7css?rel=0]
 
-      [!INCLUDE [learning-environments](../includes/learning-environments.md)]
-  - title: Usare i criteri di prevenzione della perdita dei dati
-    durationInMinutes: 6
-    content: |
-      > [!Video https://www.youtube.com/embed/vls4RPVP5xE?rel=0]
 
-      [!INCLUDE [learning-data-loss-prevention](../includes/learning-data-loss-prevention.md)]
-  - content: |
-      La sezione **Amministrare i flussi** dell'Apprendimento guidato di Microsoft Flow è stata completata.
+    [!INCLUDE [learning-environments](../includes/learning-environments.md)]
+- title: Usare i criteri di prevenzione della perdita dei dati
+  durationInMinutes: 6
+  content: >
+    > [!Video https://www.youtube.com/embed/vls4RPVP5xE?rel=0]
+
+
+    [!INCLUDE [learning-data-loss-prevention](../includes/learning-data-loss-prevention.md)]
+- content: "La sezione **Amministrare i flussi** dell'Apprendimento guidato di Microsoft Flow è stata completata.\0"
