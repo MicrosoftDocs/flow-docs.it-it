@@ -1,4 +1,4 @@
-documentType: Tutorial
+### YamlMime:Tutorial
 title: Usare le approvazioni
 metadata:
   title: Usare le approvazioni | Microsoft Flow
@@ -6,7 +6,7 @@ metadata:
   audience: Business User
   level: Beginner
   nextTutorialHref: administer-flows
-  nextTutorialTitle: Amministrare i flussi
+  nextTutorialTitle: Administer flows
   displayType: one-column
   author: MSFTMan
   manager: anneta
@@ -14,15 +14,15 @@ metadata:
   ms.topic: get-started-article
   ms.date: 10/04/2017
   ms.author: deonhe
+  ms.openlocfilehash: 8a67950c176d779f8f6745757af526b07afd5fa0
+  ms.sourcegitcommit: 9057be8df53d1c763fbf5ecd0d23cd1daf42c471
+  ms.translationtype: HT
+  ms.contentlocale: it-IT
+  ms.lasthandoff: 12/08/2017
 items:
 - durationInMinutes: 1
   content: >
-    Informazioni su come gestire l'approvazione dei documenti e dei processi in Microsoft Flow.
-  ms.openlocfilehash: 1967e986e5bf7a9ffceb13578b41710869d8e890
-  ms.sourcegitcommit: 01325305b9d2cf964acac9feb6cca0af66db7440
-  ms.translationtype: HT
-  ms.contentlocale: it-IT
-  ms.lasthandoff: 11/07/2017
+    Learn how to manage the approval of documents and processes in Microsoft Flow.
 - title: Creare una richiesta di approvazione
   durationInMinutes: 4
   content: >
@@ -37,4 +37,4 @@ items:
 
 
     [!INCLUDE [learning-approval-request](../includes/learning-approval-request.md)]
-- content: "La sezione **Usare le approvazioni** dell'Apprendimento guidato di Microsoft Flow è stata completata.\0"
+- content: "You've completed the **Work with approvals** section of Microsoft Flow Guided Learning.\0"
