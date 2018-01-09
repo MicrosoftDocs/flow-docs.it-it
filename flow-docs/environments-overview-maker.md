@@ -1,6 +1,6 @@
 ---
-title: Passaggio da un ambiente all'altro durante la creazione di un flusso di Microsoft Flow | Microsoft Docs
-description: Come usare ambienti diversi durante la creazione di un flusso di Microsoft Flow
+title: Informazioni sugli ambienti di Microsoft Flow | Microsoft Docs
+description: Informazioni su come usare gli ambienti per isolare i flussi
 services: 
 suite: flow
 documentationcenter: na
@@ -13,70 +13,79 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 10/27/2016
+ms.date: 11/27/2017
 ms.author: sunayv
-ms.openlocfilehash: bcbb566c20291da14881d771c538dd89689b6b1d
-ms.sourcegitcommit: 4f2cb27d392f46aa1d8680d6278876780ed3871b
+ms.openlocfilehash: 202167f833c6f5e1a8105db8bd44addc24dfdc3e
+ms.sourcegitcommit: 7bf01167913038b3ad3527592013eefdd3ee9200
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/15/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="choosing-an-environment"></a>Scelta di un ambiente
-Con Microsoft Flow, è possibile lavorare in ambienti diversi e passare facilmente da uno all'altro. Questo articolo tratta i seguenti argomenti in materia di ambienti:
 
-* Contesto di ciò che offrono gli ambienti
-* Passaggio da un ambiente all'altro
-* Come creare un flusso nell'ambiente appropriato
+Questo articolo presenta gli **ambienti** di Microsoft Flow in cui è possibile creare e isolare in modo sicuro i flussi, i gateway, le connessioni e altre risorse.
+
+Sono disponibili le informazioni seguenti:
+
+* Funzionalità fornite dagli ambienti.
+* Passaggio da un ambiente all'altro.
+* Come creare un flusso nell'ambiente appropriato.
 
 ## <a name="environments-overview"></a>Panoramica degli ambienti
-Gli ambienti offrono un limite di isolamento per i flussi, le connessioni, i gateway e altre risorse. Quando si crea un flusso, è possibile scegliere l'ambiente che dovrà ospitarlo e le risorse da usare. A seconda dello scenario d'uso è possibile scegliere l'ambiente da usare tra quelli disponibili.
 
-Alcuni esempi:
+Quando si crea un flusso, è possibile scegliere un ambiente che dovrà ospitarlo e le risorse usate dal flusso. È possibile usare ambienti separati per scenari diversi.
 
-* Nello scenario in cui si crea flusso che usa una connessione a Microsoft Common Data Service, il flusso e Microsoft Common Data Service si trovano entrambi nello stesso ambiente. Ciò garantisce l'isolamento di tutti i dati all'interno dell'ambiente (limite di isolamento).
-* È in corso la creazione di un flusso per il reparto Risorse umane. Si vuole avere la certezza che tale flusso sia accessibile soltanto agli utenti di questo reparto. Ad esempio, si desidera impedire l'uso di questo flusso agli utenti del gruppo Vendite. In questo scenario, è possibile usare un ambiente separato (a cui hanno accesso solo gli utenti del reparto Risorse umane) per ospitare il flusso e tutte le risorse usate dal flusso stesso, come i gateway o le connessioni.
-* In Europa ci sono alcuni utenti che usano un flusso per mostrare i dati di SharePoint. In questo scenario, è opportuno creare un ambiente in Europa che ospiti il flusso e la connessione di SharePoint. L'ambiente creato in Europa offre prestazioni migliori agli utenti in quest'area geografica, dal momento che tutte le risorse si trovano in Europa (principio di località dei dati).
+## <a name="here-are-a-few-scenarios-for-using-environments"></a>Ecco alcuni scenari per l'uso degli ambienti
 
-Gli ambienti vengono creati dagli amministratori di Microsoft Flow, che controllano anche chi può accedere ai diversi ambienti.
+Scenario|Raccomandazione
+-----|-----
+Si vuole creare un flusso che usa una connessione a Microsoft Common Data Service.|Posizionare il flusso e Common Data Service nello stesso ambiente. Ciò garantisce l'isolamento di tutti i dati all'interno dell'ambiente (limite di isolamento).
+È in corso la creazione di un flusso per il reparto Risorse umane. Si vuole avere la certezza che tale flusso sia accessibile soltanto agli utenti di questo reparto.|Creare un ambiente e aggiungervi solo le risorse del reparto Risorse umane. Posizionare il flusso e altre risorse usate dal flusso in questo ambiente.
+Alcuni utenti in Europa usano un flusso per mostrare i dati di SharePoint.|Creare un ambiente in Europa e quindi creare il flusso e la connessione a SharePoint in tale ambiente. L'ambiente creato in Europa offre prestazioni migliori agli utenti in quest'area geografica, dal momento che tutte le risorse si trovano in Europa (principio di località dei dati).
 
-Questo argomento illustra come spostarsi tra ambienti diversi. Per i dettagli su come creare e gestire gli ambienti, vedere la sezione [Gestire gli ambienti](environments-overview-admin.md).
+Per creare ambienti, è necessario essere un amministratore di Microsoft Flow. Gli amministratori determinano quali utenti possono accedere agli ambienti. Per dettagli su come creare e gestire gli ambienti, vedere l'argomento [Amministrare gli ambienti](environments-overview-admin.md).
 
 ## <a name="switching-environments"></a>Passaggio da un ambiente all'altro
-Microsoft Flow facilita enormemente il passaggio da un ambiente all'altro. Quando si cambia ambiente, saranno visibili tutti gli elementi in tale ambiente specifico, ma non quelli appartenenti a qualsiasi altro ambiente.
+
+Microsoft Flow facilita il passaggio da un ambiente all'altro. Quando si passa da un ambiente all'altro vengono visualizzati solo gli elementi creati nell'ambiente specifico. Non sarà possibile visualizzare o accedere a elementi in altri ambienti.
 
 Di seguito è riportato un esempio.
 
-Creare un flusso denominato *Nuovo_dipendente* nell'ambiente *Risorse umane* . In [flow.microsoft.com](http://flow.microsoft.com), aprire l'ambiente *Vendite*. Il flusso *Nuovo_dipendente* non è elencato. Per visualizzare il flusso *Nuovo_dipendente*, aprire l'ambiente *Risorse umane*. Tenere presente che questo si applica a qualsiasi elemento creato nell'ambiente, vale a dire anche le connessioni, i gateway, PowerApps e altro ancora.
+È stato creato un flusso denominato *NuovoDipendente* nell'ambiente *Risorse umane*. In [Microsoft Flow](https://flow.microsoft.com) aprire l'ambiente *Vendite*. Il flusso *NuovoDipendente* non è elencato. Per visualizzare il flusso *Nuovo_dipendente*, aprire l'ambiente *Risorse umane*. Occorre ricordare che le stesse regole sono applicabili a qualsiasi altro elemento creato nell'ambiente, ad esempio connessioni, gateway, flussi e altro ancora.
 
-1. Aprire [flow.microsoft.com](http://flow.microsoft.com).
-2. In alto a destra, sono visibili il proprio nome e l'ambiente corrente:  
-   ![](./media/environments-overview-maker/default-environment.png)
-   
-    Nell'immagine, osservare le notifiche. Queste notifiche sono specifiche del flusso in questo ambiente predefinito.
-3. Selezionare il proprio nome. Nell'elenco a discesa, sono elencati tutti gli ambienti disponibili. L'ambiente corrente è selezionato:  
-   ![](./media/environments-overview-maker/all-environments.png)
-4. Per passare a un altro ambiente, selezionarlo nell'elenco:  
-   ![](./media/environments-overview-maker/select-europe.png)
-5. Microsoft Flow passa automaticamente al nuovo ambiente:  
-   ![](./media/environments-overview-maker/europe-environment.png)
-   
-    Nell'immagine, si noti che non sono presenti notifiche. Il nuovo ambiente Europa non contiene alcuna notifica.
+Per passare da un ambiente all'altro, seguire questa procedura:
+
+1. Accedere a [Microsoft Flow](https://flow.microsoft.com).
+1. Nell'angolo superiore destro viene visualizzata un'immagine che rappresenta il profilo specifico.
+
+   ![Immagine del profilo](./media/environments-overview-maker/default-environment.png)
+
+1. Selezionare l'immagine. Un elenco a discesa mostra tutti gli ambienti disponibili. L'ambiente a cui si è attualmente connessi è selezionato:
+
+   ![Immagine con l'elenco di ambienti](./media/environments-overview-maker/all-environments.png)
+1. Per passare a un altro ambiente, selezionarlo nell'elenco:
+
+   ![Selezionare un ambiente a cui passare](./media/environments-overview-maker/select-europe.png)
+1. Microsoft Flow passa al nuovo ambiente.
 
 ## <a name="create-flows-in-the-right-environment"></a>Creare i flussi nell'ambiente appropriato
-Prima di creare un flusso, assicurarsi sempre di aver selezionato l'ambiente desiderato, per evitare di dover eliminare il flusso creato e ricrearlo nell'ambiente corretto.
 
-Quando si sceglie di creare i flussi in un determinato ambiente, considerare i fattori seguenti:
+Prima di creare un flusso, selezionare l'ambiente in cui aggiungere il flusso e le rispettive risorse.
 
-* I gateway vengono creati nell'ambiente predefinito. Dal momento che non è possibile creare i gateway in altri ambienti, per connettersi ai dati locali è necessario usare l'ambiente predefinito.
-* I flussi possono usare solo le connessioni e altre risorse all'interno dello stesso ambiente. Le risorse presenti in altri ambienti non possono essere usate. Ad esempio, quando si crea un flusso che usa un connettore personalizzato, questo deve trovarsi nello stesso ambiente del flusso.
-* Il database di Microsoft Common Data Service è sempre associato esattamente a un ambiente. Ciò significa che se si desidera usare i dati di Common Data Service è necessario selezionare lo stesso ambiente del database.
-* Verranno visualizzati tutti gli ambienti in cui è possibile modificare le risorse. Tuttavia, ciò non si traduce nella facoltà di creare nuove risorse in tutti gli ambienti. Infatti, in alcuni ambienti potrebbe non essere consentito creare nuovi flussi. È necessario chiedere all'amministratore di venire aggiunti all'ambiente con il ruolo di **Autore**; in alternativa è possibile selezionare un altro ambiente in cui creare il flusso (i flussi potranno sempre essere creati nell'ambiente predefinito).
+> [!NOTE]
+Se si crea un flusso nell'ambiente errato, sarà necessario eliminarlo e quindi crearlo nell'ambiente corretto.
 
-## <a name="what-you-did"></a>Risultati ottenuti
-Questi passaggi permettono di spostarsi facilmente tra gli ambienti che si è autorizzati a usare. Ora è possibile iniziare a creare i propri flussi.
+Quando si sceglie un ambiente in cui ospitare i flussi, prendere in considerazione i fattori seguenti:
+
+* È possibile creare gateway solo nell'ambiente predefinito. Se si vuole usare un gateway per la connessione del flusso ai dati locali, sarà quindi necessario usare l'ambiente predefinito.
+* I database di Microsoft Common Data Service sono associati a un ambiente specifico. Se si vuole creare un flusso che usa Common Data Service, è quindi necessario creare il flusso nell'ambiente che ospita il database.
+* Verranno visualizzati tutti gli ambienti in cui è possibile modificare le risorse. Sarà tuttavia necessario richiedere a un amministratore di essere aggiunti come autore a tutti gli ambienti in cui si vogliono creare flussi.
+
+> [!NOTE]
+Sarà sempre possibile creare flussi nell'ambiente predefinito.
 
 ## <a name="next-steps"></a>Passaggi successivi
-[Creare un flusso da un modello](get-started-logic-template.md)  
-[Creare un flusso](get-started-logic-flow.md)  
-[Panoramica sull'ambiente per gli amministratori](environments-overview-admin.md)
 
+* [Creare un flusso da un modello](get-started-logic-template.md)
+* [Creare un flusso](get-started-logic-flow.md)
+* [Panoramica sull'ambiente per gli amministratori](environments-overview-admin.md)
