@@ -6,7 +6,7 @@ metadata:
   audience: Business User
   level: Beginner
   nextTutorialHref: build-flows
-  nextTutorialTitle: Build flows
+  nextTutorialTitle: Creare flussi
   displayType: one-column
   author: MSFTMan
   manager: anneta
@@ -15,14 +15,14 @@ metadata:
   ms.date: 10/04/2017
   ms.author: deonhe
   ms.openlocfilehash: e0cc75bf5ca6683b5b5ca751908311b226a5065d
-  ms.sourcegitcommit: 9057be8df53d1c763fbf5ecd0d23cd1daf42c471
+  ms.sourcegitcommit: 56d69fadcbc9169feb2e1a68d9e9361709084cf4
   ms.translationtype: HT
   ms.contentlocale: it-IT
-  ms.lasthandoff: 12/08/2017
+  ms.lasthandoff: 01/17/2018
 items:
 - durationInMinutes: 1
   content: >
-    Welcome to Guided Learning for Microsoft Flow. This self-paced online course explains Microsoft Flow in a sequential way, so you can build your knowledge from the ground up.
+    Benvenuto nella Formazione interattiva su Microsoft Flow. Questo corso online illustra Microsoft Flow andando per ordine, per consentire di acquisire le conoscenze in modo graduale.
 - title: Informazioni sui concetti di base di Microsoft Flow
   durationInMinutes: 14
   content: >
@@ -44,4 +44,4 @@ items:
 
 
     [!INCLUDE [learning-mobile-app](../includes/learning-mobile-app.md)]
-- content: "You've completed the **Get started** section of Microsoft Flow Guided Learning.\0"
+- content: "La sezione **Introduzione** dell'Apprendimento guidato di Microsoft Flow è stata completata.\0"
