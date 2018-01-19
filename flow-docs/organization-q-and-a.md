@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 12/05/2016
 ms.author: stepsic
-ms.openlocfilehash: 6a05153864e37682ece83d8e5d90fa43a3ad01e1
-ms.sourcegitcommit: 4f2cb27d392f46aa1d8680d6278876780ed3871b
+ms.openlocfilehash: f8807ca0941761018c92a385c26f427e69ededcb
+ms.sourcegitcommit: 56d69fadcbc9169feb2e1a68d9e9361709084cf4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/15/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="flow-in-your-organization-qa"></a>Domande e risposte riguardo alla registrazione a Microsoft Flow nell'organizzazione
 L'argomento descrive il modo in cui Microsoft Flow può essere usato dagli utenti nell'organizzazione e la modalità di controllo del servizio di Microsoft Flow.
@@ -101,12 +101,12 @@ La rimozione della licenza o del servizio Flow per un utente nell'organizzazione
 Si noti che verrà rimosso solo il riquadro di Flow per impostazione predefinita. Un utente può ancora scegliere di usare Microsoft Flow come singolo.
 
 ### <a name="why-did-10000-licenses-for-microsoft-flow-show-up-in-my-office-365-tenant"></a>Perché nel tenant di Office 365 sono comparse 10.000 licenze per Microsoft Flow?
-Chiunque nel mondo può provare Microsoft Flow Plan 1 o Plan 2 per 90 giorni e queste licenze di valutazione rappresentano la capacità disponibile per i nuovi utenti di Flow nel tenant. Non sono previsti addebiti per queste licenze. In particolare, esistono due motivi possibili per cui potrebbe comparire una capacità di 10.000 licenze (di valutazione) per Flow nel portale di amministrazione di Office 365:
+Chiunque può provare Microsoft Flow Piano 1 o Piano 2 per 90 giorni e queste licenze di valutazione rappresentano la capacità disponibile per i nuovi utenti di Flow nel tenant. Non sono previsti addebiti per queste licenze. In particolare, esistono due motivi possibili per cui potrebbe comparire una capacità di 10.000 licenze (di valutazione) per Flow nel portale di amministrazione di Office 365:
 
 1. Se almeno un utente nel tenant ha partecipato all'anteprima pubblica di Flow da aprile 2016 a ottobre 2016, saranno visualizzate 10.000 licenze con etichetta "Microsoft PowerApps and Logic flows"
    
     ![](./media/organization-q-and-a/licenses2.png)
-2. Se almeno un utente nel tenant si è iscritto per la versione di valutazione di Flow Plan 2 seguendo la procedura descritta nell'**opzione 1** della sezione [Come fanno gli utenti a iscriversi a Flow?](#how-do-users-sign-up-for-powerapps), verranno visualizzate 10.000 licenze con etichetta "Microsoft Power Apps & Flow"
+2. Se almeno un utente nel tenant si è iscritto per la versione di valutazione di Flow Plan 2 seguendo la procedura descritta nell'**opzione 1** della sezione [Come fanno gli utenti a iscriversi a Flow?](#how-do-people-sign-up-for-flow), verranno visualizzate 10.000 licenze con etichetta "Microsoft Power Apps & Flow"
    
     ![](./media/organization-q-and-a/licenses1.png)
 
