@@ -84,34 +84,12 @@
       href: gateway-manage.md
     - name: Informazioni sui gateway
       href: gateway-reference.md
-- name: 'Sviluppo: sviluppatori aziendali'
+- name: Sviluppare per Microsoft Flow
   items:
-    - name: Microsoft Flow per sviluppatori aziendali
+    - name: 'Microsoft Flow per sviluppatori aziendali, partner e ISV'
       href: dev-enterprise-intro.md
-    - name: Registrare e usare i connettori personalizzati
+    - name: Compilare e certificare connettori personalizzati
       href: register-custom-api.md
-    - name: Descrivere un connettore personalizzato con Postman
-      href: postman-collection.md
-    - name: Estensioni OpenAPI per connettori personalizzati
-      href: customapi-how-to-swagger.md
-    - name: Usare Azure Active Directory con un connettore personalizzato
-      href: customapi-azure-resource-manager-tutorial.md
-    - name: Creare un connettore personalizzato per un'API Web
-      href: customapi-web-api-tutorial.md
-    - name: Usare un webhook per attivare un flusso
-      href: customapi-webhooks.md
-- name: 'Sviluppo: partner e ISV'
-  items:
-    - name: Microsoft Flow per partner Microsoft e ISV
-      href: dev-isv-partner-intro.md
-    - name: Panoramica della certificazione dei connettori API
-      href: api-connector-overview.md
-    - name: Sviluppare connettori API per la certificazione
-      href: api-connector-dev.md
-    - name: Inviare connettori API per la certificazione
-      href: api-connector-submission.md
-    - name: Domande frequenti per la certificazione dei connettori API
-      href: api-connector-faq.md
     - name: Integrazione con siti Web e altre tecnologie
       href: embed-flow-dev.md
     - name: Consentire ai clienti di eseguire il Test Drive dei flussi
