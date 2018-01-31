@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 05/06/2017
 ms.author: astay
 ms.openlocfilehash: 62f8f8d0af72292a61324d75bd46f53d559b46a3
-ms.sourcegitcommit: 4f2cb27d392f46aa1d8680d6278876780ed3871b
+ms.sourcegitcommit: f3236f9f1ec050cda0d9c3e2b9c356132b2a2594
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/15/2017
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="api-connector-overview-microsoft-flow"></a>Panoramica sul connettore delle API (Microsoft Flow)
 Un **connettore API** è un wrapper basato su OpenAPI (Swagger) intorno a un'API REST che consente al servizio sottostante di comunicare con [Microsoft Flow](https://flow.microsoft.com), [PowerApps](https://powerapps.microsoft.com) e le [App per la logica](https://docs.microsoft.com/azure/logic-apps/). Un connettore permette agli utenti di connettere i propri account e sfruttare un set di **trigger** e **azioni** predefiniti per compilare le app e i flussi di lavoro.
