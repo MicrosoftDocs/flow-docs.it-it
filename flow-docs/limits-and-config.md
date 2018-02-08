@@ -13,13 +13,13 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 08/02/2017
+ms.date: 01/31/2018
 ms.author: stepsic
-ms.openlocfilehash: c5fefde9bdd2f8e82052abfaa64a7188d768d8ea
-ms.sourcegitcommit: f3236f9f1ec050cda0d9c3e2b9c356132b2a2594
+ms.openlocfilehash: 60caaba88e825e97a49c3cf65d0ecceff586046c
+ms.sourcegitcommit: b943fa83d7ca2d1a313c0c7b2cf0d7e4a9528b85
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 02/05/2018
 ---
 # <a name="limits-and-configuration-in-microsoft-flow"></a>Limiti e configurazione in Microsoft Flow
 Questo argomento contiene le informazioni sui limiti e sui dettagli di configurazione per i flussi.
@@ -48,7 +48,7 @@ Questi sono i limiti per una singola esecuzione del flusso.
 
 | Nome | Limite | Note |
 | --- | --- | --- |
-| Durata dell'esecuzione |30 giorni |Include i flussi di lavoro con passaggi in sospeso, ad esempio le approvazioni. Dopo 30 giorni i passaggi in sospeso scadranno. |
+| Durata dell'esecuzione |30 giorni |Include i flussi di lavoro con passaggi in sospeso, ad esempio le approvazioni. Il timeout di eventuali passaggi in sospeso è previsto dopo 30 giorni. Dopo il timeout, le approvazioni vengono rimosse dal Centro approvazioni. Se un utente tenta di approvare una richiesta dopo il timeout, riceverà un messaggio di errore. |
 | Conservazione archiviazione |30 giorni |A partire dall'ora di inizio esecuzione. |
 | Intervallo di ricorrenza min |1 minuto | |
 | Intervallo di ricorrenza max |500 giorni | |
@@ -107,7 +107,7 @@ Le chiamate effettuate da un'API connessa attraverso (ad esempio l'API SQL o l'A
 | Stati Uniti |104.43.232.28, 104.43.232.242, 104.43.235.249, 104.43.234.211, 52.160.93.247, 52.160.91.66, 52.160.92.131, 52.160.95.100, 40.117.101.91, 40.117.98.246, 40.117.101.120, 40.117.100.191 |
 | Stati Uniti (accesso anticipato) |52.161.26.191, 52.161.27.42, 52.161.29.40, 52.161.26.33, 13.66.213.240, 13.66.214.51, 13.66.210.166, 13.66.213.29 |
 
-Ad esempio, se è necessario sbloccare gli indirizzi IP per il database SQL di Azure, è necessario usare questi indirizzi.
+Ad esempio, se è necessario autorizzare gli indirizzi IP per il database SQL di Azure, è necessario usare questi indirizzi.
 
 La tabella seguente elenca i servizio a cui si connette Microsoft Flow. Assicurarsi che nessuno di questi servizi risulti bloccato nella rete corrente.
 
