@@ -13,15 +13,16 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 02/15/2017
+ms.date: 02/05/2018
 ms.author: deonhe
-ms.openlocfilehash: 41f5d40ca2ad5fcce3a7967beef7104dd532b1d8
-ms.sourcegitcommit: 4f2cb27d392f46aa1d8680d6278876780ed3871b
+ms.openlocfilehash: 642cf26110a09404c8bd453f894540963904ebda
+ms.sourcegitcommit: 0b7964058416fd8d5e355913eea27172f1c61992
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/15/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="manage-an-on-premises-data-gateway-in-microsoft-flow"></a>Gestire un gateway dati locale in Microsoft Flow
+
 Installare e gestire un gateway dati locale per integrare in modo sicuro un'ampia gamma di app basate su cloud con i dati e le app locali attraverso Microsoft Flow.
 
 Con un gateway è possibile connettersi ai dati locali attraverso le connessioni seguenti:
@@ -34,37 +35,42 @@ Con un gateway è possibile connettersi ai dati locali attraverso le connessioni
 * DB2
 
 > [!IMPORTANT]
-> I gateway di dati di Microsoft SharePoint supportano il traffico HTTP, ma non il traffico HTTPS.
-> 
-> 
+> I gateway di dati di Microsoft SharePoint ora supportano il traffico sia HTTP che HTTPS.
+
 
 ## <a name="prerequisites"></a>Prerequisiti
+
 * Il nome utente e la password usati per [iscriversi](sign-up-sign-in.md) a Microsoft Flow.
 * Autorizzazioni amministrative per un gateway.
-  
-  Per ogni gateway installato sono fornite queste autorizzazioni per impostazione predefinita e un amministratore di un altro gateway può concederle per tale gateway.
+
+  Queste autorizzazioni sono disponibili per impostazione predefinita per ogni gateway installato. Inoltre, un amministratore di un altro gateway può concedere queste autorizzazioni per tale gateway.
 * Una licenza che supporti i gateway. Per ulteriori informazioni, vedere la sezione "Connectivity" (Connettività) della [pagina dei prezzi](https://flow.microsoft.com/pricing/).
-* È possibile creare un gateway e una connessione locale solo nell'[ambiente predefinito](environments-overview-maker.md).
+
+> [!NOTE]
+> È possibile creare un gateway e una connessione locale solo nell'[ambiente predefinito](environments-overview-maker.md).
+
+
 
 ## <a name="view-your-gateways"></a>Visualizzare i gateway
-Nell'angolo in alto a destra del [sito Web di Microsoft Flow](https://flow.microsoft.com) scegliere o toccare l'icona dell'ingranaggio, quindi scegliere o toccare **Gateway**.
+
+Nell'angolo in alto a destra del [sito Web di Microsoft Flow](https://flow.microsoft.com) selezionare l'icona a forma di ingranaggio e quindi selezionare **Gateway**.
 
 ![Gateway in gestione][1]
 
-**Nota**: se è stato creato o si è ricevuto l'accesso a un gateway in PowerApps, tale gateway viene visualizzato nell'elenco **Gateway personali** in Microsoft Flow.
+> [!NOTE]
+> Se si è l'autore di un gateway in PowerApps o si è autorizzati ad accedervi, tale gateway viene visualizzato nell'elenco **Gateway personali** in Microsoft Flow.
+
+
 
 ## <a name="install-a-gateway"></a>Installare un gateway
-1. Scaricare l'[installazione guidata del gateway](http://go.microsoft.com/fwlink/?LinkID=820580&clcid=0x409).
-   
-    È anche possibile scaricare questa procedura guidata selezionando o toccando l'icona dell'ingranaggio nell'angolo in alto a destra del [sito Web di Microsoft Flow](https://flow.microsoft.com), facendo clic su o toccando **Gateway**, quindi selezionando **Crea gateway**.
-   
-    ![Installazione del gateway][2]
-2. Eseguire questa procedura guidata, specificando le stesse credenziali usate per accedere a Microsoft Flow.
-   
-    Dopo aver registrato e configurato correttamente il gateway, questo viene visualizzato nell'elenco **Gateway personali** in Microsoft Flow.
+
+1. Scaricare l'[installazione guidata del gateway](https://go.microsoft.com/fwlink/?LinkID=820580&clcid=0x409).
+
+1. Eseguire questa procedura guidata e specificare le stesse credenziali usate per accedere a Microsoft Flow.
+
+    Dopo aver registrato e configurato correttamente il gateway, questo viene visualizzato nell'elenco **Gateway** in Microsoft Flow.
 
 Per altre informazioni, vedere [Informazioni sui gateway](gateway-reference.md).
 
 <!-- Image references -->
 [1]: ./media/manage-gateway/view-gateways.png
-[2]: ./media/manage-gateway/list-gateways.png

@@ -13,13 +13,13 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 01/01/2018
+ms.date: 02/12/2018
 ms.author: stepsic
-ms.openlocfilehash: 8bdfafff5fbf3a5491809063e92607cd8e10167c
-ms.sourcegitcommit: 7bf01167913038b3ad3527592013eefdd3ee9200
+ms.openlocfilehash: 3687266e84c06c37ac6ae0ee3d89aae0814158f3
+ms.sourcegitcommit: 28b6b09c9f3dd98a64492668d9a3b8c7bfbd6ce3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 02/12/2018
 ---
 # <a name="release-notes"></a>Note sulla versione
 ## <a name="top-questions"></a>Domande principali
@@ -44,6 +44,30 @@ ms.lasthandoff: 01/03/2018
 3. I trigger di file non verranno generati per i file aggiunti nelle cartelle annidate all'interno della cartella selezionata.
 
 ## <a name="whats-new"></a>Novità
+
+### <a name="release-2018-02-09"></a>Versione 09-02-2018
+
+- **Disponibilità elevata del gateway**: creare cluster a disponibilità elevata di gateway di gestione dati locali per mantenere connessioni attive in caso di malfunzionamento di singoli computer.
+- **Miglioramento di Applica a ogni**: con Microsoft Flow - Piano 1 e Piano 2 è possibile elaborare fino a 100.000 elementi in una singola esecuzione e 50 azioni in parallelo in cicli Applica a ogni. 
+
+[Ulteriori informazioni e domande](https://flow.microsoft.com/blog/gateway-ha-increased-apply-to-each/) su questa versione.
+
+### <a name="release-2018-01-29"></a>Versione 29-01-2018
+
+- **Flussi all'interno di Microsoft Teams**: da Teams è possibile creare e gestire flussi, esaminare le approvazioni ricevute e inviate e avviare i flussi direttamente all'interno dell'app desktop Teams o in teams.microsoft.com - [vedere qui per altre informazioni](https://flow.microsoft.com/blog/microsoft-flow-in-microsoft-teams/).
+- **Notifiche di modifiche condivise**: ogni volta che un flusso personale viene modificato da un collega, si riceverà una notifica tramite posta elettronica con indicazione di chi ha modificato quale flusso.
+- **Nuove espressioni**: sono stati aggiunti due nuovi set di espressioni: uno per analizzare gli URL e un altro per gestire gli oggetti JSON.
+- **Tre nuovi connettori**: questa settimana sono disponibili due nuovi connettori Plumsail: Plumsail SP e Plumsail Forms e un nuovo connettore per kintone.
+
+[Ulteriori informazioni e domande](https://flow.microsoft.com/blog/shared-notifications-and-expressions/) su questa versione.
+
+### <a name="release-2018-01-17"></a>Versione 17-01-2018
+
+- **Informazioni sul profilo di Office 365**: sono state aggiunte nuove azioni per il connettore Utenti di Office 365 utilizzabili con i profili utente e le foto.
+- **Aggiunta a variabili stringa**: è possibile aggiungere stringhe all'interno di cicli per creare tabelle o altri elenchi.
+- **Connettore Infobip**: Infobip è un servizio che supporta comunicazioni di livello aziendale, inclusi chiamate vocali e trigger per SMS in ingresso.
+
+[Ulteriori informazioni e domande](https://flow.microsoft.com/blog/o365-profile-infobip/) su questa versione.
 
 ### <a name="release-2017-12-20"></a>Versione 2017-12-20
 
