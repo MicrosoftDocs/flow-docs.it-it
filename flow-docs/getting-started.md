@@ -13,76 +13,81 @@ ms.devlang: na
 ms.topic: hero-article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 03/27/2017
+ms.date: 10/31/2017
 ms.author: stepsic
-ms.openlocfilehash: 4ed27b114819146f38a58e4f781a8372be9f60a1
-ms.sourcegitcommit: 4f2cb27d392f46aa1d8680d6278876780ed3871b
+ms.openlocfilehash: 11c8d9846982cfd372df787b6a7c9e6584d61ae5
+ms.sourcegitcommit: 95e9c124868ce09d961b5776c957b051fd621b88
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/15/2017
+ms.lasthandoff: 02/20/2018
 ---
-# <a name="get-started-with-microsoft-flow"></a>Attività iniziali con Microsoft Flow
+# <a name="get-started-with-microsoft-flow"></a>Attività iniziali con Microsoft Flow #
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/iMteXfAvDSE?list=PL8nfc9haGeb55I9wL9QnWyHp3ctU2_ThF" frameborder="0" allowfullscreen></iframe>
 
-Benvenuti. Microsoft Flow è un prodotto utile per configurare i flussi di lavoro automatizzati tra le app e i servizi preferiti per sincronizzare file, ricevere notifiche, raccogliere dati e altro ancora.
+Benvenuti. Microsoft Flow è un servizio che consente di creare flussi di lavoro automatizzati tra le app e i servizi preferiti per sincronizzare file, ricevere notifiche, raccogliere dati e altro ancora.
 
-Il primo passaggio consiste nel [registrarsi](sign-up-sign-in.md), o, se si dispone già di un account con Microsoft, è possibile [accedere](https://flow.microsoft.com/signin) direttamente dal proprio tablet, computer desktop o smartphone.
+Il primo passaggio consiste nel [registrarsi](sign-up-sign-in.md) oppure, se è già disponibile un account con Microsoft Flow, è possibile [accedere](https://flow.microsoft.com/signin) dal proprio tablet, computer desktop o smartphone.
 
-## <a name="check-out-the-home-page"></a>Consultare la home page
-[Nella home page](https://flow.microsoft.com) di Microsoft Flow è possibile [esplorare un set eterogeneo di modelli](https://flow.microsoft.com/templates) e ottenere informazioni su alcune funzionalità principali di Microsoft Flow. È possibile farsi rapidamente un'idea delle operazioni eseguibili e dell'aiuto offerto da Microsoft Flow per svolgere le attività in ambito professionale e nella vita privata.
+## <a name="check-out-the-start-page"></a>Vedere la pagina iniziale ##
 
-![Home page di Flow](./media/getting-started/flowhome1.png)
+[Nella pagina iniziale](https://flow.microsoft.com) di Microsoft Flow è possibile [esplorare un set eterogeneo di modelli](https://flow.microsoft.com/templates) e ottenere informazioni sulle funzionalità principali di Microsoft Flow. È possibile farsi rapidamente un'idea delle operazioni eseguibili e dell'aiuto offerto da Microsoft Flow per svolgere le attività in ambito professionale e nella vita privata.
 
-![Home page di Flow](./media/getting-started/flowhome2.png)
+Con Microsoft Flow è possibile:
 
-![Home page di Flow](./media/getting-started/flowhome3.png)
+- Cercare facilmente modelli e servizi.
 
-Ogni modello è progettato per uno scopo specifico, come ad esempio l'invio di un SMS quando il capo scrive un messaggio di posta elettronica, l'aggiunta di lead di Twitter a Dynamics 365 o la creazione di una copia backup dei file. Questi modelli sono solo la punta dell'iceberg e mirano a stimolare la creazione di flussi personalizzati per gli esatti processi necessari.
+    ![Pagina iniziale di Flow 1](./media/getting-started/flowhome1.png)
 
-## <a name="create-your-first-flow"></a>Creare il primo flusso
-È necessario trovare un modello di flusso utile per soddisfare le proprie esigenze. Un modello molto semplice è [**Ricevi promemoria giornalieri tramite messaggi di posta elettronica**](https://flow.microsoft.com/galleries/public/templates/45a3399aa29345308f08b6db0a9c85b9/):
+- Scegliere tra i servizi più popolari.
 
-![Modelli di flusso](./media/getting-started/template-details.png)
+    ![Pagina iniziale di Flow 2](./media/getting-started/flowhome2.png)
 
-L'uso di questo modello è molto semplice: per prima cosa, selezionare **Continua**.
+- Visualizzare una panoramica di ogni flusso.
 
-![Creare una connessione](./media/getting-started/create-connection.png)
+    ![Pagina iniziale di Flow 3](./media/getting-started/flowhome3.png)
 
-A questo punto, immettere gli indirizzi di posta elettronica a cui verrà inviato il promemoria giornaliero. Immettere quindi il messaggio di promemoria. Infine, selezionare **Crea flusso**, quindi verificare che il flusso sia in esecuzione come previsto.
+Ogni modello è progettato per uno scopo specifico. Ad esempio, sono disponibili modelli per l'invio di un SMS quando si riceve un messaggio di posta elettronica da mittenti specifici, l'aggiunta di lead di Twitter a Dynamics 365 o la creazione di una copia backup dei file. Questi modelli sono semplicemente alcuni esempi utilizzabili come fonte di ispirazione per creare flussi personalizzati per i processi esatti necessari.
 
-![Creare una connessione](./media/getting-started/configure-email-details.png)
+## <a name="create-your-first-flow"></a>Creare il primo flusso ##
 
-Nota: è possibile esplorare le condizioni che attivano il flusso e l'azione risultante da tale evento. Sperimentare con le impostazioni per personalizzare il flusso e persino aggiungere o eliminare le azioni. (o selezionare semplicemente **Fine**).
+1. Selezionare un modello utile. Un modello molto semplice è [**Ricevi promemoria giornalieri nella posta elettronica**](https://flow.microsoft.com/galleries/public/templates/45a3399aa29345308f08b6db0a9c85b9/):
 
-Esplorare altri modelli e [seguire questa esercitazione](get-started-logic-template.md) per ottenere le informazioni dettagliate sulla modalità di creazione di più flussi dai modelli.
+    ![modello di promemoria giornaliero](./media/getting-started/template-details.png)
 
-## <a name="get-creative"></a>Spazio alla creatività
-Ora che ci si è fatta un'idea di cosa può fare un flusso e si è acquisita un po' di esperienza, [creare un flusso da zero](get-started-logic-flow.md) basandosi su queste e su altre origine dati:
+1. Selezionare **Continua**.
 
-* un file di Excel in un account di archiviazione cloud, ad esempio Dropbox, OneDrive o Google Drive
-* un foglio di Google
-* un elenco di SharePoint
-* Salesforce o Microsoft Dynamics 365 con entità personalizzate
-* una tabella di SQL Azure
-* [Microsoft Common Data Service](common-data-model-intro.md)
+    ![Creare una connessione](./media/getting-started/create-connection.png)
+
+1. Immettere gli indirizzi di posta elettronica a cui verrà inviato il promemoria giornaliero. Immettere quindi il messaggio di promemoria. Infine, selezionare **Crea flusso**, quindi verificare che il flusso sia in esecuzione come previsto.
+
+    ![Specificare le credenziali per la connessione](./media/getting-started/configure-email-details.png)
+
+    > [!NOTE]
+    > È possibile esplorare le condizioni che attivano il flusso e l'azione risultante da tale evento. Sperimentare con le impostazioni per personalizzare il flusso. È anche possibile aggiungere o eliminare azioni.
+
+1. Selezionare **Fine**.
+
+[Seguire questa esercitazione](get-started-logic-template.md) per altre informazioni sulla creazione di flussi da modelli.
+
+## <a name="get-creative"></a>Spazio alla creatività ##
+
+Dopo aver creato il primo flusso da un modello, usare una delle più di [150 origini dati](https://flow.microsoft.com/connectors/) supportate da Microsoft Flow per [creare flussi personalizzati da zero](get-started-logic-flow.md).
 
 ![Creazione di un flusso](./media/getting-started/build-a-flow.png)
 
-Quando si crea un flusso da zero, si è liberi di esplorare diversi approcci, come quelli illustrati in questi argomenti:
+Quando si crea un flusso da zero, si ha il controllo dell'intero flusso di lavoro. Ecco alcune idee per iniziare:
 
-* [Flows with many steps](multi-step-logic-flow.md) (Flussi con più passaggi)
-* [Run tasks on a schedule](run-tasks-on-a-schedule.md) (Eseguire attività in una pianificazione)
-* [Create an approval flow](wait-for-approvals.md) (Creare un flusso di approvazione)
-* [Watch a flow in action](see-a-flow-run.md) (Osservare un flusso in azione)
-* [Publish a template](publish-a-template.md) (Pubblicare un modello)
+- [Flussi con più passaggi](multi-step-logic-flow.md).
+- [Run tasks on a schedule](run-scheduled-tasks.md) (Eseguire attività con una pianificazione).
+- [Creare un flusso di approvazione](wait-for-approvals.md).
+- [Osservare i flussi in azione](see-a-flow-run.md).
+- [Pubblicare un modello](publish-a-template.md).
 
-## <a name="use-the-mobile-app"></a>Usare l'app per dispositivi mobili
-Scaricare l'app per dispositivi mobili Microsoft Flow per la versione [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios) o [Windows Phone](https://aka.ms/flowmobilewindows) nel dispositivo mobile, in cui è possibile eseguire queste operazioni:
+## <a name="use-the-mobile-app"></a>Usare l'app per dispositivi mobili ##
 
-* [monitorare l'attività di flusso](mobile-monitor-activity.md), ad esempio operazioni riuscite, errori e l'ultima volta che è stato eseguito ogni flusso
-* [gestire ogni flusso](mobile-manage-flows.md), ad esempio abilitandolo o disabilitandolo e visualizzando i relativi eventi e azioni
-* [creare un flusso da un modello](mobile-create-flow.md), ad esempio per ricevere una notifica push della posta inviata da un mittente specificato
+Scaricare l'app per dispositivi mobili Microsoft Flow per [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios) o [Windows Phone](https://aka.ms/flowmobilewindows). Con questa app, è possibile [monitorare l'attività del flusso](mobile-monitor-activity.md), [gestire i flussi](mobile-manage-flows.md) e [creare flussi dai modelli](mobile-create-flow.md).
 
-## <a name="questions-ideas-were-here-to-help"></a>Domande? Idee? Siamo qui per aiutare
-Siamo lieti di scoprire cosa è possibile eseguire con Microsoft Flow e vogliamo assicurarci che l'esperienza dell'utente finale sia ottimale. Per ulteriore assistenza, consultare le esercitazioni dettagliate e [unirsi alla community](http://go.microsoft.com/fwlink/?LinkID=787467) per porre domande e condividere le proprie idee. [Contattare il supporto tecnico](http://go.microsoft.com/fwlink/?LinkID=787479) se si riscontrano problemi.
+## <a name="were-here-to-help"></a>Siamo qui per aiutare ##
 
+Per Microsoft è importante scoprire cosa fanno i clienti con Microsoft Flow e assicurare un'esperienza ottimale agli utenti. Consultare le esercitazioni per l'[apprendimento guidato](https://flow.microsoft.com/guided-learning/) e [unirsi alla community](http://go.microsoft.com/fwlink/?LinkID=787467) per porre domande e condividere le proprie idee. [Contattare il supporto tecnico](http://go.microsoft.com/fwlink/?LinkID=787479) se si riscontrano problemi.
