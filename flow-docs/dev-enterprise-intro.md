@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 01/31/2018
 ms.author: mblythe
-ms.openlocfilehash: 3e6a6e0e369f8d89dcf834b4225dfd5aa4758dd7
-ms.sourcegitcommit: b943fa83d7ca2d1a313c0c7b2cf0d7e4a9528b85
+ms.openlocfilehash: d8886f0828ca3b8ccf7ae1ce9c46f6e9b8fcc766
+ms.sourcegitcommit: f3261717768177e03e825c0dd2e3ba736dc9b94d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/05/2018
+ms.lasthandoff: 02/15/2018
 ---
 # <a name="microsoft-flow-for-enterprise-developers-isvs-and-partners"></a>Microsoft Flow per sviluppatori aziendali, ISV e partner
 
@@ -51,7 +51,7 @@ Come partner Microsoft o fornitore di software indipendenti (ISV), è possibile 
 
 ### <a name="1-connecting-to-your-apis-or-enabling-customers-to-connect-to-your-apis"></a>1. Connessione alle API o abilitazione dei clienti per la connessione alle API
 
-Gli ISV hanno spesso dati proprietari che vogliono rendere accessibili ai clienti tramite i flussi. È possibile esporre l'accesso a tutti i dati tramite un connettore personalizzato. [Altre informazioni](https://docs.microsoft.com/en-us/connectors/custom-connectors/)
+Gli ISV hanno spesso dati proprietari che vogliono rendere accessibili ai clienti tramite i flussi. È possibile esporre l'accesso a tutti i dati tramite un connettore personalizzato. [Altre informazioni](https://docs.microsoft.com/connectors/custom-connectors/)
 
 Dopo aver creato il connettore, è possibile renderlo disponibile ai clienti in due modi:
 - Il connettore può essere distribuito nel tenant del cliente tramite le API REST o PowerShell.
@@ -77,7 +77,7 @@ Per consentire agli utenti finali l'accesso a flussi che possono usare automatic
 
 Se i clienti hanno già Office 365 o Dynamics 365 e queste licenze sono associate alle identità usate per l'accesso ad Azure AD, non sono previsti altri requisiti di licenza. Tuttavia, se i clienti non usano Office 365 o Dynamics 365, è necessario acquisire i diritti di utilizzo per loro conto per Microsoft Flow, in modo che dispongano della licenza per usare tali componenti incorporati nell'applicazione.
 
-Microsoft offre il programma [Microsoft Cloud Solution Provider](https://partner.microsoft.com/en-US/cloud-solution-provider) per l'acquisizione delle licenze per conto dei clienti. Per Microsoft Flow esistono due diversi [piani tariffari](https://flow.microsoft.com/pricing/), che è consigliabile esaminare per altri dettagli sui piani e le relative funzionalità.
+Microsoft offre il programma [Microsoft Cloud Solution Provider](https://partner.microsoft.com/cloud-solution-provider) per l'acquisizione delle licenze per conto dei clienti. Per Microsoft Flow esistono due diversi [piani tariffari](https://flow.microsoft.com/pricing/), che è consigliabile esaminare per altri dettagli sui piani e le relative funzionalità.
 
 ### <a name="7-list-on-appsource"></a>7. Pubblicare in AppSource
 

@@ -15,16 +15,16 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 09/21/2017
 ms.author: deonhe
-ms.openlocfilehash: 37b53fa50afdc6865c5ba905957405f0e4b67520
-ms.sourcegitcommit: 4f2cb27d392f46aa1d8680d6278876780ed3871b
+ms.openlocfilehash: b266a953785b79c0dbc5e2d483330b239a7bf17f
+ms.sourcegitcommit: f3261717768177e03e825c0dd2e3ba736dc9b94d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/15/2017
+ms.lasthandoff: 02/15/2018
 ---
 # <a name="filter-and-copy-data-with-microsoft-flow"></a>Filtrare e copiare i dati con Microsoft Flow
 Questa procedura dettagliata illustra come creare un flusso che monitora un'origine per verificare la presenza di elementi nuovi o modificati e copia quindi tali modifiche in una destinazione. Se gli utenti inseriscono dati in un'unica posizione, ma il team ha bisogno di dati in un formato o un percorso diverso, è possibile creare un flusso di questo tipo.
 
-Mentre questa procedura dettagliata copia i dati da un [elenco](https://support.office.com/en-us/article/SharePoint-lists-I-An-introduction-f11cd5fe-bc87-4f9e-9bfe-bbd87a22a194) Microsoft SharePoint (l'origine) a una tabella del [database SQL di Microsoft Azure](https://docs.microsoft.com/azure/sql-database/sql-database-technical-overview) (la destinazione), è possibile copiare dati tra gli oltre [150 servizi](https://flow.microsoft.com/connectors/) supportati da Microsoft Flow.
+Mentre questa procedura dettagliata copia i dati da un [elenco](https://support.office.com/article/SharePoint-lists-I-An-introduction-f11cd5fe-bc87-4f9e-9bfe-bbd87a22a194) Microsoft SharePoint (l'origine) a una tabella del [database SQL di Microsoft Azure](https://docs.microsoft.com/azure/sql-database/sql-database-technical-overview) (la destinazione), è possibile copiare dati tra gli oltre [150 servizi](https://flow.microsoft.com/connectors/) supportati da Microsoft Flow.
 
 > [!IMPORTANT]
 > Le modifiche apportate nella destinazione non vengono copiate nell'origine, perché le sincronizzazioni bidirezionali non sono supportate. Se si prova a impostare una sincronizzazione bidirezionale, si creerà un ciclo infinito in cui le modifiche vengono inviate all'infinito tra l'origine e la destinazione.
@@ -35,7 +35,7 @@ Mentre questa procedura dettagliata copia i dati da un [elenco](https://support.
 * Accesso a un'origine dati e una destinazione. Questa procedura dettagliata non include i passaggi per creare l'origine e la destinazione.
 * Avere accesso a [Microsoft Flow](https://flow.microsoft.com).
 * Una conoscenza di base della modalità di archiviazione dei dati.
-* Familiarità con le nozioni di base della creazione di flussi. È possibile esaminare come aggiungere [azioni, trigger](multi-step-logic-flow.md#add-another-action) e [condizioni](add-a-condition.md). I passaggi seguenti presuppongono che si sappia come eseguire queste azioni.
+* Familiarità con le nozioni di base della creazione di flussi. È possibile esaminare come aggiungere [azioni, trigger](multi-step-logic-flow.md#add-another-action) e [condizioni](add-condition.md). I passaggi seguenti presuppongono che si sappia come eseguire queste azioni.
 
 > [!TIP]
 > I nomi delle colonne nell'origine e nella destinazione non devono per forza corrispondere, ma è necessario fornire i dati per tutte le colonne *obbligatorie* quando si inserisce o si aggiorna un elemento. Microsoft Flow identifica i campi obbligatori per l'utente.

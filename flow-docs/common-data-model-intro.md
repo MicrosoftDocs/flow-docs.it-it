@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/22/2016
 ms.author: stepsic
-ms.openlocfilehash: a63ccacb1e6d9bd63d5a11a8db6ea01a9fc37333
-ms.sourcegitcommit: 4f2cb27d392f46aa1d8680d6278876780ed3871b
+ms.openlocfilehash: e4e92bfdcf1ea65de272233b2056523641010cf2
+ms.sourcegitcommit: f3261717768177e03e825c0dd2e3ba736dc9b94d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/15/2017
+ms.lasthandoff: 02/15/2018
 ---
 # <a name="create-a-flow-that-uses-the-common-data-service"></a>Creare un flusso che usi Common Data Service
 Migliorare l'efficienza operativa con una vista unificata dei dati di business con la creazione di un flusso che usa [Common Data Service](https://powerapps.microsoft.com/tutorials/data-platform-intro/). Distribuire questo database aziendale protetto che comprende entità aziendali standard ben formate (ad esempio vendite, acquisti, servizio clienti e produttività) nell'organizzazione. Archiviare dati aziendali in una o più [entità personalizzate](https://powerapps.microsoft.com/tutorials/data-platform-create-entity/), che offrono diversi vantaggi rispetto alle origini dati esterne, ad esempio Microsoft Excel e Salesforce.
@@ -37,7 +37,7 @@ Ad esempio, è possibile sfruttare Common Data Service all'interno di Microsoft 
 
 * Iscriversi a [Microsoft Flow](https://flow.microsoft.com) e [PowerApps](https://web.powerapps.com).
   
-    Se si riscontrano problemi, verificare se [Microsoft Flow](sign-up-sign-in.md) e [PowerApps](https://powerapps.microsoft.com/en-us/tutorials/signup-for-powerapps/) supportano il tipo di account di cui si è in possesso e che l'organizzazione non abbia bloccato l'iscrizione.
+    Se si riscontrano problemi, verificare se [Microsoft Flow](sign-up-sign-in.md) e [PowerApps](https://powerapps.microsoft.com/tutorials/signup-for-powerapps/) supportano il tipo di account di cui si è in possesso e che l'organizzazione non abbia bloccato l'iscrizione.
 * Se Common Data Service non è mai stato usato in precedenza, aprire la scheda **Entità** di [powerapps.com](https://web.powerapps.com/#/entities), quindi scegliere o toccare **Crea il database personale**.
 
 ## <a name="sign-in-to-your-environment"></a>Accedere al proprio ambiente
@@ -45,7 +45,7 @@ Ad esempio, è possibile sfruttare Common Data Service all'interno di Microsoft 
    
     **Nota**: per visualizzare il pulsante **Accedi**, potrebbe essere necessario aprire il menu in alto a sinistra.
    
-    ![Accesso](./media/common-data-model-intro/signin-flow.png)
+    ![Accedi](./media/common-data-model-intro/signin-flow.png)
 2. Su powerapps.com, nel menu in alto a destra selezionare l'ambiente in cui è stato creato il database.
    
     **Nota**: se non si seleziona lo stesso ambiente, non verranno visualizzate le entità.

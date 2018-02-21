@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 09/22/2017
 ms.author: deonhe
-ms.openlocfilehash: 0e0309793cfcb45ca7ee72910803a4abc27d2f26
-ms.sourcegitcommit: 4f2cb27d392f46aa1d8680d6278876780ed3871b
+ms.openlocfilehash: 6b152f0ec85558889970db2784fe8c2dcbf526ed
+ms.sourcegitcommit: f3261717768177e03e825c0dd2e3ba736dc9b94d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/15/2017
+ms.lasthandoff: 02/15/2018
 ---
 # <a name="create-an-approval-flow-that-requires-everyone-to-approve"></a>Creare un flusso di approvazione che richieda a tutti gli utenti di approvare
 Questa procedura dettagliata illustra come creare un flusso di lavoro che richieda a tutti (tutti i responsabili approvazione assegnati) di concordare sull'approvazione di una richiesta di ferie, ma permetta a qualsiasi responsabile approvazione di rifiutare l'intera richiesta.
@@ -28,12 +28,12 @@ Questo tipo di flusso di lavoro di approvazione è utile in un'organizzazione ch
 
 ## <a name="prerequisites"></a>Prerequisiti
 * Accesso a [Microsoft Flow](https://flow.microsoft.com), Office 365 Outlook e Utenti di Office 365.
-* Un [elenco](https://support.office.com/en-us/article/SharePoint-lists-I-An-introduction-f11cd5fe-bc87-4f9e-9bfe-bbd87a22a194) di SharePoint Online.
+* Un [elenco](https://support.office.com/article/SharePoint-lists-I-An-introduction-f11cd5fe-bc87-4f9e-9bfe-bbd87a22a194) di SharePoint Online.
   
     Questa procedura dettagliata presuppone che sia già stato creato un elenco di SharePoint Online che viene usato per richiedere ferie. Vedere la procedura dettagliata sulle [approvazioni parallele](parallel-modern-approvals.md) per un esempio approfondito che illustra in dettaglio il possibile aspetto dell'elenco di SharePoint.
 * Familiarità con le nozioni di base della creazione di flussi.
   
-    È possibile esaminare come aggiungere [azioni, trigger](multi-step-logic-flow.md#add-another-action) e [condizioni](add-a-condition.md). I passaggi seguenti presuppongono che si sappia come eseguire queste azioni.
+    È possibile esaminare come aggiungere [azioni, trigger](multi-step-logic-flow.md#add-another-action) e [condizioni](add-condition.md). I passaggi seguenti presuppongono che si sappia come eseguire queste azioni.
 
 > [!NOTE]
 > Quando si usano SharePoint Online e Office 365 Outlook in questa procedura dettagliata, è possibile usare altri servizi come Zendesk, Salesforce, Gmail o uno tra gli oltre [150 servizi](https://flow.microsoft.com/connectors/) supportati da Microsoft Flow.
