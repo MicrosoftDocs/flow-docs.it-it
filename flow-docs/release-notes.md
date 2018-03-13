@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 02/12/2018
 ms.author: stepsic
-ms.openlocfilehash: 3687266e84c06c37ac6ae0ee3d89aae0814158f3
-ms.sourcegitcommit: 28b6b09c9f3dd98a64492668d9a3b8c7bfbd6ce3
+ms.openlocfilehash: 57a86fa86633e040cf788443d54bd60cfd340844
+ms.sourcegitcommit: 6308b1f4ec4ed18a8a7c89911a83cd2f12ed6dc4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="release-notes"></a>Note sulla versione
 ## <a name="top-questions"></a>Domande principali
@@ -121,7 +121,7 @@ Il pannello di avvio di Microsoft Flow è ora disponibile in tutte le aree. Ques
 
 ### <a name="release-2017-10-19"></a>Versione 2017-10-19
 
-- **Aggiunta annidata a ogni elemento**: è possibile aggiungere azioni Applica a ogni, filtrare e selezionare in altri contenitori di tipo Applica a ogni.
+- **Aggiunta annidata a ogni elemento**: è possibile aggiungere azioni Applica a ogni, filtrare e selezionare in altre azioni sui contenitori di tipo Applica a ogni.
 - **Azioni data/ora**: sono disponibili nuove azioni per ottenere l'ora locale e per l'aggiunta, la sottrazione o la formattazione degli orari.
 - **Quattro nuovi connettori**: sono ora disponibili Content Moderator, Docparser, Microsoft Kaizala e Pitney Bowes Data Validation.
 - **Esperienza di connessione migliorata**: nel portale di Flow vengono visualizzate notifiche quando una connessione viene interrotta e vengono mostrate informazioni più dettagliate sulla connessione.
