@@ -1,13 +1,13 @@
 ---
 title: Domande frequenti | Microsoft Docs
 description: Risposte a diverse domande frequenti su Microsoft Flow
-services: 
+services: ''
 suite: flow
 documentationcenter: na
 author: stepsic-microsoft-com
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/15/2017
 ms.author: stepsic
-ms.openlocfilehash: 5b8deda5f22bcc1fa7cfa37a0d4244f26c2004a4
-ms.sourcegitcommit: 4f2cb27d392f46aa1d8680d6278876780ed3871b
+ms.openlocfilehash: 99a66520b5a922b4945c9d3c94c7a5c053df98ee
+ms.sourcegitcommit: a0435b92fa7f5dedff3b0ff806836c7a07309fd2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/15/2017
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="frequently-asked-questions"></a>Domande frequenti
 ## <a name="audience-and-strategy"></a>Destinatari e strategia
@@ -99,10 +99,21 @@ Inizia con le risorse seguenti:
 * [Blog](https://flow.microsoft.com)
 * [Canale YouTube](https://youtube.com/playlist?list=PL8nfc9haGeb55I9wL9QnWyHp3ctU2_ThF)
 * [Argomento](getting-started.md)
-* [Community](http://powerusers.microsoft.com)
+* [Community](https://powerusers.microsoft.com)
 
 ### <a name="what-operating-systems-does-the-mobile-app-for-microsoft-flow-support"></a>Quali sono i sistemi operativi supportati dall'app per dispositivi mobili per Microsoft Flow?
 L'app per dispositivi mobili Microsoft Flow è disponibile su [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios) o [Windows Phone](https://aka.ms/flowmobilewindows).
+
+### <a name="can-flows-be-turned-off-or-disabled"></a>È possibile disattivare o disabilitare i flussi?
+
+Sì, ogni flusso prevede un'opzione di attivazione/disattivazione che consente di arrestare l'elaborazione delle richieste da parte del flusso.
+
+Vedere la tabella seguente per comprendere come risponde il flusso quando viene nuovamente attivato.
+
+Tipo di trigger|Descrizione
+-------|--------
+Polling, ad esempio il trigger di **ricorrenza**|Quando il flusso viene riattivato, tutti gli eventi non elaborati/in sospeso vengono elaborati.
+Webhook|Quando il flusso viene riattivato, vengono elaborati solo i nuovi eventi generati dopo la riattivazione del flusso.
 
 ### <a name="what-regions-and-languages-does-microsoft-flow-support"></a>Quali lingue e aree geografiche supporta Microsoft Flow?
 Microsoft Flow è disponibile in 42 lingue e [sei aree geografiche](regions-overview.md).
