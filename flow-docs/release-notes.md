@@ -1,13 +1,13 @@
 ---
 title: Note sulla versione | Microsoft Docs
-description: "Problemi comuni e novità delle versioni di Microsoft Flow"
-services: 
+description: Problemi comuni e novità delle versioni di Microsoft Flow
+services: ''
 suite: flow
 documentationcenter: na
 author: stepsic-microsoft-com
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 02/12/2018
 ms.author: stepsic
-ms.openlocfilehash: 57a86fa86633e040cf788443d54bd60cfd340844
-ms.sourcegitcommit: 6308b1f4ec4ed18a8a7c89911a83cd2f12ed6dc4
+ms.openlocfilehash: 4d88b0baee16fb0aeea24e2f2c84806595f21662
+ms.sourcegitcommit: 753d52fa29d04f2eb774f7bec29b8d5793ccbb93
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="release-notes"></a>Note sulla versione
 ## <a name="top-questions"></a>Domande principali
@@ -391,7 +391,7 @@ Microsoft Flow supporta ora DocuSign, per gestire eSignature e Digital Transacti
 ### <a name="release-2016-11-23"></a>Versione 23-11-2016
 * **Supporto degli avvisi di Power BI in Flow** - Trasformare le informazioni dettagliate in azioni attivando i flussi da avvisi dati di Power BI.
 * **Miglioramenti dell'applicazione per dispositivi mobili** - È stata aggiunta la possibilità di creare flussi da zero, oltre all'esperienza già esistente di creazione da modelli. Sono state inoltre migliorate le prestazioni per la visualizzazione delle esecuzioni dei flussi.
-* **Otto nuovi servizi** - È ora possibile connettersi ad Azure Resource Manager, code di Azure, Chatter, Disqus, Azure DocumentDB, API Face di Servizi cognitivi, HipChat e Wordpress.
+* **Otto nuovi servizi** - È ora possibile connettersi ad Azure Resource Manager, code di Azure, Chatter, Disqus, Azure Cosmos DB, API Face di Servizi cognitivi, HipChat e Wordpress.
 
 [Ulteriori informazioni e domande](https://flow.microsoft.com/blog/power-bi-and-eight-other-services/) su questa versione.
 
