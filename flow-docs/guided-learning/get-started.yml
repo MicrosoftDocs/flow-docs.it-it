@@ -1,7 +1,7 @@
 ### YamlMime:Tutorial
 title: Introduzione
 metadata:
-  title: "Attività iniziali | Microsoft Flow"
+  title: Attività iniziali | Microsoft Flow
   description: Benvenuto nella Formazione interattiva su Microsoft Flow. Questo corso online illustra Microsoft Flow andando per ordine, per consentire di acquisire le conoscenze in modo graduale.
   audience: Business User
   level: Beginner
@@ -14,11 +14,11 @@ metadata:
   ms.topic: get-started-article
   ms.date: 10/04/2017
   ms.author: deonhe
-  ms.openlocfilehash: e0cc75bf5ca6683b5b5ca751908311b226a5065d
-  ms.sourcegitcommit: b943fa83d7ca2d1a313c0c7b2cf0d7e4a9528b85
+  ms.openlocfilehash: 3f5cc6ac324e5e389b05d84c10cc45891ea518d2
+  ms.sourcegitcommit: aee927ab32b5e28ee9b1880b4a292f9c15025f88
   ms.translationtype: HT
   ms.contentlocale: it-IT
-  ms.lasthandoff: 02/06/2018
+  ms.lasthandoff: 03/28/2018
 items:
 - durationInMinutes: 1
   content: >
@@ -33,7 +33,7 @@ items:
 - title: Creare un flusso da un modello
   durationInMinutes: 9
   content: >
-    > [!Video https://www.youtube.com/embed/D46qE7FuShM?rel=0]
+    > [!Video https://www.youtube.com/watch?v=NeCu5VnL4s0
 
 
     [!INCLUDE [learning-create-a-flow](../includes/learning-create-a-flow.md)]
@@ -44,4 +44,4 @@ items:
 
 
     [!INCLUDE [learning-mobile-app](../includes/learning-mobile-app.md)]
-- content: "La sezione **Introduzione** dell'Apprendimento guidato di Microsoft Flow è stata completata.\0"
+- content: La sezione **Introduzione** dell'Apprendimento guidato di Microsoft Flow è stata completata.
