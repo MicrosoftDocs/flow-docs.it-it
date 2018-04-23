@@ -1,6 +1,7 @@
 Considerando la continua espansione dell'elenco dei [servizi](https://flow.microsoft.com/services) disponibili per la creazione di flussi di lavoro con [Microsoft Flow](https://flow.microsoft.com), potrebbe risultare necessario proteggere i dati business sensibili o critici archiviati in servizi aziendali come SharePoint o Salesforce. È possibile che l'organizzazione abbia l'esigenza di creare criteri per assicurarsi che i dati business sensibili non vengano pubblicati in servizi per gli utenti come Twitter e Facebook. Con Microsoft Flow, è possibile creare facilmente criteri di **prevenzione della perdita dei dati** (DLP) per esercitare un maggiore controllo sui servizi per gli utenti con cui è possibile condividere i dati business, quando gli utenti creano flussi.  
 
 ## <a name="terms-you-should-get-familiar-with"></a>Terminologia da conoscere
+
 | Termine | Descrizione |
 | --- | --- |
 | **DLP** |Acronimo di Data Loss Prevention, ovvero prevenzione della perdita dei dati. I criteri DLP vengono creati per gestire la condivisione dei dati tra i **servizi**. |

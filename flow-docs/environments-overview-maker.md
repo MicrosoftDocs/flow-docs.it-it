@@ -1,13 +1,13 @@
 ---
 title: Informazioni sugli ambienti di Microsoft Flow | Microsoft Docs
 description: Informazioni su come usare gli ambienti per isolare i flussi
-services: 
+services: ''
 suite: flow
 documentationcenter: na
 author: sunaysv
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 11/27/2017
 ms.author: sunayv
-ms.openlocfilehash: 202167f833c6f5e1a8105db8bd44addc24dfdc3e
-ms.sourcegitcommit: 7bf01167913038b3ad3527592013eefdd3ee9200
+ms.openlocfilehash: e6667c1c1999c36177d40d52fa657edadd063516
+ms.sourcegitcommit: d00c10759d4afb54517a0b1032f8d0a509006d5b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="choosing-an-environment"></a>Scelta di un ambiente
 
@@ -73,7 +73,7 @@ Per passare da un ambiente all'altro, seguire questa procedura:
 Prima di creare un flusso, selezionare l'ambiente in cui aggiungere il flusso e le rispettive risorse.
 
 > [!NOTE]
-Se si crea un flusso nell'ambiente errato, sarà necessario eliminarlo e quindi crearlo nell'ambiente corretto.
+> Se si crea un flusso nell'ambiente errato, sarà necessario eliminarlo e quindi crearlo nell'ambiente corretto.
 
 Quando si sceglie un ambiente in cui ospitare i flussi, prendere in considerazione i fattori seguenti:
 
@@ -82,7 +82,7 @@ Quando si sceglie un ambiente in cui ospitare i flussi, prendere in considerazio
 * Verranno visualizzati tutti gli ambienti in cui è possibile modificare le risorse. Sarà tuttavia necessario richiedere a un amministratore di essere aggiunti come autore a tutti gli ambienti in cui si vogliono creare flussi.
 
 > [!NOTE]
-Sarà sempre possibile creare flussi nell'ambiente predefinito.
+> Sarà sempre possibile creare flussi nell'ambiente predefinito.
 
 ## <a name="next-steps"></a>Passaggi successivi
 

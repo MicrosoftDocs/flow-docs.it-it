@@ -2,6 +2,7 @@
 Un ambiente è uno spazio virtuale usato per archiviare, gestire e condividere app, flussi e dati business in Common Data Service. Per gli ambienti è prevista la georilevazione, quindi anche tutte le app e tutti i dati archiviati nel database di un ambiente sono soggetti a georilevazione.  
 
 ## <a name="terms-you-should-get-familiar-with"></a>Terminologia da conoscere
+
 | **Termine** | **Descrizione** |
 | --- | --- |
 | **Interfaccia di amministrazione** |L'interfaccia di amministrazione è un [portale Web](https://admin.flow.microsoft.com) per la gestione di tutti gli ambienti e dei criteri di prevenzione della perdita dei dati. |

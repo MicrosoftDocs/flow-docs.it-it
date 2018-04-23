@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 11/22/2017
 ms.author: sunayv
-ms.openlocfilehash: 631c53aaa19e137e1df82f8070192f6f4271339e
-ms.sourcegitcommit: aee927ab32b5e28ee9b1880b4a292f9c15025f88
+ms.openlocfilehash: cf1a618b9e0ed76147eb4ede2aed42111c66b4a5
+ms.sourcegitcommit: d00c10759d4afb54517a0b1032f8d0a509006d5b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="using-environments-within-microsoft-flow"></a>Uso di ambienti in Microsoft Flow
 
@@ -79,18 +79,20 @@ Andare al sito [admin.flow.microsoft.com](https://admin.flow.microsoft.com) e ac
 ## <a name="create-an-environment"></a>Creare un ambiente
 
 1. Nel[Microsoft Flow admin center](https://admin.flow.microsoft.com) (Centro di amministrazione di Microsoft Flow) selezionare **Ambienti**. Verranno visualizzati tutti gli ambienti esistenti: ![Ambienti](./media/environments-overview-admin/environments-list.png)
-1. Selezionare **Nuovo ambiente** e quindi specificare le informazioni richieste:
+2. Selezionare **Nuovo ambiente** e quindi specificare le informazioni richieste:
 
-   | Proprietà | Descrizione |
-   | --- | --- |
-   | Nome ambiente |Immettere il nome del proprio ambiente, ad esempio `Human Resources` o `Europe flows`. |
-   | Area |Scegliere la posizione in cui ospitare l'ambiente. Per ottenere prestazioni ottimali, è consigliabile usare l'area geografica più vicina agli utenti.|
-   |Tipo di ambiente | Scegliere un tipo di ambiente in base alla licenza: produzione o prova.| 
+
+   |     Proprietà     |                                                 Descrizione                                                 |
+   |------------------|-------------------------------------------------------------------------------------------------------------|
+   | Nome ambiente |              Immettere il nome del proprio ambiente, ad esempio `Human Resources` o `Europe flows`.              |
+   |      Area      | Scegliere la posizione in cui ospitare l'ambiente. Per ottenere prestazioni ottimali, è consigliabile usare l'area geografica più vicina agli utenti. |
+   | Tipo di ambiente |                  Scegliere un tipo di ambiente in base alla licenza: produzione o prova.                   |
+
      ![Impostazioni dell'ambiente](./media/environments-overview-admin/new-environment-dialog.png)
-1. Fare clic su **Crea ambiente**.
-1. È ora possibile scegliere **Crea database** oppure **Ignora**.
-1. Se si sceglie **Crea database** verrà richiesto di specificare **Valuta** e **Lingua** per il database. Inoltre, è anche possibile scegliere di distribuire app e dati di esempio.
-   
+3. Fare clic su **Crea ambiente**.
+4. È ora possibile scegliere **Crea database** oppure **Ignora**.
+5. Se si sceglie **Crea database** verrà richiesto di specificare **Valuta** e **Lingua** per il database. Inoltre, è anche possibile scegliere di distribuire app e dati di esempio.
+
    ![Impostazioni di configurazione del database](./media/environments-overview-admin/create-database-dialog2.png)
 
 
