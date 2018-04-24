@@ -1,13 +1,13 @@
 ---
 title: Creare un flusso da un modello | Microsoft Docs
 description: Creare un flusso da uno dei diversi modelli incorporati.
-services: 
+services: ''
 suite: flow
 documentationcenter: na
 author: aftowen
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 02/07/2017
 ms.author: anneta
-ms.openlocfilehash: 876723b62274f3a306c0a8472095b131e223408b
-ms.sourcegitcommit: 4f2cb27d392f46aa1d8680d6278876780ed3871b
+ms.openlocfilehash: b755d9abe70740a97ad85aaa60b8a3f4685a7b26
+ms.sourcegitcommit: d00c10759d4afb54517a0b1032f8d0a509006d5b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/15/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="create-a-flow-from-a-template-in-microsoft-flow"></a>Creare un flusso da un modello in Microsoft Flow
 Creare un flusso da uno dei numerosi modelli predefiniti che possono, ad esempio, inviare un messaggio Slack quando il proprio responsabile invia un messaggio di posta elettronica in Office 365.
@@ -54,7 +54,7 @@ Creare un flusso da uno dei numerosi modelli predefiniti che possono, ad esempio
 1. Selezionare la barra del titolo di un evento per espanderla e quindi personalizzarlo (ad esempio, specificando un filtro nel messaggio di posta elettronica che interessa).
 2. Le azioni che richiedono l'input da parte dell'utente verranno espanse automaticamente.
    
-    Ad esempio, l'azione **Pubblica messaggio** viene espansa perché è necessario immettere un canale, ad esempio il proprio *@username*. È anche possibile personalizzare il contenuto del messaggio. Per impostazione predefinita, il messaggio conterrà solo l'oggetto, ma è possibile includere altre informazioni.
+    Ad esempio, l'azione **Pubblica messaggio** viene espansa perché è necessario immettere un canale, ad esempio il proprio *\@nomeutente*. È anche possibile personalizzare il contenuto del messaggio. Per impostazione predefinita, il messaggio conterrà solo l'oggetto, ma è possibile includere altre informazioni.
    
     ![Specificare il canale per Slack](./media/get-started-logic-template/specify-keyword.png)
 3. Nella parte superiore della schermata specificare un nome da assegnare al flusso e quindi selezionare **Crea flusso**.

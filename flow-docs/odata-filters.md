@@ -1,13 +1,13 @@
 ---
 title: Filtrare e copiare i dati | Microsoft Docs
 description: Informazioni su come filtrare e copiare i dati da un'origine a una destinazione con Microsoft Flow
-services: 
+services: ''
 suite: flow
 documentationcenter: na
 author: MSFTMan
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 09/21/2017
 ms.author: deonhe
-ms.openlocfilehash: b266a953785b79c0dbc5e2d483330b239a7bf17f
-ms.sourcegitcommit: f3261717768177e03e825c0dd2e3ba736dc9b94d
+ms.openlocfilehash: 7c182328c341043ffc155a679f39bcbc2130a0bc
+ms.sourcegitcommit: d00c10759d4afb54517a0b1032f8d0a509006d5b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="filter-and-copy-data-with-microsoft-flow"></a>Filtrare e copiare i dati con Microsoft Flow
 Questa procedura dettagliata illustra come creare un flusso che monitora un'origine per verificare la presenza di elementi nuovi o modificati e copia quindi tali modifiche in una destinazione. Se gli utenti inseriscono dati in un'unica posizione, ma il team ha bisogno di dati in un formato o un percorso diverso, è possibile creare un flusso di questo tipo.
@@ -106,7 +106,7 @@ Nella scheda Condizione:
     ![configurare una condizione](media/odata-filters/configure-condition.png)
 5. Selezionare **Modifica in modalità avanzata**.
    
-    Quando si apre la modalità avanzata, nella casella sarà visualizzata l'espressione **@equals(body('Get_rows')?['value'], 0)**. Modificare l'espressione aggiungendo **length()** attorno alla funzione **body('Get_items')?['valore']**. A questo punto l'intera espressione è simile alla seguente: **@equals(length(body('Get_rows')?['valore']), 0)**
+    Quando si apre la modalità avanzata, viene visualizzata l'espressione **\@equals(body('Get_rows')?['value'], 0)** nella casella. Modificare l'espressione aggiungendo **length()** attorno alla funzione **body('Get_items')?['valore']**. A questo punto l'intera espressione è simile alla seguente: **@equals(length(body('Get_rows')?['valore']), 0)**
    
     La scheda **Condizione** è ora simile all'immagine seguente:
    

@@ -54,7 +54,7 @@ Per impostazione predefinita, questo modello avvia un processo di approvazione q
 12. Selezionare **StatoApprovazione** e impostare il valore su **Sì**, quindi selezionare **CommentiResponsabile** e impostare il valore su **Commenti** dall'elenco del contenuto dinamico. 
     
      ![Stato e commenti](./media/learning-approval-center/approver-status.png)
-13. Nella parte inferiore della casella **SE NO, *NON FARE NULLA***, selezionare **Aggiungi un'azione**.
+13. Nella parte inferiore della casella **SE NO, NON FARE NULLA**, selezionare **Aggiungi un'azione**.
     
      ![Aggiungere un'azione in caso di no](./media/learning-approval-center/add-a-no-action.png)
 14. Usando la stessa procedura impiegata per la configurazione di **SE SÌ**, creare un'azione **SharePoint - Aggiorna elemento** e configurare i campi con gli stessi valori, ad eccezione dell'impostazione **StatoApprovazione** su **No**. 

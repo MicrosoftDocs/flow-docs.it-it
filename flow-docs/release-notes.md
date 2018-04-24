@@ -13,13 +13,13 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 02/12/2018
+ms.date: 04/12/2018
 ms.author: stepsic
-ms.openlocfilehash: 4d88b0baee16fb0aeea24e2f2c84806595f21662
-ms.sourcegitcommit: 753d52fa29d04f2eb774f7bec29b8d5793ccbb93
+ms.openlocfilehash: ef14fd29dbf0b227acf4d5fef6233837514d4ab0
+ms.sourcegitcommit: d00c10759d4afb54517a0b1032f8d0a509006d5b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="release-notes"></a>Note sulla versione
 ## <a name="top-questions"></a>Domande principali
@@ -44,6 +44,39 @@ ms.lasthandoff: 03/23/2018
 3. I trigger di file non verranno generati per i file aggiunti nelle cartelle annidate all'interno della cartella selezionata.
 
 ## <a name="whats-new"></a>Novità
+
+### <a name="release-2018-04-12"></a>Versione 12-04-2018
+
+- **Restituire i dati in PowerApps da un flusso** - Creare flussi che possono essere chiamati da un'app compilata con PowerApps e restituire nuovamente i dati nell'app. Usare la finestra di progettazione del flusso di dati con trascinamento della selezione di oggetti visivi per creare la logica necessaria per le app. 
+- **Aggiungere più record agli input delle matrici** - In Microsoft Flow è stato aggiunto List Builder che consente ad esempio di aggiungere più allegati a un messaggio di posta elettronica.
+- **Testare i flussi con i dati di esecuzione precedenti** - Nella finestra di progettazione è stato aggiunto un nuovo pulsante Test flusso che consente di testare il flusso con i dati sui trigger delle esecuzioni del flusso precedenti.
+- **Nuovi campi workflow()** - È ora possibile accedere al nome dell'ambiente e al nome visualizzato del flusso con l'espressione workflow().
+
+[Ulteriori informazioni e domande](https://flow.microsoft.com/blog/return-data-to-powerapps/) su questa versione.
+
+### <a name="release-2018-04-04"></a>Versione 04-04-2018
+
+- **Approvazioni in Common Data Service** - Le approvazioni moderne sono create in base alla versione più recente di Common Data Service per le app. Ciò significa che è possibile creare flussi che leggono lo stato delle approvazioni inviate o ricevute con il connettore CDS.
+- **Trovare gli errori nelle applicazioni singole** - Passare direttamente agli errori nei cicli nella visualizzazione di esecuzione del flusso, anche in presenza di centinaia di elementi nel ciclo.
+- **Riassegnare le approvazioni** - È possibile assegnare qualsiasi approvazione ricevuta a un altro utente nell'organizzazione per delegare l'approvazione. 
+- **Elenchi delle sale** - Il connettore Office 365 Outlook ha aggiunto le azioni per visualizzare i dati sulle sale dell'organizzazione.
+- **Pulsanti per la visualizzazione dei dettagli del flusso** - Durante l'esecuzione di un flusso condiviso, è ora possibile visualizzare tutte le azioni usate dal flusso.
+- **Area Regno Unito** - È ora possibile creare ambienti per l'archiviazione dei dati nel Regno Unito.
+- **Due nuovi connettori** - È stato aggiunto il supporto di AtBot Admin e Marketing Content Hub.
+- **Nuova pagina di destinazione della documentazione** - La pagina di destinazione della documentazione è stata aggiornata e consente di suddividere i contenuti per i principianti, gli utenti intermedi e gli esperti. 
+
+[Ulteriori informazioni e domande](https://flow.microsoft.com/blog/approvals-in-cds-and-seven-updates/) su questa versione.
+
+### <a name="release-2018-03-13"></a>Versione 13-03-2018
+
+- **Cronologia delle approvazioni** - Visualizzare tutte le richieste di approvazione inviate, con risposte, commenti inviati e ora di esecuzione.
+- **Quattro nuovi connettori** - Sono stati aggiunti Excel Online (Business), Excel Online (OneDrive), Azure SQL Data Warehouse e Pitney Bowes Tax Calculator.
+- **Descrizioni comandi con contenuto dinamico** - Passare il mouse sul contenuto dinamico per visualizzarne la provenienza all'interno delle azioni e visualizzare le espressioni in anteprima senza aprire l'editor delle espressioni completo.
+- **Controllo della concorrenza** - Abilitare il controllo della concorrenza per fare in modo che un determinato flusso abbia una sola esecuzione alla volta.
+- **Ripetizione esponenziale** - Un nuovo tipo di criteri di ripetizione che distanzia le ripetizioni in modo esponenziale nel tempo.
+- **Conformità dell'accessibilità** - Sono stati rilasciati nuovi documenti di conformità che descrivono come Microsoft Flow soddisfa gli standard di accessibilità.
+
+[Ulteriori informazioni e domande](https://flow.microsoft.com/blog/approval-history-accessibility/) su questa versione.
 
 ### <a name="release-2018-02-09"></a>Versione 09-02-2018
 
