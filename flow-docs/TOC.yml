@@ -54,6 +54,8 @@
       href: all-assigned-must-approve.md
     - name: Approvazioni integrate
       href: common-data-model-approve.md
+    - name: Formattare le richieste di approvazione
+      href: approvals-markdown-support.md
 - name: Usare l'app per dispositivi mobili
   items:
     - name: Creare un flusso
@@ -110,6 +112,16 @@
       href: prevent-data-loss.md
     - name: Introduzione ai gruppi di dati
       href: introduction-to-data-groups.md
+- name: Rispondere alle richieste DSR
+  items:
+    - name: Riepilogo
+      href: gdpr-dsr-summary.md
+    - name: Richieste di individuazione
+      href: gdpr-dsr-discovery.md
+    - name: Richieste di esportazione
+      href: gdpr-dsr-export.md
+    - name: Richieste di cancellazione
+      href: gdpr-dsr-delete.md
 - name: Informazioni di riferimento
   items:
     - name: Panoramica delle aree geografiche
