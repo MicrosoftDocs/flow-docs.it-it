@@ -1,13 +1,13 @@
 ---
 title: Informazioni sui gateway dati locali | Microsoft Docs
 description: Informazioni di riferimento, installazione e risoluzione dei problemi per i gateway dati locali
-services: 
+services: ''
 suite: flow
 documentationcenter: na
 author: MSFTMan
-manager: anneta
-editor: 
-tags: 
+manager: KFile
+editor: ''
+tags: ''
 ms.service: flow
 ms.devlang: na
 ms.topic: get-started-article
@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 09/15/2017
 ms.author: deonhe
-ms.openlocfilehash: 73567d4d553ceac1d2cee46feb07ad9a6e7ade33
-ms.sourcegitcommit: 0b7964058416fd8d5e355913eea27172f1c61992
+ms.openlocfilehash: 3ff4148f88c145df1db5e8ec8468138fe7413a6a
+ms.sourcegitcommit: 12fbfe22fedd780d42ef1d2febfd7a0769b4902e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="understand-on-premises-data-gateways-for-microsoft-flow"></a>Comprendere i gateway dati locali per Microsoft Flow
 Usare il gateway dati locale con Microsoft Flow per stabilire connessioni protette alle origini dati locali, ad esempio Microsoft SQL Server.
@@ -141,6 +141,10 @@ Gli utenti eseguiranno l'accesso con un account aziendale o dell'istituto di ist
 Il gateway dati locale è configurato in modo da usare *NT SERVICE\PBIEgwService* per le credenziali di accesso al servizio Windows. Per impostazione predefinita, ha il diritto Accedi come servizio a seconda del contesto del computer su cui si sta installando il gateway.
 
 Questo non è l'account usato per connettersi alle origini dati locali. Non si tratta neanche dell'account aziendale o dell'istituto di istruzione con cui si accede ai servizi cloud.
+
+## <a name="tenant-level-administration"></a>Amministrazione a livello di tenant
+
+Non è attualmente disponibile alcuna posizione centralizzata da cui gli amministratori tenant possano gestire tutti i gateway installati e configurati da altri utenti.  Per gli amministratori tenant è consigliabile chiedere agli utenti dell'organizzazione di essere aggiunti come amministratore in ogni gateway installato. In questo modo è possibile gestire tutti i gateway all'interno dell'organizzazione tramite la pagina Impostazioni gateway oppure tramite i [comandi di PowerShell](https://docs.microsoft.com/power-bi/service-gateway-high-availability-clusters#powershell-support-for-gateway-clusters).
 
 ## <a name="frequently-asked-questions"></a>Domande frequenti
 ### <a name="general-questions"></a>Domande generali
