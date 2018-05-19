@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 04/12/2018
 ms.author: stepsic
-ms.openlocfilehash: ef14fd29dbf0b227acf4d5fef6233837514d4ab0
-ms.sourcegitcommit: d00c10759d4afb54517a0b1032f8d0a509006d5b
+ms.openlocfilehash: bae4991754de37ca9483d540891431e216ee74cd
+ms.sourcegitcommit: b6ac1562b3ed6601401d23f4009b7528c1ce8925
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="release-notes"></a>Note sulla versione
 ## <a name="top-questions"></a>Domande principali
@@ -44,6 +44,14 @@ ms.lasthandoff: 04/16/2018
 3. I trigger di file non verranno generati per i file aggiunti nelle cartelle annidate all'interno della cartella selezionata.
 
 ## <a name="whats-new"></a>Novità
+
+### <a name="release-2014-05-01"></a>Versione 01-05-2014
+
+- **Testo in formato RTF nei messaggi di approvazione**: usare Markdown per formattare i dettagli relativi all'approvazione inviata.
+- **Pulsanti con più input di selezione**: compilare i pulsanti di flusso che usano un elenco di selezione multipla per raccogliere più di un valore in una sola volta.
+- **Usare flussi più ampi**: l'app Microsoft Flow ora supporta la visualizzazione orizzontale e la progettazione Web include una barra di scorrimento orizzontale.
+
+[Ulteriori informazioni e domande](https://flow.microsoft.com/blog/rich-approvals-text-and-multiselect/) su questa versione.
 
 ### <a name="release-2018-04-12"></a>Versione 12-04-2018
 

@@ -1,13 +1,13 @@
 ---
-title: "Automatizzare con facilità i flussi di lavoro di approvazione. | Microsoft Docs"
+title: Automatizzare con facilità i flussi di lavoro di approvazione. | Microsoft Docs
 description: Automatizzare i flussi di lavoro di approvazione che si integrano con SharePoint, Dynamics CRM, Salesforce, OneDrive for Business, Zendesk o WordPress.
-services: 
+services: ''
 suite: flow
 documentationcenter: na
 author: msftman
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -15,13 +15,14 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 07/20/2017
 ms.author: deonhe
-ms.openlocfilehash: f6fc61a25dadba50c4906310b0562d32c11f8e73
-ms.sourcegitcommit: 22a883c30c859b6193fc2a619e753d71247f5e15
+ms.openlocfilehash: bd89bca994a77072815a73ba1cbc7ba1db6955d3
+ms.sourcegitcommit: e52f04b5953240d71d726c0e3373740cc59292dc
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="create-and-test-an-approval-workflow-with-microsoft-flow"></a>Creare e testare un flusso di lavoro di approvazione con Microsoft Flow
+
 Con Microsoft Flow, è possibile gestire l'approvazione dei documenti o dei processi in diversi servizi, inclusi SharePoint, Dynamics CRM, Salesforce, OneDrive for Business, Zendesk o WordPress.
 
 Per creare un flusso di lavoro di approvazione, aggiungere l'azione **Approvals - Start an approval** (Approvazioni - Avvia un'approvazione) a qualsiasi flusso. Dopo l'aggiunta di questa azione, il flusso può gestire l'approvazione di documenti o processi. Ad esempio, è possibile creare un flusso di approvazione documenti che approva fatture, ordini di lavoro oppure preventivi di vendita. È anche possibile creare un flusso di approvazione processi che approva richieste di ferie, lavoro straordinario o piani di viaggio.
@@ -49,12 +50,13 @@ Creare queste colonne nell'elenco di SharePoint Online:
 
    ![Colonne dell'elenco di SharePoint Online](./media/modern-approvals/sharepoint-list-fields.png)
 
-Annotare il nome e l'URL dell'elenco di SharePoint Online. Questi elementi serviranno in un secondo momento per configurare il trigger**SharePoint - Quando viene creato un nuovo elemento**.
+Annotare il nome e l'URL dell'elenco di SharePoint Online. Questi elementi serviranno in un secondo momento per configurare il trigger**SharePoint - Quando viene creato un elemento**.
 
 ## <a name="create-your-flow-from-the-blank-template"></a>Creare il flusso dal modello vuoto
 [!INCLUDE [sign-in-and-create-flow-from-blank-template](includes/sign-in-and-create-flow-from-blank-template.md)]
 
 ## <a name="add-a-trigger"></a>Aggiungere un trigger
+
 [!INCLUDE [add-trigger-when-sharepoint-item-created](includes/add-trigger-when-sharepoint-item-created.md)]
 
 **Indirizzo sito** e **Nome elenco** sono le voci annotate in precedenza.
@@ -62,6 +64,7 @@ Annotare il nome e l'URL dell'elenco di SharePoint Online. Questi elementi servi
 ![Informazioni su SharePoint](./media/modern-approvals/select-sharepoint-site-info.png)
 
 ## <a name="add-a-profile-action"></a>Aggiungere un'azione profilo
+
 1. Selezionare **Nuovo passaggio**, quindi scegliere **Aggiungi un'azione**.
    
     ![nuovo passaggio](./media/modern-approvals/select-sharepoint-add-action.png)
@@ -76,14 +79,20 @@ Annotare il nome e l'URL dell'elenco di SharePoint Online. Questi elementi servi
     ![salvare flusso](./media/modern-approvals/save.png)
 
 ## <a name="add-an-approval-action"></a>Aggiungere un'azione di approvazione
+
 [!INCLUDE [add-an-approval-action](includes/add-an-approval-action.md)]
 
-Nota: questa azione invia la richiesta di approvazione all'indirizzo e-mail indicato nella casella **Assegnato a**.
+> [!NOTE]
+> Questa azione invia la richiesta di approvazione all'indirizzo di posta elettronica indicato nella casella **Assegnato a**.
+>
+>
 
 ## <a name="add-a-condition"></a>Aggiungere una condizione
+
 [!INCLUDE [add-approval-condition-response](includes/add-approval-condition-response.md)]
 
 ## <a name="add-an-email-action-for-approvals"></a>Aggiungere un'azione di posta elettronica per le approvazioni
+
 Seguire questa procedura per inviare un messaggio di posta elettronica in caso di approvazione della richiesta di ferie:
 
 [!INCLUDE [add-action-to-send-email-when-vacation-approved](includes/add-action-to-send-email-when-vacation-approved.md)]
@@ -91,21 +100,30 @@ Seguire questa procedura per inviare un messaggio di posta elettronica in caso d
    ![configurare il modello di posta elettronica per le approvazioni](./media/sequential-modern-approvals/yes-email-config.png)
 
 ## <a name="add-an-update-action-for-approved-requests"></a>Aggiungere un'azione di aggiornamento per le richieste approvate
+
 [!INCLUDE [add-action-to-update-sharepoint-with-approval](includes/add-action-to-update-sharepoint-with-approval.md)]
 
-Nota: i campi **Indirizzo sito**, **Nome elenco**, **ID** e **Titolo** sono obbligatori.
+> [!NOTE]
+> I campi **Indirizzo del sito**, **Nome lista**, **ID** e **Titolo** sono obbligatori.
+>
+>
 
 ![aggiornare la configurazione dell'elemento](./media/modern-approvals/configure-update-item.png)
 
 ## <a name="add-an-email-action-for-rejections"></a>Aggiungere un'azione di posta elettronica per le richieste rifiutate
+
 [!INCLUDE [add-action-to-send-email-when-vacation-rejected](includes/add-action-to-send-email-when-vacation-rejected.md)]
 
 ![configurazione delle richieste rifiutate](./media/modern-approvals/configure-rejected-email.png)
 
 ## <a name="add-update-action-for-rejected-requests"></a>Aggiungere l'azione di aggiornamento per le richieste rifiutate
+
 [!INCLUDE [add-action-to-update-sharepoint-with-rejection](includes/add-action-to-update-sharepoint-with-rejection.md)]
 
-   Nota: i campi **Indirizzo sito**, **Nome elenco**, **ID** e **Titolo** sono obbligatori.
+   > [!NOTE]
+   > I campi **Indirizzo del sito**, **Nome lista**, **ID** e **Titolo** sono obbligatori.
+   >
+   >
 
 ![aggiornare scheda elemento](./media/modern-approvals/configure-update-item-no.png)
 
@@ -120,11 +138,13 @@ Se tutti i passaggi sono stati eseguiti correttamente, il flusso sarà simile al
 Dopo aver creato il flusso, è opportuno testarlo.
 
 ## <a name="request-an-approval"></a>Richiedere un'approvazione
+
 [!INCLUDE [request-vacation-approval](includes/request-vacation-approval.md)]
 
 Dopo avere creato e testato il flusso, occorre assicurarsi di illustrarne il funzionamento agli altri utenti.
 
 ## <a name="learn-more"></a>Altre informazioni
+
 * Visualizzare e gestire le [richieste di approvazione in sospeso](approve-reject-requests.md)
 * Creare [flussi di approvazione sequenziali](sequential-modern-approvals.md).
 * Creare [flussi di approvazione paralleli](parallel-modern-approvals.md).
