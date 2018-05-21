@@ -1,4 +1,4 @@
-1. Selezionare **Aggiungi un'azione** nella diramazione della condizione **SE SÌ, NON FARE NULLA**.
+1. Selezionare **Aggiungi un'azione** nella diramazione della condizione **SE SÌ**.
    
     ![aggiungere nuovo passaggio](media/modern-approvals/add-action-after-condition.png)
 2. Immettere **invia messaggio di posta elettronica** nella casella di ricerca della scheda **Scegliere un'azione**.
@@ -9,7 +9,10 @@
     ![selezionare l'azione di invio di posta elettronica](media/modern-approvals/select-send-email-yes.png)
 4. Configurare la scheda del messaggio di posta elettronica in base alle proprie esigenze.
    
-     Nota: i campi **A**, **Oggetto** e **Corpo** sono obbligatori.
+     >[!NOTE]
+     > I campi **A**, **Oggetto** e **Corpo** sono obbligatori.
+     >
+     >
    
      Questa scheda è un modello per il messaggio di posta elettronica che viene inviato quando lo stato delle richieste di ferie cambia.
    

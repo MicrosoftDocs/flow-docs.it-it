@@ -8,3 +8,5 @@
    
     ![crea da zero](media/modern-approvals/blank-template.png)
 
+4. Selezionare il pulsante **Crea da zero**.
+
