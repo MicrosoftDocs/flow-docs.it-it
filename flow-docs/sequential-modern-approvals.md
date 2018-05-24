@@ -1,13 +1,13 @@
 ---
-title: "Creare un flusso di lavoro di approvazione moderno con più responsabili approvazione | Microsoft Docs"
-description: "Creare un flusso di lavoro di approvazione moderno con più responsabili approvazione "
-services: 
+title: Creare un flusso di lavoro di approvazione moderno con più responsabili approvazione | Microsoft Docs
+description: 'Creare un flusso di lavoro di approvazione moderno con più responsabili approvazione '
+services: ''
 suite: flow
 documentationcenter: na
 author: MSFTMan
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 06/08/2017
 ms.author: deonhe
 ms.openlocfilehash: 8620cd49f9e19f6641909fcab3103568d148e565
-ms.sourcegitcommit: 01325305b9d2cf964acac9feb6cca0af66db7440
+ms.sourcegitcommit: f0202f74ba9a2282a670a1751462f598a5ea0ce5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="manage-sequential-approvals-with-microsoft-flow"></a>Gestire le approvazioni sequenziali con Microsoft Flow
 Alcuni flussi di lavoro richiedono l'approvazione preliminare prima che il responsabile approvazione finale debba disconnettersi. Ad esempio, una società potrebbe avere un criterio di approvazione sequenziale che richieda l'approvazione preliminare per le fatture di importo superiore a €1.000 prima che siano approvate dal reparto finanziario.

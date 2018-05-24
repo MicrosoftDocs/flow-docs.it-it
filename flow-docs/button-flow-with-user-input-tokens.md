@@ -1,13 +1,13 @@
 ---
-title: "Informazioni su come automatizzare attività ripetitive con i flussi attivati da un pulsante che accettano input dell'utente| Microsoft Docs"
-description: "Microsoft Flow rende più semplice automatizzare attività ripetitive. I flussi possono anche accettare l'input dell'utente durante l'esecuzione di un'attività ripetitiva."
-services: 
+title: Informazioni su come automatizzare attività ripetitive con i flussi attivati da un pulsante che accettano input dell'utente| Microsoft Docs
+description: Microsoft Flow rende più semplice automatizzare attività ripetitive. I flussi possono anche accettare l'input dell'utente durante l'esecuzione di un'attività ripetitiva.
+services: ''
 suite: flow
 documentationcenter: na
 author: msftman
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 02/15/2017
 ms.author: deonhe
-ms.openlocfilehash: 73feb90b3907ee8a7a192f16bc29c5893d0be4bb
-ms.sourcegitcommit: 4f2cb27d392f46aa1d8680d6278876780ed3871b
+ms.openlocfilehash: 483837a013b5fa0c8dfa27d2ed3a1e3481c36c5b
+ms.sourcegitcommit: 8bf92483780a5682777dd9fb73be8c2fb0e78dc4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/15/2017
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="introducing-button-flows-with-user-input"></a>Introduzione ai flussi di un pulsante con input dell'utente
 Creare un flusso di un pulsante per eseguire attività di routine semplicemente toccando un pulsante. Personalizzare il flusso consentendo all'utente di fornire dettagli specifici che verranno usati quando viene eseguito il flusso. Questo argomento illustra come creare un flusso di un pulsante che accetta l'input dell'utente e quindi eseguire il flusso di un pulsante, evidenziando come fornire l'input dell'utente.
@@ -116,7 +116,7 @@ In questa procedura dettagliata, si userà l'app per dispositivi mobili per Micr
 
 ## <a name="next-steps"></a>Passaggi successivi
 * [Condividere i flussi dei pulsanti](share-buttons.md)
-* [Informazioni sui flussi](guided-learning/learning-introducing-flow.md)  
+* [Informazioni sui flussi](guided-learning/get-started.yml?tutorial-step=1)  
 * [Informazioni sui flussi dei pulsanti](introduction-to-button-flows.md)  
 * [Informazioni sui flussi dei pulsanti con token di trigger](introduction-to-button-trigger-tokens.md)  
 

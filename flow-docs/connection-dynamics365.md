@@ -1,13 +1,13 @@
 ---
 title: Creare un flusso con Dynamics 365 (online) | Microsoft Docs
 description: Creare flussi di lavoro utili con una connessione di Dynamics 365 e Microsoft Flow
-services: 
+services: ''
 suite: flow
 documentationcenter: na
 author: Mattp123
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 02/06/2017
 ms.author: matp
-ms.openlocfilehash: 5ef3de417b1557644ce9bfcd935353e017ceb676
-ms.sourcegitcommit: 4f2cb27d392f46aa1d8680d6278876780ed3871b
+ms.openlocfilehash: 923fd1fc573586871d506a66aaa2b09d5b5dc9da
+ms.sourcegitcommit: f0202f74ba9a2282a670a1751462f598a5ea0ce5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/15/2017
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="create-a-flow-by-using-dynamics-365-online"></a>Creare un flusso con Dynamics 365 (online)
 Usando un connettore Dynamics 365, è possibile creare flussi che si avviano quando si verifica un evento in Dynamics 365 o in un altro servizio, che quindi esegue un'azione in Dynamics 365 o un altro servizio. 
@@ -73,7 +73,7 @@ Se non è disponibile un modello adatto alle proprie necessità, creare un fluss
 12. Scegliere o toccare **Crea flusso**.
 
 ## <a name="create-a-wunderlist-task-from-a-dynamics-365-task"></a>Creare un'attività Wunderlist da un'attività di Dynamics 365
-Questa procedura dettagliata illustra come creare un'attività in [Wunderlist](http://www.wunderlist.com) ogni volta che viene creata un'attività in Dynamics 365. Wunderlist è un servizio basato su Internet che è possibile usare per creare elenchi di attività, aggiungere i promemoria o tenere traccia di commissioni.
+Questa procedura dettagliata illustra come creare un'attività in [Wunderlist](https://www.wunderlist.com) ogni volta che viene creata un'attività in Dynamics 365. Wunderlist è un servizio basato su Internet che è possibile usare per creare elenchi di attività, aggiungere i promemoria o tenere traccia di commissioni.
 
 1. Accedere al [sito Web di Microsoft Flow](https://flow.microsoft.com/).
 2. Scegliere o toccare **Flussi personali**, quindi scegliere o toccare **Crea da zero**.
@@ -129,7 +129,7 @@ In questo esempio viene anche assegnata l'attività a un utente specifico in bas
 
   ![Flow - ID record e utente tipo](./media/connection-dynamics365/flow-recordid-user.png)
 
-Per trovare l'ID di un record, vedere [Trovare l'ID del record](#find-the-record-id) più avanti in questo argomento.
+Per trovare l'ID di un record, vedere [Trovare l'ID del record](#find-the-records-id) più avanti in questo argomento.
 
 > **Importante:** i campi non devono contenere un valore se hanno una descrizione tipo "Per solo uso interno." Questi campi sono **Percorso incrociato**, **Parametri aggiuntivi** e **Numero di versione regola fuso orario.**
 > 

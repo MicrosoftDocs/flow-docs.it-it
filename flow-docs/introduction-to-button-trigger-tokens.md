@@ -1,13 +1,13 @@
 ---
 title: Introduzione ai token di attivazione dei pulsanti | Microsoft Docs
 description: Introduzione ai token per attivare i pulsanti per i flussi dei pulsanti Microsoft.
-services: 
+services: ''
 suite: flow
 documentationcenter: na
 author: msftman
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 12/12/2016
 ms.author: deonhe
-ms.openlocfilehash: 4b0e6d7187d12c7257bce4715c3549caf19ce093
-ms.sourcegitcommit: 4f2cb27d392f46aa1d8680d6278876780ed3871b
+ms.openlocfilehash: c3231811e5318b1fe941e005012c2890c83f6e76
+ms.sourcegitcommit: 8bf92483780a5682777dd9fb73be8c2fb0e78dc4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/15/2017
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="get-started-with-button-trigger-tokens"></a>Introduzione ai token per attivare i pulsanti
 ## <a name="what-are-button-trigger-tokens"></a>Cosa sono i token per attivare i pulsanti?
@@ -92,5 +92,5 @@ A questo punto è stato creato il flusso di un pulsante che usa i token per l'at
 ## <a name="next-steps"></a>Passaggi successivi
 * [Condividere i flussi dei pulsanti](share-buttons.md)
 * [Informazioni sui flussi dei pulsanti](introduction-to-button-flows.md)  
-* [Informazioni sui flussi](guided-learning/learning-introducing-flow.md)
+* [Informazioni sui flussi](guided-learning/get-started.yml?tutorial-step=1)
 

@@ -1,13 +1,13 @@
 ---
-title: "Aggiungere un'opzione avanzata e più azioni | Microsoft Docs"
-description: "Espandere un flusso in modo da includere un'opzione avanzata, ad esempio l'impostazione di posta elettronica a priorità elevata e l'aggiunta di un'altra azione per lo stesso evento."
-services: 
+title: Aggiungere un'opzione avanzata e più azioni | Microsoft Docs
+description: Espandere un flusso in modo da includere un'opzione avanzata, ad esempio l'impostazione di posta elettronica a priorità elevata e l'aggiunta di un'altra azione per lo stesso evento.
+services: ''
 suite: flow
 documentationcenter: na
 author: stepsic-microsoft-com
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 04/20/2017
 ms.author: stepsic
 ms.openlocfilehash: f6c936cbf5a2bd481adb52ec9b01545fb9ba7b0b
-ms.sourcegitcommit: 4f2cb27d392f46aa1d8680d6278876780ed3871b
+ms.sourcegitcommit: f0202f74ba9a2282a670a1751462f598a5ea0ce5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/15/2017
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="add-multiple-actions-and-advanced-options-to-a-flow"></a>Aggiungere più azioni e opzioni avanzate a un flusso
 Personalizzare un flusso aggiungendo una o più opzioni avanzate e più azioni per lo stesso trigger. Ad esempio, aggiungere un'opzione avanzata che invii un messaggio di posta elettronica con priorità elevata. Oltre a inviare posta elettronica quando un elemento viene aggiunto a un elenco di , creare in Dropbox un file che contenga le stesse informazioni.

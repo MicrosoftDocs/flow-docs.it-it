@@ -1,13 +1,13 @@
 ---
 title: Gruppi di dati di Microsoft Flow | Microsoft Docs
 description: Introduzione ai gruppi di dati di Microsoft PowerApps e Microsoft Flow.
-services: 
+services: ''
 suite: flow
 documentationcenter: na
 author: msftman
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 10/26/2016
 ms.author: deonhe
 ms.openlocfilehash: fd76c12d1879c9b613ba833d9ef2211cd4aab702
-ms.sourcegitcommit: 4f2cb27d392f46aa1d8680d6278876780ed3871b
+ms.sourcegitcommit: f0202f74ba9a2282a670a1751462f598a5ea0ce5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/15/2017
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="learn-all-about-data-groups"></a>Tutte le informazioni su gruppi di dati
 ## <a name="what-is-a-data-group"></a>Che cos'è un gruppo di dati?
