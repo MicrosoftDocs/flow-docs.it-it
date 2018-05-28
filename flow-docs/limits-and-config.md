@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 01/31/2018
 ms.author: stepsic
-ms.openlocfilehash: 06e327963a44f74141492ec14f2bef7cab802b79
-ms.sourcegitcommit: 12fbfe22fedd780d42ef1d2febfd7a0769b4902e
+ms.openlocfilehash: 9b2447ce0a7c9bc353e47ee1edb4bea55f2c49f4
+ms.sourcegitcommit: f9be24c533003146d75e5a7fa6e40356d4ce47d7
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/25/2018
 ---
 # <a name="limits-and-configuration-in-microsoft-flow"></a>Limiti e configurazione in Microsoft Flow
 Questo argomento contiene le informazioni sui limiti e sui dettagli di configurazione per i flussi.
@@ -31,7 +31,8 @@ Questi sono i limiti per una singola richiesta in uscita.
 
 | Nome | Limite |
 | --- | --- |
-| Timeout della richiesta |120 secondi |
+| Timeout della richiesta per le chiamate sincrone |120 secondi |
+| Timeout della richiesta per le chiamate asincrone|Configurabile. Il valore massimo è 30 giorni. |
 
 ### <a name="message-size"></a>Dimensione del messaggio
 
@@ -55,6 +56,7 @@ Questi sono i limiti per una singola esecuzione del flusso.
 | Conservazione archiviazione |30 giorni |A partire dall'ora di inizio esecuzione. |
 | Intervallo di ricorrenza min |1 minuto | |
 | Intervallo di ricorrenza max |500 giorni | |
+| Tempo massimo di conservazione cronologia di esecuzione |28 giorni, in base alle regole GDPR. | |
 
 ## <a name="looping-and-debatching-limits"></a>Limiti di ciclo e debatch
 Questi sono i limiti per una singola esecuzione del flusso.

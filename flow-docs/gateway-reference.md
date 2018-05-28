@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 09/15/2017
 ms.author: deonhe
-ms.openlocfilehash: 3ff4148f88c145df1db5e8ec8468138fe7413a6a
-ms.sourcegitcommit: 12fbfe22fedd780d42ef1d2febfd7a0769b4902e
+ms.openlocfilehash: fc69517beb24d50432c1cbed216f28cfc0f862fb
+ms.sourcegitcommit: f0202f74ba9a2282a670a1751462f598a5ea0ce5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="understand-on-premises-data-gateways-for-microsoft-flow"></a>Comprendere i gateway dati locali per Microsoft Flow
 Usare il gateway dati locale con Microsoft Flow per stabilire connessioni protette alle origini dati locali, ad esempio Microsoft SQL Server.
@@ -192,7 +192,7 @@ Non è attualmente disponibile alcuna posizione centralizzata da cui gli amminis
 
 ### <a name="high-availabilitydisaster-recovery"></a>Disponibilità elevata/Ripristino di emergenza
 **Domanda:** sono disponibili piani per l'abilitazione di scenari a disponibilità elevata con il gateway?
-**Risposta:** sì. È una funzionalità prevista, ma non è ancora disponibile una data precisa.
+**Risposta:** sì, la disponibilità elevata è [ora disponibile](https://flow.microsoft.com/blog/gateway-ha-increased-apply-to-each).
 
 **Domanda:** quali opzioni sono disponibili per il ripristino di emergenza?
 **Risposta:** è possibile usare la chiave di ripristino per ripristinare o spostare un gateway.

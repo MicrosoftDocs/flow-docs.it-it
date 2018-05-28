@@ -1,13 +1,13 @@
 ---
 title: Approvare le richieste in un dispositivo mobile | Microsoft Docs
 description: Usare un dispositivo mobile per approvare le richieste create in Microsoft Flow.
-services: 
+services: ''
 suite: flow
 documentationcenter: na
 author: msftman
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 07/20/2017
 ms.author: deonhe
-ms.openlocfilehash: 18546c044dc823d703544c48f5cda76a3581e99f
-ms.sourcegitcommit: 4f2cb27d392f46aa1d8680d6278876780ed3871b
+ms.openlocfilehash: 2b856dfa75e0acb7eb83525c4d64d070315b5735
+ms.sourcegitcommit: f0202f74ba9a2282a670a1751462f598a5ea0ce5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/15/2017
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="approve-requests-on-your-mobile-device-by-using-microsoft-flow"></a>Approvare le richieste nel dispositivo mobile tramite Microsoft Flow
 Se un flusso identifica l'utente come responsabile approvazione ed è stata installata l'app per dispositivi mobili per Microsoft Flow, l'utente riceverà una notifica push ogni volta che viene richiesta la sua approvazione.
@@ -52,7 +52,7 @@ Per completare questa procedura dettagliata, è necessario quanto segue:
 Se non sono presenti richieste di approvazione in sospeso, creare un [flusso di approvazione](modern-approvals.md), impostare se stessi come responsabile approvazione e quindi attivare il flusso. Le richieste di approvazione vengono visualizzate nel Centro approvazioni pochi secondi dopo l'attivazione del flusso e l'invio di una richiesta per l'approvazione.
 
 ## <a name="approve-requests-and-leave-an-optional-comment"></a>Approvare le richieste e inserire un commento facoltativo
-1. Se non è già stato fatto, seguire la procedura precedente per [visualizzare tutte le richieste di approvazione in sospeso](mobile-approvals.md#view-pending-approval-requests).
+1. Se non è già stato fatto, seguire la procedura precedente per [visualizzare le richieste in sospeso](mobile-approvals.md#view-pending-requests).
 2. Selezionare **APPROVA** nella richiesta da approvare.
    
     ![Selezionare Approva](./media/mobile-approvals/select-approve.png)
