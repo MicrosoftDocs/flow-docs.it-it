@@ -1,13 +1,13 @@
 ---
 title: Consentire ai clienti di eseguire il test drive dei flussi in AppSource | Microsoft Docs
 description: Usare AppSource per condividere le app con i clienti e generare lead per l'azienda.
-services: 
+services: ''
 suite: flow
 documentationcenter: na
 author: linhtranms
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -16,10 +16,11 @@ ms.workload: na
 ms.date: 05/09/2017
 ms.author: litran
 ms.openlocfilehash: 41d53a6f7382365dfcabbc98a2fa362d465720fa
-ms.sourcegitcommit: 4f2cb27d392f46aa1d8680d6278876780ed3871b
+ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/15/2017
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "23439651"
 ---
 # <a name="let-customers-test-drive-your-flows-on-appsource"></a>Consentire ai clienti di eseguire il Test Drive dei flussi in AppSource
 Per mostrare in che modo l'app si integra con Microsoft Flow, è ora possibile eseguire il Test Drive delle soluzioni su [AppSource.com](https://appsource.microsoft.com) in modo da condividere l'integrazione di Microsoft Flow con i clienti e generare lead per l'azienda.

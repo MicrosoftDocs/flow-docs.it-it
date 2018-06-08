@@ -1,13 +1,13 @@
 ---
 title: Aggiungere una condizione a un flusso | Microsoft Docs
-description: "Specificare che un flusso esegue una o più attività solo se si verifica una condizione."
-services: 
+description: Specificare che un flusso esegue una o più attività solo se si verifica una condizione.
+services: ''
 suite: flow
 documentationcenter: na
 author: stepsic-microsoft-com
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -16,10 +16,11 @@ ms.workload: na
 ms.date: 10/17/2017
 ms.author: stepsic
 ms.openlocfilehash: 135b3509a9412f7674a1e9cb2ada86ebd2bb9f4f
-ms.sourcegitcommit: 01325305b9d2cf964acac9feb6cca0af66db7440
+ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "23981286"
 ---
 # <a name="add-a-condition-to-a-flow"></a>Aggiungere una condizione a un flusso
 

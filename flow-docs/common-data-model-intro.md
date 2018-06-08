@@ -1,13 +1,13 @@
 ---
 title: Common Data Service | Microsoft Docs
 description: Creare un flusso per importare i dati, esportare i dati o creare approvazioni con Common Data Service.
-services: 
+services: ''
 suite: flow
 documentationcenter: na
 author: stepsic-microsoft-com
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -16,10 +16,11 @@ ms.workload: na
 ms.date: 10/22/2016
 ms.author: stepsic
 ms.openlocfilehash: e4e92bfdcf1ea65de272233b2056523641010cf2
-ms.sourcegitcommit: f3261717768177e03e825c0dd2e3ba736dc9b94d
+ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "29351303"
 ---
 # <a name="create-a-flow-that-uses-the-common-data-service"></a>Creare un flusso che usi Common Data Service
 Migliorare l'efficienza operativa con una vista unificata dei dati di business con la creazione di un flusso che usa [Common Data Service](https://powerapps.microsoft.com/tutorials/data-platform-intro/). Distribuire questo database aziendale protetto che comprende entità aziendali standard ben formate (ad esempio vendite, acquisti, servizio clienti e produttività) nell'organizzazione. Archiviare dati aziendali in una o più [entità personalizzate](https://powerapps.microsoft.com/tutorials/data-platform-create-entity/), che offrono diversi vantaggi rispetto alle origini dati esterne, ad esempio Microsoft Excel e Salesforce.

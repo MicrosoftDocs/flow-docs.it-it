@@ -1,13 +1,13 @@
 ---
 title: Creare un flusso di approvazione che richieda a tutti gli utenti di approvare | Microsoft Docs
 description: Creare un flusso di approvazione che richieda a tutti gli utenti di approvare o a una persona di rifiutare una richiesta.
-services: 
+services: ''
 suite: flow
 documentationcenter: na
 author: msftman
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -16,10 +16,11 @@ ms.workload: na
 ms.date: 02/27/2018
 ms.author: deonhe
 ms.openlocfilehash: b7cf57ad343433f50a918e3a09710fbb1e3325de
-ms.sourcegitcommit: 79fc1e439640c6329bac884085eb66e71f63ab63
+ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "29681296"
 ---
 # <a name="create-an-approval-flow-that-requires-everyone-to-approve"></a>Creare un flusso di approvazione che richieda a tutti gli utenti di approvare
 

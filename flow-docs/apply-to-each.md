@@ -1,13 +1,13 @@
 ---
 title: Usare l'azione Applica a ogni per riprodurre a ciclo una matrice di elementi. | Microsoft Docs
-description: "Usare Microsoft Flow per riprodurre a ciclo una matrice di elementi con cui verificare più condizioni e intraprendere azioni in base alle stesse."
-services: 
+description: Usare Microsoft Flow per riprodurre a ciclo una matrice di elementi con cui verificare più condizioni e intraprendere azioni in base alle stesse.
+services: ''
 suite: flow
 documentationcenter: na
 author: msftman
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -16,10 +16,11 @@ ms.workload: na
 ms.date: 03/16/2017
 ms.author: deonhe
 ms.openlocfilehash: 37f1ce939db23694bcd92e7f1af75bf6c474be91
-ms.sourcegitcommit: 4f2cb27d392f46aa1d8680d6278876780ed3871b
+ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/15/2017
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "23440461"
 ---
 # <a name="use-the-apply-to-each-action-in-microsoft-flow-to-process-a-list-of-items-periodically"></a>Usare l'azione Applica a ogni in Microsoft Flow per elaborare periodicamente un elenco di elementi
 Molti trigger possono avviare immediatamente un flusso in base a un evento, ad esempio quando si riceve un nuovo messaggio di posta elettronica nella posta in arrivo. Questi trigger sono molto utili, ma a volte si vuole eseguire un flusso che interroghi un'origine dati secondo una pianificazione predefinita, eseguendo determinate azioni sulla base delle proprietà degli elementi nell'origine dati. A tale scopo, il flusso può essere avviato secondo una pianificazione (ad esempio, una volta al giorno) e si può usare un'azione di ciclo, ad esempio **Applica a ogni**, per elaborare un elenco di elementi. È possibile, ad esempio, usare **Applica a ogni** per aggiornare i record da un database o un elenco di elementi da Microsoft SharePoint.

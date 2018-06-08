@@ -1,13 +1,13 @@
 ---
 title: Creare un flusso dal telefono | Microsoft Docs
 description: Creare un flusso da un modello che, ad esempio, invia una notifica push quando si riceve posta da un indirizzo specificato
-services: 
+services: ''
 suite: flow
 documentationcenter: na
 author: adiregev
 manager: erikre
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -16,10 +16,11 @@ ms.workload: na
 ms.date: 09/18/2016
 ms.author: adiregev
 ms.openlocfilehash: 27a2001e3fa154f9354ef5ad888e194f30b3d6ab
-ms.sourcegitcommit: 4f2cb27d392f46aa1d8680d6278876780ed3871b
+ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/15/2017
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "23440299"
 ---
 # <a name="create-a-flow-from-your-phone-by-using-microsoft-flow"></a>Creare un flusso dal telefono usando Microsoft Flow
 Creare un flusso dal telefono usando un modello che è possibile trovare cercando in un elenco di servizi, esplorando categorie o specificando parole chiave. Seguire i passaggi descritti in questo argomento per creare un flusso che invii una notifica push al telefono dell'utente quando si riceve posta dal responsabile.

@@ -16,10 +16,11 @@ ms.workload: na
 ms.date: 04/20/2017
 ms.author: stepsic
 ms.openlocfilehash: f6c936cbf5a2bd481adb52ec9b01545fb9ba7b0b
-ms.sourcegitcommit: f0202f74ba9a2282a670a1751462f598a5ea0ce5
+ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "23442117"
 ---
 # <a name="add-multiple-actions-and-advanced-options-to-a-flow"></a>Aggiungere più azioni e opzioni avanzate a un flusso
 Personalizzare un flusso aggiungendo una o più opzioni avanzate e più azioni per lo stesso trigger. Ad esempio, aggiungere un'opzione avanzata che invii un messaggio di posta elettronica con priorità elevata. Oltre a inviare posta elettronica quando un elemento viene aggiunto a un elenco di , creare in Dropbox un file che contenga le stesse informazioni.

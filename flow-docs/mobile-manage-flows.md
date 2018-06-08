@@ -1,13 +1,13 @@
 ---
 title: Gestire i flussi dal telefono | Microsoft Docs
 description: Visualizzare un elenco dei flussi, abilitarli o disabilitarli e visualizzare eventi, azioni e cronologia di esecuzione di ogni flusso
-services: 
+services: ''
 suite: flow
 documentationcenter: na
 author: adiregev
 manager: erikre
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -16,10 +16,11 @@ ms.workload: na
 ms.date: 06/11/2016
 ms.author: adiregev
 ms.openlocfilehash: 4a04fec70ae70ff17ddf6e1f93e6461ec432e8d2
-ms.sourcegitcommit: 4f2cb27d392f46aa1d8680d6278876780ed3871b
+ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/15/2017
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "23440101"
 ---
 # <a name="manage-flows-in-microsoft-flow-from-your-phone"></a>Gestire i flussi dal telefono in Microsoft Flow dal telefono
 Visualizzare un elenco di tutti i flussi che sono stati creati e, per ogni flusso, visualizzare i relativi eventi e le azioni, abilitarlo o disabilitarlo ed esaminare la cronologia di esecuzione.

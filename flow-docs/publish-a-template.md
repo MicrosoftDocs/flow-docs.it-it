@@ -1,13 +1,13 @@
 ---
 title: Inviare un modello di flusso | Microsoft Docs
 description: Inviare il flusso come modello, in modo che le altre organizzazioni possano trovarlo nella raccolta di modelli e possano usarlo.
-services: 
+services: ''
 suite: flow
 documentationcenter: na
 author: sunaysv
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -16,10 +16,11 @@ ms.workload: na
 ms.date: 06/10/2017
 ms.author: sunayv
 ms.openlocfilehash: c265556631d19cb3c9179454bcf3b8a26e88651b
-ms.sourcegitcommit: 4f2cb27d392f46aa1d8680d6278876780ed3871b
+ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/15/2017
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "23442045"
 ---
 # <a name="submit-a-template-to-the-microsoft-flow-gallery"></a>Inviare un modello alla raccolta di Microsoft Flow
 Inviare un modello di flusso alla raccolta di modelli per Microsoft Flow. I modelli consentono agli utenti non solo di creare flussi con maggiore facilità, ma anche di immaginare scenari aggiuntivi che potrebbero trarre vantaggio da un flusso. 

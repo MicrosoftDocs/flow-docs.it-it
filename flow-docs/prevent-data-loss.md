@@ -1,13 +1,13 @@
 ---
 title: Introduzione ai criteri di prevenzione della perdita dei dati (DLP). | Microsoft Docs
 description: Introduzione ai criteri di prevenzione della perdita dei dati di Microsoft Flow.
-services: 
+services: ''
 suite: flow
 documentationcenter: na
 author: msftman
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -16,10 +16,11 @@ ms.workload: na
 ms.date: 02/28/2018
 ms.author: deonhe
 ms.openlocfilehash: 7dbf6296383551d82d22682121210f1cd339b65e
-ms.sourcegitcommit: 22a883c30c859b6193fc2a619e753d71247f5e15
+ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "29563087"
 ---
 # <a name="data-loss-prevention-dlp-policies"></a>Criteri di prevenzione della perdita dei dati (DLP)
 

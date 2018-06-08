@@ -1,12 +1,12 @@
 ---
 title: Collegamenti al contenuto per i connettori personalizzati | Microsoft Docs
 description: Collegamenti al contenuto per la creazione, l'uso, la condivisione e la certificazione di connettori personalizzati.
-services: 
+services: ''
 suite: flow
-documentationcenter: 
+documentationcenter: ''
 author: sunaysv
 manager: anneta
-editor: 
+editor: ''
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -15,10 +15,11 @@ ms.workload: na
 ms.date: 01/29/2018
 ms.author: sunayv
 ms.openlocfilehash: 045ae7c50cae1cf62782b33d3a6465fab89d033f
-ms.sourcegitcommit: 2d6cd915a666e9032882871f70aadaea4f877c6f
+ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "28892021"
 ---
 # <a name="custom-connectors-in-microsoft-flow"></a>Connettori personalizzati in Microsoft Flow
 

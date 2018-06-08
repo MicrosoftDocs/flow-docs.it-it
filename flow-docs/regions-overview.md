@@ -1,13 +1,13 @@
 ---
 title: Panoramica sulle aree geografiche per Microsoft Flow | Microsoft Docs
 description: Panoramica sulle aree geografiche in Microsoft Flow attraverso domande e risposte
-services: 
+services: ''
 suite: flow
 documentationcenter: na
 author: MSFTMan
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -16,10 +16,11 @@ ms.workload: na
 ms.date: 08/28/2017
 ms.author: deonhe
 ms.openlocfilehash: ec9b72e570c562c091aefd370f73d6862ff56f18
-ms.sourcegitcommit: 4f2cb27d392f46aa1d8680d6278876780ed3871b
+ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/15/2017
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "23442081"
 ---
 # <a name="faq-for-regions-in-microsoft-flow"></a>Domande frequenti sulle aree in Microsoft Flow
 Questo documento fornisce un elenco delle domande frequenti su Microsoft Flow.

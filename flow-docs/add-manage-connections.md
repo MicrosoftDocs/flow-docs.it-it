@@ -1,13 +1,13 @@
 ---
 title: Informazioni su come connettersi ai dati con le connessioni e i gateway dati locali | Microsoft Docs
 description: Aggiungere o gestire le connessioni di SharePoint, SQL Server, OneDrive for Business, Salesforce, Office 365, OneDrive, Dropbox, Twitter, Google Drive e altro
-services: 
+services: ''
 suite: flow
 documentationcenter: na
 author: stepsic-microsoft-com
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -16,10 +16,11 @@ ms.workload: na
 ms.date: 02/15/2017
 ms.author: stepsic
 ms.openlocfilehash: c0e115732e26bdeb0d7e4c3c60e1aa6c63e0ffc1
-ms.sourcegitcommit: 4f2cb27d392f46aa1d8680d6278876780ed3871b
+ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/15/2017
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "23439777"
 ---
 # <a name="manage-connections-in-microsoft-flow"></a>Gestire le connessioni in Microsoft Flow
 Se si crea una connessione in Microsoft Flow è possibile accedere facilmente ai dati durante la creazione di un flusso. Microsoft Flow include le connessioni di uso comune tra cui SharePoint, SQL Server, Office 365, OneDrive for Business, Salesforce, Excel, Dropbox, Twitter e altro. Le connessioni sono condivise con PowerApps, quindi quando si crea una connessione in un solo prodotto, verrà visualizzata anche nell'altro.

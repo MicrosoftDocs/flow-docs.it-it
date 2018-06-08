@@ -1,13 +1,13 @@
 ---
 title: Integrare Microsoft Flow con siti Web e app | Microsoft Docs
 description: Incorporare le esperienze di Microsoft Flow in un sito Web o un'app.
-services: 
+services: ''
 suite: flow
 documentationcenter: na
 author: bbarath
 manager: erikre
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -15,11 +15,12 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 05/09/2017
 ms.author: barathb
-ms.openlocfilehash: 12664286a9e7d88fb5e24607d600b42f95398cee
-ms.sourcegitcommit: 4f2cb27d392f46aa1d8680d6278876780ed3871b
+ms.openlocfilehash: af03ee70b09ba5ee1164a9a7ea5019b13c19eec6
+ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/15/2017
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "23440047"
 ---
 # <a name="integrate-microsoft-flow-with-websites-and-apps"></a>Integrare Microsoft Flow con siti Web e app
 Incorporare Microsoft Flow direttamente dall'app o dal sito Web per concedere agli utenti un modo semplice per automatizzare le attività personali o professionali.
@@ -33,7 +34,7 @@ Per creare flussi, gli utenti dovranno avere un **Account Microsoft** o un accou
 ## <a name="show-templates-for-your-scenarios"></a>Visualizzare i modelli per gli scenari
 Per iniziare, aggiungere il codice seguente per visualizzare i modelli di flusso direttamente nel sito Web:
 
-```
+```html
 <iframe src="https://flow.microsoft.com/{locale}/widgets/templates/?q={search term}
 &pagesize={number of templates}&destination={destination}"></iframe>
 ```
@@ -59,7 +60,7 @@ Se l'utente è in un determinato contesto in un'app o nel sito Web, si può deci
 ### <a name="full-sample"></a>Esempio completo
 Per visualizzare i primi quattro modelli su Wunderlist in tedesco e avviare l'utente con **myCoolList**:
 
-```
+```html
 <iframe src="https://flow.microsoft.com/de-de/widgets/templates/?q=wunderlist
 &pagesize=4&destination=details&parameters.listName=myCoolList"></iframe>
 ```
@@ -75,20 +76,20 @@ Usare Flow SDK autenticato per consentire agli utenti di creare e gestire flussi
 ### <a name="include-the-javascript-for-the-authenticated-sdk"></a>Includere il codice JavaScript per l'SDK autenticato
 Seguendo questo esempio, includere l'SDK nel codice HTML. È anche possibile scaricare, minimizzare e includere l'SDK con il prodotto.
 
-```
+```javascript
 <script src="https://flow.microsoft.com/content/msflowsdk-1.1.js" async defer></script>
 ```
 
 ### <a name="create-a-container-to-contain-the-view"></a>Creare un contenitore per contenere la visualizzazione
 Aggiungere un tag div HTML
 
-```
+```html
 <div id="flowDiv" class="flowContainer"></div>
 ```
 
 Si consiglia di applicare uno stile a questo contenitore in modo che venga visualizzato con dimensioni appropriate durante l'uso:
 
-```
+```html
 <head>
     <style>
         .flowContainer iframe {
@@ -106,7 +107,7 @@ Si noti che il rendering dell'attributo iframe non verrà eseguito correttamente
 ### <a name="authentication-against-the-sdk"></a>Autenticazione sull'SDK
 Per l'elenco dei flussi che l'utente ha già scritto e anche per creare flussi in base ai modelli, fornire un authToken da AAD.
 
-```
+```javascript
 <script>
     window.msFlowSdkLoaded = function() {
         var sdk = new MsFlowSdk({
@@ -132,7 +133,7 @@ Per l'elenco dei flussi che l'utente ha già scritto e anche per creare flussi i
 
 Per trovare l'`environmentId`, eseguire la chiamata all'API seguente, che restituisce l'elenco di ambienti a cui l'utente ha accesso:
 
-```
+```http
 GET https://management.azure.com/providers/Microsoft.ProcessSimple/environments
 ?api-version=2016-11-01 
 ```
@@ -141,7 +142,7 @@ La chiamata restituisce una risposta JSON con l'elenco degli ambienti, da cui è
 
 In questo esempio, `requestParam` è definito come:
 
-```
+```javascript
 export interface IRpcRequestParam {
     callInfo: IRpcCallInfo,
     data?: any;
@@ -150,7 +151,7 @@ export interface IRpcRequestParam {
 
 Successivamente, `widgetDoneCallback` è una funzione di callback che deve essere chiamata una volta che l'host ha acquisito il token. Ciò avviene perché l'acquisizione di token è probabilmente un processo asincrono. I parametri che devono essere passati quando si chiama questa funzione sono `(errorResult: any, successResult: any)`. Il parametro successResult dipenderà dal tipo di callback. Per `GetAccessToken` il tipo è:
 
-```
+```javascript
 export interface IGetAccessTokenResult {
     token: string;
 }
