@@ -1,13 +1,13 @@
 ---
 title: Usare l'interfaccia di amministrazione per gestire gli ambienti e i criteri dati. | Microsoft Docs
-description: "L'interfaccia di amministrazione di Microsoft Flow è usata dagli amministratori dell'ambiente e del tenant per gestire gli ambienti e i criteri dati per le distribuzioni di Microsoft Flow."
-services: 
+description: L'interfaccia di amministrazione di Microsoft Flow è usata dagli amministratori dell'ambiente e del tenant per gestire gli ambienti e i criteri dati per le distribuzioni di Microsoft Flow.
+services: ''
 suite: flow
 documentationcenter: na
 author: msftman
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -16,10 +16,11 @@ ms.workload: na
 ms.date: 10/31/2017
 ms.author: deonhe
 ms.openlocfilehash: 368b208a6f1d47f76a6f195edcd8055a03c06800
-ms.sourcegitcommit: 01325305b9d2cf964acac9feb6cca0af66db7440
+ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "23981322"
 ---
 # <a name="the-admin-center"></a>L'interfaccia di amministrazione
 
@@ -29,7 +30,7 @@ L'interfaccia di amministrazione è la posizione centrale in cui gli amministrat
 
 ## <a name="access-the-admin-center"></a>Accedere all'interfaccia di amministrazione
 
-* Passare a https://admin.flow.microsoft.com per accedere all'interfaccia di amministrazione di Microsoft Flow.
+* Andare a https://admin.flow.microsoft.com per accedere all'interfaccia di amministrazione di Microsoft Flow.
 
 ## <a name="environments"></a>Ambienti
 

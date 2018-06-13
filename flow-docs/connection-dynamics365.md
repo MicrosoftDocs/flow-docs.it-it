@@ -15,16 +15,20 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 02/06/2017
 ms.author: matp
-ms.openlocfilehash: 923fd1fc573586871d506a66aaa2b09d5b5dc9da
-ms.sourcegitcommit: f0202f74ba9a2282a670a1751462f598a5ea0ce5
+ms.openlocfilehash: 2db995eafaf8e73af7cd29b8a2469d4abaab2356
+ms.sourcegitcommit: 7d04ee86361fe5d70ee89cde06d01754ada757b5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34799672"
 ---
 # <a name="create-a-flow-by-using-dynamics-365-online"></a>Creare un flusso con Dynamics 365 (online)
 Usando un connettore Dynamics 365, è possibile creare flussi che si avviano quando si verifica un evento in Dynamics 365 o in un altro servizio, che quindi esegue un'azione in Dynamics 365 o un altro servizio. 
 
 In Microsoft Flow è possibile configurare i flussi di lavoro automatizzati tra le app e i servizi preferiti per sincronizzare file, ricevere notifiche, raccogliere dati e altro ancora. Per altre informazioni, vedere [Attività iniziali con Microsoft Flow](getting-started.md).
+
+> [!IMPORTANT] 
+> Per chiamare un trigger di flusso, nell'entità di engagement personalizzata di Dynamics 365 deve essere abilitato il **Rilevamento modifiche**. Altre informazioni: [Abilitare la registrazione delle modifiche per controllare la sincronizzazione dei dati](https://docs.microsoft.com/dynamics365/customer-engagement/admin/enable-change-tracking-control-data-synchronization) 
 
 ## <a name="create-a-flow-from-a-template"></a>Creare un flusso da un modello
 È possibile creare un flusso usando uno dei numerosi modelli disponibili, come in questi esempi:
@@ -87,6 +91,11 @@ Questa procedura dettagliata illustra come creare un'attività in [Wunderlist](h
 8. In **ID lista**, selezionare **Posta in arrivo**.
 9. In **Titolo**selezionare **oggetto** nel riquadro del contenuto dinamico.
 10. Scegliere o toccare **Crea flusso**.  
+
+## <a name="trigger-based-logic"></a>Logica basata sui trigger
+I trigger come **Quando un record viene creato**, **Quando un record viene aggiornato** e **Quando un record viene eliminato** avviano il flusso dopo pochi minuti che si è verificato l'evento.  In rari casi, l'attivazione del flusso può richiedere fino a 2 ore.
+
+Quando si verifica il trigger, il flusso riceve una notifica ma viene eseguito sui dati esistenti al momento dell'esecuzione dell'azione.  Ad esempio, se il flusso viene avviato quando viene creato un nuovo record e il record viene aggiornato due volte prima dell'esecuzione del flusso, il flusso viene eseguito una sola volta con i dati più recenti.
 
 ## <a name="specify-advanced-options"></a>Specificare le opzioni avanzate
 Quando si aggiunge un passaggio a un flusso, è possibile scegliere o toccare **Mostra opzioni avanzate** per aggiungere un filtro o per ordinare in base alla query che controlla come vengono filtrati i dati nel flusso.

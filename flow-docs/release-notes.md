@@ -13,13 +13,14 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 04/12/2018
+ms.date: 06/04/2018
 ms.author: stepsic
-ms.openlocfilehash: bae4991754de37ca9483d540891431e216ee74cd
-ms.sourcegitcommit: b6ac1562b3ed6601401d23f4009b7528c1ce8925
+ms.openlocfilehash: 61c6382a35a55ca18dbfbce5b5b6fe38dc6ee0f2
+ms.sourcegitcommit: 3f7f5a941466485cd16e78239fcfd89d71f501e0
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34755576"
 ---
 # <a name="release-notes"></a>Note sulla versione
 ## <a name="top-questions"></a>Domande principali
@@ -45,7 +46,17 @@ ms.lasthandoff: 05/08/2018
 
 ## <a name="whats-new"></a>Novità
 
-### <a name="release-2014-05-01"></a>Versione 01-05-2014
+### <a name="release-2018-05-21"></a>Versione 21-05-2018
+
+- **Flussi "di proprietà" degli elenchi e librerie di SharePoint**: i flussi che funzionano con gli elenchi e le librerie di SharePoint possono essere condivisi con questi elenchi o librerie. Di conseguenza, anziché essere condivisi con singoli utenti o gruppi, vengono condivisi con chiunque abbia accesso all'elenco. Quando gli utenti vengono aggiunti o rimossi dall'elenco o dalla raccolta, le relative appartenenze cambiano automaticamente di conseguenza.
+- **Analisi dei dettagli degli errori**: è disponibile un nuovo report incorporato che offre informazioni su tutti gli errori che si verificano all'interno di un flusso.
+- **Condivisione dei flussi con i gruppi di Office 365**: è possibile rendere un gruppo moderno di Office 365 il proprietario di un flusso ed è possibile condividere i flussi dei pulsanti con i gruppi di Office 365 in modo che chiunque nel gruppo possa eseguire il flusso.
+- **Miglioramenti del connettore di SharePoint**: sono presenti due nuove funzionalità del connettore di SharePoint: attivazione dei flussi quando gli elementi o i file vengono eliminati e chiamata di qualsiasi endpoint HTTP supportato dall'API REST di SharePoint.
+- **Due nuovi connettori**: è stato aggiunto il supporto per Azure Data Factory e MailParser
+
+[Ulteriori informazioni e domande](https://flow.microsoft.com/blog/share-with-sharepoint-office-365/) su questa versione.
+
+### <a name="release-2018-05-01"></a>Versione 01-05-2018
 
 - **Testo in formato RTF nei messaggi di approvazione**: usare Markdown per formattare i dettagli relativi all'approvazione inviata.
 - **Pulsanti con più input di selezione**: compilare i pulsanti di flusso che usano un elenco di selezione multipla per raccogliere più di un valore in una sola volta.

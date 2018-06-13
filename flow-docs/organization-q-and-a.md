@@ -1,13 +1,13 @@
 ---
 title: Domande e risposte sull'iscrizione a Microsoft Flow nell'organizzazione | Microsoft Docs
-description: "Domande e risposte più comuni riguardo alle licenze, all'amministrazione e agli utenti che si registrano a Microsoft Flow nel tenant di Office 365"
-services: 
+description: Domande e risposte più comuni riguardo alle licenze, all'amministrazione e agli utenti che si registrano a Microsoft Flow nel tenant di Office 365
+services: ''
 suite: flow
 documentationcenter: na
 author: stepsic-microsoft-com
 manager: erikre
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -16,10 +16,11 @@ ms.workload: na
 ms.date: 12/05/2016
 ms.author: stepsic
 ms.openlocfilehash: f8807ca0941761018c92a385c26f427e69ededcb
-ms.sourcegitcommit: 56d69fadcbc9169feb2e1a68d9e9361709084cf4
+ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "23442495"
 ---
 # <a name="flow-in-your-organization-qa"></a>Domande e risposte riguardo alla registrazione a Microsoft Flow nell'organizzazione
 L'argomento descrive il modo in cui Microsoft Flow può essere usato dagli utenti nell'organizzazione e la modalità di controllo del servizio di Microsoft Flow.
@@ -137,7 +138,7 @@ Se un nuovo tenant è stato creato da Microsoft Flow, con la procedura seguente 
 1. Accedere al tenant iscrivendosi a Flow con un dominio e-mail corrispondente al dominio del tenant che si desidera gestire. Ad esempio, se Microsoft ha creato il tenant contoso.com, accedere al tenant con un indirizzo e-mail che termini con @contoso.com.
 2. Richiedere il controllo amministrativo comprovando la proprietà del dominio: una volta nel tenant, è possibile assumere il ruolo di amministratore comprovando la proprietà del dominio. A tale scopo, seguire questi passaggi:    
    
-   1. Visitare la pagina [https://portal.office.com](https://portal.office.com/Start?sku=flow_free).
+   1. Andare a [https://portal.office.com](https://portal.office.com/Start?sku=flow_free).
    2. Selezionare l'icona di avvio dell'app in alto a sinistra e scegliere Admin (Amministratore).
    3. Leggere le istruzioni sulla pagina **Become the admin** (Diventare amministratore), quindi fare clic su **Yes, I want to be the admin** (Sì, voglio essere l'amministratore).  
       
