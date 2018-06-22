@@ -20,6 +20,7 @@ ms.sourcegitcommit: 12fbfe22fedd780d42ef1d2febfd7a0769b4902e
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31823193"
 ---
 # <a name="responding-to-gdpr-data-subject-discovery-requests-for-microsoft-flow"></a>Risposta alle richieste di individuazione del soggetto dei dati GDPR per Microsoft Flow
 
