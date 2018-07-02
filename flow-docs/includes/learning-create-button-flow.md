@@ -3,7 +3,7 @@ In questo argomento si apprenderà come **creare un flusso del pulsante** per la
 I flussi del pulsante servono a **inviare posta elettronica** a un team e **avvisarli delle attività** da eseguire. La **proprietà** dei flussi **può essere assegnata a un** solo operatore o **condivisa tra più** membri di un team.  
 
 1. Prima di tutto, accedere al [sito Web di Microsoft Flow](https://ms.flow.microsoft.com).
-2. Selezionare **Flussi personali** e quindi **Crea da zero**.
+2. Dopo aver eseguito l'accesso, selezionare **Flussi personali** e quindi **Crea da zero**.
    
     ![Crea da zero](./media/learning-create-button-flow/2-create-from-blank.png)
    

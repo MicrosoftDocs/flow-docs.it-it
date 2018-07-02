@@ -1,4 +1,4 @@
-1. Accedere a [Microsoft Flow](https://flow.microsoft.com).
+1. Eseguire l'accesso a [Microsoft Flow](https://flow.microsoft.com).
    
     ![accedere](media/modern-approvals/sign-in.png)
 2. Selezionare la scheda **Flussi personali**.

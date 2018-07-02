@@ -1,4 +1,4 @@
-1. Accedere a [Microsoft Flow](https://flow.microsoft.com), quindi selezionare la scheda **Flussi personali**.
+1. Accedere a [Microsoft Flow](https://flow.microsoft.com) e quindi selezionare la scheda **Flussi personali**.
 2. Selezionare **Crea da zero**.
    
     ![flusso vuoto](media/email-triggers/email-triggers-create-blank.png)

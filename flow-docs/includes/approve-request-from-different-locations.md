@@ -13,7 +13,7 @@ Per approvare una richiesta:
     ![immettere commento](media/modern-approvals/request-in-approval-center.png)
 
 ### <a name="from-the-approvals-center"></a>Dal Centro approvazioni
-1. Accedere a [Microsoft Flow](https://flow.microsoft.com).
+1. Eseguire l'accesso a [Microsoft Flow](https://flow.microsoft.com).
    
     ![accedere](media/modern-approvals/sign-in.png)
 2. Selezionare la scheda **Approvazioni**.
