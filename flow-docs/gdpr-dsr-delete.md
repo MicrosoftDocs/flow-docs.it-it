@@ -73,7 +73,7 @@ Di seguito è riportata una suddivisione delle esperienze disponibili per un amm
 
 *Con l'introduzione di Common Data Service per le app, se viene creato un database all'interno dell'ambiente, le autorizzazioni per l'ambiente e le autorizzazioni per le app basate su modello vengono archiviate come record all'interno dell'istanza del database di Common Data Service per le app. Vedere [Executing DSRs against Common Data Service Customer Data](https://go.microsoft.com/fwlink/?linkid=872251) (Esecuzione di richieste DSR sui dati dei clienti di Common Data Service) per indicazioni su come rispondere alle richieste DSR per gli utenti che usano Common Data Service.
 
-**Un amministratore sarà in grado di accedere a queste risorse dal portale per gli autori di Microsoft Flow solo se gli è stato assegnato l'accesso dall'interfaccia di amministrazione di Microsoft Flow.
+\*\*Un amministratore sarà in grado di accedere a queste risorse dal portale per gli autori di Microsoft Flow solo se gli è stato assegnato l'accesso dall'interfaccia di amministrazione di Microsoft Flow.
 
 ## <a name="manage-delete-requests"></a>Gestire le richieste di eliminazione
 
