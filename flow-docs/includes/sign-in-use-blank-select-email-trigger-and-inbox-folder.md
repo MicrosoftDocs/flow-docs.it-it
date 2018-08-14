@@ -7,7 +7,8 @@
     ![trigger di posta elettronica](media/email-triggers/email-triggers-1.png)
 4. Selezionare la cartella in cui il flusso dovrà monitorare la presenza di messaggi di posta elettronica in ingresso e quindi selezionare il flusso **Mostra opzioni avanzate**.
    
-     Nota: per visualizzare tutte le cartelle di posta elettronica, selezionare l'icona **Mostra selezione**, che si trova sul lato destro della casella **Cartella** nella scheda **All'arrivo di un nuovo messaggio di posta elettronica**.
+     >[!NOTE]
+     > Per visualizzare tutte le cartelle di posta elettronica, selezionare l'icona **Mostra selezione**, che si trova sul lato destro della casella **Cartella** nella scheda **All'arrivo di un nuovo messaggio di posta elettronica**.
    
     ![proprietà della cartella](media/email-triggers/email-triggers-subject-folder.png)
 

@@ -15,12 +15,12 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 4/17/2018
 ms.author: keweare
-ms.openlocfilehash: 70206e0ed6c2b59d0dfffa0c4608ba47e0fac1dc
-ms.sourcegitcommit: ca875127f607034d7ef6a3fe270fc48e4f7eeee6
+ms.openlocfilehash: 532d3c1affe899da3125e9f512b21bf3e39ca25e
+ms.sourcegitcommit: cd3cdcff3accb9a54f002fdc33d33935b4276249
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39175133"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39520078"
 ---
 # <a name="responding-to-gdpr-data-subject-delete-requests-for-microsoft-flow"></a>Risposta alle richieste di eliminazione del soggetto dei dati GDPR per Microsoft Flow
 
@@ -73,7 +73,7 @@ Di seguito è riportata una suddivisione delle esperienze disponibili per un amm
 
 *Con l'introduzione di Common Data Service per le app, se viene creato un database all'interno dell'ambiente, le autorizzazioni per l'ambiente e le autorizzazioni per le app basate su modello vengono archiviate come record all'interno dell'istanza del database di Common Data Service per le app. Vedere [Executing DSRs against Common Data Service Customer Data](https://go.microsoft.com/fwlink/?linkid=872251) (Esecuzione di richieste DSR sui dati dei clienti di Common Data Service) per indicazioni su come rispondere alle richieste DSR per gli utenti che usano Common Data Service.
 
-\*\*Un amministratore sarà in grado di accedere a queste risorse dal portale per gli autori di Microsoft Flow solo se gli è stato assegnato l'accesso dall'interfaccia di amministrazione di Microsoft Flow.
+\*\* Un amministratore sarà in grado di accedere a queste risorse dal portale per gli autori di Microsoft Flow solo se gli è stato assegnato l'accesso dall'interfaccia di amministrazione di Microsoft Flow.
 
 ## <a name="manage-delete-requests"></a>Gestire le richieste di eliminazione
 

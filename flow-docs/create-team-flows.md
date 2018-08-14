@@ -15,12 +15,12 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 04/21/2017
 ms.author: deonhe
-ms.openlocfilehash: d4e8de2f9f67c07861297e079948a5336ff66e7f
-ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
+ms.openlocfilehash: ec7801f249ce4f3a1e33a6092726a6574a2e6d4c
+ms.sourcegitcommit: cd3cdcff3accb9a54f002fdc33d33935b4276249
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "23439687"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39520009"
 ---
 # <a name="create-team-flows"></a>Creare flussi del team
 Creare un flusso del team aggiungendo altri utenti nell'organizzazione come proprietari. Tutti i proprietari di un flusso di team possono eseguire queste azioni:
@@ -64,6 +64,10 @@ Seguire questi passaggi per creare un flusso del team o per aggiungere uno o pi�
     ![nuovo proprietario](./media/create-team-flows/addowner4.png)
    
      Congratulazioni &mdash; il flusso del team è stato creato.
+
+##<a name="add-a-list-as-a-co-owner"></a>Aggiungere un elenco come comproprietario
+
+È possibile aggiungere a un flusso elenchi di SharePoint come comproprietari, in modo che tutti gli utenti che hanno accesso in modifica all'elenco ottengano automaticamente l'accesso in modifica al flusso. Quando il flusso è condiviso, è sufficiente distribuire un collegamento per il flusso.
 
 ## <a name="remove-an-owner"></a>Rimuovere un proprietario
 > [!IMPORTANT]

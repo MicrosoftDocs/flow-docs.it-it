@@ -15,12 +15,12 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/15/2017
 ms.author: stepsic
-ms.openlocfilehash: 4fa6af7557fdbae46db5eb74a82a9d30a991e93b
-ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
+ms.openlocfilehash: af179e30c3b8b7c6d4200f10f122f0d928526f1b
+ms.sourcegitcommit: 77aae180d972373d1f251fa6a5c8f484f08ffc15
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34453309"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39718305"
 ---
 # <a name="frequently-asked-questions"></a>Domande frequenti
 ## <a name="audience-and-strategy"></a>Destinatari e strategia
@@ -80,7 +80,7 @@ I modelli sono flussi predefiniti per scenari popolari e comuni. L'uso di un mod
 È possibile connettersi a più di 100 servizi standard di Microsoft e terze parti, ad esempio Office 365, Twitter, SharePoint, OneDrive, Dropbox, SQL Server e altro ancora. È inoltre possibile connettersi a servizi di eccellenza, come Salesforce e Common Data Service per PowerApps.
 
 ### <a name="how-do-i-connect-to-a-rest-api-in-my-flow"></a>Come ci si connette a un'API REST nel flusso?
-Per connettersi a un'API REST che usa JSON e supporta almeno uno degli oltre 10 metodi di autenticazione, è possibile creare [un connettore personalizzato](register-custom-api.md).
+Per connettersi a un'API REST che usa JSON e supporta almeno uno degli oltre 10 metodi di autenticazione, è possibile creare [un connettore personalizzato](developer/register-custom-api.md).
 
 ### <a name="how-do-i-connect-to-sql-server-and-other-on-premises-data-sources"></a>Come ci si connette a SQL Server e ad altre origini dati locali?
 È possibile connettersi ai servizi della rete locale tramite il [gateway dati locale](gateway-manage.md).
