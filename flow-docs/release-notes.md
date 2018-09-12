@@ -13,14 +13,14 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 06/04/2018
+ms.date: 07/21/2018
 ms.author: stepsic
-ms.openlocfilehash: 61c6382a35a55ca18dbfbce5b5b6fe38dc6ee0f2
-ms.sourcegitcommit: 3f7f5a941466485cd16e78239fcfd89d71f501e0
+ms.openlocfilehash: 063fd316f1c4e1679935fb7a83560441d2704701
+ms.sourcegitcommit: 4489d9587bfb1ef197df7f4c0253a3ab4ecb1d1d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34755576"
+ms.lasthandoff: 08/16/2018
+ms.locfileid: "43774227"
 ---
 # <a name="release-notes"></a>Note sulla versione
 ## <a name="top-questions"></a>Domande principali
@@ -45,6 +45,35 @@ ms.locfileid: "34755576"
 3. I trigger di file non verranno generati per i file aggiunti nelle cartelle annidate all'interno della cartella selezionata.
 
 ## <a name="whats-new"></a>Novità
+
+### <a name="release-2018-07-23"></a>Versione 23-07-2018
+
+- **Compilare ed eseguire flussi da Excel**: con il nuovo pulsante **Flow** (accessibile dalla scheda **Dati** della barra multifunzione), è possibile creare e attivare automazioni da Flow su dati di tabella in Excel. Automatizzare l'elaborazione dei dati o la copia/importazione dei dati.
+- **Creare un flusso di processo business**: un flusso di processo business è un nuovo tipo di flusso con stato e con interazione umana basato su Common Data Service per le app. Usare questi nuovi flussi per definire un set di fasi e passaggi da seguire per gli utenti. Gli utenti possono spostarsi avanti e indietro in base alle esigenze.
+- **Creare un flusso per Microsoft To-Do in Outlook Web App**: se un utente viene menzionato con \@ in Outlook Web App, vedrà un collegamento per creare un flusso. Questo flusso crea automaticamente le attività per la \@persona menzionata in Microsoft To-Do, in base al contenuto del messaggio di posta elettronica.
+- **Supporto della visualizzazione SharePoint**: il connettore SharePoint supporta ora la selezione di una visualizzazione specifica di SharePoint per trigger e azioni. Ciò consente di filtrare le colonne in modo da mostrare solo i campi inclusi nella visualizzazione selezionata.
+- **Quattro nuovi connettori**: sono stati aggiunti Azure IoT Central (una soluzione SaaS IoT a scalabilità elevata), Survey 123, LMS365 e ProjectWise Design Integration.
+
+[Ulteriori informazioni e domande](https://flow.microsoft.com/blog/excel-bpf-todo-and-more/) su questa versione.
+
+### <a name="release-2018-06-29"></a>Versione 29-06-2018
+
+- **Flusso Richiedi approvazione integrato in SharePoint**: quando si seleziona un file o un elemento in SharePoint, verrà visualizzato un nuovo flusso **Richiedi approvazione**. Questo flusso non richiede alcuna configurazione e invia una richiesta di approvazione con un solo clic.
+- **Due nuovi connettori**: sono stati aggiunti i connettori Cloud Connect Studio e PoliteMail.
+- **Miglioramenti per la cronologia e la creazione di pagine**: l'elenco Cronologia esecuzioni è stato aggiornato includendo le ore esatte di esecuzione e la creazione delle pagine è stata aggiornata con l'aggiunta di un nuovo video con procedura dettagliata.
+
+[Ulteriori informazioni e domande](https://flow.microsoft.com/blog/request-sign-off-four-connectors/) su questa versione.
+
+### <a name="release-2018-06-08"></a>Versione 08-06-2018
+
+- **Cmdlet di PowerShell**: sia i creatori di flusso che gli amministratori del tenant possono ora usare PowerShell per gestire i flussi a livello di programmazione.
+- **Miglioramenti al bot Flow di Teams**: il bot Flow in Microsoft Teams consente di eseguire i pulsanti del flusso e di descrivere i flussi.
+- **Tre nuovi connettori**: è stato aggiunto il supporto per Marketo, ElasticOCR e DynamicSignal. 
+- **Informazioni aggiuntive per la condivisione**: sono state aggiunte ulteriori informazioni quando si condividono flussi o si eseguono flussi condivisi, per sapere esattamente quali sono le autorizzazioni che riceveranno gli altri utenti.
+- **Rimozione automatica di testo dagli URL di SharePoint**: quando si copia e incolla un URL di SharePoint nel browser, l'URL potrebbe contenere testo aggiuntivo oltre al sito e questo tipo di testo verrà rimosso automaticamente in modo che sia possibile connettersi solo al sito.
+- **Documentazione per le richieste GDPR**: sono stati creati una guida e un set di strumenti completi per le organizzazioni aziendali per gestire le richieste dei soggetti interessati.
+
+[Ulteriori informazioni e domande](https://flow.microsoft.com/blog/powershell-flow-bot-marketo/) su questa versione.
 
 ### <a name="release-2018-05-21"></a>Versione 21-05-2018
 
