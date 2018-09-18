@@ -15,12 +15,17 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/22/2016
 ms.author: stepsic
-ms.openlocfilehash: f56b109cc0263c8464d6d7475421ab32af8888d5
-ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
+search.app:
+- Flow
+search.audienceType:
+- flowmaker
+- enduser
+ms.openlocfilehash: 6c48d79138dfdafa94e56380343840d6aa0fcbb5
+ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "29351339"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44690876"
 ---
 # <a name="build-an-approval-loop-by-using-microsoft-flow-and-the-microsoft-common-data-service"></a>Creazione di un ciclo di approvazione tramite Microsoft Flow e Microsoft Common Data Service
 Common Data Service può rappresentare un modo per creare flussi di informazioni archiviate in un database indipendente di un flusso. L'esempio migliore è con le approvazioni. Se si archivia lo stato di approvazione in un'entità, è possibile sovrapporre il flusso.

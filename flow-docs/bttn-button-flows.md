@@ -15,12 +15,17 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 05/30/2017
 ms.author: deonhe
-ms.openlocfilehash: 3387cc29bb088348634c4d97699f56a4a69ac434
-ms.sourcegitcommit: 77aae180d972373d1f251fa6a5c8f484f08ffc15
+search.app:
+- Flow
+search.audienceType:
+- flowmaker
+- enduser
+ms.openlocfilehash: 813ad16dbc9514975daadac456b73d98fc30db79
+ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39718213"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44689066"
 ---
 # <a name="run-your-flows-with-physical-buttons-bttns-from-the-button-corporation-preview"></a>Eseguire i flussi con i pulsanti fisici (bttn) di The Button Corporation (anteprima)
 Attivare i flussi premendo un bttn (un pulsante fisico creato da [The Button Corporation](https://my.bt.tn/)). Ad esempio, è possibile premere un bttn che attiva un flusso per eseguire queste attività:

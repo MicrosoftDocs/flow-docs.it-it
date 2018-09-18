@@ -15,12 +15,17 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 09/18/2016
 ms.author: adiregev
-ms.openlocfilehash: 27a2001e3fa154f9354ef5ad888e194f30b3d6ab
-ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
+search.app:
+- Flow
+search.audienceType:
+- flowmaker
+- enduser
+ms.openlocfilehash: f87320c61427957c02ff75675e4e15b938ac99f4
+ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "23440299"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44688330"
 ---
 # <a name="create-a-flow-from-your-phone-by-using-microsoft-flow"></a>Creare un flusso dal telefono usando Microsoft Flow
 Creare un flusso dal telefono usando un modello che è possibile trovare cercando in un elenco di servizi, esplorando categorie o specificando parole chiave. Seguire i passaggi descritti in questo argomento per creare un flusso che invii una notifica push al telefono dell'utente quando si riceve posta dal responsabile.

@@ -15,12 +15,17 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 02/15/2017
 ms.author: stepsic
-ms.openlocfilehash: c0e115732e26bdeb0d7e4c3c60e1aa6c63e0ffc1
-ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
+search.app:
+- Flow
+search.audienceType:
+- flowmaker
+- enduser
+ms.openlocfilehash: bdfa1072bca2afc7c608a4dbf68b8f598dff89f1
+ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "23439777"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44689112"
 ---
 # <a name="manage-connections-in-microsoft-flow"></a>Gestire le connessioni in Microsoft Flow
 Se si crea una connessione in Microsoft Flow è possibile accedere facilmente ai dati durante la creazione di un flusso. Microsoft Flow include le connessioni di uso comune tra cui SharePoint, SQL Server, Office 365, OneDrive for Business, Salesforce, Excel, Dropbox, Twitter e altro. Le connessioni sono condivise con PowerApps, quindi quando si crea una connessione in un solo prodotto, verrà visualizzata anche nell'altro.

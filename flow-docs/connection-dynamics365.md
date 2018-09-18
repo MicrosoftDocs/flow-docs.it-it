@@ -15,12 +15,17 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 02/06/2017
 ms.author: matp
-ms.openlocfilehash: ffce0a2fcc77d2bf2ff132e589410cc032bf63fd
-ms.sourcegitcommit: cd3cdcff3accb9a54f002fdc33d33935b4276249
+search.app:
+- Flow
+search.audienceType:
+- flowmaker
+- enduser
+ms.openlocfilehash: 9a054ab8179d4c2a06cbab95cd2633088bbf7458
+ms.sourcegitcommit: 44bc9de9f06b64615731ceb60a4f46cfcd45b167
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39519894"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45727206"
 ---
 # <a name="create-a-flow-by-using-dynamics-365-online"></a>Creare un flusso con Dynamics 365 (online)
 Usando un connettore Dynamics 365, è possibile creare flussi che si avviano quando si verifica un evento in Dynamics 365 o in un altro servizio, che quindi esegue un'azione in Dynamics 365 o un altro servizio. 
@@ -56,7 +61,7 @@ Se non è disponibile un modello adatto alle proprie necessità, creare un fluss
      Per questa procedura dettagliata, selezionare **Lead**.
    
     ![Flow details (Dettagli del flusso)](./media/connection-dynamics365/flow-details.png)
-    > [IMPORTANTE] Per consentire l'attivazione del flusso sull'entità di Dynamics 365, è necessario che l'opzione Rilevamento modifiche sia abilitata per la definizione dell'entità. Vedere [Abilitare la registrazione delle modifiche per controllare la sincronizzazione dei dati](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/admin/enable-change-tracking-control-data-synchronization)
+    > [IMPORTANTE] Per consentire l'attivazione del flusso sull'entità di Dynamics 365, è necessario che l'opzione Rilevamento modifiche sia abilitata per la definizione dell'entità. Vedere [Abilitare la registrazione delle modifiche per controllare la sincronizzazione dei dati](https://docs.microsoft.com/dynamics365/customer-engagement/admin/enable-change-tracking-control-data-synchronization)
     
 7. Scegliere o toccare **Nuovo passaggio**, quindi scegliere o toccare **Aggiungi un'azione**.
 8. Scegliere o toccare **Dynamics 365 - Crea un nuovo record**.

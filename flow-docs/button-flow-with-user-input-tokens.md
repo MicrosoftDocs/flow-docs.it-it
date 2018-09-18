@@ -15,12 +15,17 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 02/15/2017
 ms.author: deonhe
-ms.openlocfilehash: 483837a013b5fa0c8dfa27d2ed3a1e3481c36c5b
-ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
+search.app:
+- Flow
+search.audienceType:
+- flowmaker
+- enduser
+ms.openlocfilehash: f0e075a63331a70c32fd87a25ad0b3fdb7cf043b
+ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34308718"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44689963"
 ---
 # <a name="introducing-button-flows-with-user-input"></a>Introduzione ai flussi di un pulsante con input dell'utente
 Creare un flusso di un pulsante per eseguire attività di routine semplicemente toccando un pulsante. Personalizzare il flusso consentendo all'utente di fornire dettagli specifici che verranno usati quando viene eseguito il flusso. Questo argomento illustra come creare un flusso di un pulsante che accetta l'input dell'utente e quindi eseguire il flusso di un pulsante, evidenziando come fornire l'input dell'utente.

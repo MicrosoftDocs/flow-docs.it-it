@@ -15,12 +15,17 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 06/08/2017
 ms.author: deonhe
-ms.openlocfilehash: 8620cd49f9e19f6641909fcab3103568d148e565
-ms.sourcegitcommit: 4a8d11e1768cd0ca96a60b6f5548a68c0c8999e5
+search.app:
+- Flow
+search.audienceType:
+- flowmaker
+- enduser
+ms.openlocfilehash: f75f9b822078fcec8701bf06c3dcb8be0e07d874
+ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38949542"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44690736"
 ---
 # <a name="manage-sequential-approvals-with-microsoft-flow"></a>Gestire le approvazioni sequenziali con Microsoft Flow
 Alcuni flussi di lavoro richiedono l'approvazione preliminare prima che il responsabile approvazione finale debba disconnettersi. Ad esempio, una società potrebbe avere un criterio di approvazione sequenziale che richieda l'approvazione preliminare per le fatture di importo superiore a €1.000 prima che siano approvate dal reparto finanziario.

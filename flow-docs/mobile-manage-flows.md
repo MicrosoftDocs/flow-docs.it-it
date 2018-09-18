@@ -15,12 +15,17 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 06/11/2016
 ms.author: adiregev
-ms.openlocfilehash: 4a04fec70ae70ff17ddf6e1f93e6461ec432e8d2
-ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
+search.app:
+- Flow
+search.audienceType:
+- flowmaker
+- enduser
+ms.openlocfilehash: 4a35166ec57e81b957f7659e0e670e80bbf510ca
+ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "23440101"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44689549"
 ---
 # <a name="manage-flows-in-microsoft-flow-from-your-phone"></a>Gestire i flussi dal telefono in Microsoft Flow dal telefono
 Visualizzare un elenco di tutti i flussi che sono stati creati e, per ogni flusso, visualizzare i relativi eventi e le azioni, abilitarlo o disabilitarlo ed esaminare la cronologia di esecuzione.

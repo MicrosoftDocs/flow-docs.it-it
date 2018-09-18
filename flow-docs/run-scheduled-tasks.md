@@ -15,12 +15,17 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 09/14/2017
 ms.author: stepsic
-ms.openlocfilehash: eaeaf62da694daf7f8e6d876c3d225337fdbe592
-ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
+search.app:
+- Flow
+search.audienceType:
+- flowmaker
+- enduser
+ms.openlocfilehash: 809ea2202971df854b2351d57a09da8918d13b8b
+ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "23981250"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44690193"
 ---
 # <a name="run-flows-on-a-schedule"></a>Eseguire i flussi in una pianificazione
 Creare un flusso che esegue una o più attività, ad esempio l'invio di un report tramite posta elettronica:

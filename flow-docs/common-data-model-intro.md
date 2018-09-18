@@ -15,12 +15,17 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/22/2016
 ms.author: stepsic
-ms.openlocfilehash: e4e92bfdcf1ea65de272233b2056523641010cf2
-ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
+search.app:
+- Flow
+search.audienceType:
+- flowmaker
+- enduser
+ms.openlocfilehash: b2cf6c52a2cbaf06fc638fe8fc898689e6d523c4
+ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "29351303"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44690821"
 ---
 # <a name="create-a-flow-that-uses-the-common-data-service"></a>Creare un flusso che usi Common Data Service
 Migliorare l'efficienza operativa con una vista unificata dei dati di business con la creazione di un flusso che usa [Common Data Service](https://powerapps.microsoft.com/tutorials/data-platform-intro/). Distribuire questo database aziendale protetto che comprende entità aziendali standard ben formate (ad esempio vendite, acquisti, servizio clienti e produttività) nell'organizzazione. Archiviare dati aziendali in una o più [entità personalizzate](https://powerapps.microsoft.com/tutorials/data-platform-create-entity/), che offrono diversi vantaggi rispetto alle origini dati esterne, ad esempio Microsoft Excel e Salesforce.
