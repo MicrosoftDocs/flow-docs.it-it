@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: f0e075a63331a70c32fd87a25ad0b3fdb7cf043b
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
+ms.openlocfilehash: f87b0d93b912799a4977f347d89b12421cf42e70
+ms.sourcegitcommit: ffed9f02092fbd19fc4108aee05dd40d1a2a3755
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44689963"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "46711566"
 ---
 # <a name="introducing-button-flows-with-user-input"></a>Introduzione ai flussi di un pulsante con input dell'utente
 Creare un flusso di un pulsante per eseguire attività di routine semplicemente toccando un pulsante. Personalizzare il flusso consentendo all'utente di fornire dettagli specifici che verranno usati quando viene eseguito il flusso. Questo argomento illustra come creare un flusso di un pulsante che accetta l'input dell'utente e quindi eseguire il flusso di un pulsante, evidenziando come fornire l'input dell'utente.
@@ -122,7 +122,6 @@ In questa procedura dettagliata, si userà l'app per dispositivi mobili per Micr
 
 ## <a name="next-steps"></a>Passaggi successivi
 * [Condividere i flussi dei pulsanti](share-buttons.md)
-* [Informazioni sui flussi](guided-learning/get-started.yml?tutorial-step=1)  
 * [Informazioni sui flussi dei pulsanti](introduction-to-button-flows.md)  
 * [Informazioni sui flussi dei pulsanti con token di trigger](introduction-to-button-trigger-tokens.md)  
 

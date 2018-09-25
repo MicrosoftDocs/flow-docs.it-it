@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 4746fa74911126f3e23ed009dd109a2766dae12a
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
+ms.openlocfilehash: dc1b93553938221c3f1c995b63b984cfff913c06
+ms.sourcegitcommit: ffed9f02092fbd19fc4108aee05dd40d1a2a3755
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44690929"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "46711612"
 ---
 # <a name="get-started-with-button-trigger-tokens"></a>Introduzione ai token per attivare i pulsanti
 ## <a name="what-are-button-trigger-tokens"></a>Cosa sono i token per attivare i pulsanti?
@@ -97,6 +97,4 @@ A questo punto è stato creato il flusso di un pulsante che usa i token per l'at
 
 ## <a name="next-steps"></a>Passaggi successivi
 * [Condividere i flussi dei pulsanti](share-buttons.md)
-* [Informazioni sui flussi dei pulsanti](introduction-to-button-flows.md)  
-* [Informazioni sui flussi](guided-learning/get-started.yml?tutorial-step=1)
-
+* [Informazioni sui flussi dei pulsanti](introduction-to-button-flows.md)
