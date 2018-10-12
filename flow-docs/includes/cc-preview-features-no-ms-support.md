@@ -1,0 +1,1 @@
+Microsoft non offre supporto per questa funzionalità in anteprima. Il supporto tecnico di Microsoft Dynamics 365 non potrà risolvere problemi o rispondere a domande. Le funzionalità di anteprima non sono destinate a essere applicate in ambienti di produzione e sono soggette a [condizioni per l'utilizzo aggiuntive](http://go.microsoft.com/fwlink/p/?LinkId=511446) distinte.

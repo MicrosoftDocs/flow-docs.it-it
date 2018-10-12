@@ -1,0 +1,1 @@
+Le funzionalità di anteprima non sono destinate agli ambienti di produzione e possono avere un funzionamento limitato. Queste funzionalità sono disponibili prima della versione ufficiale in modo che i clienti possano accedervi anticipatamente e farci avere i loro commenti e suggerimenti.

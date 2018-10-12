@@ -1,0 +1,1 @@
+Stiamo preparando l'anteprima. Provatela e fateci sapere cosa ne pensate. Commenti e suggerimenti sono utili per dare priorità alle funzionalità più necessarie. Inviateci i vostri suggerimenti e segnalate i problemi usando il nostro sito di feedback disponibile pubblicamente.

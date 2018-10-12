@@ -1,0 +1,1 @@
+Si prevedono modifiche a questa funzionalità. È consigliabile non usarla in produzione. Usarla solo in ambienti di test e sviluppo.

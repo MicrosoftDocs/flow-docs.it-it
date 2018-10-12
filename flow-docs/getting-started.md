@@ -5,7 +5,7 @@ services: ''
 suite: flow
 documentationcenter: na
 author: stepsic-microsoft-com
-manager: anneta
+manager: kvivek
 editor: ''
 tags: ''
 ms.service: flow
@@ -15,18 +15,27 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/31/2017
 ms.author: stepsic
-ms.openlocfilehash: 11c8d9846982cfd372df787b6a7c9e6584d61ae5
-ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
+search.app:
+- Flow
+search.audienceType:
+- flowmaker
+- enduser
+ms.openlocfilehash: cfd337180d1517df67864e239b611f6283e3af14
+ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "23439993"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44689779"
 ---
 # <a name="get-started-with-microsoft-flow"></a>Attività iniziali con Microsoft Flow #
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/iMteXfAvDSE?list=PL8nfc9haGeb55I9wL9QnWyHp3ctU2_ThF" frameborder="0" allowfullscreen></iframe>
 
 Benvenuti. Microsoft Flow è un servizio che consente di creare flussi di lavoro automatizzati tra le app e i servizi preferiti per sincronizzare file, ricevere notifiche, raccogliere dati e altro ancora.
+
+I tipi di flusso principali sono flussi [automatizzati](get-started-logic-flow.md), [attivati da un pulsante](introduction-to-button-flows.md), [pianificati](run-scheduled-tasks.md) e [processi aziendali](business-process-flows-overview.md).
+
+Gli addetti alla personalizzazione di Dynamics 365 Customer Engagement probabilmente conoscono i processi Classic Common Data Service per le app che includono [flussi di lavoro](configure-workflow-steps.md), [azioni](create-actions.md), [flussi di attività per dispositivi mobili](create-mobile-task-flow.md) e [interazioni](use-cds-for-apps-dialogs.md).
 
 Il primo passaggio consiste nel [registrarsi](sign-up-sign-in.md) oppure, se è già disponibile un account con Microsoft Flow, è possibile [accedere](https://flow.microsoft.com/signin) dal proprio tablet, computer desktop o smartphone.
 

@@ -1,16 +1,6 @@
 ---
 title: Usare le espressioni con le condizioni. | Microsoft Docs
-description: 'Usare le espressioni avanzate, ad esempio '
-"\"and\"\",": ''
-"\"\"or\"\",": ''
-"\"\"empty\"\",": ''
-"\"\"less\"\"": ''
-and: ''
-"\"\"greater\"\"": ''
-with: ''
-microsoft: ''
-flow: ''
-conditions.": ''
+description: Usare le espressioni avanzate, ad esempio "and", "or", "empty", "less" e "greater", con le condizioni di Microsoft Flow.
 services: ''
 suite: flow
 documentationcenter: na
@@ -25,12 +15,17 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 08/01/2017
 ms.author: deonhe
-ms.openlocfilehash: 3a089735cc2d8c9144e18a2765b549b528470d1e
-ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
+search.app:
+- Flow
+search.audienceType:
+- flowmaker
+- enduser
+ms.openlocfilehash: 430d29c4520cbe28801b6912b58a5819a59b5168
+ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31008638"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44690538"
 ---
 # <a name="use-expressions-in-conditions-to-check-multiple-values"></a>Usare le espressioni nelle condizioni per verificare più valori
 Questa procedura dettagliata illustra come usare le espressioni e le **condizioni** per confrontare più valori in **modalità Avanzata**.
