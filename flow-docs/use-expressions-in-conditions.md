@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 430d29c4520cbe28801b6912b58a5819a59b5168
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
+ms.openlocfilehash: 81aa718837fa14615459f3688a282c25cb99bab6
+ms.sourcegitcommit: dc188618c36583b20af3e838d72bd7b020575d7d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44690538"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48874438"
 ---
 # <a name="use-expressions-in-conditions-to-check-multiple-values"></a>Usare le espressioni nelle condizioni per verificare più valori
 Questa procedura dettagliata illustra come usare le espressioni e le **condizioni** per confrontare più valori in **modalità Avanzata**.
@@ -44,7 +44,7 @@ Espressione|Descrizione|Esempio
 |[greater](#use-the-greater-expression)|Accetta due argomenti e restituisce true se il primo argomento è maggiore del secondo argomento. <br><b>Nota</b>: i tipi supportati sono integer, float e string.|Questa espressione restituisce false:<br>greater(10,10)
 |greaterOrEquals|Accetta due argomenti e restituisce true se il primo argomento è maggiore o uguale al secondo argomento. <br><b>Nota</b>: i tipi supportati sono integer, float e string.|Questa espressione restituisce false:<br>greaterOrEquals(10,100)
 |[empty](#use-the-empty-expression)|Restituisce true se l'oggetto, matrice o stringa è vuota.|Questa espressione restituisce true:<br>empty('')
-|not|Accetta due argomenti e restituisce true se gli argomenti sono false. <br><b>Nota</b>: entrambi gli argomenti devono essere valori booleani.|Questa espressione restituisce true:<br>not(contains('200 Success','Fail'))
+|not|Restituisce l'opposto di un valore booleano. |Questa espressione restituisce true:<br>not(contains('200 Success','Fail'))
 |if|Restituisce un valore specifico se l'espressione risulta true o false.|Questa espressione restituisce "yes":<br>if(equals(1, 1), 'yes', 'no')
 
 ## <a name="prerequisites"></a>Prerequisiti
