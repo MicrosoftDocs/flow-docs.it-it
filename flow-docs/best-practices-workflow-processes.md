@@ -22,12 +22,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 94c38a54fec91e6a480cd90d0a72f19ca56ae51c
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
+ms.openlocfilehash: bba5b203782cfa813de6ddc509a8be604e5e146b
+ms.sourcegitcommit: 50ea1cdd763863a2cbc88f9f965bdf9351f1059c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44689526"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51225541"
 ---
 # <a name="best-practices-for-workflow-processes"></a>Procedure consigliate per i processi dei flussi di lavoro
 
@@ -61,7 +61,7 @@ Per i flussi di lavoro che non vengono eseguiti in background (sincroni), è con
 ![Opzioni Mantieni registri per i processi del flusso di lavoro con errori](media/keep-logs-for-workflows.png)
 
 ## <a name="limit-the-number-of-workflows-that-update-the-same-entity"></a>Limitare il numero di flussi di lavoro che aggiornano la stessa entità
-L'esecuzione di più flussi di lavoro che aggiornano la stessa entità può causare problemi di blocco delle risorse. Si supponga di avere più flussi di lavoro dove ogni aggiornamento dell'entità attiva un aggiornamento all'account associato. L'esecuzione di più istanze di questi flussi di lavoro che tentano di aggiornare lo stesso record account contemporaneamente può causare problemi di blocco delle risorse. Si verificano errori di flusso di lavoro e viene registrato un messaggio di errore, ad esempio **SQL Timeout: Cannot obtain lock on resource *nome risorsa*** (Timeout SQL: Impossibile ottenere il blocco nella risorsa *nome risorsa*). 
+L'esecuzione di più flussi di lavoro che aggiornano la stessa entità può causare problemi di blocco delle risorse. Si supponga di avere più flussi di lavoro dove ogni aggiornamento dell'entità attiva un aggiornamento all'account associato. L'esecuzione di più istanze di questi flussi di lavoro che tentano di aggiornare lo stesso record account contemporaneamente può causare problemi di blocco delle risorse. Si verificano errori di flusso di lavoro e viene registrato un messaggio di errore, ad esempio **Timeout SQL: Impossibile ottenere il blocco nella risorsa _nome risorsa_**. 
 
   
 <a name="BKMK_DocumentChangesUsingNotes"></a>   
