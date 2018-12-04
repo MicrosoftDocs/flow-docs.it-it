@@ -15,10 +15,10 @@ search.app:
 search.audienceType:
 - developer
 ms.openlocfilehash: ae3633047bda556058c8e2ec94e6411e7f277e76
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
+ms.sourcegitcommit: 50ea1cdd763863a2cbc88f9f965bdf9351f1059c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/12/2018
+ms.lasthandoff: 11/28/2018
 ms.locfileid: "44691067"
 ---
 # <a name="work-with-business-process-flows-using-code"></a>Usare i processi aziendali con il codice
@@ -354,7 +354,7 @@ Per impostazione predefinita, per un'entità per la quale sono stati definiti pi
 1. Identificare tutti i processi aziendali applicabili al nuovo record di entità in base all'attributo **Workflow.PrimaryEntity** dei record di definizione del processo aziendale.
 2. Identificare le definizioni del processo aziendale che l'utente corrente usa per eseguire l'accesso. Per informazioni su come determinare e gestire l'accesso al processo aziendale, vedere la sezione [Gestire la sicurezza per i processi aziendali](#BPFSecurity) illustrata in precedenza in questo argomento.<br/>  
 3. Tutte le definizioni del processo aziendale nel sistema sono soggette a un ordine globale per ogni entità. L'ordine del processo aziendale viene archiviato nell'attributo **Workflow.ProcessOrder** Le definizioni del processo aziendale per un'entità vengono classificate in base a questo ordine e viene selezionata quella con il valore più basso nell'ordine.
-4. Infine, se il record di entità viene creato da un'app aziendale (modulo dell'app), viene applicato un altro livello di filtro per selezionare il processo aziendale da applicare automaticamente al nuovo record di entità. Quando si lavora in un'app, gli utenti possono accedere solo a entità, processi aziendali, visualizzazioni e moduli rilevanti, che sono stati loro concessi in virtù dei ruoli di sicurezza assegnati all'app aziendale. 
+4. Infine, se il record di entità viene creato da un'app aziendale (modulo dell'app), viene applicato un altro livello di filtro per selezionare il processo aziendale da applicare automaticamente al nuovo record di entità. Quando si lavora in un'app, gli utenti possono accedere solo a entità, processi aziendali, visualizzazioni e moduli rilevanti, che sono stati loro concessi in virtù dei ruoli di sicurezza assegnati all'app aziendale. 
     - Se l'app aziendale non contiene processi aziendali, il processo aziendale verrà applicato come spiegato fino al passaggio 3.
     - Se l'app aziendale contiene uno o più processi aziendali, sarà applicato solo il processo aziendale presente nell'app. In questo caso, quando l'utente usa un contesto dell'app aziendale, l'elenco dei processi aziendali descritti nel passaggio 3 viene filtrato per ottenere i processi che fanno parte dell'app aziendale all'interno del modulo dell'app. Tali processi vengono poi classificati in base all'ordine del processo. 
     - Se nessun processo aziendale è disponibile nell'app aziendale per l'entità e l'utente non ha accesso ad alcun processo, non verrà applicato nessun processo aziendale al nuovo record di entità.
