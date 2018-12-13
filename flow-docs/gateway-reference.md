@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 95081295bfe0fd6c904876aaf70974575a7986c1
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
+ms.openlocfilehash: 8baaf85ae07d2763886eb1ffda0141e4804cb630
+ms.sourcegitcommit: 8a36a3211e76b2b1a4a3154bc41e12a87dc3c288
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44690906"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53179818"
 ---
 # <a name="understand-on-premises-data-gateways-for-microsoft-flow"></a>Comprendere i gateway dati locali per Microsoft Flow
 Usare il gateway dati locale con Microsoft Flow per stabilire connessioni protette alle origini dati locali, ad esempio Microsoft SQL Server.
@@ -123,14 +123,14 @@ Per completezza, sostituire i valori **NomeComputer** e **Porta** con quelli ele
 Anche il firewall potrebbe bloccare le connessioni tra il bus di servizio di Azure e il data center di Azure. In tal caso, è opportuno inserire nell'elenco elementi consentiti (sbloccare) tutti gli [indirizzi IP](https://www.microsoft.com/download/details.aspx?id=41653) per la propria area per tali data center.
 
 ## <a name="configure-ports"></a>Configurare le porte
-Il gateway crea una connessione in uscita al bus di servizio di Azure. Comunica sulle porte in uscita: TCP 443 (predefinita), 5671, 5672, 9350 a 9354. Il gateway non richiede porte in ingresso.
+Il gateway crea una connessione in uscita al bus di servizio di Azure. Comunica sulle porte in uscita TCP 443 (predefinita), 5671, 5672 e da 9350 a 9354. Il gateway non richiede porte in ingresso.
 
 Altre informazioni sulle [soluzioni ibride](https://azure.microsoft.com/documentation/articles/service-bus-fundamentals-hybrid-solutions/).
 
 | Nomi di dominio | Porte in uscita | Descrizione |
 | --- | --- | --- |
 | *.analysis.windows.net |443 |HTTPS |
-| *.login.windows.net |443 |HTTPS |
+| *.login.microsoftonline.com |443 |HTTPS |
 | *.servicebus.windows.net |5671-5672 |Advanced Message Queuing Protocol (AMQP) |
 | *.servicebus.windows.net |443, 9350-9354 |Listener in Inoltro del bus di servizio su TCP (è richiesta la porta 443 per l'acquisizione del token di Controllo di accesso) |
 | *.frontend.clouddatahub.net |443 |HTTPS |
@@ -165,22 +165,22 @@ Non è attualmente disponibile alcuna posizione centralizzata da cui gli amminis
 * DB2
 
 **Domanda:** è necessario un gateway per origini dati nel cloud come SQL Azure?
-**Risposta:** no. Un gateway si connette solo a origini dati locali.
+**Risposta:** No. Un gateway si connette solo a origini dati locali.
 
 **Domanda:** qual è il nome effettivo del servizio di Windows?
-**Risposta:** in Servizi, il gateway si chiama **servizio Enterprise Gateway di Power BI**.
+**Risposta:** in Servizi, il gateway si chiama **Power BI Enterprise Gateway Service**.
 
 **Domanda:** sono presenti connessioni in ingresso verso il gateway dal cloud?
-**Risposta:** no. Il gateway usa connessioni in uscita al bus di servizio di Azure.
+**Risposta:** No. Il gateway usa connessioni in uscita al bus di servizio di Azure.
 
 **Domanda:** cosa succede se si bloccano le connessioni in uscita? Cosa occorre aprire?
 **Risposta:** vedere l'elenco di [porte](gateway-reference.md#configure-ports) e host usati dal gateway.
 
 **Domanda:** il gateway deve essere installato nello stesso computer dell'origine dati?
-**Risposta:** no. Il gateway si connetterà all'origine dati usando le informazioni di connessione fornite. In questo senso il gateway è simile a un'applicazione client. È solo necessario che riesca a connettersi allo stesso nome server specificato.
+**Risposta:** No. Il gateway si connetterà all'origine dati usando le informazioni di connessione fornite. In questo senso il gateway è simile a un'applicazione client. È solo necessario che riesca a connettersi allo stesso nome server specificato.
 
 **Domanda:** qual è la latenza per l'esecuzione di query in un'origine dati dal gateway? Qual è l'architettura migliore?
-**Risposta:** è consigliabile che il gateway si trovi il più vicino possibile all'origine dati, in modo da evitare la latenza di rete. Se è possibile installare il gateway nell'origine dati effettiva, si ridurrà al minimo la latenza introdotta. Prendere in considerazione anche i data center. Se, ad esempio, il servizio usa il data center Stati Uniti occidentali e SQL Server è ospitato in una macchina virtuale di Azure, è consigliabile posizionare anche la macchina virtuale di Azure negli Stati Uniti occidentali. In questo modo si minimizza la latenza e si evitano addebiti in uscita sulla macchina virtuale di Azure.
+**Risposta:**  è consigliabile che il gateway si trovi il più vicino possibile all'origine dati, in modo da evitare la latenza di rete. Se è possibile installare il gateway nell'origine dati effettiva, si ridurrà al minimo la latenza introdotta. Prendere in considerazione anche i data center. Se, ad esempio, il servizio usa il data center Stati Uniti occidentali e SQL Server è ospitato in una macchina virtuale di Azure, è consigliabile posizionare anche la macchina virtuale di Azure negli Stati Uniti occidentali. In questo modo si minimizza la latenza e si evitano addebiti in uscita sulla macchina virtuale di Azure.
 
 **Domanda:** sono previsti requisiti per la larghezza di banda di rete?
 **Risposta:** è consigliabile mantenere una velocità effettiva ottimale per la connessione di rete. Ogni ambiente è diverso e questo valore dipende anche dalla quantità di dati inviati. L'uso di ExpressRoute può essere utile per assicurare un livello specifico di velocità effettiva tra l'ambiente locale e i data center di Azure.
@@ -188,10 +188,10 @@ Non è attualmente disponibile alcuna posizione centralizzata da cui gli amminis
 È possibile usare l'[app Azure Speed Test](http://azurespeedtest.azurewebsites.net/) di terze parti per determinare la velocità effettiva.
 
 **Domanda:** il servizio di Windows Gateway può essere eseguito con un account Azure Active Directory?
-**Risposta:** no. Il servizio di Windows deve avere un account di Windows valido. Per impostazione predefinita, verrà eseguito con SID del servizio *NT SERVICE\PBIEgwService*.
+**Risposta:** No. Il servizio di Windows deve avere un account di Windows valido. Per impostazione predefinita, verrà eseguito con SID del servizio *NT SERVICE\PBIEgwService*.
 
 **Domanda:** in che modo i risultati vengono inviati al cloud?
-**Risposta:** i risultati vengono inviati con il bus di servizio di Microsoft Azure. Per altre informazioni, vedere la [sezione relativa al funzionamento](gateway-reference.md#how-the-gateway-works).
+**Risposta:** i risultati vengono inviati con il bus di servizio di Azure. Per altre informazioni, vedere la [sezione relativa al funzionamento](gateway-reference.md#how-the-gateway-works).
 
 **Domanda:** dove vengono archiviate le credenziali?
 **Risposta:** le credenziali immesse per un'origine dati vengono crittografate e archiviate nel servizio cloud gateway. Le credenziali vengono decrittografate nel gateway locale.

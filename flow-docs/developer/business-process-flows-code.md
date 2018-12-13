@@ -14,12 +14,12 @@ search.app:
 - Flow
 search.audienceType:
 - developer
-ms.openlocfilehash: ae3633047bda556058c8e2ec94e6411e7f277e76
-ms.sourcegitcommit: 50ea1cdd763863a2cbc88f9f965bdf9351f1059c
+ms.openlocfilehash: 1283d9d0a8e7f2b9b0495400c5db1f624ef91954
+ms.sourcegitcommit: a505b0aac796960d57fccee92eb18c6566ac9c35
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "44691067"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "53007002"
 ---
 # <a name="work-with-business-process-flows-using-code"></a>Usare i processi aziendali con il codice
 
@@ -46,7 +46,7 @@ Per abilitare un'entità del processo aziendale, impostare la proprietà <xref:M
 <a name="DefineBPF"></a>   
 ## <a name="define-business-process-flow"></a>Definire un processo aziendale
   
-Usare la finestra di progettazione grafica del processo aziendale per definire un processo aziendale. Per altre informazioni: [Creare un processo aziendale](../create-business-process-flow.md)
+Usare la finestra di progettazione grafica del processo aziendale per definire un processo aziendale. Altre informazioni: [Creare un processo aziendale](../create-business-process-flow.md)
 
 Per impostazione predefinita, un record di processo aziendale viene creato con lo stato `Draft`.  
 
@@ -65,7 +65,7 @@ La definizione di un processo aziendale viene archiviata nell'entità <xref:Micr
   
  Ad esempio, se il nome specificato per la definizione del processo aziendale è "My Custom BPF" e si usa l'autore predefinito (new) per la soluzione attiva, il nome dell'entità personalizzata creata per l'archiviazione delle istanze del processo sarà "new_mycustombpf".  
   
- Se il valore `uniquename` non è disponibile per la definizione di un processo aziendale, ad esempio se il processo aziendale è stato importato come parte di una soluzione da una versione precedente, il nome predefinito dell'entità personalizzata sarà ""*\<activesolutionprefix>*\_bpf\_*<GUID_BPF_Definition>*:  
+ Se il valore `uniquename` non è disponibile per la definizione di un processo aziendale, ad esempio se il processo aziendale è stato importato come parte di una soluzione da una versione precedente, il nome predefinito dell'entità personalizzata sarà "`\<activesolutionprefix>_bpf_<GUID_BPF_Definition>`:  
   
 > [!IMPORTANT]
 >  I record del processo aziendale di esempio usano le entità di sistema per archiviare i record dell'istanza del processo aziendale corrispondente.  
@@ -74,10 +74,10 @@ La definizione di un processo aziendale viene archiviata nell'entità <xref:Micr
 
 È possibile recuperare il nome dell'entità del processo aziendale usando uno dei modi seguenti:
 
-- **Tramite l'interfaccia utente**: usare l'interfaccia utente di personalizzazione per selezionare l'entità del processo aziendale:
+- **Interfaccia utente**: usare l'interfaccia utente di personalizzazione per selezionare l'entità del processo aziendale:
 
     ![](media/bpf-entity-name.png)
-- **Tramite l'API Web**: usare la richiesta seguente:
+- **API Web**: usare la richiesta seguente:
 
     **Richiesta**
 
@@ -97,8 +97,8 @@ La definizione di un processo aziendale viene archiviata nell'entità <xref:Micr
          }
       ]
     }
-
-- **Using the Organization service**: Use the following code sample:
+    ```
+- **Servizio organizzazione**: Usare l'esempio di codice seguente:
 
     ```c#
     QueryExpression query = new QueryExpression
@@ -119,35 +119,35 @@ La definizione di un processo aziendale viene archiviata nell'entità <xref:Micr
         }
     };
     Workflow Bpf = (Workflow)_serviceProxy.RetrieveMultiple(query).Entities[0]; 
-
+    ```
 > [!NOTE]
-> The <xref:Microsoft.Xrm.Sdk.Metadata.EntityMetadata.IsBPFEntity> property is `true` for business process flow entities. You can retrieve all the business process flow entities in your instance by running the following Web API request:
+> La proprietà <xref:Microsoft.Xrm.Sdk.Metadata.EntityMetadata.IsBPFEntity> è `true` per le entità del processo aziendale. Per recuperare tutte le entità del processo aziendale nell'istanza, eseguire la richiesta API Web seguente:
 > ```http
 > GET [Organization URI]/api/data/v9.0/EntityDefinitions?$select=SchemaName,LogicalName,DisplayName&$filter=IsBPFEntity eq true HTTP/1.1
 > ```
 
 <a name="BPFSecurity"></a>   
-## Manage security for business process flows
+## <a name="manage-security-for-business-process-flows"></a>Gestire la sicurezza per i processi aziendali
 
-The custom entity that is automatically created on activating a business process flow to store business process flow instances adheres to the standard security model as for any other custom entity in Customer Engagement. This implies that privileges granted on these entities define the runtime permissions for users for business process flows.
+L'entità personalizzata che viene creata automaticamente all'attivazione di un processo aziendale per archiviare le istanze del processo aziendale è conforme al modello di sicurezza standard come per qualsiasi altra entità personalizzata in Customer Engagement. Ciò implica che i privilegi concessi per tali entità definiscono le autorizzazioni di runtime per gli utenti per i processi aziendali.
 
-The custom business process flow entity has organization scope. The regular create, retrieve, update and delete privileges on this entity define the permission the user would have based on his/her assigned roles. By default, when the business process flow custom entity is created, only **System Administrator** and **System Customizer** security roles are granted access to it, and you must explicitly grant permissions to the new business process flow entity (for example, **My Custom BPF**) for other security roles as required.
+L'ambito dell'entità del processo aziendale personalizzata è l'organizzazione. I privilegi standard per la creazione, il recupero, l'aggiornamento e l'eliminazione per questa entità definiscono le autorizzazioni per l'utente in base ai ruoli assegnati. Per impostazione predefinita, quando viene creata l'entità personalizzata del processo aziendale, l'accesso viene concesso solo ai ruoli di sicurezza **Amministratore sistema** e **Addetto personalizzazione sistema** ed è necessario concedere in modo esplicito le autorizzazioni per la nuova entità de processo aziendale (ad esempio, **My Custom BPF**) per gli altri ruoli di sicurezza in base alle esigenze.
 
 ![](media/bpf-privileges.png)
 
 <a name="ManageBPF"></a>   
-## Create, retrieve, update, and delete business process flow entity records (process instances)  
- The custom entity that is automatically created on activating a business process flow definition stores all the process instances for the business process flow definition. The custom entity supports the standard programmatic creation and management of records (process instances) using Web API and CRM 2011 endpoint.
+## <a name="create-retrieve-update-and-delete-business-process-flow-entity-records-process-instances"></a>Creare, recuperare, aggiornare ed eliminare record dell'entità del processo aziendale (istanze del processo)  
+ L'entità personalizzata che viene creata automaticamente all'attivazione di una definizione di processo aziendale archivia tutte le istanze del processo per la definizione del processo aziendale. L'entità personalizzata supporta la creazione a livello di codice standard e la gestione dei record (istanze del processo) tramite l'API Web e l'endpoint di CRM 2011.
 
 > [!IMPORTANT]
-> Switching to another process instance for an entity record is only supported through UI (client) or programmatically using information available in this section. You can no longer use the `SetProcess` message (<xref href="Microsoft.Dynamics.CRM.SetProcess?text=SetProcess Action" /> or <xref:Microsoft.Crm.Sdk.Messages.SetProcessRequest>) to programmatically switch processes (set another business process flow as the active process instance) for the target entity record. 
+> Il passaggio a un'altra istanza del processo per un record di entità è supportato solo tramite l'interfaccia utente (client) o a livello di codice usando le informazioni disponibili in questa sezione. Non è più possibile usare il messaggio `SetProcess` (<xref href="Microsoft.Dynamics.CRM.SetProcess?text=SetProcess Action" /> o <xref:Microsoft.Crm.Sdk.Messages.SetProcessRequest>) per cambiare processo a livello di codice (impostare un altro processo aziendale come istanza del processo attiva) per il record dell'entità di destinazione. 
 
- Lets consider the following example where we have a cross-entity business process flow, "My Custom BPF," with 3 stages: S1:Account, S2:Account, and S3:Contact. 
+ Si considera l'esempio seguente che include un processo aziendale tra entità, "My Custom BPF", con 3 fasi: S1:Account, S2:Account e S3:Contact. 
 
  ![](media/sample-bpf.png)
  
-### Retrieve all the records (instances) for a business process flow entity
- If the name of your business process flow entity is "new_mycustombpf", use the following query to retrieve all the records (process instances) for your business process flow entity:  
+### <a name="retrieve-all-the-records-instances-for-a-business-process-flow-entity"></a>Recuperare tutti i record (istanze) per un'entità del processo aziendale
+ Se il nome dell'entità del processo aziendale è "new_mycustombpf", usare la query seguente per recuperare tutti i record (istanze del processo) per l'entità del processo aziendale:  
   
 ```http
 GET [Organization URI]/api/data/v9.0/new_mycustombpfs HTTP/1.1 
@@ -266,16 +266,16 @@ OData-Version: 4.0
 
 #### <a name="change-the-state-of-a-process-instance-abort-reactivate-or-finish"></a>Modificare lo stato di un'istanza del processo: interrompere, riattivare o terminare 
 
-Lo stato di un'istanza del processo può essere: **Attivo**, **Terminato** o **Interrotto**. Lo stato è determinato dagli attributi seguenti per il record di istanza del processo:
+Un'istanza del processo può avere uno degli stati seguenti: **Active**, **Finished** o **Aborted**. Lo stato è determinato dagli attributi seguenti per il record di istanza del processo:
 
-- **stateCode**: visualizza lo stato dell'istanza del processo.
+- **statecode**: visualizza lo stato dell'istanza del processo.
 
     |Valore|Etichetta|
     |-----|-----|
     |0    |Attivo|
     |1    |Non attivo|
 
-- **stateCode**: visualizza informazioni sullo stato dell'istanza del processo.
+- **statuscode**: visualizza informazioni sullo stato dell'istanza del processo.
 
     |Valore|Etichetta|
     |-----|-----|
@@ -372,7 +372,7 @@ Se durante la creazione di un nuovo record di entità non si imposta un valore p
 
 Gli attributi legacy correlati al processo (ad esempio **ProcessId**, **StageId** e **TraversedPath**) nelle entità abilitate per i processi aziendali sono già deprecati. La modifica degli attributi legacy correlati al processo per i record di entità di destinazione non garantisce la coerenza dello stato del processo aziendale e ***non*** è uno scenario supportato. È consigliabile usare gli attributi dell'entità del processo aziendale, come illustrato in precedenza nella sezione [Creare, recuperare, aggiornare ed eliminare i record di entità del processo aziendale (istanze del processo)](#create-retrieve-update-and-delete-business-process-flow-entity-records-process-instances).
 
-L'unica eccezione consiste nel modificare a livello di codice l'attributo **ProcessId** durante la creazione di un record di entità in modo da sostituire l'applicazione predefinita del processo aziendale al nuovo record, come illustrato nella sezione precedente: [Applicare un processo aziendale durante la creazione di un record di entità](#ApplyBPF).
+L'unica eccezione consiste nel modificare a livello di codice l'attributo **ProcessId** durante la creazione di un record di entità in modo da sostituire l'applicazione predefinita del processo aziendale con un nuovo record, come illustrato nella sezione precedente: [Applicare un processo aziendale durante la creazione di un record di entità](#ApplyBPF).
 
 <a name="BKMK_clientSideScript"></a>   
 ## <a name="client-side-programmability-support-for-business-process-flows"></a>Supporto per la programmazione lato client dei processi aziendali  

@@ -19,7 +19,7 @@ Un criterio DLP è semplicemente una regola denominata che inserisce ogni serviz
 | **Business data only** (Solo dati business) |Tutti i servizi in questo gruppo possono condividere dati tra loro, ma non possono condividere dati con il gruppo **No business data allowed**. |
 | **No Business data allowed** (Nessun dato business consentito) |Tutti i servizi in questo gruppo possono condividere dati tra loro, ma non possono condividere dati con il gruppo **Business data only**. |
 
-**Nota**: l'aggiunta di un servizio a un gruppo di dati ne comporta la rimozione automatica dall'altro gruppo. Ad esempio, se Twitter è incluso nel gruppo di dati **Business data only** e non si vuole consentire la condivisione dei dati business con Twitter, è sufficiente aggiungere il servizio Twitter al gruppo di dati **No Business data allowed**. Twitter verrà così rimosso dal gruppo **Business data only**.
+**Nota**: L'aggiunta di un servizio a un gruppo di dati ne comporta la rimozione automatica dall'altro gruppo. Ad esempio, se Twitter è incluso nel gruppo di dati **Business data only** e non si vuole consentire la condivisione dei dati business con Twitter, è sufficiente aggiungere il servizio Twitter al gruppo di dati **No Business data allowed**. Twitter verrà così rimosso dal gruppo **Business data only**.
 
 ## <a name="heres-what-you-need-to-create-a-dlp"></a>Ecco cosa occorre per creare un criterio DLP
 * Accesso all'[interfaccia di amministrazione](https://admin.flow.microsoft.com) di Microsoft Flow  
