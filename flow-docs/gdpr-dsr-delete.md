@@ -20,12 +20,12 @@ search.app:
 - Powerplatform
 search.audienceType:
 - admin
-ms.openlocfilehash: 77ce6e368c8cb54d360ebeaa32f1f649e30aa297
-ms.sourcegitcommit: 44bc9de9f06b64615731ceb60a4f46cfcd45b167
+ms.openlocfilehash: 9edad8ef0aa4e51292bddc5dc59c90ae84223de2
+ms.sourcegitcommit: ade400bab38f85071d4c8bf6a5380f561f12f2f5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45727183"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53248846"
 ---
 # <a name="responding-to-gdpr-data-subject-delete-requests-for-microsoft-flow"></a>Risposta alle richieste di eliminazione del soggetto dei dati GDPR per Microsoft Flow
 
@@ -55,7 +55,7 @@ Per i dati e le risorse che richiedano una verifica manuale, Microsoft Flow offr
 
 * **Accesso ai siti Web:** accedere all'[interfaccia di amministrazione di PowerApps](https://admin.powerapps.com/) o all'[interfaccia di amministrazione di Microsoft Flow](https://admin.flow.microsoft.com/)
 
-* **Accesso a PowerShell:**[cmdlet di PowerShell per l'amministrazione di PowerApps](https://go.microsoft.com/fwlink/?linkid=871804) 
+* **Accesso a PowerShell**:  [Cmdlet di PowerShell per amministratori di PowerApps](https://go.microsoft.com/fwlink/?linkid=871804) 
 
 Di seguito è riportata una suddivisione delle esperienze disponibili per un amministratore per l'eliminazione di ogni tipo di dati personali all'interno di ogni tipo di risorsa:
 
@@ -175,6 +175,7 @@ $deleteDsrUserId = "7822bb68-7c24-49ce-90ce-1ec8deab99a7"
 Get-AdminConnection -CreatedBy $deleteDsrUserId | Remove-AdminConnection 
 
 ```
+
 ## <a name="delete-the-users-permissions-to-shared-connections"></a>Eliminare le autorizzazioni dell'utente per le connessioni condivise
 
 Cmdlet di PowerShell per autori di PowerApps
@@ -281,11 +282,12 @@ Con l'introduzione di Common Data Service per le app, se viene creato un databas
 Per altre informazioni sulla rimozione delle autorizzazioni dell'utente in un ambiente, vedere [Uso di ambienti in Microsoft Flow](https://docs.microsoft.com/flow/environments-overview-admin).
 
 ## <a name="delete-gateway-settings"></a>Eliminare le impostazioni gateway
+
 La procedura per rispondere alle richieste di eliminazione oggetto dati per i gateway dati locali è disponibile [qui](https://docs.microsoft.com/power-bi/service-gateway-onprem#tenant-level-administration).
 
 ## <a name="delete-user-details"></a>Eliminare i dettagli utente
-I dettagli utente offrono un collegamento tra un utente e un tenant specifico. Prima di eseguire questo comando verificare che tutti i flussi per questo utente siano stati riassegnati e/o eliminati. Dopo aver completato questa operazione, un amministratore può eliminare i dettagli dell'utente chiamando il cmdlet **Remove-AdminFlowUserDetails** e passando l'ID oggetto corrispondente all'utente.
 
+I dettagli utente offrono un collegamento tra un utente e un tenant specifico. Prima di eseguire questo comando verificare che tutti i flussi per questo utente siano stati riassegnati e/o eliminati. Dopo aver completato questa operazione, un amministratore può eliminare i dettagli dell'utente chiamando il cmdlet **Remove-AdminFlowUserDetails** e passando l'ID oggetto corrispondente all'utente.
 
 Cmdlet di PowerShell per amministratori di PowerApps
 ```PowerShell
@@ -297,14 +299,18 @@ Remove-AdminFlowUserDetails -UserId 1b6759b9-bbea-43b6-9f3e-1af6206e0e80
 > Se un utente è ancora titolare di flussi individuali o del team, questo comando restituisce un errore. Per risolvere il problema eliminare tutti i flussi o i flussi del team rimanenti per l'utente ed eseguire di nuovo comando.
 >
 >
+
 ## <a name="delete-the-user-from-azure-active-directory"></a>Eliminare l'utente da Azure Active Directory
+
 Dopo il completamento dei passaggi precedenti, il passaggio finale è l'eliminazione dell'account utente per Azure Active Directory seguendo la procedura descritta nella documentazione di Azure per le richieste dei soggetti interessati in base al GDPR, disponibile nel [Service Trust Portal di Office 365](https://servicetrust.microsoft.com/ViewPage/GDPRDSR).
 
 ## <a name="delete-the-user-from-unmanaged-tenant"></a>Eliminare l'utente dal tenant non gestito
+
 Se si appartiene a un tenant non gestito, è necessario eseguire un'operazione **Account close** (Chiusura account) nel [portale Work and School Privacy ](https://go.microsoft.com/fwlink/?linkid=873123) (Privacy per l'azienda e l'istituto di istruzione).
 
 Per determinare se si appartiene a un tenant gestito o non gestito, seguire questa procedura:
-1. Aprire l'URL seguente in un browser, assicurandosi di sostituire il proprio indirizzo di posta elettronica nell'URL: [ https://login.windows.net/common/userrealm/foobar@contoso.com?api-version=2.1](https://login.windows.net/common/userrealm/foobar@contoso.com?api-version=2.1).
+
+1. Aprire l'URL seguente in un browser, assicurandosi di sostituire il proprio indirizzo di posta elettronica nell'URL:[https://login.microsoftonline.com/common/userrealm/foobar@contoso.com?api-version=2.1](https://login.microsoftonline.com/common/userrealm/foobar@contoso.com?api-version=2.1).
 1. Se si appartiene a un **tenant non gestito** la risposta include `"IsViral": true`.
 
     {
@@ -318,4 +324,3 @@ Per determinare se si appartiene a un tenant gestito o non gestito, seguire ques
     }
 
 1. In caso contrario, si appartiene a un tenant gestito.
-
