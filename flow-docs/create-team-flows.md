@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 238ef8eac80d3259981cb11cc21e3b05eb83e0ec
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
+ms.openlocfilehash: fb9f95845a6b516bfb83ed476929d8682098601f
+ms.sourcegitcommit: 4bd9fa4a9549a1830644f68cbf9ba50ed0ef8e19
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44689733"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55204940"
 ---
 # <a name="create-team-flows"></a>Creare flussi del team
 Creare un flusso del team aggiungendo altri utenti nell'organizzazione come proprietari. Tutti i proprietari di un flusso di team possono eseguire queste azioni:
@@ -70,11 +70,12 @@ Seguire questi passaggi per creare un flusso del team o per aggiungere uno o pi�
    
      Congratulazioni &mdash; il flusso del team è stato creato.
 
-##<a name="add-a-list-as-a-co-owner"></a>Aggiungere un elenco come comproprietario
+## <a name="add-a-list-as-a-co-owner"></a>Aggiungere un elenco come comproprietario
 
 È possibile aggiungere a un flusso elenchi di SharePoint come comproprietari, in modo che tutti gli utenti che hanno accesso in modifica all'elenco ottengano automaticamente l'accesso in modifica al flusso. Quando il flusso è condiviso, è sufficiente distribuire un collegamento per il flusso.
 
 ## <a name="remove-an-owner"></a>Rimuovere un proprietario
+
 > [!IMPORTANT]
 > Quando si rimuove un proprietario le cui credenziali vengono usate per accedere ai servizi di Microsoft Flow, potrebbe essere necessario aggiornare le credenziali di queste connessioni in modo che il flusso continui a funzionare correttamente.
 > 
@@ -93,7 +94,20 @@ Seguire questi passaggi per creare un flusso del team o per aggiungere uno o pi�
    
     ![utente rimosso](./media/create-team-flows/removeowner4.png)
 
+
+## <a name="update-connection-owner"></a>Aggiornare il proprietario della connessione
+
+Potrebbe essere necessario modificare il proprietario di una connessione in un flusso, se si rimuove il proprietario esistente. Seguire questa procedura per cambiare il proprietario di un flusso:
+
+1. Selezionare il flusso che contiene la connessione che si vuole aggiornare dall'elenco **Flussi del team**.
+1. Selezionare **Visualizza tutto** nell'elenco **PROPRIETARI**.
+1. Selezionare **Gestione connessioni** nell'elenco **Connessioni in uso**.
+1. Cercare la connessione da aggiornare e quindi selezionarla.
+1. Selezionare **...** (altri comandi) e quindi selezionare **Cambia account**.
+1. Seguire la procedura per usare un account diverso per la connessione.
+
 ## <a name="embedded-and-other-connections"></a>Connessioni incorporate e altri tipi
+
 Le connessioni usate in un flusso rientrano in due categorie:
 
 * **Incorporate** &mdash; Queste connessioni sono usate all'interno del flusso.

@@ -19,12 +19,12 @@ search.app:
 - Flow
 search.audienceType:
 - developer
-ms.openlocfilehash: aa5e0a7d143e0e1486533131f90d6b04c6fbc20c
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
+ms.openlocfilehash: 00f802a1776ed36755f73437e272c6ca975ac8bd
+ms.sourcegitcommit: 31b578972f00e6ab2e50ea0b674142199b3b7a35
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44690011"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54905685"
 ---
 # <a name="integrate-microsoft-flow-with-websites-and-apps"></a>Integrare Microsoft Flow con siti Web e app
 Incorporare Microsoft Flow direttamente dall'app o dal sito Web per concedere agli utenti un modo semplice per automatizzare le attività personali o professionali.
@@ -142,7 +142,7 @@ GET https://management.azure.com/providers/Microsoft.ProcessSimple/environments
 ?api-version=2016-11-01 
 ```
 
-La chiamata restituisce una risposta JSON con l'elenco degli ambienti, da cui è possibile selezionare qualsiasi ambiente. È possibile cercare l'ambiente utente predefinito selezionando la proprietà `properties.isDefault=true`.
+La chiamata restituisce una risposta JSON con l'elenco degli ambienti, da cui è possibile selezionare qualsiasi ambiente. È possibile cercare l'ambiente utente predefinito controllando la proprietà `properties.isDefault=true`.
 
 In questo esempio, `requestParam` è definito come:
 

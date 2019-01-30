@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: c780b3d305fbd5549f9c7ffc2a23571007dac7a7
-ms.sourcegitcommit: f7985b96afe68b079b7fd4a6d04cd0a042d893e0
+ms.openlocfilehash: e5abf1dd6f1f1d1dd6853aa552460694aebddd61
+ms.sourcegitcommit: 31b578972f00e6ab2e50ea0b674142199b3b7a35
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47188617"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54905690"
 ---
 # <a name="create-a-flow-by-using-dynamics-365-online"></a>Creare un flusso con Dynamics 365 (online)
 Usando un connettore Dynamics 365, è possibile creare flussi che si avviano quando si verifica un evento in Dynamics 365 o in un altro servizio, che quindi esegue un'azione in Dynamics 365 o un altro servizio. 
@@ -78,7 +78,7 @@ Se non è disponibile un modello adatto alle proprie necessità, creare un fluss
     
     ![Flow - Aggiungi argomento](./media/connection-dynamics365/flow-addtopic.png)
     
-    > **Suggerimento:** nel riquadro del contenuto dinamico, scegliere o toccare **Vedi altro** per visualizzare più campi associati all'entità. Ad esempio, è anche possibile popolare il campo **Oggetto** dell'attività con il campo **Nome società**, **Cliente**, **Descrizione** o **Posta elettronica** del lead.
+    > **Suggerimento:** nel riquadro del contenuto dinamico, fare clic o toccare **Vedi altro** per visualizzare più campi associati all'entità. Ad esempio, è anche possibile popolare il campo **Oggetto** dell'attività con il campo **Nome società**, **Cliente**, **Descrizione** o **Posta elettronica** del lead.
     > 
     > 
 12. Scegliere o toccare **Crea flusso**.
@@ -147,7 +147,7 @@ In questo esempio viene anche assegnata l'attività a un utente specifico in bas
 
 Per trovare l'ID di un record, vedere [Trovare l'ID del record](#find-the-records-id) più avanti in questo argomento.
 
-> **Importante:** i campi non devono contenere un valore se hanno una descrizione tipo "Per solo uso interno." Questi campi sono **Percorso incrociato**, **Parametri aggiuntivi** e **Numero di versione regola fuso orario.**
+> **Importante:** i campi non devono contenere un valore se hanno una descrizione del tipo "Solo per uso interno." Questi campi sono **Percorso incrociato**, **Parametri aggiuntivi** e **Numero di versione regola fuso orario.**
 > 
 > 
 

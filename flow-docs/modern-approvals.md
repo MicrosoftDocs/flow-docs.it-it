@@ -20,16 +20,16 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 0d948cdf5bce01aa5c18955645774dbcf455ba1b
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
+ms.openlocfilehash: 50466c2cf51593a4e34796fdf1d7a285eb63d462
+ms.sourcegitcommit: 31b578972f00e6ab2e50ea0b674142199b3b7a35
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44690857"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54905688"
 ---
 # <a name="create-and-test-an-approval-workflow-with-microsoft-flow"></a>Creare e testare un flusso di lavoro di approvazione con Microsoft Flow
 
-Con Microsoft Flow, è possibile gestire l'approvazione dei documenti o dei processi in diversi servizi, inclusi SharePoint, Dynamics CRM, Salesforce, OneDrive for Business, Zendesk o WordPress.
+Con Microsoft Flow, è possibile gestire l'approvazione dei documenti o dei processi in diversi servizi, inclusi SharePoint, Dynamics 365, Salesforce, OneDrive for Business, Zendesk o WordPress.
 
 Per creare un flusso di lavoro di approvazione, aggiungere l'azione **Approvals - Start an approval** (Approvazioni - Avvia un'approvazione) a qualsiasi flusso. Dopo l'aggiunta di questa azione, il flusso può gestire l'approvazione di documenti o processi. Ad esempio, è possibile creare un flusso di approvazione documenti che approva fatture, ordini di lavoro oppure preventivi di vendita. È anche possibile creare un flusso di approvazione processi che approva richieste di ferie, lavoro straordinario o piani di viaggio.
 
