@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: e5abf1dd6f1f1d1dd6853aa552460694aebddd61
-ms.sourcegitcommit: 31b578972f00e6ab2e50ea0b674142199b3b7a35
+ms.openlocfilehash: 64dc59bc53dfdc1d09dbb80be4f32a33c7259415
+ms.sourcegitcommit: 20a151bc5ef94c1ecde22934cbd878710ffb312c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54905690"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55504508"
 ---
 # <a name="create-a-flow-by-using-dynamics-365-online"></a>Creare un flusso con Dynamics 365 (online)
 Usando un connettore Dynamics 365, è possibile creare flussi che si avviano quando si verifica un evento in Dynamics 365 o in un altro servizio, che quindi esegue un'azione in Dynamics 365 o un altro servizio. 
@@ -120,6 +120,7 @@ Quando si aggiunge un valore a un campo, deve corrispondere al tipo di campo che
 | Campi integer |Alcuni campi richiedono un valore integer o contenuto dinamico che sia un campo di tipo integer. Alcuni esempi sono **Percentuale completata** e **Durata**. |**Impostazioni** > **Personalizzazioni** > **Personalizzare il sistema** > **Entità** > **Attività** > **Campi** |**percentcomplete** |**Numero intero** |
 | Campi di data |Alcuni campi richiedono una data immessa nel formato mm/gg/aaaa o contenuto dinamico che sia un campo di tipo data. Gli esempi includono **Data creazione**, **Data di inizio**, **Inizio effettivo**, **Ultimo periodo sospensione**, **Fine effettiva** e **Scadenza**. |**Impostazioni** > **Personalizzazioni** > **Personalizzare il sistema** > **Entità** > **Attività** > **Campi** |**createdon** |**Data e ora** |
 | I campi che richiedono sia un ID record sia un tipo di ricerca |Alcuni campi che fanno riferimento a un altro record di entità richiedono sia l'ID record sia il tipo di ricerca. |**Impostazioni** > **Personalizzazioni** > **Personalizzare il sistema** > **Entità** > **Account** > **Campi** |**accountid** |**Chiave primaria** |
+|Set di opzioni|Per i campi Set di opzioni è richiesto il passaggio di un valore integer noto.  Nell'area di personalizzazione di Dynamics 365 è possibile visualizzare i set di opzioni a supporto del campo integer insieme alla rispettiva etichetta.|Impostazioni > Personalizzazione > Personalizzare il sistema > Entità > Account > Campi | Metodo di contatto preferito| Numero intero|
 
 ### <a name="more-examples-of-fields-that-require-both-a-record-id-and-lookup-type"></a>Altri esempi di campi che richiedono sia un ID record sia un tipo di ricerca
 Espandendo la tabella precedente, ecco altri esempi di campi che non funzionano con i valori selezionati dall'elenco di contenuto dinamico, ma richiedono invece l'immissione sia di un ID record sia di un tipo di ricerca nei campi in PowerApps.

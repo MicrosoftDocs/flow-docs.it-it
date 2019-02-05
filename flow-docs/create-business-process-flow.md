@@ -22,12 +22,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 1e765d4c7c11354e382c3ff74ac66103345ff39f
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
+ms.openlocfilehash: 93d0e035ed3661bd78c55a246106e604f2866b2e
+ms.sourcegitcommit: 29045ac95102af371a358b79b345b54a130fcab0
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44691035"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55501435"
 ---
 # <a name="tutorial-create-a-business-process-flow-to-standardize-processes"></a>Esercitazione: Creare un processo aziendale per la standardizzazione dei processi
 
@@ -40,7 +40,12 @@ Questa esercitazione illustra come creare un processo aziendale con PowerApps. P
  > [!TIP]
  >  Dopo aver creato la definizione di un processo aziendale, è possibile offrire il controllo su chi può creare, leggere, aggiornare o eliminare l'istanza del processo aziendale. Ad esempio, per i processi di assistenza, è possibile fornire accesso completo agli operatori del servizio clienti per la modifica dell'istanza del processo aziendale e fornire accesso di sola lettura per l'istanza ai rappresentanti per consentire loro di monitorare le attività post-vendita dei clienti. Per impostare la sicurezza per la definizione di un processo aziendale creato, selezionare **Abilita ruoli di sicurezza** sulla barra delle azioni.  
   
-<a name="BKMK_Createbusinessprocessflows"></a>   
+<a name="BKMK_Createbusinessprocessflows"></a>
+
+## <a name="prerequisites"></a>Prerequisiti
+
+È necessario [Flow - Piano 2](https://preview.flow.microsoft.com/pricing/) per creare flussi di processi aziendali. Alcuni piani di licenza di Dynamics 365 includono Flow - Piano 2.
+
 ## <a name="create-a-business-process-flow"></a>Creare un processo aziendale  
   
 1. Aprire [Esplora soluzioni](/powerapps/maker/model-driven-apps/advanced-navigation#solution-explorer).
