@@ -20,12 +20,12 @@ search.app:
 - Powerplatform
 search.audienceType:
 - admin
-ms.openlocfilehash: f62bbf9e508c269c17284382b674a07221a2d568
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
+ms.openlocfilehash: ef3f6c98d16733977482c5cb3c0c23e168f5eeca
+ms.sourcegitcommit: 8debf0041094f32fa221f5da3dbbcbc4f7815ff8
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44690561"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56885505"
 ---
 # <a name="flow-in-your-organization-qa"></a>Domande e risposte riguardo alla registrazione a Microsoft Flow nell'organizzazione
 L'argomento descrive il modo in cui Microsoft Flow può essere usato dagli utenti nell'organizzazione e la modalità di controllo del servizio di Microsoft Flow.
@@ -46,6 +46,10 @@ Per iscriversi, chiunque deve visitare la pagina [flow.microsoft.com](https://fl
 Quando un utente dell'organizzazione si iscrive a Flow con l'opzione 2, a tale utente viene assegnata automaticamente una licenza gratuita per Microsoft Flow.
 
 Altre informazioni sono disponibili nell'argomento [Sign up for Flow](sign-up-sign-in.md) (Iscriversi a Flow).
+
+### <a name="what-is-the-microsoft-flow-free-plan"></a>Che cos'è il piano Microsoft Flow Gratuito?
+
+Il piano Microsoft Flow Gratuito viene usato solo per scopi di rilevamento. L'abilitazione o disabilitazione di questo piano non ha alcun effetto sulla capacità di un utente di creare flussi. Se si disabilita il piano Microsoft Flow Gratuito, questo viene abilitato di nuovo quando un utente effettua l'accesso. Si tratta del comportamento previsto.
 
 ### <a name="can-i-block-another-person-from-signing-up-for-flow"></a>È possibile impedire a un'altra persona di iscriversi a Flow?
 Microsoft Flow è un servizio cloud totalmente pubblico, quindi chiunque può iscriversi e usare Microsoft Flow in ogni parte del mondo per automatizzare le attività quotidiane. Per usare Microsoft Flow non è necessario avere o usare un account di Office 365. Per questo motivo, al momento non esiste alcun meccanismo per impedire a una persona di usare Flow: tutti gli utenti in ogni parte del mondo possono farlo, indipendentemente dall'indirizzo di posta elettronica.
@@ -147,7 +151,7 @@ Se un nuovo tenant è stato creato da Microsoft Flow, con la procedura seguente 
    2. Selezionare l'icona di avvio dell'app in alto a sinistra e scegliere Admin (Amministratore).
    3. Leggere le istruzioni sulla pagina **Become the admin** (Diventare amministratore), quindi fare clic su **Yes, I want to be the admin** (Sì, voglio essere l'amministratore).  
       
-       **NOTA**: se questa opzione non è visualizzata, significa che esiste già un amministratore di Office 365.
+       **NOTA**: se questa opzione non viene visualizzata, significa che esiste già un amministratore di Office 365.
 
 ### <a name="if-i-have-multiple-domains-can-i-control-the-office-365-tenant-that-users-are-added-to"></a>Se si hanno più domini, è possibile controllare il tenant di Office 365 al quale vengono aggiunti gli utenti?
 Se non si fa nulla, viene creato un tenant per il dominio e sottodominio e-mail di ogni utente.
