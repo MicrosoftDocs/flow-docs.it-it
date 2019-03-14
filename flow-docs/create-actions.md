@@ -15,12 +15,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: f1b51a48d7355684d2c6883bbf0db12853f686eb
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
+ms.openlocfilehash: 92db054d5e9fab7ef6077146260ce46f540697c9
+ms.sourcegitcommit: 9ecf4956320d465a3bf618b79a9023b729d33c89
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44690239"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57462842"
 ---
 # <a name="create-a-custom-action"></a>Creare un'azione personalizzata
 
@@ -52,7 +52,7 @@ A differenza dei processi del flusso di lavoro, non è necessario impostare le o
   
 - **Ambito**: le azioni vengono sempre eseguite nel contesto dell'utente chiamante.  
   
-- **Esegui flusso di lavoro in background**: le azioni sono sempre flussi di lavoro in tempo reale.  
+- **Esecuzione in background**: le azioni sono sempre flussi di lavoro in tempo reale.  
   
 Le azioni hanno anche elementi non presenti nei processi del flusso di lavoro: gli argomenti di input e output.
 
@@ -125,7 +125,7 @@ Le azioni hanno anche elementi non presenti nei processi del flusso di lavoro: g
 |String|Valore di testo.|  
   
 > [!NOTE]
-> I valori dell'argomento **EntityCollection** non possono essere impostati nell'interfaccia utente per condizioni o azioni. I valori sono disponibili per l'uso da parte degli sviluppatori nel codice personalizzato. Altre informazioni: [Creare azioni personalizzate](https://docs.microsoft.com/dynamics365/customer-engagement/developer/create-own-actions) 
+> I valori dell'argomento **EntityCollection** non possono essere impostati nell'interfaccia utente per condizioni o azioni. I valori sono disponibili per l'uso da parte degli sviluppatori nel codice personalizzato. Altre informazioni: [Create your own actions](https://docs.microsoft.com/dynamics365/customer-engagement/developer/create-own-actions) (Creare azioni personalizzate) 
   
 <a name="BKMK_AddStagesConditionsAndActions"></a>   
 ### <a name="add-stages-and-steps"></a>Aggiungere fasi e passaggi  

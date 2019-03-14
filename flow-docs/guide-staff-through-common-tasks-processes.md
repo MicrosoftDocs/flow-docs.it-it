@@ -4,7 +4,7 @@ description: Informazioni sui diversi tipi di logica di business che è possibil
 ms.custom: ''
 ms.date: 05/01/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: flow
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: get-started-article
@@ -22,12 +22,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: b6cf8c2bc5e7499e7eaf5feb367c07a3aa94b3f7
-ms.sourcegitcommit: f7985b96afe68b079b7fd4a6d04cd0a042d893e0
+ms.openlocfilehash: 5e123fa2abc8955d90fad2c9b09da76e449bf4b1
+ms.sourcegitcommit: 9ecf4956320d465a3bf618b79a9023b729d33c89
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47188594"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57462948"
 ---
 # <a name="create-custom-business-logic-through-processes"></a>Creare una logica di business personalizzata tramite i processi
 
@@ -67,7 +67,7 @@ PowerApps include diversi tipi di processi, ognuno progettato per uno scopo dive
   
 <a name="useMSFlow"></a>   
 ## <a name="when-to-use-microsoft-flow"></a>Quando usare Microsoft Flow  
- Usare Microsoft Flow quando è necessario creare flussi di lavoro automatizzati che eseguano azioni tra l'ambiente e l'app o il servizio preferito, ad esempio Dynamics 365, Twitter, Dropbox, servizi di Google, Office 365 e SharePoint. È possibile attivare un flusso in base a un'azione specifica oppure richiamarlo dall'interno dell'app. Altre informazioni: [Utilizzare Microsoft Flow per automatizzare i processi tra i servizi](https://docs.microsoft.com/dynamics365/customer-engagement/basics/use-flow-automate-processes-across-services
+ Usare Microsoft Flow quando è necessario creare flussi di lavoro automatizzati che eseguano azioni tra l'ambiente e l'app o il servizio preferito, ad esempio Dynamics 365, Twitter, Dropbox, servizi di Google, Office 365 e SharePoint. È possibile attivare un flusso in base a un'azione specifica oppure richiamarlo dall'interno dell'app. Altre informazioni: [Usare Microsoft Flow per automatizzare i processi tra i servizi](https://docs.microsoft.com/dynamics365/customer-engagement/basics/use-flow-automate-processes-across-services
 )  
   
 <a name="BKMK_Where"></a>   

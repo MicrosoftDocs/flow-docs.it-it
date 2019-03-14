@@ -14,12 +14,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 137cfd02ef3ba41cc9fffacc0aa23dc88e31fcef
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
+ms.openlocfilehash: 5f3e2145741c96d20f73ff74f5fd6cc6c1cbb52e
+ms.sourcegitcommit: 9ecf4956320d465a3bf618b79a9023b729d33c89
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44690975"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57462911"
 ---
 # <a name="classic-common-data-service-cds-for-apps-workflows"></a>Flussi di lavoro classici di Common Data Service (CDS) per le app 
 
@@ -74,7 +74,7 @@ Gli sviluppatori possono creare flussi di lavoro usando le informazioni incluse 
  ![Scheda Generale in un flusso di lavoro](media/create-workflow-general-tab.PNG "Scheda Generale in un flusso di lavoro")  
   
  **Attiva come**  
- È possibile scegliere **Modello di processo** per creare un punto iniziale avanzato per altri modelli. Se si seleziona questa opzione, dopo aver attivato il flusso di lavoro, il flusso non verrà applicato ma sarà disponibile per la selezione nella finestra di dialogo **Crea processo** quando si seleziona **Tipo**: **Nuovo processo da modello esistente (selezionare una voce dall'elenco)**  
+ È possibile scegliere **Modello di processo** per creare un punto iniziale avanzato per altri modelli. Se si seleziona questa opzione, dopo aver attivato il flusso di lavoro, il flusso non verrà applicato ma potrà essere selezionato nella finestra di dialogo **Crea processo** quando si seleziona **Tipo**: **Nuovo processo da modello esistente (selezionare una voce dall'elenco)**  
   
  I modelli di processo sono particolarmente utili quando sono presenti numerosi processi del flusso di lavoro simili e si vuole definirli senza duplicare la stessa logica.  
   

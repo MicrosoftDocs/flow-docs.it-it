@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: e544f396bc4ba4410a04cda9b56a221d1b3cb181
-ms.sourcegitcommit: d8a061b308547043dbdd99379bbd778dfeca6e1f
+ms.openlocfilehash: 693874ae7876b7c91fa55c45a656b3b76c52a517
+ms.sourcegitcommit: 54700957eb6d7ac486b9ec1f95f2b3ddb58e698c
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 03/05/2019
-ms.locfileid: "57345087"
+ms.locfileid: "57430174"
 ---
 # <a name="submit-a-template-to-the-microsoft-flow-gallery"></a>Inviare un modello alla raccolta di Microsoft Flow
 
@@ -35,7 +35,7 @@ Inviare un modello di flusso alla raccolta di modelli per Microsoft Flow. I mode
 
     ![Pulsante puntini di sospensione](./media/publish-a-template/ellipsis-button.png)
 1. Selezionare **Dettagli** nel menu visualizzato.
-1. Selezionare **Altro** e quindi selezionare **Invia come modello** dal menu visualizzato.
+1. Selezionare **Altro**, quindi selezionare **Invia come modello** dal menu visualizzato.
 
     ![Menu di scelta rapida](./media/publish-a-template/context-menu.png)
 

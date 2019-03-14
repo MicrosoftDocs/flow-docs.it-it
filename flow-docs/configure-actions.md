@@ -3,7 +3,7 @@ title: Configurare azioni per i flussi di lavoro in PowerApps | MicrosoftDocs
 ms.custom: ''
 ms.date: 06/27/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: flow
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -21,12 +21,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 7bd236368e572c7204309094982b2868db0bce8f
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
+ms.openlocfilehash: c1b8686000b7723f2d942f3c6c5ebe685d98429d
+ms.sourcegitcommit: 9ecf4956320d465a3bf618b79a9023b729d33c89
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44690677"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57462925"
 ---
 # <a name="configure-custom-actions-from-a-workflow"></a>Configurare azioni personalizzate da un flusso di lavoro
 
@@ -45,7 +45,7 @@ A differenza dei processi del flusso di lavoro, non è necessario impostare le o
   
 - **Ambito**: le azioni vengono sempre eseguite nel contesto dell'utente chiamante.  
   
-- **Esegui flusso di lavoro in background**: le azioni sono sempre flussi di lavoro in tempo reale.  
+- **Esecuzione in background**: le azioni sono sempre flussi di lavoro in tempo reale.  
   
 Le azioni hanno anche elementi non presenti nei processi del flusso di lavoro: gli argomenti di input e output. Altre informazioni: [Definire gli argomenti del processo](configure-actions.md#BKMK_DefineProcessArgs)  
   
@@ -135,7 +135,7 @@ Le azioni hanno anche elementi non presenti nei processi del flusso di lavoro: g
 |String|Valore di testo.|  
   
 > [!NOTE]
-> I valori dell'argomento **EntityCollection** non possono essere impostati nell'interfaccia utente per condizioni o azioni. I valori sono disponibili per l'uso da parte degli sviluppatori nel codice personalizzato. Altre informazioni: [Creare azioni personalizzate](https://docs.microsoft.com/dynamics365/customer-engagement/developer/create-own-actions) 
+> I valori dell'argomento **EntityCollection** non possono essere impostati nell'interfaccia utente per condizioni o azioni. I valori sono disponibili per l'uso da parte degli sviluppatori nel codice personalizzato. Altre informazioni: [Create your own actions](https://docs.microsoft.com/dynamics365/customer-engagement/developer/create-own-actions) (Creare azioni personalizzate) 
   
 <a name="BKMK_AddStagesConditionsAndActions"></a>   
 ### <a name="add-stages-and-steps"></a>Aggiungere fasi e passaggi  

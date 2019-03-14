@@ -3,7 +3,7 @@ title: Sostituire le interazioni con processi aziendali o app canvas | Microsoft
 ms.custom: ''
 ms.date: 08/02/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: flow
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: get-started-article
@@ -21,12 +21,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 87a12345c72fd3dd3e93c1afecd282a688e4d4d1
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
+ms.openlocfilehash: 498efb98a4c89ca6c2a01e345f5593beae4dbcca
+ms.sourcegitcommit: 9ecf4956320d465a3bf618b79a9023b729d33c89
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44691090"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57463028"
 ---
 # <a name="replace-dialogs-with-business-process-flows-or-canvas-apps"></a>Sostituire le interazioni con processi aziendali o app canvas
 
@@ -118,7 +118,7 @@ Andando oltre, si supponga di voler rendere l'app disponibile direttamente nel m
 - Sì. A tale scopo, è sufficiente impostare l'URL di destinazione su quello dell'app canvas, ottenuto dalla sezione **Dettagli** dell'app, come descritto in precedenza.
 
 I flussi di lavoro possono essere chiamati da un'app canvas?
-- Questa funzione non è supportata. È consigliabile usare invece un flusso. Per altre informazioni, vedere [Introduzione ai flussi di un pulsante con input dell'utente](button-flow-with-user-input-tokens.md)
+- Questa funzione non è supportata. È consigliabile usare invece un flusso. Altre informazioni: [Introduzione ai flussi di un pulsante con input dell'utente](button-flow-with-user-input-tokens.md)
 
 È possibile convertire automaticamente le interazioni in processi aziendali o app canvas?
 - Non è possibile convertire automaticamente le interazioni in processi aziendali o app canvas.

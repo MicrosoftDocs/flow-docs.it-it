@@ -3,7 +3,7 @@ title: Panoramica dei processi aziendali | MicrosoftDocs
 ms.custom: ''
 ms.date: 06/27/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: flow
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: baefae21e605b0e54e32b09dfaee8f2980d73c13
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
+ms.openlocfilehash: b1e23a3ddfd4302c4a5429029ea4fb47f0ab9808
+ms.sourcegitcommit: 9ecf4956320d465a3bf618b79a9023b729d33c89
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44690312"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57463012"
 ---
 # <a name="business-process-flows-overview"></a>Panoramica dei processi aziendali
 
@@ -137,7 +137,7 @@ I processi aziendali consentono agli utenti di portare a termine un lavoro. Offr
  Per abilitare un'entità personalizzata per i processi aziendali, selezionare la casella di controllo **Processi aziendali (verranno creati i campi)** nella definizione dell'entità. Si noti che questa azione non può essere annullata.  
   
 > [!NOTE]
->  Se si passa alla fase del processo aziendale che contiene l'entità `Social Activity` e si seleziona il pulsante **Fase successiva**, verrà visualizzata l'opzione **Crea**. Scegliendo **Crea**, viene caricato il modulo **Impegno social**. Tuttavia, poiché `Social Activity` non è un'entità valida per `Create` dall'interfaccia utente dell'app, non sarà possibile salvare il modulo e verrà visualizzato il messaggio di errore "Errore imprevisto".  
+>  Se si passa alla fase del processo aziendale che contiene l'entità `Social Activity` e si seleziona il pulsante **Fase successiva**, verrà visualizzata l'opzione **Crea**. Scegliendo **Crea**, viene caricato il modulo **Impegno social**. Tuttavia, poiché `Social Activity` non è un'entità valida per `Create` dall'interfaccia utente dell'app non sarà possibile salvare il modulo e verrà visualizzato il messaggio di errore: "Errore imprevisto".  
   
 <a name="BPF_MaxNumbers"></a>   
 ### <a name="maximum-number-of-processes-stages-and-steps"></a>Numero massimo di processi, fasi e passaggi  
@@ -180,4 +180,4 @@ Sono disponibili diverse visualizzazioni predefinite che possono essere visualiz
  [Breve video (4:49) sui processi aziendali](https://go.microsoft.com/fwlink/p/?linkid=842226)   
  [Creare un processo aziendale](create-business-process-flow.md)   
  [Migliorare i processi aziendali con la creazione dei rami](enhance-business-process-flows-branching.md) <br/>
- [Whitepaper: Process Enablement with Dynamics 365](http://download.microsoft.com/download/C/3/B/C3B46E35-9445-43B9-800B-474E022EE352/Process%20Enablement%20with%20Microsoft%20Dynamics%20CRM%202013.pdf) (White paper: Abilitazione del processo con Dynamics 365)</br>
+ [White paper: Process Enablement with Dynamics 365](http://download.microsoft.com/download/C/3/B/C3B46E35-9445-43B9-800B-474E022EE352/Process%20Enablement%20with%20Microsoft%20Dynamics%20CRM%202013.pdf) (White paper: Abilitazione del processo con Dynamics 365)</br>

@@ -4,7 +4,7 @@ description: Informazioni su come configurare i passaggi del flusso di lavoro
 ms.custom: ''
 ms.date: 06/27/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: flow
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -18,12 +18,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 8e34f8ef8847ab08e14c91ee6d7871697b0275ce
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
+ms.openlocfilehash: 9ebdb1eddaea1f2fd7918c968879f5da37c287fe
+ms.sourcegitcommit: 9ecf4956320d465a3bf618b79a9023b729d33c89
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44690446"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57462855"
 ---
 # <a name="configure-workflow-stages-and-steps"></a>Configurare le fasi e i passaggi del flusso di lavoro
 
@@ -76,7 +76,7 @@ Quando si progettano i flussi di lavoro si ha la possibilità di inserire la log
   
 |Tipo di condizione|Descrizione|  
 |--------------------|-----------------|  
-|**Condizione controllo**|Un'istruzione logica "if-\<condizione> then".<br /><br /> È possibile controllare i valori correnti del record su cui viene eseguito il flusso di lavoro, tutti i record collegati al record in una relazione N:1 o tutti i record creati dai passaggi precedenti. In base a questi valori è possibile definire passaggi aggiuntivi quando la condizione ha valore true.<br /><br /> Nell'istruzione "if-\<condizione> then" è possibile usare gli operatori seguenti: **Uguale a**, **Diverso da**, **Contiene dati**, **Non contiene dati**, **Inferiore a** e **Non inferiore a**. **Nota:** **Inferiore a** e **Non inferiore a** sono operatori gerarchici. Possono essere usati solo nelle entità con una relazione gerarchica definita. Se si tenta di usare questi operatori nelle entità per cui non è stata definita una relazione gerarchica, viene visualizzato il messaggio di errore: "Stai utilizzando un operatore gerarchico su un'entità che non ha alcuna relazione gerarchica definita. Rendi gerarchica l'entità (contrassegnando una relazione come gerarchica) o utilizza un altro operatore". Per altre informazioni sulle relazioni gerarchiche, vedere [Define and query hierarchically related data](/powerapps/maker/common-data-service/define-query-hierarchical-data) (Definire ed eseguire query nei dati correlati in modo gerarchico). Lo screenshot che segue la tabella è un esempio di definizione del processo del flusso di lavoro che usa gli operatori gerarchici **Inferiore a** e **Non inferiore a**.|  
+|**Condizione controllo**|Un'istruzione logica "if-\<condizione> then".<br /><br /> È possibile controllare i valori correnti del record su cui viene eseguito il flusso di lavoro, tutti i record collegati al record in una relazione N:1 o tutti i record creati dai passaggi precedenti. In base a questi valori è possibile definire passaggi aggiuntivi quando la condizione ha valore true.<br /><br /> Nell'istruzione if-\<condition> then" è possibile usare gli operatori seguenti: **Uguale a**, **Diverso da**, **Contiene dati**, **Non contiene dati**, **Inferiore a** e **Non inferiore a**. **Nota**:  **Inferiore a** e **Non inferiore a** sono operatori gerarchici. Possono essere usati solo nelle entità con una relazione gerarchica definita. Se si tenta di usare questi operatori nelle entità per cui non è stata definita una relazione gerarchica, viene visualizzato il messaggio di errore: "Stai usando un operatore gerarchico su un'entità che non ha alcuna relazione gerarchica definita. Rendi gerarchica l'entità (contrassegnando una relazione come gerarchica) o utilizza un altro operatore". Per altre informazioni sulle relazioni gerarchiche, vedere [Define and query hierarchically related data](/powerapps/maker/common-data-service/define-query-hierarchical-data) (Definire ed eseguire query nei dati correlati in modo gerarchico). Lo screenshot che segue la tabella è un esempio di definizione del processo del flusso di lavoro che usa gli operatori gerarchici **Inferiore a** e **Non inferiore a**.|  
 |**Ramo condizionale**|Un'istruzione logica "else-if-then", l'editor usa il testo “Otherwise, if \<condizione> then:”<br /><br /> Selezionare una condizione di controllo definita in precedenza e sarà possibile aggiungere un ramo condizionale per definire ulteriori passaggi quando la condizione di controllo restituisce false.|  
 |**Azione predefinita**|Un'istruzione logica "else". L'editor usa il testo “Otherwise:”<br /><br /> Selezionare una condizione di controllo, un ramo condizionale, una condizione di attesa o un ramo di attesa parallela definito in precedenza e sarà possibile usare un'azione predefinita per definire i passaggi per tutti i casi che non soddisfano i criteri definiti negli elementi condizione e ramo.|  
 |**Condizione di attesa**|Abilita un flusso di lavoro in background che viene sospeso fino a quando non vengono soddisfatti i criteri definiti dalla condizione. Il flusso di lavoro viene riavviato automaticamente quando vengono soddisfatti i criteri della condizione di attesa.<br /><br /> I flussi di lavoro in tempo reale non possono usare le condizioni di attesa.|  

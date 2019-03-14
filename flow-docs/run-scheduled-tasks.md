@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 809ea2202971df854b2351d57a09da8918d13b8b
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
+ms.openlocfilehash: af18e8caae8e74bb12d274c6e5cb0d94a0e0471b
+ms.sourcegitcommit: b684b379e6007d3bd00948525156e7fbd39bf96c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44690193"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "57665015"
 ---
 # <a name="run-flows-on-a-schedule"></a>Eseguire i flussi in una pianificazione
 Creare un flusso che esegue una o più attività, ad esempio l'invio di un report tramite posta elettronica:
@@ -53,7 +53,7 @@ Creare un flusso che esegue una o più attività, ad esempio l'invio di un repor
 ## <a name="specify-advanced-options"></a>Specificare le opzioni avanzate
 1. Seguire la procedura illustrata nella sezione precedente, quindi selezionare **Mostra le opzioni avanzate**.
    
-    **Nota**: queste opzioni dipendono dai valori specificati per **Intervallo** e **Frequenza**. Se la schermata non corrisponde al grafico seguente, assicurarsi che **Intervallo** e **Frequenza** siano impostati sugli stessi valori mostrati nel grafico.
+    **Nota**: queste opzioni cambiano a seconda dei valori specificati per **Intervallo** e **Frequenza**. Se la schermata non corrisponde al grafico seguente, assicurarsi che **Intervallo** e **Frequenza** siano impostati sugli stessi valori mostrati nel grafico.
 2. Selezionare un **Fuso orario** per specificare se **Ora di inizio** rispecchia l'ora locale, l'ora UTC (Universal Coordinated Time) e così via.
 3. Specificare un'**Ora di inizio** con il formato seguente:
    <br>AAAA-MM-GG:MM:SSZ
@@ -84,4 +84,8 @@ Creare un flusso che esegue una o più attività, ad esempio l'invio di un repor
      ![Aggiungere un ritardo](./media/run-scheduled-tasks/add-delay.png)
      ![Specificare il ritardo in unità di tempo](./media/run-scheduled-tasks/delay.png)
      ![Specificare la data di fine del ritardo](./media/run-scheduled-tasks/delay-until.png)
+
+## <a name="learn-more"></a>Altre informazioni
+
+Altre informazioni sulle [opzioni avanzate](https://docs.microsoft.com/azure/connectors/connectors-native-recurrence) e sulla loro configurazione.
 

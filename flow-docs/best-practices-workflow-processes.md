@@ -1,10 +1,10 @@
 ---
-title: Procedure consigliate per i processi dei flussi di lavoro in PowerApps | MicrosoftDocs
+title: Procedure consigliate per la gestione dei processi del flusso di lavoro | MicrosoftDocs
 description: Informazioni sui metodi di utilizzo consigliati per i flussi di lavoro
 ms.custom: ''
 ms.date: 06/27/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: flow
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -22,12 +22,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: bba5b203782cfa813de6ddc509a8be604e5e146b
-ms.sourcegitcommit: 50ea1cdd763863a2cbc88f9f965bdf9351f1059c
+ms.openlocfilehash: c0a59a625f4d43d125bde6ddf6edd5da5b6f6430
+ms.sourcegitcommit: 9ecf4956320d465a3bf618b79a9023b729d33c89
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51225541"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57462787"
 ---
 # <a name="best-practices-for-workflow-processes"></a>Procedure consigliate per i processi dei flussi di lavoro
 
@@ -37,7 +37,7 @@ Questo argomento descrive le procedure consigliate per la creazione e la gestion
 ## <a name="avoid-infinite-loops"></a>Evitare i cicli infiniti  
  È possibile che in un flusso di lavoro si crei una logica che avvia un ciclo infinito che esaurisce le risorse del server con effetti sulle prestazioni. La situazione tipica in cui può verificarsi un ciclo infinito è il caso di un flusso di lavoro configurato in modo che venga avviato quando viene aggiornato un attributo e che quindi aggiorna l'attributo stesso nella logica del flusso di lavoro. L'azione di aggiornamento attiva lo stesso flusso di lavoro che aggiorna il record e attiva il flusso di lavoro all'infinito.  
   
- I flussi di lavoro creati includono una logica per rilevare e arrestare i cicli infiniti. Se un processo del flusso di lavoro viene eseguito più di un determinato numero di volte in un record specifico in un breve periodo di tempo, il processo non viene eseguito generando l'errore seguente: **Il processo del flusso di lavoro è stato annullato perché il flusso di lavoro che lo ha avviato include un ciclo infinito. Correggere la logica del flusso di lavoro e riprovare**. Il limite di tentativi è 16.  
+ I flussi di lavoro creati includono una logica per rilevare e arrestare i cicli infiniti. Se un processo del flusso di lavoro viene eseguito più di un certo numero di volte in un record specifico in un breve periodo di tempo, il processo non viene eseguito e genera l'errore seguente: **Il processo del flusso di lavoro è stato annullato perché il flusso di lavoro che lo ha avviato include un ciclo infinito. Correggere la logica del flusso di lavoro e riprovare**. Il limite di tentativi è 16.  
   
 <a name="BKMK_UseWorkflowTemplates"></a>   
 ## <a name="use-workflow-templates"></a>Usare i modelli di flusso di lavoro  
