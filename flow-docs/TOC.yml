@@ -69,9 +69,9 @@ items:
     href: edit-solution-aware-flow.md
   - name: Rimuovere un flusso con riconoscimento della soluzione
     href: remove-solution-aware-flow.md
-- name: Common Data Service (CDS) per le app
+- name: Common Data Service
   items:
-  - name: Flussi di lavoro classici di CDS per le app
+  - name: Flussi di lavoro classici di Common Data Service
     href: workflow-processes.md
     items:
     - name: Configurare le fasi e i passaggi del flusso di lavoro
@@ -80,7 +80,7 @@ items:
       href: monitor-manage-processes.md
     - name: Procedure consigliate per i processi dei flussi di lavoro
       href: best-practices-workflow-processes.md
-  - name: Azioni classiche di CDS per le app
+  - name: Azioni classiche di Common Data Service
     items:
     - name: Usare le azioni
       href: actions.md
@@ -90,15 +90,15 @@ items:
       href: configure-actions.md
     - name: Richiamare azioni personalizzate da un flusso di lavoro
       href: invoke-custom-actions-workflow-dialog.md
-  - name: Flussi di attività classici di CDS per le app
+  - name: Flussi di attività classici di Common Data Service
     items:
     - name: Creare flussi di attività per dispositivi mobili
       href: create-mobile-task-flow.md
-  - name: Interazioni classiche di CDS per le app
+  - name: Finestre di dialogo classiche di Common Data Service
     items:
-    - name: Usare interazioni classiche di CDS per le app
+    - name: Usare le finestre di dialogo classiche di Common Data Service
       href: use-cds-for-apps-dialogs.md
-    - name: Sostituire interazioni classiche di CDS per le app
+    - name: Sostituire le finestre di dialogo classiche di Common Data Service
       href: replace-dialogs.md
 - name: Procedura
   items:
@@ -161,7 +161,7 @@ items:
     items:
     - name: 'Esempio: Usare i processi aziendali'
       href: ./developer/sample-work-business-process-flows.md
-  - name: Attività personalizzate dei flussi di lavoro di CDS per le app
+  - name: Attività del flusso di lavoro personalizzate di Common Data Service
     href: ./developer/custom-cds-for-apps-workflow-activities.md
 - name: Amministrazione
   items:
@@ -221,9 +221,9 @@ items:
     href: https://flow.microsoft.com/blog/
   - name: Forum
     href: https://powerusers.microsoft.com/t5/Microsoft-Flow-Community/ct-p/FlowCommunity
-ms.openlocfilehash: e5b09261b0c46b8019fbb58e058c3a11720c2028
-ms.sourcegitcommit: 3c7822c7207cfa51d0274e9647ef02e5ea1d999f
+ms.openlocfilehash: 160466a0a616661993237e70007072efded33c9c
+ms.sourcegitcommit: 24da014ea8db8e59f097c4622d1e2cca9a4d1709
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58321365"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58352735"
