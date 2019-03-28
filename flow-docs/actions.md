@@ -17,12 +17,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 7d75332f8902d5889881d122f2d42e3c203e34ad
-ms.sourcegitcommit: 9ecf4956320d465a3bf618b79a9023b729d33c89
+ms.openlocfilehash: cf5c0e488f1d01c514f509b9d2a8afae265cf487
+ms.sourcegitcommit: 24da014ea8db8e59f097c4622d1e2cca9a4d1709
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57462741"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58352873"
 ---
 # <a name="use-actions"></a>Usare le azioni
 
@@ -39,7 +39,7 @@ Le azioni offrono la possibilità di definire un singolo verbo (o messaggio) che
 <a name="BKMK_GlobalMessages"></a>   
 ## <a name="global-messages"></a>Messaggi globali 
  
- A differenza dei flussi di lavoro di CDS per le app o dei [plug-in](/powerapps/developer/common-data-service/apply-business-logic-with-code?branch=master#create-a-plug-in), un'azione non deve essere associata a un'entità specifica. È possibile definire ”globali” le azioni che possono essere chiamate autonomamente.
+ A differenza dei flussi di lavoro di Common Data Service o dei [plug-in](/powerapps/developer/common-data-service/apply-business-logic-with-code?branch=master#create-a-plug-in), un'azione non deve essere associata a un'entità specifica. È possibile definire ”globali” le azioni che possono essere chiamate autonomamente.
 
 ## <a name="next-steps"></a>Passaggi successivi
 

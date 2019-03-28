@@ -18,12 +18,12 @@ search.app:
 - Flow
 search.audienceType:
 - developer
-ms.openlocfilehash: 6fe2b6d600d86dfd807dbb1ef794a1f428f26fbf
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
+ms.openlocfilehash: 6f3543b666e471d1f7fa0fe24fc718e50d35aec8
+ms.sourcegitcommit: 24da014ea8db8e59f097c4622d1e2cca9a4d1709
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44690055"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58352965"
 ---
 # <a name="sample-work-with-business-process-flows"></a>Esempio: Usare i processi aziendali
 
@@ -35,7 +35,7 @@ In questo esempio viene illustrato come usare i processi aziendali a livello di 
 ## <a name="prerequisites"></a>Prerequisiti  
  Per poter eseguire l'esempio è necessario:  
 
-1. Avere accesso a un ambiente Common Data Service per le app.  
+1. Avere accesso a un ambiente Common Data Service.  
 
 2. Avere i privilegi appropriati per le entità Lead, Opportunità e Flusso di lavoro e i record di entità per la  definizione dei processi aziendali usati in questo esempio.  
 
@@ -70,7 +70,7 @@ In questo esempio viene illustrato come usare i processi aziendali a livello di 
 
 2. Individuare il file `WorkWithBPF.sln` nella cartella estratta e aprirlo in Visual Studio.  
 
-3. Il progetto di esempio usa pacchetti NuGet che devono essere ripristinati prima di eseguire l'esempio. Assicurarsi che in Visual Studio sia abilitato il ripristino automatico dei pacchetti NuGet. Altre informazioni: [Abilitazione e disabilitazione del ripristino dei pacchetti NuGet](https://go.microsoft.com/fwlink/?linkid=846106).  
+3. Il progetto di esempio usa pacchetti NuGet che devono essere ripristinati prima di eseguire l'esempio. Assicurarsi che in Visual Studio sia abilitato il ripristino automatico dei pacchetti NuGet. Altre informazioni: [Abilitazione e disabilitazione del ripristino dei pacchetti NuGet](https://go.microsoft.com/fwlink/?linkid=846106)  
 
     In alternativa, selezionare **Progetto** > **Gestisci pacchetti NuGet** e selezionare **Ripristina** per ripristinare manualmente i pacchetti usati nell'esempio.  
 

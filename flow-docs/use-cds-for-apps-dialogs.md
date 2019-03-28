@@ -1,5 +1,5 @@
 ---
-title: Usare le interazioni di CDS per le app per le procedure guidate (deprecato) | MicrosoftDocs
+title: Usare le interazioni di Common Data Service per le procedure guidate (deprecato) | MicrosoftDocs
 description: Le interazioni sono i processi sincroni o interattivi che raccolgono ed elaborano le informazioni usando script dettagliati per indirizzare gli utenti in un processo
 ms.custom: ''
 ms.date: 10/31/2017
@@ -15,22 +15,22 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: f8b2e87bdb9aed63e9f180d446349779cd37c25c
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
+ms.openlocfilehash: 90bdbc0ecf9b778ec6da3e4cac2b32b44e361fb0
+ms.sourcegitcommit: 24da014ea8db8e59f097c4622d1e2cca9a4d1709
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44689664"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58352919"
 ---
-# <a name="use-cds-for-apps-dialogs-for-guided-processes-deprecated"></a>Usare le interazioni di CDS per le app per le procedure guidate (deprecato)
+# <a name="use-common-data-service-dialogs-for-guided-processes-deprecated"></a>Usare le interazioni di Common Data Service per le procedure guidate (deprecato)
 
 [Le interazioni sono deprecate](/dynamics365/get-started/whats-new/customer-engagement/important-changes-coming#dialogs-are-deprecated). Sostituire le interazioni con processi aziendali o app canvas. Altre informazioni: [Sostituire le interazioni con processi aziendali o app canvas](replace-dialogs.md) 
 
-Le interazioni sono i processi sincroni o interattivi di Common Data Service (CDS) per le app che raccolgono ed elaborano le informazioni usando script dettagliati per indirizzare gli utenti in un processo. Ad esempio, è possibile creare interazioni da usare come guida per i rappresentanti del servizio clienti per la risoluzione e la riassegnazione dei casi. Analogamente, è possibile creare interazioni per standardizzare i processi di vendita, ad esempio per la qualifica opportunità e il punteggio lead. Per altre informazioni, vedere [Use dialogs for guided processes](/dynamics365/customer-engagement/developer/use-dialogs-guided-processes) (Usare le interazioni per le procedure guidate) in Dynamics 365 Customer Engagement Developer Guide (Guida per sviluppatori di Dynamics 365 Customer Engagement).
+Le interazioni sono i processi sincroni o interattivi di Common Data Service che raccolgono ed elaborano le informazioni usando script dettagliati per indirizzare gli utenti in un processo. Ad esempio, è possibile creare interazioni da usare come guida per i rappresentanti del servizio clienti per la risoluzione e la riassegnazione dei casi. Analogamente, è possibile creare interazioni per standardizzare i processi di vendita, ad esempio per la qualifica opportunità e il punteggio lead. Per altre informazioni, vedere [Use dialogs for guided processes](/dynamics365/customer-engagement/developer/use-dialogs-guided-processes) (Usare le interazioni per le procedure guidate) in Dynamics 365 Customer Engagement Developer Guide (Guida per sviluppatori di Dynamics 365 Customer Engagement).
 
 ## <a name="differences-between-workflows-and-dialogs"></a>Differenze tra flussi di lavoro e interazioni
 
-La tabella seguente offre informazioni sulle differenze tra i flussi di lavoro e le interazioni di CDS per le app.  
+La tabella seguente offre informazioni sulle differenze tra i flussi di lavoro e le interazioni di Common Data Service.  
 
 
 | Flussi di lavoro     |    Interazioni      |

@@ -2,31 +2,25 @@
 layout: HubPage
 hide_bc: true
 title: Documentazione di Microsoft Flow | Microsoft Docs
-description: Microsoft Flow è un servizio che consente di creare flussi di lavoro automatizzati tra le app e i servizi preferiti per sincronizzare file, ricevere notifiche, raccogliere dati e molto altro ancora.
+description: 'Microsoft Flow è un servizio che consente di creare flussi di lavoro automatizzati tra le app e i servizi preferiti per sincronizzare file, ricevere notifiche, raccogliere dati e molto altro ancora.'
 keywords:
-- Microsoft Flow
-- flusso di lavoro
-- flusso
-- flusso di lavoro di approvazione
-- flusso di lavoro di sharepoint
+  - Microsoft Flow
+  - flusso di lavoro
+  - flusso
+  - flusso di lavoro di approvazione
+  - flusso di lavoro di sharepoint
 author: msftman
 ms.author: deonhe
 manager: kfile
 ms.date: 03/28/2018
 ms.topic: hub-page
 ms.reviewer:
-- karann-msft
+  - karann-msft
 search.app:
-- Flow
+  - Flow
 search.audienceType:
-- flowmaker
-- enduser
-ms.openlocfilehash: 03eebb10c1155894b9dc1db5a0283cd72d78a1ae
-ms.sourcegitcommit: ffed9f02092fbd19fc4108aee05dd40d1a2a3755
-ms.translationtype: HT
-ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "46711589"
+  - flowmaker
+  - enduser
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -428,12 +422,12 @@ ms.locfileid: "46711589"
                                     <div class="card">
                                         <div class="cardImageOuter">
                                             <div class="cardImage  bgdAccent1">
-                                                <img src="media/index/analytics_reporting.svg" alt="Use Common Data Service (CDS) for apps." />
+                                                <img src="media/index/analytics_reporting.svg" alt="Use Common Data Service." />
                                             </div>
                                         </div>
                                         <div class="cardText">
-                                            <h3>Usare Common Data Service (CDS) per le app</h3>
-                                            <p>Usare Common Data Service (CDS) per le app con i processi del flusso di lavoro.</p>
+                                            <h3>Usare Common Data Service</h3>
+                                            <p>Usare Common Data Service con i processi del flusso di lavoro.</p>
                                         </div>
                                     </div>
                                 </div>

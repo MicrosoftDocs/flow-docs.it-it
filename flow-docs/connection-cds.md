@@ -1,6 +1,6 @@
 ---
-title: Creare un flusso automatizzato con Common Data Service per le app | Microsoft Docs
-description: Creare flussi di lavoro usando una connessione a Common Data Service per le app e Microsoft Flow
+title: Creare un flusso automatizzato con Common Data Service | Microsoft Docs
+description: Creare flussi di lavoro usando una connessione a Common Data Service e Microsoft Flow
 services: ''
 suite: flow
 documentationcenter: na
@@ -20,18 +20,18 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: f9a417f99b6ea4105a451b65f7ccabbf36922d78
-ms.sourcegitcommit: 61f0eb1fdc54da02eb57dadf09899fa6f308b00d
+ms.openlocfilehash: 6dba013481983d0b8c43c82c7bc6eed800fccc2e
+ms.sourcegitcommit: 24da014ea8db8e59f097c4622d1e2cca9a4d1709
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57524498"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58352896"
 ---
-# <a name="create-an-automated-flow-by-using-common-data-service-for-apps"></a>Creare un flusso automatizzato usando Common Data Service per le app
+# <a name="create-an-automated-flow-by-using-common-data-service"></a>Creare un flusso automatizzato usando Common Data Service
 
-Common Data Service per le app consente di creare flussi che vengono avviati durante eventi di creazione e aggiornamento nel database di Common Data Service. Consente anche di creare, aggiornare, recuperare ed eliminare le azioni sui record presenti nel database di Common Data Service per le app.
+Il connettore Common Data Service consente di creare flussi che vengono avviati durante eventi di creazione e aggiornamento nel database di Common Data Service. Consente anche di creare, aggiornare, recuperare ed eliminare le azioni sui record presenti nel database di Common Data Service.
 
-## <a name="initiate-a-flow-from-common-data-service-for-apps"></a>Avviare un flusso da Common Data Service per le app
+## <a name="initiate-a-flow-from-common-data-service"></a>Avviare un flusso da Common Data Service
 
 Per avviare il flusso, è possibile usare uno dei trigger seguenti:
 
@@ -75,9 +75,9 @@ Questo flusso viene attivato ogniqualvolta viene aggiornato il nome o il cognome
 
 Perché un utente possa creare un flusso avviato sulla base di operazioni di creazione, aggiornamento o eliminazione di un record, è necessario che disponga delle autorizzazioni per creare, leggere, scrivere, leggere ed eliminare nell'entità Registrazione callback. A seconda degli ambiti definiti, potrebbe anche essere necessario che l'utente abbia almeno quel livello di lettura nella stessa entità.  [Altre informazioni](https://docs.microsoft.com/power-platform/admin/database-security) sulla sicurezza dell'ambiente.
 
-## <a name="write-data-into-common-data-service-for-apps"></a>Scrivere i dati in Common Data Service per le app
+## <a name="write-data-into-common-data-service"></a>Scrivere i dati in Common Data Service
 
-Per scrivere i dati in Common Data Service per le app, usare una delle azioni seguenti:
+Per scrivere i dati in Common Data Service, usare una delle azioni seguenti:
 
 - Creare un nuovo record
 - Aggiornare un record

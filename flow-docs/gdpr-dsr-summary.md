@@ -20,16 +20,16 @@ search.app:
 - Powerplatform
 search.audienceType:
 - admin
-ms.openlocfilehash: 6e4763fd3851276d647a302747342a6980293c33
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
+ms.openlocfilehash: 1eaa98b674e78f46988d253e2be76a5d92283a76
+ms.sourcegitcommit: 24da014ea8db8e59f097c4622d1e2cca9a4d1709
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44690795"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58353126"
 ---
 # <a name="responding-to-gdpr-data-subject-requests-for-microsoft-flow"></a>Risposta alle richieste di soggetto dei dati GDPR per Microsoft Flow
 
-Le informazioni in questo articolo consentono di preparare amministratori e organizzazioni per il Regolamento generale sulla protezione dei dati (GDPR) dell'Unione europea. Questo articolo non solo descrive le iniziative di Microsoft per prepararsi per il regolamento GDPR, ma condivide anche esempi delle procedure adottabili sin da subito per supportare la conformità a GDPR quando si usano PowerApps, Microsoft Flow e Common Data Service per le app.
+Le informazioni in questo articolo consentono di preparare amministratori e organizzazioni per il Regolamento generale sulla protezione dei dati (GDPR) dell'Unione europea. Questo articolo non solo descrive le iniziative di Microsoft per prepararsi per il regolamento GDPR, ma condivide anche esempi delle procedure adottabili sin da subito per supportare la conformità a GDPR quando si usano PowerApps, Microsoft Flow e Common Data Service.
 
 ## <a name="prerequisites"></a>Prerequisiti
 
@@ -68,13 +68,13 @@ Questo articolo illustra come usare i prodotti, i servizi e gli strumenti di amm
 
     È possibile usare Azure Active Directory per gestire le identità degli utenti di Microsoft Flow. I clienti aziendali possono gestire le richieste di rettifica DSR, incluse funzionalità di modifica limitate, in base alla natura di un determinato servizio Microsoft.  In quanto responsabile del trattamento dei dati, Microsoft non offre la possibilità di correggere i log generati dal sistema, in quanto questi log riflettono attività concrete e costituiscono un record cronologico degli eventi all'interno di servizi Microsoft.  [Altre informazioni sulle richieste DSR](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-azure).
 
-1. Limitazione: limitare l'elaborazione dei dati personali, rimuovendo le licenze per vari servizi online o disattivando i servizi desiderati, laddove possibile. È anche possibile rimuovere i dati dal cloud di Microsoft e conservarli in locale o in un'altra posizione.
+1. Limitazione: limitare l'elaborazione dei dati personali, rimuovendo le licenze per vari servizi online o disattivando i servizi desiderati, se possibile. È anche possibile rimuovere i dati dal cloud di Microsoft e conservarli in locale o in un'altra posizione.
 
     I soggetti dei dati possono richiedere la limitazione dell'elaborazione dei dati personali.  Microsoft offre API (Application Programming Interface) e interfacce utente a questo scopo.  Queste interfacce consentono all'amministratore tenant del cliente aziendale di gestire queste richieste DSR tramite una combinazione di esportazione dei dati ed eliminazione dei dati. Un cliente potrebbe (1) esportare una copia in formato elettronico dei dati personali dell'utente, tra cui account, log generati dal sistema e log associati, e in seguito (2) eliminare l'account e i dati associati che risiedono all'interno di sistemi Microsoft.
 
 1. Eliminazione: rimuovere in modo permanente i dati personali che risiedono nel cloud di Microsoft. [Altre informazioni sull'eliminazione dei dati personali](gdpr-dsr-delete.md).
 
-1. Esportazione: fornire una copia elettronica (in un formato leggibile al computer) dei dati personali al soggetto dei dati. In ogni sezione di questo articolo vengono descritte le procedure tecniche che un'organizzazione titolare del trattamento dei dati può adottare per rispondere a una richiesta DSR per dati personali nel cloud di Microsoft. [Altre informazioni sull'esportazione dei dati personali](gdpr-dsr-export.md).
+1. Esportazione: consegnare una copia elettronica (in un formato leggibile al computer) dei dati personali al soggetto dei dati. In ogni sezione di questo articolo vengono descritte le procedure tecniche che un'organizzazione titolare del trattamento dei dati può adottare per rispondere a una richiesta DSR per dati personali nel cloud di Microsoft. [Altre informazioni sull'esportazione dei dati personali](gdpr-dsr-export.md).
 
 ## <a name="system-generated-logs"></a>Log generati dal sistema
 

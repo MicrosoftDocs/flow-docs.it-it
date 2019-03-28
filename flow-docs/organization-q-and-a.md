@@ -20,12 +20,12 @@ search.app:
 - Powerplatform
 search.audienceType:
 - admin
-ms.openlocfilehash: ef3f6c98d16733977482c5cb3c0c23e168f5eeca
-ms.sourcegitcommit: 8debf0041094f32fa221f5da3dbbcbc4f7815ff8
+ms.openlocfilehash: 6e05c24aa00c29dff4ca07432277ca7b907ebbb0
+ms.sourcegitcommit: e17963065b72ddaba7b2605908c62768acb8c16c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56885505"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58327091"
 ---
 # <a name="flow-in-your-organization-qa"></a>Domande e risposte riguardo alla registrazione a Microsoft Flow nell'organizzazione
 L'argomento descrive il modo in cui Microsoft Flow può essere usato dagli utenti nell'organizzazione e la modalità di controllo del servizio di Microsoft Flow.
@@ -38,7 +38,7 @@ Microsoft Flow è servizio cloud pubblico progettato per consentire a singoli ut
 I singoli utenti possono iscriversi a Flow tramite il portale Web in due modi:
 
 #### <a name="option-1"></a>Opzione 1
-Per iscriversi, chiunque deve visitare la pagina [flow.microsoft.com](https://flow.microsoft.com), fare clic su **Iscrizione gratuita** e quindi completare la procedura di iscrizione a Flow tramite [portal.office.com](https://portal.office.com/Start?sku=flow_free) o [signup.live.com](https://signup.live.com).
+Per iscriversi, chiunque deve visitare la pagina [flow.microsoft.com](https://flow.microsoft.com), fare clic su **Iscrizione gratuita** e quindi completare la procedura di iscrizione a Flow tramite [admin.microsoft.com](https://admin.microsoft.com/Start?sku=flow_free) o [signup.live.com](https://signup.live.com).
 
 #### <a name="option-2"></a>Opzione 2
 Per iscriversi, chiunque deve visitare la pagina [flow.microsoft.com](https://flow.microsoft.com), fare clic su **Accedi**, effettuare l'accesso con il proprio account aziendale o dell'istituto di istruzione oppure l'indirizzo di posta elettronica personale e accettare le condizioni per l'utilizzo di Flow.    
@@ -147,7 +147,7 @@ Se un nuovo tenant è stato creato da Microsoft Flow, con la procedura seguente 
 1. Accedere al tenant iscrivendosi a Flow con un dominio e-mail corrispondente al dominio del tenant che si desidera gestire. Ad esempio, se Microsoft ha creato il tenant contoso.com, accedere al tenant con un indirizzo e-mail che termini con @contoso.com.
 2. Richiedere il controllo amministrativo comprovando la proprietà del dominio: una volta nel tenant, è possibile assumere il ruolo di amministratore comprovando la proprietà del dominio. A tale scopo, seguire questi passaggi:    
    
-   1. Andare a [https://portal.office.com](https://portal.office.com/Start?sku=flow_free).
+   1. Andare a [https://admin.microsoft.com](https://admin.microsoft.com/Start?sku=flow_free).
    2. Selezionare l'icona di avvio dell'app in alto a sinistra e scegliere Admin (Amministratore).
    3. Leggere le istruzioni sulla pagina **Become the admin** (Diventare amministratore), quindi fare clic su **Yes, I want to be the admin** (Sì, voglio essere l'amministratore).  
       

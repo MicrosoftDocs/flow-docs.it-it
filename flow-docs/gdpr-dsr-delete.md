@@ -20,12 +20,12 @@ search.app:
 - Powerplatform
 search.audienceType:
 - admin
-ms.openlocfilehash: 9edad8ef0aa4e51292bddc5dc59c90ae84223de2
-ms.sourcegitcommit: ade400bab38f85071d4c8bf6a5380f561f12f2f5
+ms.openlocfilehash: 523e46269522d50eebe34fc559d69f4c146a2c3f
+ms.sourcegitcommit: 24da014ea8db8e59f097c4622d1e2cca9a4d1709
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53248846"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58353080"
 ---
 # <a name="responding-to-gdpr-data-subject-delete-requests-for-microsoft-flow"></a>Risposta alle richieste di eliminazione del soggetto dei dati GDPR per Microsoft Flow
 
@@ -49,7 +49,7 @@ La tabella seguente mostra i dati personali che vengono eliminati automaticament
 
 *Ognuna di queste risorse contiene record "Autore modifica" e "Modificato da" che includono dati personali. Per motivi di sicurezza, questi record vengono mantenuti fino a quando la risorsa viene eliminata.
 
-**Per gli ambienti che includono un database Common Data Service per le app, le autorizzazioni per l'ambiente (ad esempio, quali utenti vengono assegnati ai ruoli Autore dell'ambiente e Amministratore dell'ambiente) vengono archiviate come record nel database di Common Data Service. Vedere [Executing DSRs against Common Data Service Customer Data](https://go.microsoft.com/fwlink/?linkid=872251) (Esecuzione di richieste DSR sui dati dei clienti di Common Data Service) per indicazioni su come rispondere alle richieste DSR per gli utenti che usano Common Data Service.
+**Per gli ambienti che includono un database Common Data Service, le autorizzazioni per l'ambiente (ad esempio, quali utenti vengono assegnati ai ruoli Autore dell'ambiente e Amministratore dell'ambiente) vengono archiviate come record nel database di Common Data Service. Vedere [Executing DSRs against Common Data Service Customer Data](https://go.microsoft.com/fwlink/?linkid=872251) (Esecuzione di richieste DSR sui dati dei clienti di Common Data Service) per indicazioni su come rispondere alle richieste DSR per gli utenti che usano Common Data Service.
 
 Per i dati e le risorse che richiedano una verifica manuale, Microsoft Flow offre le esperienze seguenti per individuare o modificare i dati personali per un utente specifico:
 
@@ -76,7 +76,7 @@ Di seguito è riportata una suddivisione delle esperienze disponibili per un amm
 |Autorizzazioni per i connettori personalizzati|Portale per gli autori di Microsoft Flow| ||
 |Cronologia di approvazione|Portale per gli autori di Microsoft PowerApps*|||
 
-*Con l'introduzione di Common Data Service per le app, se viene creato un database all'interno dell'ambiente, le autorizzazioni per l'ambiente e le autorizzazioni per le app basate su modello vengono archiviate come record all'interno dell'istanza del database di Common Data Service per le app. Vedere [Executing DSRs against Common Data Service Customer Data](https://go.microsoft.com/fwlink/?linkid=872251) (Esecuzione di richieste DSR sui dati dei clienti di Common Data Service) per indicazioni su come rispondere alle richieste DSR per gli utenti che usano Common Data Service.
+*Con l'introduzione di Common Data Service, se viene creato un database all'interno dell'ambiente, le autorizzazioni per l'ambiente e le autorizzazioni per le app basate su modello vengono archiviate come record all'interno dell'istanza del database di Common Data Service. Vedere [Executing DSRs against Common Data Service Customer Data](https://go.microsoft.com/fwlink/?linkid=872251) (Esecuzione di richieste DSR sui dati dei clienti di Common Data Service) per indicazioni su come rispondere alle richieste DSR per gli utenti che usano Common Data Service.
 
 \*\* Un amministratore sarà in grado di accedere a queste risorse dal portale per gli autori di Microsoft Flow solo se gli è stato assegnato l'accesso dall'interfaccia di amministrazione di Microsoft Flow.
 
@@ -137,7 +137,7 @@ Questi passaggi copiano i flussi esistenti per un utente che lascia l'organizzaz
 
 ## <a name="delete-approval-history-from-microsoft-flow"></a>Eliminare la cronologia delle approvazioni da Microsoft Flow
 
- I dati di approvazione per Microsoft Flow vengono archiviati all'interno della versione precedente o corrente di Common Data Service per le app. All'interno di un'approvazione, le informazioni personali esistono sotto forma di assegnazioni di approvazione e commenti inclusi in una risposta di approvazione. Gli amministratori possono accedere a tali dati seguendo questa procedura:
+ I dati di approvazione per Microsoft Flow vengono archiviati all'interno della versione precedente o corrente di Common Data Service. All'interno di un'approvazione, le informazioni personali esistono sotto forma di assegnazioni di approvazione e commenti inclusi in una risposta di approvazione. Gli amministratori possono accedere a tali dati seguendo questa procedura:
 
 1. Accedere a [PowerApps](https://web.powerapps.com/).
 
@@ -277,7 +277,7 @@ Un amministratore può concedere l'accesso amministrativo a un ambiente creato d
 
 È possibile assegnare autorizzazioni agli utenti in un ambiente (ad esempio Amministratore dell'ambiente, Autore dell'ambiente e così via), che vengono archiviate nel servizio Microsoft Flow come "assegnazione di ruolo".
 
-Con l'introduzione di Common Data Service per le app, se viene creato un database all'interno dell'ambiente, queste "assegnazioni di ruolo" vengono archiviate come record all'interno dell'istanza del database di Common Data Service per le app.
+Con l'introduzione di Common Data Service, se viene creato un database all'interno dell'ambiente, queste "assegnazioni di ruolo" vengono archiviate come record all'interno dell'istanza del database di Common Data Service.
 
 Per altre informazioni sulla rimozione delle autorizzazioni dell'utente in un ambiente, vedere [Uso di ambienti in Microsoft Flow](https://docs.microsoft.com/flow/environments-overview-admin).
 
