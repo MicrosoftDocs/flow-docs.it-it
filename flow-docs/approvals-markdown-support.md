@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: a6c06fc564334eeacd01e54ab3b71046d229d033
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
+ms.openlocfilehash: 7611ccb8bba9f2647402df46753de284016d7cd4
+ms.sourcegitcommit: 014f64bcc4aed27794d5c7efc2eca241d271518e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44690033"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58656132"
 ---
 # <a name="use-markdown-in-microsoft-flow-approval-requests"></a>Usare Markdown nelle richieste di approvazione di Microsoft Flow
 
@@ -57,10 +57,8 @@ Iniziare una riga con un carattere cancelletto `#` per impostare un'intestazione
    
 **Esempio**
 
-<pre>
-Add lines between your text with the Enter key.
-This spaces your text better and makes it easier to read.
-</pre>
+Aggiungere righe nel testo con il tasto INVIO.
+In questo modo si migliora la spaziatura del testo e quindi anche la leggibilit√†.
 
 **Risultato:**   
 Aggiungere righe nel testo con il tasto INVIO.      
@@ -69,10 +67,8 @@ In questo modo si migliora la spaziatura del testo e quindi anche la leggibilit√
 
 **Esempio 2**
 
-<pre>
-Add two spaces prior to the end of the line.(space, space)     
-This adds space in between paragraphs.
-</pre>
+Aggiungere due spazi prima della fine della riga.(spazio, spazio)     
+In questo modo viene aggiunto spazio tra i paragrafi.
 
 **Risultato:**  
 Aggiungere due spazi prima della fine della riga.   
