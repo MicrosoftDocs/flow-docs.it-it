@@ -110,6 +110,8 @@ items:
     href: data-operations.md
   - name: Usare le espressioni nelle condizioni
     href: use-expressions-in-conditions.md
+  - name: 'Riferimento: Usare le funzioni nelle espressioni'
+    href: https://docs.microsoft.com/azure/logic-apps/workflow-definition-language-functions-reference
   - name: Flussi di approvazione
     items:
     - name: Approvazioni singole
@@ -148,7 +150,7 @@ items:
     href: gateway-reference.md
 - name: Per gli sviluppatori
   items:
-  - name: Microsoft Flow per sviluppatori aziendali, partner e ISV
+  - name: Sviluppatori aziendali, partner e ISV
     href: ./developer/dev-enterprise-intro.md
   - name: Compilare e certificare connettori personalizzati
     href: ./developer/register-custom-api.md
@@ -221,9 +223,9 @@ items:
     href: https://flow.microsoft.com/blog/
   - name: Forum
     href: https://powerusers.microsoft.com/t5/Microsoft-Flow-Community/ct-p/FlowCommunity
-ms.openlocfilehash: 160466a0a616661993237e70007072efded33c9c
-ms.sourcegitcommit: 24da014ea8db8e59f097c4622d1e2cca9a4d1709
+ms.openlocfilehash: ea5150ef076981cabf21599cd176076e0ad08d70
+ms.sourcegitcommit: dfd9b4994aa9cb877ac4136460e011a344e27cb2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58352735"
+ms.lasthandoff: 04/16/2019
+ms.locfileid: "59614489"

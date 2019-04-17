@@ -57,23 +57,23 @@ Iniziare una riga con un carattere cancelletto `#` per impostare un'intestazione
    
 **Esempio**
 
-Aggiungere righe nel testo con il tasto INVIO.
-In questo modo si migliora la spaziatura del testo e quindi anche la leggibilità.
+Add lines between your text with the Enter key.
+This spaces your text better and makes it easier to read.
 
 **Risultato:**   
-Aggiungere righe nel testo con il tasto INVIO.      
-In questo modo si migliora la spaziatura del testo e quindi anche la leggibilità.
+Add lines between your text with the Enter key.      
+This spaces your text better and makes it easier to read.
 
 
 **Esempio 2**
 
-Aggiungere due spazi prima della fine della riga.(spazio, spazio)     
-In questo modo viene aggiunto spazio tra i paragrafi.
+Add two spaces prior to the end of the line.(space, space)     
+This adds space in between paragraphs.
 
 **Risultato:**  
-Aggiungere due spazi prima della fine della riga.   
+Add two spaces prior to the end of the line.   
 
-In questo modo viene aggiunto spazio tra i paragrafi.
+This adds space in between paragraphs.
   
 
 ## <a name="lists"></a>Elenchi
@@ -94,9 +94,9 @@ Gli elenchi ordinati iniziano con un numero seguito da un punto per ogni element
 
 **Risultato:**
 
-1. Primo elemento.
-2. Secondo elemento.
-3. Terzo elemento.
+1. First item.
+2. Second item.
+3. Third item.
 
 ### <a name="bullet-lists"></a>Elenchi puntati
 
@@ -112,9 +112,9 @@ Gli elenchi ordinati iniziano con un numero seguito da un punto per ogni element
 
 **Risultato:**
 
-- Elemento 1
-- Elemento 2
-- Elemento 3
+- Item 1
+- Item 2
+- Item 3
 
 ### <a name="nested-lists"></a>Elenchi annidati
 
@@ -134,15 +134,15 @@ Gli elenchi ordinati iniziano con un numero seguito da un punto per ogni element
 
 **Risultato:**  
 
-1. Primo elemento.
+1. First item.
 
-    - Elemento 1
-    - Elemento 2
-    - Elemento 3
-2. Secondo elemento.
-    - Elemento annidato 1
-    - Elemento annidato 2
-    - Elemento annidato 3
+    - Item 1
+    - Item 2
+    - Item 3
+2. Second item.
+    - Nested item 1
+    - Nested item 2
+    - Nested item 3
 
 
 ## <a name="links"></a>Collegamenti
@@ -212,10 +212,10 @@ Organizzare i dati strutturati con le tabelle.
 
 **Risultato:**  
 
-| Intestazione 1 | Intestazione 2 | Intestazione 3 |  
+| Heading 1 | Heading 2 | Heading 3 |  
 |-----------|:---------:|-----------:|  
-| Cella A1 | Cella A2 | Cella A3 |  
-| Cella B1 | Cella B2 | Cella B3<br/>Seconda riga di testo |  
+| Cell A1 | Cell A2 | Cell A3 |  
+| Cell B1 | Cell B2 | Cell B3<br/>second line of text |  
 
  
 ## <a name="emphasis-bold-italics-strikethrough"></a>Enfasi (grassetto, corsivo, barrato)  
@@ -239,9 +239,9 @@ Use _emphasis_ in comments to express **strong** opinions and point out ~~correc
 
 **Risultato:**
 
-Usare gli _effetti di enfasi_ nei commenti per esprimere opinioni **importanti** e sottolineare <s>correzioni</s>   
-**_Testo in grassetto e corsivo_**   
-**~~Testo in grassetto e barrato~~**  
+Use _emphasis_ in comments to express **strong** opinions and point out <s>corrections</s>   
+**_Bold, italicized text_**   
+**~~Bold, strike-through text~~**  
 
 
 ## <a name="special-characters"></a>Caratteri speciali
