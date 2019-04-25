@@ -6,26 +6,24 @@ suite: flow
 documentationcenter: na
 author: msftman
 manager: anneta
-editor: ''
-tags: ''
 ms.service: flow
 ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 08/01/2017
+ms.date: 04/15/2019
 ms.author: deonhe
 search.app:
 - Flow
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 81aa718837fa14615459f3688a282c25cb99bab6
-ms.sourcegitcommit: dc188618c36583b20af3e838d72bd7b020575d7d
+ms.openlocfilehash: d6ad21cace7643abeb19de185c247f17ec9a2b35
+ms.sourcegitcommit: dfd9b4994aa9cb877ac4136460e011a344e27cb2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48874438"
+ms.lasthandoff: 04/16/2019
+ms.locfileid: "59614535"
 ---
 # <a name="use-expressions-in-conditions-to-check-multiple-values"></a>Usare le espressioni nelle condizioni per verificare più valori
 Questa procedura dettagliata illustra come usare le espressioni e le **condizioni** per confrontare più valori in **modalità Avanzata**.
@@ -214,6 +212,6 @@ Ecco l'implementazione dell'espressione **and** che identifica tutte le persone 
 
 ````@and(greater(item()?['Due'], item()?['Paid']), less(item()?['dueDate'], addDays(utcNow(),1)))````
 
-## <a name="learn-more"></a>Altre informazioni
-Informazioni sulle altre [espressioni](https://docs.microsoft.com/azure/logic-apps/logic-apps-workflow-definition-language#functions)
+## <a name="use-functions-in-expressions"></a>Usare le funzioni nelle espressioni
 
+Alcune espressioni ottengono i rispettivi valori da azioni di runtime che potrebbero non essere ancora disponibili quando viene avviata l'esecuzione di un flusso. Per fare riferimento o usare questi valori nelle espressioni, è possibile usufruire delle funzioni fornite dal linguaggio di definizione del flusso di lavoro. Altre informazioni: [Riferimento alle funzioni per il linguaggio di definizione del flusso di lavoro in Microsoft Flow](https://docs.microsoft.com/azure/logic-apps/workflow-definition-language-functions-reference)
