@@ -20,12 +20,12 @@ search.app:
 - Powerplatform
 search.audienceType:
 - admin
-ms.openlocfilehash: b9dd1fd2f3c00870b0a713f50cc567d5d79385d8
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
-ms.translationtype: HT
+ms.openlocfilehash: 43f6f36cc32ec40088bd9b4c61e2895a7de78589
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44690630"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "65035042"
 ---
 # <a name="using-environments-within-microsoft-flow"></a>Uso di ambienti in Microsoft Flow
 
@@ -33,21 +33,21 @@ ms.locfileid: "44690630"
 
 Gli ambienti offrono i vantaggi seguenti:
 
-* **Collocazione geografica dei dati**: gli ambienti possono essere creati in aree geografiche differenti, a cui vengono associati. Quando si crea un flusso in un ambiente, tale flusso viene indirizzato a tutti i data center in quella posizione geografica, offrendo un miglioramento delle prestazioni.
+* **Località dei dati**: Gli ambienti possono essere creati in aree diverse e di cui vengono associati a tale località geografica. Quando si crea un flusso in un ambiente, tale flusso viene indirizzato a tutti i data center in quella posizione geografica, offrendo un miglioramento delle prestazioni.
 
     Se gli utenti si trovano in Europa, creare e usare l'ambiente in quell'area geografica. Se, invece, gli utenti si trovano negli Stati Uniti, creare e usare l'ambiente in quell'area geografica. 
 
     > [!IMPORTANT]
     > Se si elimina l'ambiente, vengono eliminati anche tutti i flussi in tale ambiente. Questo vale per ogni elemento creato in tale ambiente, incluse le connessioni, i gateway, PowerApps e altro ancora.
-* **Prevenzione della perdita di dati**: in qualità di amministratore, non si vuole che i flussi ottengano i dati da una posizione interna (ad esempio *OneDrive for Business* o un elenco di SharePoint che contiene informazioni sulle retribuzioni), per poi distribuirli pubblicamente (ad esempio su *Twitter*). La prevenzione della perdita dei dati consente di controllare i servizi che possono condividere dati all'interno della distribuzione di Microsoft Flow.
+* **Prevenzione della perdita dei dati**: Come amministratore, non si desidera che i flussi ottengano i dati da una posizione interna (ad esempio *OneDrive for Business* o un elenco di SharePoint che contiene informazioni sulle retribuzioni) e poi distribuirli pubblicamente che i dati (ad esempio su * Twitter*). La prevenzione della perdita dei dati consente di controllare i servizi che possono condividere dati all'interno della distribuzione di Microsoft Flow.
 
     Ad esempio, è possibile aggiungere i servizi *SharePoint* e *OneDrive for Business* a un criterio per i soli dati aziendali. Qualsiasi flusso creato in questo ambiente può usare i servizi *SharePoint* e *OneDrive for Business*. Tuttavia, questi flussi non consentiranno la condivisione di dati con altri servizi non inclusi nel criterio per i soli dati aziendali.
 
   > [!NOTE]
   > La prevenzione della perdita di dati è disponibile con alcuni SKU di licenza, tra cui la licenza P2.
 
-* **Limite di isolamento per tutte le risorse**: qualsiasi flusso, gateway, connessione, connettore personalizzato e così via si trova in un ambiente specifico e non esiste in nessun altro ambiente.
-* **Common Data Service**: di seguito sono indicate le opzioni disponibili se si vuole creare un flusso che inserisce dati in un servizio:
+* **Limite di isolamento per tutte le risorse**: Tutti i flussi, gateway, connessioni, connettori personalizzati e così via si trovano in un ambiente specifico. e non esiste in nessun altro ambiente.
+* **Common Data Service**: Ecco le opzioni disponibili se si desidera creare un flusso che inserisce dati in un servizio:
 
   * Inserire i dati in un file Excel e archiviarlo in un account di archiviazione cloud, ad esempio OneDrive.
   * Creare un database SQL e quindi archiviarvi i dati.
@@ -70,7 +70,7 @@ L'ambiente **predefinito** è condiviso da tutti gli utenti e qualsiasi utente p
 
 Gli amministratori usano l'interfaccia di amministrazione per creare e gestire ambienti. Esistono due modi per aprire l'interfaccia di amministrazione:
 
-### <a name="option-1-select-settings"></a>Opzione 1: selezionare le impostazioni
+### <a name="option-1-select-settings"></a>Opzione 1: selezionare impostazioni
 
 1. Accedere a [flow.microsoft.com](https://flow.microsoft.com).
 1. Selezionare Impostazioni (icona a forma di ingranaggio) e scegliere **Interfaccia di amministrazione** nell'elenco:
@@ -78,13 +78,13 @@ Gli amministratori usano l'interfaccia di amministrazione per creare e gestire a
    ![Impostazioni e Portale amministratore](./media/environments-overview-admin/settings.png)
 1. Viene aperto il centro di amministrazione.
 
-### <a name="option-2-open-adminflowmicrosoftcom"></a>Opzione 2: aprire admin.flow.microsoft.com
+### <a name="option-2-open-adminflowmicrosoftcom"></a>Opzione 2: Aprire admin.flow.microsoft.com
 
 Andare al sito [admin.flow.microsoft.com](https://admin.flow.microsoft.com) e accedere con l'account aziendale.
 
 ## <a name="create-an-environment"></a>Creare un ambiente
 
-1. Nel[Microsoft Flow admin center](https://admin.flow.microsoft.com) (Centro di amministrazione di Microsoft Flow) selezionare **Ambienti**. Verranno visualizzati tutti gli ambienti esistenti: ![Ambienti](./media/environments-overview-admin/environments-list.png)
+1. Nel[Microsoft Flow admin center](https://admin.flow.microsoft.com) (Centro di amministrazione di Microsoft Flow) selezionare **Ambienti**. Si noterà che tutti gli ambienti esistenti: ![Ambienti](./media/environments-overview-admin/environments-list.png)
 2. Selezionare **Nuovo ambiente** e quindi specificare le informazioni richieste:
 
 
@@ -92,7 +92,7 @@ Andare al sito [admin.flow.microsoft.com](https://admin.flow.microsoft.com) e ac
    |------------------|-------------------------------------------------------------------------------------------------------------|
    | Nome ambiente |              Immettere il nome del proprio ambiente, ad esempio `Human Resources` o `Europe flows`.              |
    |      Area      | Scegliere la posizione in cui ospitare l'ambiente. Per ottenere prestazioni ottimali, è consigliabile usare l'area geografica più vicina agli utenti. |
-   | Tipo di ambiente |                  Scegliere un tipo di ambiente in base alla licenza: produzione o prova.                   |
+   | Tipo di ambiente |                  Scegliere un tipo di ambiente in base alle licenza: Prova o produzione.                   |
 
      ![Impostazioni dell'ambiente](./media/environments-overview-admin/new-environment-dialog.png)
 3. Fare clic su **Crea ambiente**.
@@ -115,14 +115,14 @@ Andare al sito [admin.flow.microsoft.com](https://admin.flow.microsoft.com) e ac
    ![Scheda Dettagli](./media/environments-overview-admin/open-environment.png)
 1. Selezionare **Sicurezza**.
 
-    Se non è stato selezionato **Crea database** nei passaggi precedenti, in **Ruoli ambiente** sono disponibili due opzioni: **Amministratore dell'ambiente** e **Autore dell'ambiente**:
+    Se non è stato selezionato **Create Database** nei passaggi precedenti, in **ruoli ambiente**, si sono disponibili due opzioni: **Amministratore dell'ambiente** e **creatore dell'ambiente**:
 
     ![Ruoli amministrativi](./media/environments-overview-admin/environment-roles.png)
 
     Un **autore** può creare nuove risorse in un ambiente, ad esempio flussi, connessioni dati e gateway.
 
    > [!NOTE]
-   > Un utente non deve necessariamente essere un **autore** per *modificare* le risorse in un ambiente. Ogni autore determina chi può modificare le sue risorse tramite la concessione di autorizzazioni agli utenti che non sono autori di un ambiente.
+   > Un utente non deve necessariamente essere un **autore** per *modificare* le risorse in un ambiente. Ogni autore determina chi può modificare le relative risorse dalla concessione di autorizzazioni agli utenti che non sono gli sviluppatori di ambienti.
    > 
    > 
 

@@ -20,11 +20,11 @@ search.app:
 search.audienceType:
 - developer
 ms.openlocfilehash: ac71b9b2d991496121d910e9e74b83e69d74c098
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
-ms.translationtype: HT
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44689503"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64460339"
 ---
 # <a name="let-customers-test-drive-your-flows-on-appsource"></a>Consentire ai clienti di eseguire il Test Drive dei flussi in AppSource
 Per mostrare in che modo l'app si integra con Microsoft Flow, è ora possibile eseguire il Test Drive delle soluzioni su [AppSource.com](https://appsource.microsoft.com) in modo da condividere l'integrazione di Microsoft Flow con i clienti e generare lead per l'azienda.

@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: b25f63a3980d21e60b26a0783ac4bf5eb6030cd3
-ms.sourcegitcommit: 282059c82bfcf5896d06043476c34641906e20e3
-ms.translationtype: HT
+ms.openlocfilehash: b8b14f720736a60b04cbd9ae23dec5c0524ff03c
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49087909"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "65054065"
 ---
 # <a name="manage-an-on-premises-data-gateway-in-microsoft-flow"></a>Gestire un gateway dati locale in Microsoft Flow
 
@@ -60,7 +60,13 @@ Con un gateway è possibile connettersi ai dati locali attraverso le connessioni
 > [!NOTE]
 > È possibile creare un gateway e una connessione locale solo nell'[ambiente predefinito](environments-overview-maker.md).
 
+## <a name="install-a-gateway"></a>Installare un gateway
 
+1. Scaricare l'[installazione guidata del gateway](https://go.microsoft.com/fwlink/?LinkID=820580&clcid=0x409).
+
+1. Eseguire questa procedura guidata e specificare le stesse credenziali usate per accedere a Microsoft Flow.
+
+    Dopo aver registrato e configurato correttamente il gateway, questo viene visualizzato nell'elenco **Gateway** in Microsoft Flow.
 
 ## <a name="view-your-gateways"></a>Visualizzare i gateway
 
@@ -72,14 +78,22 @@ Nell'angolo in alto a destra del [sito Web di Microsoft Flow](https://flow.micro
 > Se si è l'autore di un gateway in PowerApps o si è autorizzati ad accedervi, tale gateway viene visualizzato nell'elenco **Gateway personali** in Microsoft Flow.
 
 
+## <a name="cluster-your-gateways"></a>I gateway del cluster
 
-## <a name="install-a-gateway"></a>Installare un gateway
+È possibile creare *cluster a disponibilità elevata di installazioni del gateway dati locale* per evitare singoli punti di errore nell'accesso alle risorse dati locali. 
 
-1. Scaricare l'[installazione guidata del gateway](https://go.microsoft.com/fwlink/?LinkID=820580&clcid=0x409).
+Per impostazione predefinita, Microsoft Flow Usa il gateway primario nel cluster. Se il gateway primario non è disponibile, il servizio passa al gateway successivo del cluster, e così via.
 
-1. Eseguire questa procedura guidata e specificare le stesse credenziali usate per accedere a Microsoft Flow.
+Dopo aver configurato un cluster di gateway, è possibile consentire il traffico deve essere distribuito tra tutti i gateway nel cluster. 
 
-    Dopo aver registrato e configurato correttamente il gateway, questo viene visualizzato nell'elenco **Gateway** in Microsoft Flow.
+Seguire questi passaggi per distribuire il traffico tra i gateway:
+
+1. Selezionare **dati** sulla barra di spostamento a sinistra.
+1. Selezionare **gateway**.
+1. Selezionare uno dei gateway.
+1. Selezionare **distribuire le richieste tra tutti i gateway attivi in questo cluster**.
+1. Selezionare **applica** per salvare le modifiche.
+
 
 Per altre informazioni, vedere [Informazioni sui gateway](gateway-reference.md).
 

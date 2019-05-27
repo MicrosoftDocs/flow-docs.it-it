@@ -21,11 +21,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 4a35166ec57e81b957f7659e0e670e80bbf510ca
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
-ms.translationtype: HT
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44689549"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64467652"
 ---
 # <a name="manage-flows-in-microsoft-flow-from-your-phone"></a>Gestire i flussi dal telefono in Microsoft Flow dal telefono
 Visualizzare un elenco di tutti i flussi che sono stati creati e, per ogni flusso, visualizzare i relativi eventi e le azioni, abilitarlo o disabilitarlo ed esaminare la cronologia di esecuzione.
@@ -45,7 +45,7 @@ Quando viene eseguito il flusso, invia una notifica push personalizzata, con que
 
 ![Inviare messaggi a Slack](./media/mobile-manage-flows/create-event.png)
 
-**Nota:** è anche possibile [monitorare l'attività di flusso](mobile-monitor-activity.md) dall'app per dispositivi mobili.
+**Nota**: È anche possibile [monitorare l'attività del flusso](mobile-monitor-activity.md) dall'app per dispositivi mobili.
 
 ## <a name="manage-a-flow"></a>Gestire un flusso
 1. Aprire l'app per dispositivi mobili e quindi toccare **Flussi personali** nella parte inferiore della schermata per elencare tutti i flussi.

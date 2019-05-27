@@ -21,11 +21,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 3ba49aff12118d79d41a7b76f7c8a0f7e3f1d01b
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
-ms.translationtype: HT
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44689687"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64467852"
 ---
 # <a name="monitor-activity-in-microsoft-flow-from-your-phone"></a>Monitorare l'attività in Microsoft Flow dal telefono
 Visualizzare un riepilogo di quante volte ogni flusso è riuscito o no oggi, ieri e nei giorni precedenti. Esplorare i dettagli relativi a ogni esecuzione, ad esempio quando si è verificata, il tempo impiegato per ogni passaggio e perché eventualmente non è riuscita.
@@ -47,7 +47,7 @@ Quando viene eseguito il flusso, invia una notifica push personalizzata, con que
 
 ![Inviare notifica push](./media/mobile-monitor-activity/create-event.png)
 
-**Nota:** è anche possibile [gestire i flussi](mobile-manage-flows.md) dall'app per dispositivi mobili.
+**Nota**: È anche possibile [gestire i flussi](mobile-manage-flows.md) dall'app per dispositivi mobili.
 
 ## <a name="display-a-summary-of-activity"></a>Visualizzare un riepilogo dell'attività
 <iframe width="560" height="315" src="https://www.youtube.com/embed/nVCGJamOw6s?list=PL8nfc9haGeb55I9wL9QnWyHp3ctU2_ThF" frameborder="0" allowfullscreen></iframe>

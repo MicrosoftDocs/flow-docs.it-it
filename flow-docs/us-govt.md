@@ -14,12 +14,12 @@ search.app:
 - Powerplatform
 search.audienceType:
 - admin
-ms.openlocfilehash: 705051668c4e25d5bddc3e6f92e445f3474baad1
-ms.sourcegitcommit: 3d0aecc89ed12b58f4b424c1c5a0654350f07d08
-ms.translationtype: HT
+ms.openlocfilehash: a32b80ce9dba28f0c94c13989e4892fe6533813f
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "58059807"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "65035172"
 ---
 # <a name="microsoft-flow-us-government"></a>Microsoft Flow US Government
 
@@ -143,7 +143,7 @@ I servizi di Microsoft Flow US Government vengono distribuiti in Microsoft Azure
 
 Quando un utente di un'organizzazione che usa AD FS prova ad accedere a Microsoft Flow US Government, l'utente viene reindirizzato a una pagina di accesso ospitata nel server AD FS dell'organizzazione.
 
-L'utente fornisce le proprie credenziali al server AD FS dell'organizzazione. Il server AD FS dell'organizzazione prova ad autenticare le credenziali usando l'infrastruttura di Active Directory dell'organizzazione.
+L'utente fornisce credenziali al server ADFS dell'organizzazione. Il server AD FS dell'organizzazione prova ad autenticare le credenziali usando l'infrastruttura di Active Directory dell'organizzazione.
 
 Se l'autenticazione ha esito positivo, il server AD FS dell'organizzazione rilascia un ticket SAML (Security Assertion Markup Language) che contiene le informazioni sull'appartenenza a gruppi e sull'identità dell'utente.
 

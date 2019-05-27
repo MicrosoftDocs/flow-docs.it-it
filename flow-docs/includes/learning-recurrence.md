@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: a4c1189e943d5e1f48507bd3e55b5f2d8fe52a8c
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64460494"
+---
 In questo argomento, si apprenderà come eseguire flussi precedentemente pianificati usando un trigger chiamato **Ricorrenza**.  Si creerà un flusso per il team di marketing di Contoso che richiama automaticamente gli indirizzi di posta elettronica del cliente da una tabella di Excel in OneDrive. Si configurerà il flusso in modo che, i nuovi indirizzi di posta elettronica che sono stati aggiunti al foglio di calcolo vengano quindi aggiunti una volta al giorno a un elenco clienti di MailChimp. 
 
 ## <a name="create-a-scheduled-flow"></a>Creare un flusso pianificato
@@ -15,7 +23,7 @@ In questo argomento, si apprenderà come eseguire flussi precedentemente pianifi
    
     ![](./media/learning-recurrence/excel-get-rows.png)
    
-    **Nota**: assicurarsi di selezionare **Ottieni righe**, non **Ottieni riga**. 
+    **Nota**: Assicurarsi di selezionare **Ottieni righe**, non **Ottieni riga**. 
 6. Selezionare **Nome file** e passare al percorso del file. Selezionare **Nome tabella** e selezionare la tabella desiderata nel foglio di calcolo. 
    
     ![](./media/learning-recurrence/excel-get-file.png)
@@ -26,7 +34,7 @@ In questo argomento, si apprenderà come eseguire flussi precedentemente pianifi
    
     ![](./media/learning-recurrence/select-mailchimp.png)
    
-    **Nota:** MailChimp è un connettore *premium*. In base alla licenza di Microsoft Flow, per poter usare questo connettore potrebbe essere necessario effettuare l'iscrizione a una versione di valutazione.
+    **Nota**: MailChimp è un *premium* connector. In base alla licenza di Microsoft Flow, per poter usare questo connettore potrebbe essere necessario effettuare l'iscrizione a una versione di valutazione.
 9. Aggiungere i campi **Id lista** e **Stato** dai menu a discesa:
    
    * **Id lista**: selezionare la lista di distribuzione MailChimp desiderata

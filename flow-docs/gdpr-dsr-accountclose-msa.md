@@ -20,16 +20,16 @@ search.app:
 - Powerplatform
 search.audienceType:
 - admin
-ms.openlocfilehash: be12491490cac51a0b91906b1a663522c2a7658f
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
-ms.translationtype: HT
+ms.openlocfilehash: 6480fe6a7e6ca26a7dbad3952b6608a9e0a880ae
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44688767"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "65035058"
 ---
 # <a name="responding-to-gdpr-data-subject-account-close-requests-for-microsoft-flow"></a>Risposta alle richieste di chiusura dell'account del soggetto dei dati GDPR per Microsoft Flow
 
-Il **diritto alla cancellazione** dei dati personali è una protezione chiave nel regolamento GDPR. Questo diritto include la rimozione di tutti i dati personali tranne le informazioni del log di controllo. Quando un utente sceglie di chiudere il proprio account del servizio gestito Microsoft (MSA), vengono eliminati anche i dati dell'utente sottostanti.
+Il **diritto alla cancellazione** dei dati personali è una protezione chiave nel regolamento GDPR. Questo diritto include la rimozione di tutti i dati personali tranne le informazioni del log di controllo. Quando gli utenti decidono di chiudere i loro Account Microsoft (MSA), viene eliminati anche i dati dell'utente sottostante.
 
 Le seguenti risorse contengono dati personali che vengono eliminati automaticamente quando un utente chiude un account del servizio gestito Microsoft (MSA):
 

@@ -1,4 +1,12 @@
-In questa lezione, si parlerà dell'app Microsoft Flow per dispositivi mobili e delle relative funzionalità. Dall'app per dispositivi mobili, è possibile accedere a queste funzionalità: **Feed attività**, **Esplorazione**, **Pulsanti** e **Gestione dei flussi**.
+---
+ms.openlocfilehash: af3b0e4171e49cc918d8a18985136ffb760c1473
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64462769"
+---
+In questa lezione, si parlerà dell'app Microsoft Flow per dispositivi mobili e delle relative funzionalità. Dall'app per dispositivi mobili, è possibile accedere a queste funzionalità: **Feed attività**, **Browsing**, **pulsanti**, e **la gestione dei flussi**.
 
 Prima di tutto, è necessario **scaricare** e **installare** l'app Microsoft Flow dall'app store.
 

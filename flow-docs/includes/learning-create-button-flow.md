@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: d48ba29d932bc3d9b0d631b4646eb68d89134271
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "65035154"
+---
 In questo argomento si apprenderà come **creare un flusso del pulsante** per la società Contoso Flooring Company. 
 
 I flussi del pulsante servono a **inviare posta elettronica** a un team e **avvisarli delle attività** da eseguire. La **proprietà** dei flussi **può essere assegnata a un** solo operatore o **condivisa tra più** membri di un team.  
@@ -48,7 +56,7 @@ I flussi del pulsante servono a **inviare posta elettronica** a un team e **avvi
      ![Creare il flusso](./media/learning-create-button-flow/12-create-flow.png)
 
 ## <a name="create-a-team-flow"></a>Creare un flusso del team
-È possibile usare questo flusso del pulsante come esempio di come creare un flusso del team. Cosa accade se l'autore di questo flusso è in congedo malattia? Cosa succede se lascia la società? Ci si vorrà assicurare della continua esecuzione di questo flusso. A tale scopo, aggiungere dei comproprietari.
+È possibile usare questo flusso del pulsante come esempio di come creare un flusso del team. Cosa accade se l'autore di questo flusso è in congedo malattia? Cosa accade se tale utente lascia l'azienda? Ci si vorrà assicurare della continua esecuzione di questo flusso. A tale scopo, aggiungere dei comproprietari.
 
 1. Selezionare l'**icona del team** nel flusso per aggiungere un comproprietario.
    
@@ -66,9 +74,9 @@ I flussi del pulsante servono a **inviare posta elettronica** a un team e **avvi
 ## <a name="summary"></a>Riepilogo
 In questa lezione, si è visto come **creare un flusso del pulsante**. 
 
-In pochi minuti, il flusso ha permesso a un operatore del magazzino di **avvertire il team** dell'**arrivo di una consegna**, in modo che il team non dovesse attendere invano, sprecando tempo prezioso che avrebbe potuto impiegare in altre attività. 
+In pochi minuti, il flusso ha permesso un operatore del magazzino la possibilità **avvisa il team** a un **arrivo recapito**, in modo che il team dovevi attendere, invano sprecare tempo prezioso che avrebbe potuto impiegare in altre attività . 
 
-L'operatore ha quindi condiviso il pulsante con il suo team, in modo che altri potessero attivare lo stesso flusso in sua assenza.
+Il ruolo di lavoro quindi condiviso il pulsante con i team, in modo che altri potessero attivare lo stesso flusso se tale utente non è stata intorno.
 
 ## <a name="next-lesson"></a>Lezione successiva
 La lezione successiva illustrerà come creare un flusso che usa le **notifiche push**.

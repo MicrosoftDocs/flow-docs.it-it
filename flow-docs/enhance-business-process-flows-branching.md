@@ -17,12 +17,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: a7e1dc8d366ac9f23682362c8a673eb67df65975
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
-ms.translationtype: HT
+ms.openlocfilehash: f8911c828b216d8f65210b4c54603fd8838e848b
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44690515"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "65054102"
 ---
 # <a name="tutorial-enhance-business-process-flows-with-branching"></a>Esercitazione: Migliorare i processi aziendali con la creazione dei rami
 
@@ -58,10 +58,10 @@ I processi aziendali consentono di familiarizzare con le varie fasi dei processi
 > - È possibile accedere più volte a un'entità usata nel processo (più cicli di entità chiusi).  
 > - Un processo può tornare alla fase precedente indipendentemente dal tipo di entità. Ad esempio, se è la fase attiva è **Deliver Quote** in un record di offerta, gli utenti possono tornare alla fase attiva **Propose** in un record di opportunità.  
 >   
->   In un altro esempio, si supponga che un processo si trovi attualmente nella fase **Present Proposal**: **Qualify Lead** > **Identify Needs** > **Create Proposal** > **Present Proposal** > **Close**. Se la proposta presentata al cliente richiede un'indagine più approfondita per identificare le esigenze del cliente, gli utenti possono semplicemente selezionare la fase **Identify Needs** del processo e scegliere **Set Active**.  
+>   In un altro esempio, si supponga che un processo è attualmente disponibile nel **proposta attuale** fase nel flusso di processo: **Qualifica di Lead** > **identificare i requisiti** > **creare proposta** > **presentare proposta**  >  **Chiudi**. Se la proposta presentata al cliente richiede un'indagine più approfondita per identificare le esigenze del cliente, gli utenti possono semplicemente selezionare la fase **Identify Needs** del processo e scegliere **Set Active**.  
   
 <a name="CarSelling365"></a>   
-## <a name="dynamics-365-customer-engagement-example-car-selling-process-flow-with-two-branches"></a>Esempio di Dynamics 365 Customer Engagement: Processo di vendita di automobili con due rami
+## <a name="dynamics-365-customer-engagement-example-car-selling-process-flow-with-two-branches"></a>Esempio di Dynamics 365 Customer Engagement: Flusso del processo con due rami di vendita Auto
  
 Esaminiamo l'esempio del processo aziendale con due rami, per la vendita di automobili nuove e usate.  
   
@@ -104,11 +104,11 @@ Esaminiamo l'esempio del processo aziendale con due rami, per la vendita di auto
   
  ![Diagramma dei passaggi in un processo di esempio per impedire la diffusione di informazioni](media/example-car-sales-flow-chart-process-prevent-information-disclosure.png "Diagramma dei passaggi in un processo di esempio per impedire la diffusione di informazioni")  
   
- In questo scenario il responsabile prestiti della banca deve poter accedere al record Request, ma non può avere visibilità sull'indagine della richiesta. A prima vista, sembrerebbe sufficiente assegnare al responsabile prestiti un ruolo di sicurezza in cui si specifica il divieto di accesso all'entità Investigation. Esaminiamo però l'esempio più nel dettaglio per considerare valida questa soluzione.  
+ In questo scenario, il responsabile bank deve poter accedere al record di richiesta, ma il responsabile non deve avere visibilità sulle eventuali l'analisi della richiesta. A prima vista, sembrerebbe sufficiente assegnare al responsabile prestiti un ruolo di sicurezza in cui si specifica il divieto di accesso all'entità Investigation. Esaminiamo però l'esempio più nel dettaglio per considerare valida questa soluzione.  
   
- Si supponga che un cliente richieda alla banca un prestito di oltre 60.000 dollari. Nella prima fase il responsabile esamina la richiesta. Se viene soddisfatta la regola del ramo che controlla se l'importo dovuto alla banca supererà i 50.000 dollari, la fase successiva del processo sarà stabilire se la richiesta è di tipo fraudolento. Se si stabilisce che si tratta effettivamente di un caso di frode, il processo passerà all'apertura di un'azione legale nei confronti del richiedente. Non potendo accedere all'entità Investigation, il responsabile prestiti non avrà visibilità sulle due fasi investigative.  
+ Si supponga che un cliente richieda alla banca un prestito di oltre 60.000 dollari. Nella prima fase il responsabile esamina la richiesta. Se viene soddisfatta la regola del ramo che controlla se l'importo dovuto alla banca supererà i 50.000 dollari, la fase successiva del processo sarà stabilire se la richiesta è di tipo fraudolento. Se si stabilisce che si tratta effettivamente di un caso di frode, il processo passerà all'apertura di un'azione legale nei confronti del richiedente. Il responsabile non dovrà avere visibilità le due fasi investigativa il delegato ha accesso all'entità di indagine.  
   
- Tuttavia, se il responsabile apre il record Request, potrebbe visualizzare l'intero processo in tutte le sue fasi. Non solo potrà visualizzare la fase di indagine sulla frode, ma potrà anche risalire all'esito dell'indagine, dal momento che può visualizzare la fase Legal Action del processo. Selezionando la fase potrà anche visualizzare l'anteprima dei passaggi delle fasi di indagine. Anche se non potrà visualizzare i dati o lo stato di completamento della fase, potrà conoscere le possibili azioni intraprese nei confronti del richiedente durante le fasi di indagine e di azione legale.  
+ Tuttavia, se il responsabile si apre il record di richiesta, tutto sarebbe in grado di visualizzare l'intero processo end-to-end. Non solo il responsabile potrà vedere la fase di analisi delle frodi, ma ha anche sarà in grado di identificare il risultato dell'analisi, essendo stato in grado di visualizzare la fase di un'azione legale nel processo. Inoltre, il responsabile della sarà in grado di visualizzare in anteprima i passaggi nelle fasi investigativa scegliendo la fase. Anche se il responsabile non è in grado di visualizzare i dati o lo stato di completamento del passaggio, Anna sarà in grado di identificare le possibili azioni che sono state eseguite con il responsabile dell'invio della richiesta durante l'analisi e le fasi di un'azione legale.  
   
  In questo processo il responsabile prestiti visualizzerà le fasi Fraud e Legal Action, che costituiscono un'errata diffusione di informazioni. È consigliabile prestare particolare attenzione alle informazioni che possono essere diffuse in seguito alla creazione dei rami. In questo esempio, per evitare la diffusione di informazioni, è necessario suddividere il processo in due processi distinti, uno per l'elaborazione della richiesta e un altro per le attività di indagine sulla frode. Il processo per il responsabile sarà il seguente:  
   

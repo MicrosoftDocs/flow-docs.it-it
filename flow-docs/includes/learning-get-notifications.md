@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 2780850e521e208c3ab047543f00cab0b9a17f69
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64463362"
+---
 **Microsoft Flow** viene usato comunemente per ricevere una **notifica** quando si verifica un evento.  Le notifiche possono essere **e-mail**, **messaggi di testo** o **notifiche push sul telefono**.
 
 ![Da un modello](./media/learning-get-notifications/template-notifications.png)

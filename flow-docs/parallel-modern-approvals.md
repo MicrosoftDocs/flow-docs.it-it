@@ -21,11 +21,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: ec3c6725ca6c0b1e03738f50132464b00c1f8695
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
-ms.translationtype: HT
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44690689"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64469948"
 ---
 # <a name="create-parallel-approval-workflows-with-microsoft-flow"></a>Creare flussi di lavoro di approvazione paralleli con Microsoft Flow
 
@@ -147,7 +147,7 @@ Continuando:
 
 Eseguire la procedura seguente nella parte **Se sì** del ramo **Condizione**.
 
-   Nota: il flusso usa questa procedura per inviare un messaggio di posta elettronica quando la richiesta viene approvata:
+   Nota: Il flusso Usa questa procedura per inviare un messaggio di posta elettronica quando la richiesta viene approvata:
 
 [!INCLUDE [add-action-to-send-email-when-vacation-approved](includes/add-action-to-send-email-when-vacation-approved.md)]
 
@@ -161,7 +161,7 @@ Ripetere i passaggi precedenti nei rami **Avviare un'approvazione 2** (la richie
 
 Eseguire la procedura seguente per aggiornare SharePoint quando vengono prese le decisioni.
 
-   Nota: assicurarsi di eseguire questi passaggi su entrambe le estremità **Se SÌ** e **SE NO** del ramo.
+   Nota: Assicurarsi di eseguire questi passaggi sia il **se Sì** e il **IF NO** i lati del ramo.
 
 [!INCLUDE [add-action-to-update-sharepoint-with-approval](includes/add-action-to-update-sharepoint-with-approval.md)]
 

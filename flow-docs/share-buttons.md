@@ -21,11 +21,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 77b46d10ec3856054dcc8e1734b327bac9a01596
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
-ms.translationtype: HT
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44690338"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64465391"
 ---
 # <a name="share-button-flows-in-microsoft-flow"></a>Condividere i flussi di un pulsante in Microsoft Flow
 Nell'app Microsoft Flow per dispositivi mobili è possibile condividere i [flussi di un pulsante](introduction-to-button-flows.md) (pulsanti) con altri utenti o gruppi all'interno dell'organizzazione. Quando si condivide un pulsante, la persona o il gruppo con cui lo si condivide può eseguirlo allo stesso modo in cui esegue i propri pulsanti. È anche possibile [condividere un collegamento](share-buttons.md#re-share-a-button) a pulsanti che un altro utente ha condiviso. È possibile [interrompere la condivisione](share-buttons.md#stop-sharing-a-button) dei pulsanti in qualsiasi momento.

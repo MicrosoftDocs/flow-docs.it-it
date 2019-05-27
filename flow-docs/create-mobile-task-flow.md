@@ -22,11 +22,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 7f15f11a4e66d80762384f8183af7973fcca76bf
-ms.sourcegitcommit: 9ecf4956320d465a3bf618b79a9023b729d33c89
-ms.translationtype: HT
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57462764"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64456190"
 ---
 # <a name="create-a-mobile-task-flow"></a>Creare un flusso di attività per dispositivi mobili
 

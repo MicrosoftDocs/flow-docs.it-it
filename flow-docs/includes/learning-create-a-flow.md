@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: f5fd6ecb3ace5d2e11f4929fe94124b231cccf2a
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64463749"
+---
 Bentornato nella Formazione interattiva su Microsoft Flow. In questa lezione, si scopriranno altre informazioni sull'ambiente di Microsoft Flow e si potrà **compilare il primo flusso**.
 
 Iniziare a usare Microsoft Flow è facile, perché ci sono tantissimi **modelli tra cui scegliere**, che aiuteranno a connettere i servizi che si usano già in maniera più significativa.  

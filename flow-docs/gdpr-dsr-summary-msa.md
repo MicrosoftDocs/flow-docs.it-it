@@ -21,11 +21,11 @@ search.app:
 search.audienceType:
 - admin
 ms.openlocfilehash: 3742ac7afed24b0a1523a6038978589d293ba00b
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
-ms.translationtype: HT
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44688491"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64460302"
 ---
 # <a name="respond-to-gdpr-data-subject-rights-dsrs-requests"></a>Rispondere alle richieste di diritti del soggetto dei dati (DSR) GPDR
 
@@ -54,14 +54,14 @@ Microsoft offre prodotti, servizi e strumenti di amministrazione che consentono 
 
 Ecco una panoramica dei processi descritti in questa guida:
 
-1. **Individuazione**: usare strumenti di ricerca e individuazione per trovare facilmente i dati dei clienti che possono essere oggetto di una richiesta DSR. Se si determina che i documenti raccolti soddisfano le linee guida del titolare per intraprendere un'azione, è possibile eseguire una o più delle azioni DSR descritte nei passaggi seguenti. Altre informazioni sono disponibili nella [documentazione sulle procedure di individuazione per le richieste DSR in Microsoft Flow](gdpr-dsr-discovery-msa.md). Si potrebbe anche determinare che la richiesta non soddisfa le linee guida del titolare per la risposta a richieste DSR.
+1. **Individuare**: Usare gli strumenti di ricerca per trovare facilmente i dati dei clienti che potrebbero essere oggetto di una richiesta DSR. Se si determina che i documenti raccolti soddisfano le linee guida del titolare per intraprendere un'azione, è possibile eseguire una o più delle azioni DSR descritte nei passaggi seguenti. Altre informazioni sono disponibili nella [documentazione sulle procedure di individuazione per le richieste DSR in Microsoft Flow](gdpr-dsr-discovery-msa.md). Si potrebbe anche determinare che la richiesta non soddisfa le linee guida del titolare per la risposta a richieste DSR.
 
-1. **Accesso**: recuperare i dati personali che risiedono nel cloud Microsoft e, se richiesto, crearne una copia che può essere resa disponibile al soggetto dei dati.
+1. **Accesso**: Recuperare i dati personali che risiedono nel cloud Microsoft e, se richiesto, crearne una copia in modo che possa essere disponibile al soggetto dei dati.
 
 1. **Rettifica**: apportare modifiche o implementare altre azioni richieste sui dati personali, se applicabile.
 
-1. **Limitazione**: limitare l'elaborazione dei dati personali, rimuovendo le licenze per vari servizi online o disattivando i servizi desiderati, se possibile. È anche possibile rimuovere i dati dal cloud di Microsoft e conservarli in locale o in un'altra posizione.
+1. **Limitare**: limitare l'elaborazione dei dati personali, rimuovendo le licenze per vari servizi online o disattivando i servizi desiderati, se possibile. È anche possibile rimuovere i dati dal cloud di Microsoft e conservarli in locale o in un'altra posizione.
 
-1. **Eliminazione**: rimuovere in modo permanente i dati personali che risiedono nel cloud di Microsoft. Altre informazioni sull'[eliminazione dei dati personali per gli account Microsoft](gdpr-dsr-delete-msa.md). Altre informazioni sulla [chiusura di un account Microsoft](gdpr-dsr-accountclose-msa.md).
+1. **Elimina**: rimuovere in modo permanente i dati personali che risiedono nel cloud di Microsoft. Altre informazioni sull'[eliminazione dei dati personali per gli account Microsoft](gdpr-dsr-delete-msa.md). Altre informazioni sulla [chiusura di un account Microsoft](gdpr-dsr-accountclose-msa.md).
 
-1. **Esportazione**: rendere disponibile una copia elettronica dei dati personali (in un formato leggibile per il computer). [Altre informazioni sull'esportazione dei dati personali per gli account Microsoft](gdpr-dsr-export-msa.md).
+1. **Esportare**: Fornire una copia elettronica (in un formato leggibile al computer) dei dati personali. [Altre informazioni sull'esportazione dei dati personali per gli account Microsoft](gdpr-dsr-export-msa.md).

@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 05c2f4add521300687b1a7bf21580977a161e241
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64471693"
+---
 1. Selezionare **Aggiungi un'azione** nel ramo **SE NO, NON FARE NULLA**.
 2. Immettere **Invia messaggio di posta elettronica** nella casella di ricerca della scheda **Scegliere un'azione**.
    

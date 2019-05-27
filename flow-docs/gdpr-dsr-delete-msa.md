@@ -21,11 +21,11 @@ search.app:
 search.audienceType:
 - admin
 ms.openlocfilehash: e42da775d5c004bfbe0d6bb8923e6d05aaa5e976
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
-ms.translationtype: HT
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44688974"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64454241"
 ---
 # <a name="respond-to-gdpr-data-subject-delete-requests"></a>Rispondere alle richieste di eliminazione del soggetto dei dati GPDR
 

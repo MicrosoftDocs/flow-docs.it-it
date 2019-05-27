@@ -20,12 +20,12 @@ search.app:
 - Powerplatform
 search.audienceType:
 - admin
-ms.openlocfilehash: d03b2fff23fc313ebb7f8c12ce2835687f589516
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
-ms.translationtype: HT
+ms.openlocfilehash: 6f181a66453573c2f636cbe5130b7fc003a3b151
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44690768"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "65035030"
 ---
 # <a name="responding-to-gdpr-data-subject-export-requests-for-microsoft-flow"></a>Risposta alle richieste di esportazione del soggetto dei dati GDPR per Microsoft Flow
 
@@ -33,7 +33,7 @@ Come parte dell'impegno di Microsoft a collaborare con i clienti per soddisfare 
 
 ## <a name="manage-export-requests"></a>Gestire le richieste di esportazione
 
-Il *diritto alla portabilità dei dati* consente a un soggetto dei dati di richiedere una copia dei dati personali in formato elettronico (ovvero un "formato strutturato, di uso comune, leggibile da computer e interoperabile") che può essere trasmessa a un altro titolare del trattamento dei dati.
+Il *diritto alla portabilità dei dati* consente soggetti dei dati richiedere una copia dei dati personali in formato elettronico, ovvero un "formato strutturato, uso comune, leggibile e interoperabile", che può essere trasmessi a un altro controller di dati.
 
 Usare il [dashboard di privacy di Microsoft](https://account.microsoft.com/privacy/) o [Microsoft Flow](https://flow.microsoft.com/) per trovare o esportare i dati personali per un utente specifico.
 
@@ -98,7 +98,7 @@ La cronologia di esecuzione viene scaricata come file con estensione csv ed è p
 
 ## <a name="export-a-users-activity-feed"></a>Esportare il feed attività di un utente
 
-In [Microsoft Flow](https://flow.microsoft.com/) il feed attività mostra la cronologia di attività, errori e notifiche di un utente. Un utente può visualizzare il feed attività personale seguendo questa procedura:
+In [Microsoft Flow](https://flow.microsoft.com/) il feed attività mostra la cronologia di attività, errori e notifiche di un utente. Gli utenti possono visualizzare le proprie attività feed seguendo questa procedura:
 
 1. Accedere a [Microsoft Flow](http://flow.microsoft.com/), selezionare l'icona a forma di campanello nell'angolo superiore destro e quindi selezionare **Mostra tutta l'attività**.
 

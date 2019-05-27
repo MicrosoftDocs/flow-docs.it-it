@@ -19,11 +19,11 @@ search.app:
 search.audienceType:
 - developer
 ms.openlocfilehash: b274da0bf638e338d2e566d9f6a3b133fc45f9fe
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
-ms.translationtype: HT
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44689411"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64455870"
 ---
 # <a name="custom-connectors-in-microsoft-flow"></a>Connettori personalizzati in Microsoft Flow
 

@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 0422f774f18fd7ac49bed005755be251a7f24c1f
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64462190"
+---
 Se un utente svolge il ruolo di approvatore in un flusso di lavoro, riceverà un messaggio di posta elettronica ogni volta che un utente crea una richiesta. La richiesta di approvazione viene inviata anche al Centro approvazioni. È possibile quindi approvare o rifiutare le richieste ricevute tramite posta elettronica, il Centro approvazioni o l'app Microsoft Flow.
 
 Per approvare una richiesta:

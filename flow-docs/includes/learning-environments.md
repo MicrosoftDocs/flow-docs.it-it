@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 0e46ba9a9ff1044e72b8550b47d126e2999cfb71
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64461124"
+---
 ## <a name="what-is-an-environment"></a>Che cos'è un ambiente:
 Un ambiente è uno spazio virtuale usato per archiviare, gestire e condividere app, flussi e dati business in Common Data Service. Per gli ambienti è prevista la georilevazione, quindi anche tutte le app e tutti i dati archiviati nel database di un ambiente sono soggetti a georilevazione.  
 

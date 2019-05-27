@@ -21,11 +21,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: bbcb6c8950e8ac5959880727604e0355b3150c6f
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
-ms.translationtype: HT
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44690475"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64455629"
 ---
 # <a name="run-your-flows-by-pressing-a-flic-smart-button-preview"></a>Eseguire i flussi premendo uno smart button Flic (anteprima)
 Attivare i flussi premendo un pulsante fisico, noto come Flic, di Shortcut Labs. Ad esempio, premere un pulsante Flic per tenere traccia delle ore lavorative, bloccare il calendario, conteggiare i visitatori di un evento o salvare le posizioni geografiche.
@@ -57,7 +57,7 @@ Dopo aver collegato un evento Flic a Microsoft Flow, è quindi possibile selezio
 ## <a name="create-a-flow-thats-triggered-by-a-flic"></a>Creare un flusso che viene attivato da un pulsante Flic
 In questa procedura dettagliata, verrà usato un pulsante Flic per eseguire un flusso che registra il tempo impiegato da un consulente presso ogni cliente. Il consulente preme il pulsante Flic una sola volta all'arrivo, premendolo di nuovo poco prima di andar via. Ciascuna pressione del pulsante Flic avvia un'esecuzione del flusso a cui è connesso. Il flusso salva l'ora corrente in un foglio Google e quindi invia una notifica di posta elettronica. Il messaggio contiene i dettagli sull'esecuzione del flusso.
 
-Nota: assicurarsi di aver usato l'app Flic per dispositivi mobili per l'associazione e configurare almeno un'azione di **clic** per attivare Microsoft Flow. In questa schermata, è stata configurata l'azione di **clic** in modo da attivare Microsoft Flow. Più avanti in questa procedura dettagliata verrà configurata l'attivazione del flusso quando si preme il pulsante Flic una sola volta (cioè si fa clic su di esso).
+Nota: Assicurarsi di aver usato l'app per dispositivi mobili Flic-to-pair e configurare almeno un **fare clic su** azione per attivare Microsoft Flow. In questa schermata, è stata configurata l'azione di **clic** in modo da attivare Microsoft Flow. Più avanti in questa procedura dettagliata verrà configurata l'attivazione del flusso quando si preme il pulsante Flic una sola volta (cioè si fa clic su di esso).
 
    ![configurazione flic](./media/flic-button-flows/flic-configured-for-flow.png)
 
@@ -80,11 +80,11 @@ Iniziamo a creare il flusso.
    ![esaminare i dettagli del modello](./media/flic-button-flows/flic-template-details.png)
 2. In Fogli Google, creare un foglio di calcolo che contenga un foglio con colonne denominate **ClickType** e **TimeStamp**.
    
-      Suggerimento: assegnare un nome alle colonne in Fogli Google immettendolo nella parte superiore della colonna. In questo modo, il foglio sarà simile a questa schermata:
+      Suggerimento: Assegnare un nome le colonne in fogli Google immettendo il nome della colonna nella parte superiore della colonna. In questo modo, il foglio sarà simile a questa schermata:
    
    ![Foglio di Google](./media/flic-button-flows/flic-google-sheet.png)
    
-   Nota: questo foglio verrà usato più avanti in questa procedura dettagliata.
+   Nota: Questo foglio verrà usato più avanti in questa procedura dettagliata.
 
 ### <a name="add-the-flic-trigger-to-your-flow"></a>Aggiungere il trigger Flic al flusso
 1. Accedere ai servizi del modello e quindi selezionare **Continua**.
@@ -112,7 +112,7 @@ Iniziamo a creare il flusso.
 1. Selezionare il foglio di calcolo creato in precedenza dall'elenco **File**.
 2. Selezionare il foglio dall'elenco **Foglio di lavoro**.
    
-   Nota: dopo aver selezionato il foglio, verranno visualizzate due caselle aggiuntive nella riga **Inserisci riga**, che rappresentano le due colonne nel foglio creato in precedenza.
+   Nota: Vengono visualizzate due caselle aggiuntive nella **Inserisci riga** dopo aver selezionato il foglio. che rappresentano le due colonne nel foglio creato in precedenza.
 3. Selezionare la casella **ClickType** e quindi selezionare il token **Click type**.
 4. Selezionare la casella **Timestamp** e quindi selezionare il token **Click time**.
    

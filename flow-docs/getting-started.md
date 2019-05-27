@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 9ab3594f540129eb9caf8900c87420c08c1f7037
-ms.sourcegitcommit: 24da014ea8db8e59f097c4622d1e2cca9a4d1709
-ms.translationtype: HT
+ms.openlocfilehash: f667401774e49505009cd416f6975ff38683a5c7
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58353000"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "65035218"
 ---
 # <a name="get-started-with-microsoft-flow"></a>Attività iniziali con Microsoft Flow #
 
@@ -94,6 +94,38 @@ Quando si crea un flusso da zero, si ha il controllo dell'intero flusso di lavor
 - [Osservare i flussi in azione](see-a-flow-run.md).
 - [Pubblicare un modello](publish-a-template.md).
 - [Creare flussi da un modello di Microsoft Teams](https://flow.microsoft.com/connectors/shared_teams/microsoft-teams/).
+
+
+## <a name="peek-at-the-code"></a>Visualizza il codice
+
+Non è necessario essere uno sviluppatore di creare flussi, tuttavia, Microsoft Flow forniscono un **Visualizza codice** funzionalità che permette a chiunque di esaminare più da vicino il codice generato per tutte le azioni e trigger in un flusso. Visualizzazione codice è stato possibile consentono di comprendere meglio i dati che sono usati da azioni e trigger. Seguire questi passaggi per visualizzare il codice generato per i flussi da all'interno della finestra di progettazione di Microsoft Flow: 
+
+1. Selezionare il **...**  voce di menu in alto a destra di qualsiasi **azione** oppure **trigger**. 
+1. Selezionare **Visualizza codice**.
+
+    ![Visualizza codice](media/getting-started/peek-code.png)
+
+1. Si noti che la rappresentazione JSON completa le azioni e trigger. Sono inclusi tutti gli input, ad esempio il testo che immesso direttamente e le espressioni usate. È possibile selezionare le espressioni qui e quindi incollarli nel **del contenuto dinamico** editor espressioni. Ciò consente anche di visualizzare un modo per verificare i dati che prevede siano presenti nel flusso.
+
+    ![Visualizza codice](media/getting-started/peek-code-details.png)
+   
+
+## <a name="find-your-flows-easily"></a>Trovare con facilità i flussi
+
+Quando la creatività succhi inizio *trasmessi*, è possibile creare molti flussi. Non ti preoccupare, la ricerca dei flussi è facile: puoi usare la casella di ricerca nel **flussi personali**, **flussi Team**, **connessioni**, oppure **soluzioni** schermata per visualizzare flussi solo che corrispondono ai criteri di ricerca che immesso.
+
+![Flussi di ricerca o filtro](media/getting-started/filter-search-box.png)
+ 
+> [!NOTE]
+> Il filtro di ricerca individua solo i flussi che sono stati caricati nella pagina. Se non si trova il flusso, provare a selezionare **carica altro** nella parte inferiore della pagina.
+
+## <a name="get-notifications-when-somethings-wrong"></a>Ricevere notifiche quando qualcosa non va
+
+Usare il centro di notifica di Microsoft Flow (nella parte superiore destra della finestra di progettazione) a rapidamente vedere un elenco dei flussi non riuscite di recente. Il centro notifiche presenta un numero che indica il numero di flussi che non è riuscito recente.
+
+Nell'area di notifica, è possibile passare al **attività** pagina di Microsoft Flow per visualizzare tutti i flussi che di recente è stato eseguito, inviare notifiche o non è riuscita.
+
+![Centro notifiche](media/getting-started/notification-center.png)
 
 ## <a name="use-the-mobile-app"></a>Usare l'app per dispositivi mobili ##
 

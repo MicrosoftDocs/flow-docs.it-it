@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 253acf6677bf244c1719000c332102aa58c2e805
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64463707"
+---
 In questo argomento, si osserverà in che modo Contoso Flooring usa Microsoft Flow per convertire automaticamente i documenti in un formato standard e quindi archiviarli in SharePoint Online per maggiore sicurezza nel cloud. Verrà creato un flusso che rileva quando un nuovo file è stato aggiunto a una cartella di OneDrive for Business, quindi lo converte in formato PDF e lo archivia in una cartella di SharePoint Online. 
 
 ## <a name="prerequisites"></a>Prerequisiti
@@ -35,9 +43,9 @@ Per questo scenario, è necessario un account di **Muhimbi**, un servizio di con
        ![](./media/learning-create-pdf/tenant-id.png)
 7. Nell'azione **Convert document** impostare i valori seguenti:
    
-   * **Source file name**: dall'elenco di contenuto dinamico, selezionare **File name**.
-   * **Source file content**: dall'elenco di contenuto dinamico, selezionare **File content**.
-   * **Output format**: dall'elenco a discesa, selezionare **PDF**.
+   * **Nome file di origine**: Nell'elenco del contenuto dinamico, selezionare **nome del File**.
+   * **Contenuto del file di origine**: Nell'elenco del contenuto dinamico, selezionare **File content**.
+   * **Formato di output**: Dall'elenco a discesa, selezionare **PDF**.
      
      ![](./media/learning-create-pdf/muhimbi-configuration.png)
 
@@ -53,10 +61,10 @@ Per il passaggio finale, si aggiungerà un'azione che sposterà il documento PDF
     ![](./media/learning-create-pdf/sharepoint-create-file.png)
 2. Nell'azione **Crea file** impostare i valori seguenti:
    
-   * **Indirizzo sito**: l'URL del sito di SharePoint.  
-   * **Percorso cartella**: selezionare l'icona della cartella e passare alla cartella **PDF - File completati**.
-   * **Nome file**: dall'elenco del contenuto dinamico per **Convert document** selezionare **Base file name**, quindi aggiungere "**.pdf**" in modo da salvarlo in SharePoint con tale estensione di file. 
-   * **File content**: dall'elenco di contenuto dinamico per **Convert document**, selezionare **Processed file content**.
+   * **Indirizzo sito**: L'URL del sito di SharePoint.  
+   * **Percorso della cartella**: Scegliere l'icona della cartella e selezionare il **PDF - file completati** cartella.
+   * **Nome del file**: Dall'elenco del contenuto dinamico per **Convert document**, selezionare **nome file di Base**, quindi aggiungere "**PDF**" in modo da salvarlo in SharePoint con l'estensione di file. 
+   * **Contenuto file**: Dall'elenco del contenuto dinamico per **Convert document**, selezionare **elaborati contenuto del file**.
 3. Selezionare **Crea flusso** nella parte superiore della pagina per salvare il lavoro.
    
     ![](./media/learning-create-pdf/sharepoint-configure-file.png)

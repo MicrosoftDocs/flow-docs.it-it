@@ -14,12 +14,12 @@ search.app:
 - Flow
 search.audienceType:
 - developer
-ms.openlocfilehash: 4fcbca859d167e82229aa60f96f5122912e5cca3
-ms.sourcegitcommit: c7c9add30d5bf1ab6bd5b55b802fd28618b38411
-ms.translationtype: HT
+ms.openlocfilehash: dde9b4328319e0cbfec7df1ba0bb52f403901989
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54362979"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "65054081"
 ---
 # <a name="work-with-business-process-flows-using-code"></a>Usare i processi aziendali con il codice
 
@@ -131,7 +131,7 @@ La definizione di un processo aziendale viene archiviata nell'entità <xref:Micr
 
 L'entità personalizzata che viene creata automaticamente all'attivazione di un processo aziendale per archiviare le istanze del processo aziendale è conforme al modello di sicurezza standard come per qualsiasi altra entità personalizzata in Customer Engagement. Ciò implica che i privilegi concessi per tali entità definiscono le autorizzazioni di runtime per gli utenti per i processi aziendali.
 
-L'ambito dell'entità del processo aziendale personalizzata è l'organizzazione. I privilegi standard di creazione, recupero, aggiornamento ed eliminazione per questa entità definiscono le autorizzazioni per l'utente in base ai ruoli assegnati all'utente stesso. Per impostazione predefinita, quando viene creata l'entità personalizzata del processo aziendale, l'accesso viene concesso solo ai ruoli di sicurezza **Amministratore sistema** e **Addetto personalizzazione sistema** ed è necessario concedere in modo esplicito le autorizzazioni per la nuova entità de processo aziendale (ad esempio, **My Custom BPF**) per gli altri ruoli di sicurezza in base alle esigenze.
+L'ambito dell'entità del processo aziendale personalizzata è l'organizzazione. I privilegi create, retrieve, update e delete regolari nell'entità definiscono l'autorizzazione agli utenti potrebbero avere con relativi ruoli assegnati. Per impostazione predefinita, quando viene creata l'entità personalizzata del processo aziendale, l'accesso viene concesso solo ai ruoli di sicurezza **Amministratore sistema** e **Addetto personalizzazione sistema** ed è necessario concedere in modo esplicito le autorizzazioni per la nuova entità de processo aziendale (ad esempio, **My Custom BPF**) per gli altri ruoli di sicurezza in base alle esigenze.
 
 ![](media/bpf-privileges.png)
 

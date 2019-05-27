@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: b2f825ccd318897c408c56f457ad76788ef1cc91
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64462817"
+---
 Oggi è molto comune usare un **servizio di archiviazione file**, ad esempio **OneDrive** o **Google Drive**.  C'è mai stato bisogno di **copiare i file da un servizio di archiviazione a un altro**?  Microsoft Flow rende più facile spostare e copiare automaticamente i file tra due servizi.
 
 ## <a name="creating-flows-that-copy-files"></a>Creazione di flussi che copiano i file

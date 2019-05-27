@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 431bb579e19f89132f5ea0ca772a89ea17988de2
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64463420"
+---
 In un argomento precedente, è stato illustrato come potenziare i feed di Twitter in un modo semplice con un elenco di SharePoint. In questo argomento si apprenderà come creare uno scenario più efficiente usando le approvazioni. In questo modo, chiunque abbia accesso all'elenco di SharePoint può contribuire con i tweet e il team di social networking potrà approvare o rifiutare tali tweet. Il team mantiene il controllo dell'account e del contenuto che viene pubblicato per i clienti. 
 
 ## <a name="create-an-approval-request-flow"></a>Creare un flusso di richiesta di approvazione
@@ -21,7 +29,7 @@ Per impostazione predefinita, questo modello avvia un processo di approvazione q
 2. Tornando a **Microsoft Flow**, nell'azione **Quando viene creato un nuovo elemento**, immettere i valori seguenti:
    
    * **Indirizzo sito**: l'URL del team di SharePoint
-   * **Nome elenco**: TweetDiContoso
+   * **Nome elenco**: ContosoTweets
      
      ![Sito ed elenco](./media/learning-approval-center/site-address.png)
 3. Nell'azione **Avviare un'approvazione**, selezionare **Modifica** per visualizzare tutti i campi. 

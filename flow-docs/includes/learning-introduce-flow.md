@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 09f1d3ca4cfb79cb73c91aa77d18be07c047c028
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64462814"
+---
 Benvenuto nella Formazione interattiva su Microsoft Flow. Questo **corso online** illustra Microsoft Flow andando per ordine, per consentire di acquisire le conoscenze in modo graduale. Il corso è pensato per fornire **indicazioni con argomenti organizzati in modo chiaro**, con molti **oggetti visivi ed esempi**, seguendo un'evoluzione logica, utile per apprendere principi e dettagli.
 
 In questo corso, si apprenderà di Microsoft Flow e dei relativi concetti, si scoprirà come **creare flussi**, **gestirli** e **amministrarli** nel proprio ambiente. Verranno fornite informazioni e scenari per una società fittizia denominata Contoso Flooring, ma si apprenderà come usare gli stessi scenari nella propria azienda o in quelle dei clienti.

@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 7ae06fa2bf0029d7dcfe8e3f85c615ce195e799a
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64471742"
+---
 1. Selezionare **Aggiungi un'azione**.
    
     ![aggiungi un'azione](media/modern-approvals/add-update-item-action.png)

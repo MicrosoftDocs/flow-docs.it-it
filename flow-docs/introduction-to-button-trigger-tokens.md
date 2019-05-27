@@ -21,11 +21,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: dc1b93553938221c3f1c995b63b984cfff913c06
-ms.sourcegitcommit: ffed9f02092fbd19fc4108aee05dd40d1a2a3755
-ms.translationtype: HT
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "46711612"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64462502"
 ---
 # <a name="get-started-with-button-trigger-tokens"></a>Introduzione ai token per attivare i pulsanti
 ## <a name="what-are-button-trigger-tokens"></a>Cosa sono i token per attivare i pulsanti?
@@ -84,7 +84,7 @@ Ora si può iniziare:
    ![token per attivare il pulsante](./media/introduction-to-button-trigger-tokens/9.png)  
 
 ## <a name="run-the-button-flow"></a>Eseguire il flusso del pulsante
-**NOTA**: il flusso di questo pulsante invierà nell'e-mail la posizione corrente.  
+**NOTA**: Il flusso invierà la posizione corrente tramite posta elettronica.  
 
 1. Toccare la categoria **Buttons** (Pulsanti) in fondo alla schermata. Verrà visualizzato un elenco dei pulsanti che si è autorizzati a usare. Toccare il pulsante che rappresenta il flusso del pulsante appena creato:  
    ![token per attivare il pulsante](./media/introduction-to-button-trigger-tokens/10.png)  

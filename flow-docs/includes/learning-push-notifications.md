@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: d45bf5974c24a8258f3f4e51e1e4c89b9c74fba7
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64460380"
+---
 Per questo flusso, sarà necessario creare un elenco di **SharePoint** in cui il team di marketing di **Contoso Flooring** archivia i **post di Twitter** e le date di pubblicazione. Da qui, si creerà un flusso che invierà automaticamente tweet basati sul contenuto di tali post. 
 
 ## <a name="connect-microsoft-flow-services"></a>Connettere i servizi di Microsoft Flow
@@ -81,7 +89,7 @@ Per il trigger è tutto.
 3. Impostare il valore di ritardo.
    
    1. Fare clic o toccare il campo **Timestamp**. 
-   2. Quando si apre la casella del contenuto dinamico, scorrere fino alla fine per visualizzare le tre colonne dell'elenco di SharePoint: **Titolo**, **Data Tweet** e **Contenuto Tweet**.
+   2. Quando si apre la casella del contenuto dinamico, scorrere fino alla fine, e visualizzare le tre colonne nell'elenco di SharePoint: **Titolo**, **data Tweet**, e **contenuto del Tweet**.
    3. Selezionare **Data Tweet**. 
       
        ![Ritarda fino a timestamp](./media/learning-push-notifications/14-delay-until-timestamp.png)

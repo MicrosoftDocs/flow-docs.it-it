@@ -21,11 +21,11 @@ search.app:
 search.audienceType:
 - admin
 ms.openlocfilehash: 9ec66eefdbf2f6b6a9047678e9c29cb66900eda2
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
-ms.translationtype: HT
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44688928"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64454080"
 ---
 # <a name="responding-to-gdpr-data-subject-discovery-requests-for-microsoft-flow"></a>Risposta alle richieste di individuazione del soggetto dei dati GDPR per Microsoft Flow
 

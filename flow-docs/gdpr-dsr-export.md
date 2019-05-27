@@ -21,11 +21,11 @@ search.app:
 search.audienceType:
 - admin
 ms.openlocfilehash: e0f9b8e5b345b4dbc226cff2f42850bb126c09b3
-ms.sourcegitcommit: 44bc9de9f06b64615731ceb60a4f46cfcd45b167
-ms.translationtype: HT
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45727137"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64461871"
 ---
 # <a name="responding-to-gdpr-data-subject-export-requests-for-microsoft-flow"></a>Risposta alle richieste di esportazione del soggetto dei dati GDPR per Microsoft Flow
 
@@ -39,7 +39,7 @@ Microsoft Flow offre le esperienze seguenti per trovare o esportare i dati perso
 
 * **Accesso ai siti Web:** accedere all'[interfaccia di amministrazione di PowerApps](https://admin.powerapps.com/) o all'[interfaccia di amministrazione di Microsoft Flow](https://admin.flow.microsoft.com/).
 
-* **Accesso a PowerShell:**[cmdlet di PowerApps per l'amministrazione di PowerShell](https://go.microsoft.com/fwlink/?linkid=871804).
+* **Accesso a PowerShell**:  [Cmdlet di PowerShell di amministrazione di PowerApps per powerapps](https://go.microsoft.com/fwlink/?linkid=871804).
 
 |**Dati dei clienti**|**Accesso ai siti Web**|**Accesso a PowerShell**|
 |-----------------|------------------|-------------------|

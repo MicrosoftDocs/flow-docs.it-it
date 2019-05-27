@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: bb5f08b2606b889a19de0167ef2825cd3428d069
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64463393"
+---
 In un argomento precedente, è stato illustrato come creare un processo di approvazione intorno ai tweet archiviati in un elenco SharePoint.  In questo argomento successivo, si vedrà cosa succede quando un responsabile approvazione riceve una nuova richiesta di approvazione. 
 
 ## <a name="create-and-process-a-request"></a>Creare ed elaborare una richiesta

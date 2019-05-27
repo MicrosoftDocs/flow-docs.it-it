@@ -17,11 +17,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: aa061d5e2f668e8950a6cdab89992996f64c6fe8
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
-ms.translationtype: HT
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44689618"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64461009"
 ---
 # <a name="add-an-on-demand-workflow-to-a-business-process-flow"></a>Aggiungere un flusso di lavoro su richiesta a un processo aziendale
 
@@ -32,8 +32,8 @@ Un flusso di lavoro diventa attivato in base alla posizione in cui è stato rila
 - Processi globali su richiesta. Quando il flusso di lavoro viene rilasciato nell'area **Flusso di lavoro globale**, il flusso di lavoro viene attivato all'attivazione o all'archiviazione del processo (quando lo stato diventa Applicato, Completato, Riattivato o Abbandonato). 
 
 Quando si aggiunge un flusso di lavoro a un processo aziendale tenere presente i requisiti seguenti.
-- Per i flussi di lavoro aggiunti a una fase: è possibile usare solo flussi su richiesta attivi creati per la stessa entità della fase in cui è stato aggiunto il flusso di lavoro.  
-- Per i flussi di lavoro globali: è possibile usare solo flussi di lavoro su richiesta attivi creati per l'entità primaria del processo aziendale.
+- Per i flussi di lavoro aggiunto a una fase: È possibile utilizzare solo i flussi di lavoro attivi, su richiesta creati per la stessa entità della fase in cui si aggiunge il flusso di lavoro.  
+- Per i flussi di lavoro globale: È possibile utilizzare solo i flussi di lavoro attivi, su richiesta creati per l'entità primaria del flusso del processo di business.
 
 ## <a name="add-an-on-demand-workflow-to-a-business-process-flow-stage"></a>Aggiungere un flusso di lavoro su richiesta a un fase del processo aziendale
 

@@ -21,11 +21,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 141eb19018e080191bf0fe2ba6f47f0739d347d7
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
-ms.translationtype: HT
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44689710"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64456746"
 ---
 # <a name="create-an-approval-flow-that-requires-everyone-to-approve"></a>Creare un flusso di approvazione che richieda a tutti gli utenti di approvare
 

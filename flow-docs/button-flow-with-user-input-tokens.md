@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: f87b0d93b912799a4977f347d89b12421cf42e70
-ms.sourcegitcommit: ffed9f02092fbd19fc4108aee05dd40d1a2a3755
-ms.translationtype: HT
+ms.openlocfilehash: 5c1aed64ad5ac8fc1cced9290b376cb54f97e65a
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "46711566"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64992266"
 ---
 # <a name="introducing-button-flows-with-user-input"></a>Introduzione ai flussi di un pulsante con input dell'utente
 Creare un flusso di un pulsante per eseguire attività di routine semplicemente toccando un pulsante. Personalizzare il flusso consentendo all'utente di fornire dettagli specifici che verranno usati quando viene eseguito il flusso. Questo argomento illustra come creare un flusso di un pulsante che accetta l'input dell'utente e quindi eseguire il flusso di un pulsante, evidenziando come fornire l'input dell'utente.
@@ -118,7 +118,28 @@ In questa procedura dettagliata, si userà l'app per dispositivi mobili per Micr
     ![](./media/button-flow-with-user-input-tokens/runmt5.png)  
 7. (facoltativo) Visualizzare i risultati dettagliati dell'esecuzione toccando il passaggio **Create a new work item** (Crea un nuovo elemento di lavoro).
    
-    ![](./media/button-flow-with-user-input-tokens/runmt6.png)  
+    ![](./media/button-flow-with-user-input-tokens/runmt6.png)
+
+
+## <a name="use-different-input-types"></a>Usare diversi tipi di input
+
+I flussi dei pulsanti possono anche accettare tipi di dati complessi. Ecco l'elenco dei tipi di input di dati che accettano i flussi dei pulsanti: 
+
+- Testo
+- Elenchi a discesa (ad esempio, pulsanti di opzione)
+- Indirizzo di posta elettronica
+- File (ad esempio, una foto sul telefono)
+- Casella di controllo Sì o No
+- numero
+- Data (con un selettore del calendario)
+
+Per usare questi tipi di input, aggiungere il **attiva un flusso manualmente** trigger e quindi aggiungere uno di questi tipi al flusso:
+
+![Opzioni di input](media/button-flow-with-user-input-tokens/input-options.png)
+
+Inoltre, è possibile designare alcuni input come richiesto e altri come facoltativa. Usare il menu azione (... sul lato destro) su ogni campo di input. È previsto un limite di cinque gli input per ogni pulsante.
+
+![Seleziona token facoltativo](media/button-flow-with-user-input-tokens/required-optional.png)
 
 ## <a name="next-steps"></a>Passaggi successivi
 * [Condividere i flussi dei pulsanti](share-buttons.md)

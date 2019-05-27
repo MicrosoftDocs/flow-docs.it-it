@@ -20,17 +20,21 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: f75f9b822078fcec8701bf06c3dcb8be0e07d874
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
-ms.translationtype: HT
+ms.openlocfilehash: dd30051425906fdc305be536342eeb7e1762d1eb
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44690736"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "65019857"
 ---
 # <a name="manage-sequential-approvals-with-microsoft-flow"></a>Gestire le approvazioni sequenziali con Microsoft Flow
 Alcuni flussi di lavoro richiedono l'approvazione preliminare prima che il responsabile approvazione finale debba disconnettersi. Ad esempio, una società potrebbe avere un criterio di approvazione sequenziale che richieda l'approvazione preliminare per le fatture di importo superiore a €1.000 prima che siano approvate dal reparto finanziario.
 
 In questa procedura dettagliata viene creato un flusso di lavoro di approvazione sequenziale che gestisce le richieste di ferie dei dipendenti.
+
+> [!NOTE]
+> SharePoint viene utilizzato solo come un esempio; non è necessario per creare flussi di approvazione. È possibile usare uno dei più di 200 servizi con cui si integra Microsoft Flow per drive dei flussi.
+
 
 ## <a name="detailed-steps-in-the-flow"></a>Procedura dettagliata nel flusso
 Il flusso:
@@ -40,7 +44,7 @@ Il flusso:
 3. Invia tramite posta elettronica la decisione di approvazione preliminare al dipendente.
 4. Aggiorna l'elenco di SharePoint Online con la decisione e i commenti del responsabile approvazione preliminare.
    
-   Nota: se la richiesta viene preapprovata, il flusso procede con questi passaggi:
+   Nota: Se la richiesta viene preapprovata, il flusso procede con questi passaggi:
 5. Invia la richiesta al responsabile approvazione finale.
 6. Invia tramite posta elettronica la decisione finale al dipendente.
 7. Aggiorna l'elenco di SharePoint con la decisione finale.
@@ -52,7 +56,7 @@ Questa immagine riepiloga i passaggi precedenti:
 ## <a name="prerequisites"></a>Prerequisiti
 [!INCLUDE [prerequisites-for-modern-approvals](includes/prerequisites-for-modern-approvals.md)]
 
-L'elenco di SharePoint Online creato dall'utente deve includere le colonne seguenti:
+Ai fini di questa procedura dettagliata, l'elenco di SharePoint Online creato deve includere le colonne seguenti:
 
    ![Colonne elenco di SharePoint](./media/sequential-modern-approvals/sharepoint-columns.png)
 
@@ -85,7 +89,7 @@ Dopo ogni operazione di salvataggio, selezionare **Modifica flusso** nella parte
 ## <a name="add-an-approval-action-for-pre-approvals"></a>Aggiungere un'azione di approvazione per le approvazioni preliminari
 [!INCLUDE [add-an-approval-action](includes/add-an-approval-action.md)]
 
-Nota: questa azione invia la richiesta di approvazione preliminare all'indirizzo e-mail indicato nella casella **Assegnato a**.
+Nota: Questa azione Invia la richiesta di approvazione preliminare all'indirizzo di posta elettronica nel **assegnato a** casella.
 
 ## <a name="add-a-condition"></a>Aggiungere una condizione
 [!INCLUDE [add-approval-condition-response](includes/add-approval-condition-response.md)]
@@ -137,7 +141,7 @@ Nota: questa azione invia la richiesta di approvazione preliminare all'indirizzo
 
    ![configurazione delle richieste rifiutate](./media/sequential-modern-approvals/configure-rejected-email.png)
 
-Nota: è necessario aggiungere quest'azione al ramo **SE NO, NON FARE NULLA** sotto la scheda **Condizione**.
+Nota: Questa azione deve essere aggiunto al **se NO, non fare nulla** ramo sotto il **condizione** carta.
 
 ## <a name="update-sharepoint-with-pre-approval-rejection"></a>Aggiornare SharePoint con rifiuto dell'approvazione preliminare
 [!INCLUDE [add-action-to-update-sharepoint-with-rejection](includes/add-action-to-update-sharepoint-with-rejection.md)]
@@ -147,7 +151,7 @@ Nota: è necessario aggiungere quest'azione al ramo **SE NO, NON FARE NULLA** so
 ## <a name="send-email-with-final-rejection"></a>Inviare posta elettronica con il rifiuto finale
 1. Seguire la procedura in [Inviare posta elettronica con rifiuto dell'approvazione preliminare](sequential-modern-approvals.md#send-email-with-pre-approval-rejection) per aggiungere e quindi configurare un'azione che invii un messaggio di posta elettronica quando la richiesta di ferie viene rifiutata dal responsabile approvazione finale.
    
-    Nota: è necessario aggiungere quest'azione al ramo **SE NO, NON FARE NULLA** sotto la scheda **Condizione 2**.
+    Nota: Questa azione deve essere aggiunto al **se NO, non fare nulla** ramo sotto il **condizione 2** carta.
 2. Al termine, la scheda sarà simile all'immagine seguente:
    
    ![configurazione delle richieste rifiutate](./media/sequential-modern-approvals/final-rejection-email-card.png)
@@ -183,7 +187,7 @@ La richiesta deve essere simile all'immagine seguente:
 ## <a name="approve-the-request"></a>Approvare la richiesta
 La procedura per approvare una richiesta è identica a quella necessaria per [preapprovare una richiesta](sequential-modern-approvals.md#pre-approve-a-request)
 
-Nota: il responsabile approvazione finale riceve la richiesta di ferie solo dopo che è stata preapprovata.
+Nota: Il responsabile approvazione finale riceve la richiesta di ferie solo dopo che la richiesta è stata preapprovata.
 
 ## <a name="reject-a-request"></a>Rifiutare una richiesta
 [!INCLUDE [reject-a-request](includes/reject-a-request.md)]

@@ -21,11 +21,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: c28fa7feb743db4616199246d6d517e2e1f6aff9
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
-ms.translationtype: HT
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44690998"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64457727"
 ---
 # <a name="use-data-operations-with-microsoft-flow"></a>Usare le operazioni dati con Microsoft Flow
 Questa procedura dettagliata illustra alcune delle operazioni dati comuni di Microsoft Flow, come composizione, aggiunta, selezione, filtro matrice, creazione tabella e analisi JSON, disponibili per modificare i dati durante la creazione di flussi.
@@ -145,7 +145,7 @@ Usare l'azione **Operazioni dati - Crea tabella CSV** (create csv table) per mod
    
     ![configurare azione crea tabella CSV](./media/data-operations/create-csv-table.png)
    
-    Nota: il token **Body** in questa immagine proviene da un'azione **Richiesta/Risposta - Risposta**; tuttavia, è possibile ottenere l'input per l'azione **Crea tabella CSV** dall'output di qualsiasi azione precedente nel flusso oppure immetterlo direttamente nella casella **Da**.
+    Nota: Il **corpo** token in questa immagine proviene da un **richiesta / risposta-risposta** azione, tuttavia, è possibile ottenere l'input per il **Crea tabella CSV** azione dall'output di qualsiasi azione precedente nel flusso oppure immetterlo direttamente nella **da** casella.
 2. Salvare e quindi eseguire il flusso.
    
     Quando viene eseguito il flusso, l'output di **Crea tabella CSV** è simile a questa immagine:

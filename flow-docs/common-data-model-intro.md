@@ -21,11 +21,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: b2cf6c52a2cbaf06fc638fe8fc898689e6d523c4
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
-ms.translationtype: HT
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44690821"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64460146"
 ---
 # <a name="create-a-flow-that-uses-the-common-data-service"></a>Creare un flusso che usi Common Data Service
 Migliorare l'efficienza operativa con una vista unificata dei dati di business con la creazione di un flusso che usa [Common Data Service](https://powerapps.microsoft.com/tutorials/data-platform-intro/). Distribuire questo database aziendale protetto che comprende entità aziendali standard ben formate (ad esempio vendite, acquisti, servizio clienti e produttività) nell'organizzazione. Archiviare dati aziendali in una o più [entità personalizzate](https://powerapps.microsoft.com/tutorials/data-platform-create-entity/), che offrono diversi vantaggi rispetto alle origini dati esterne, ad esempio Microsoft Excel e Salesforce.
@@ -85,12 +85,12 @@ Ad esempio, è possibile sfruttare Common Data Service all'interno di Microsoft 
     ![Specificare l'istanza di Dynamics 365](./media/common-data-model-intro/specify-instance.png)
 2. (facoltativo) Nella parte superiore della schermata, specificare un nome diverso per il flusso che si sta creando.
    
-    **Nota**: se la finestra del browser non è ingrandita, l'interfaccia utente potrebbe essere leggermente diversa.
+    **Nota**: Se la finestra del browser non è ingrandita, l'interfaccia utente potrebbe essere leggermente diversa.
    
     ![Assegnare un nome al flusso](./media/common-data-model-intro/name-flow.png)
 3. Scegliere o toccare **Crea flusso**.
    
-    **Nota**: se la finestra del browser non è ingrandita, potrebbe essere visualizzato solo il segno di spunta.
+    **Nota**: Se la finestra del browser non è ingrandita, venga visualizzato solo il segno di spunta.
    
     ![Creare il flusso](./media/common-data-model-intro/create-flow.png)
 

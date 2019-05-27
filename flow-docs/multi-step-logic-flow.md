@@ -21,11 +21,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 9dd2aed8b8cdb1f0a8e673c5466291f60baaf41d
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
-ms.translationtype: HT
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44689388"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64466469"
 ---
 # <a name="add-multiple-actions-and-advanced-options-to-a-flow"></a>Aggiungere più azioni e opzioni avanzate a un flusso
 Personalizzare un flusso aggiungendo una o più opzioni avanzate e più azioni per lo stesso trigger. Ad esempio, aggiungere un'opzione avanzata che invii un messaggio di posta elettronica con priorità elevata. Oltre a inviare posta elettronica quando un elemento viene aggiunto a un elenco di , creare in Dropbox un file che contenga le stesse informazioni.
@@ -76,7 +76,7 @@ In questa procedura si aggiungerà un'azione nel mezzo del flusso. Questa azione
   
     ![Eliminare il menu](./media/multi-step-logic-flow/deletemenu.png)
   
-     **Nota:** non è possibile eliminare un'azione se si usano i relativi output in qualsiasi punto nel flusso. È prima di tutto necessario rimuovere tali output dai campi, quindi è possibile eliminare l'azione.
+     **Nota**: È possibile eliminare un'azione se si usa qualsiasi output da quest'ultimo in un punto qualsiasi nel flusso. È prima di tutto necessario rimuovere tali output dai campi, quindi è possibile eliminare l'azione.
 
 ## <a name="add-advanced-options"></a>Aggiungere le opzioni avanzate
 Iniziare con un flusso che includa un'azione **Invia un messaggio di posta elettronica**.
