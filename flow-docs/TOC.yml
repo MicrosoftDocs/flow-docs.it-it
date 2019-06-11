@@ -109,6 +109,10 @@
           href: use-cds-for-apps-dialogs.md
         - name: Sostituire le finestre di dialogo classiche di Common Data Service
           href: replace-dialogs.md
+- name: Generatore di intelligenza artificiale
+  items:
+    - name: Uso del Generatore di intelligenza artificiale in Microsoft Flow
+      href: use-ai-builder.md
 - name: Procedura
   items:
     - name: Aggiungere un'azione
