@@ -81,14 +81,17 @@
 - name: Common Data Service
   items:
     - name: Flussi di lavoro classici di Common Data Service
-      href: workflow-processes.md
       items:
+        - name: Panoramica
+          href: workflow-processes.md
         - name: Configurare le fasi e i passaggi del flusso di lavoro
           href: configure-workflow-steps.md
         - name: Monitorare e gestire i processi del flusso di lavoro
           href: monitor-manage-processes.md
         - name: Procedure consigliate per i processi dei flussi di lavoro
           href: best-practices-workflow-processes.md
+        - name: Sostituire i flussi di lavoro con i flussi
+          href: replace-workflows-with-flows.md
     - name: Azioni classiche di Common Data Service
       items:
         - name: Usare le azioni
