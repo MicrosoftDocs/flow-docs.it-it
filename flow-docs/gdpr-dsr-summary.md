@@ -1,11 +1,12 @@
 ---
-title: Riepilogo delle richieste di soggetto dei dati GDPR | Microsoft Docs
-description: Informazioni su come rispondere alle richieste di soggetto dei dati GPDR per Microsoft Flow.
+title: Riepilogo richieste oggetto dati GDPR | Microsoft Docs
+description: Informazioni su come rispondere alle richieste del soggetto dei dati alle GPDR per Microsoft Flow.
 services: ''
 suite: flow
 documentationcenter: na
-author: KentWeareMSFT
-manager: anneta
+author: MSFTMAN
+manager: KVIVEK
+ms.author: Deonhe
 editor: ''
 tags: ''
 ms.service: flow
@@ -14,22 +15,22 @@ ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 4/24/2018
-ms.author: keweare
 search.app:
 - Flow
 - Powerplatform
 search.audienceType:
 - admin
-ms.openlocfilehash: 1eaa98b674e78f46988d253e2be76a5d92283a76
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: c4d2686e9da00aaccc46e62570de387678bd1ece
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "64460437"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73548214"
 ---
-# <a name="responding-to-gdpr-data-subject-requests-for-microsoft-flow"></a>Risposta alle richieste di soggetto dei dati GDPR per Microsoft Flow
+# <a name="responding-to-gdpr-data-subject-requests-for-microsoft-flow"></a>Risposta alle richieste del soggetto dei dati GDPR per Microsoft Flow
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
-Le informazioni in questo articolo consentono di preparare amministratori e organizzazioni per il Regolamento generale sulla protezione dei dati (GDPR) dell'Unione europea. Questo articolo non solo descrive le iniziative di Microsoft per prepararsi per il regolamento GDPR, ma condivide anche esempi delle procedure adottabili sin da subito per supportare la conformità a GDPR quando si usano PowerApps, Microsoft Flow e Common Data Service.
+Questo articolo prepara l'utente e l'organizzazione per la Regolamento generale sulla protezione dei dati dell'Unione europea (GDPR). Questo articolo non solo descrive cosa sta facendo Microsoft per prepararsi per la GDPR, ma condivide anche esempi di passaggi che è possibile intraprendere per supportare la conformità GDPR quando si usa PowerApps, Microsoft Flow e Common Data Service.
 
 ## <a name="prerequisites"></a>Prerequisiti
 
@@ -37,45 +38,45 @@ Gli utenti e gli amministratori possono eseguire le azioni descritte in questo a
 
 ### <a name="users"></a>Utenti
 
-Un utente deve avere un account Azure Active Directory attivo con un [licenza Microsoft Flow](https://preview.flow.microsoft.com/pricing/). Gli utenti che non soddisfano questo requisito devono chiedere a un amministratore di eseguire queste azioni.
+Un utente deve disporre di un account Azure Active Directory attivo con una [licenza di Microsoft Flow](https://preview.flow.microsoft.com/pricing/). Gli utenti che non soddisfano questo requisito devono richiedere a un amministratore di eseguire queste azioni.
 
 ### <a name="administrators"></a>Amministratori
 
-È possibile eseguire le operazioni che richiedono privilegi di amministratore, descritte in questo articolo, se si esegue l'accesso all'[interfaccia di amministrazione di Microsoft Flow](https://admin.flow.microsoft.com/) o a [PowerShell per amministratori di PowerApps](https://go.microsoft.com/fwlink/?linkid=871804) con un account che dispone di entrambe queste autorizzazioni:
+È possibile eseguire le operazioni che richiedono privilegi di amministratore, descritte in questo articolo, se si accede all'interfaccia di [amministrazione di Microsoft Flow](https://admin.flow.microsoft.com/) o a [PowerApps admin PowerShell](https://go.microsoft.com/fwlink/?linkid=871804) con un account che dispone di entrambe le autorizzazioni seguenti:
 
-- Una licenza a pagamento o di valutazione per PowerApps Piano 2.
+- Una licenza a pagamento o di valutazione per PowerApps piano 2.
 
-    [Una licenza di valutazione](http://web.powerapps.com/trial) scade dopo 30 giorni.
+    [Una licenza di valutazione](http://web.powerapps.com/trial) scade tra 30 giorni.
 
-- [Amministratore globale di Office 365](https://support.office.com/article/assign-admin-roles-in-office-365-for-business-eac4d046-1afd-4f1a-85fc-8219c79e1504) oppure [Amministratore globale di Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal).
+- [Amministratore globale di Office 365](https://support.office.com/article/assign-admin-roles-in-office-365-for-business-eac4d046-1afd-4f1a-85fc-8219c79e1504) o [Azure Active Directory amministratore globale](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal).
 
 ### <a name="unmanaged-tenants"></a>Tenant non gestiti
-Se l'utente appartiene a un [tenant non gestito](https://docs.microsoft.com/azure/active-directory/domains-admin-takeover), ovvero se il tenant Azure AD non ha un amministratore globale, l'utente può comunque seguire la procedura descritta in questo articolo per esportare e rimuovere i dati personali. 
+Se si è membri di un [tenant non gestito](https://docs.microsoft.com/azure/active-directory/domains-admin-takeover), vale a dire che il tenant di Azure ad non dispone di un amministratore globale, sarà comunque possibile seguire la procedura descritta in questo articolo per esportare e rimuovere i dati personali. 
 
-## <a name="responding-to-dsrs-for-microsoft-flow-customer-data"></a>Risposta alle richieste DSR per i dati dei clienti di Microsoft Flow
+## <a name="responding-to-dsrs-for-microsoft-flow-customer-data"></a>Risposta a DSRs per i dati del cliente Microsoft Flow
 
-Il regolamento GDPR concede diritti agli individui (noti come soggetti dei dati in GDPR) per gestire i dati personali raccolti da un datore di lavoro o un altro tipo di agenzia o organizzazione (noto come titolare del trattamento dei dati o semplicemente titolare). Nell'ambito del regolamento GDPR i dati personali hanno una definizione molto ampia, ovvero sono tutti i dati riferiti a una persona fisica identificata o identificabile. In base al regolamento GDPR, ai soggetti dei dati vengono assegnati diritti specifici per i dati personali, tra i quali ottenere copie dei dati personali, richiedere correzioni di tali dati, limitarne l'elaborazione, eliminarli o riceverli in formato elettronico in modo che possano essere trasferiti a un altro titolare. Una richiesta formale da un soggetto dei dati a un titolare di agire sui dati personali viene definita richiesta DSR (Data Subject Rights, diritti del soggetto dei dati).
+Il GDPR fornisce ai dipendenti (noti in GDPR come soggetti dati) i diritti per gestire i dati personali raccolti da un datore di lavoro o da un altro tipo di agenzia o organizzazione (noto come controller dati o solo controller). I dati personali vengono definiti in modo molto ampio sotto la GDPR come tutti i dati che si riferiscono a un utente naturale identificato o identificabile. Il GDPR fornisce ai soggetti dati diritti specifici sui dati personali; questi diritti includono l'ottenimento di copie di dati personali, la richiesta di correzioni, la limitazione dell'elaborazione, l'eliminazione o la ricezione in formato elettronico, in modo che possa essere spostata in un altro controller. Una richiesta formale da un soggetto interessato a un controller per eseguire un'azione sui dati personali è detta richiesta di diritti dei soggetti interessati (DSR).
 
-Questo articolo illustra come usare i prodotti, i servizi e gli strumenti di amministrazione di Microsoft per consentire ai titoli di individuare i dati personali e agire su di essi in risposta alle richieste DSR. In particolare, questo articolo include indicazioni per trovare, accedere e agire sui dati personali che si risiedono nel cloud di Microsoft. Ecco una rapida panoramica dei processi descritti in questa guida:
+Questo articolo illustra come usare i prodotti, i servizi e gli strumenti di amministrazione di Microsoft per aiutare i controller a trovare e agire sui dati personali quando rispondono a DSRs. In particolare, questo articolo include come trovare, accedere e agire sui dati personali che risiedono nel cloud di Microsoft. Ecco una rapida panoramica dei processi descritti in questa guida:
 
-1. Individuazione: usare strumenti di ricerca e individuazione per trovare più facilmente i dati dei clienti che potrebbero essere oggetto di una richiesta DSR. Dopo aver raccolto i documenti potenzialmente interessati, è possibile eseguire una o più delle azioni DSR descritte nei passaggi seguenti per rispondere alla richiesta. Si potrebbe anche determinare che la richiesta non soddisfa le linee guida della propria organizzazione per rispondere a richieste DSR. [Documentazione sulle procedure di individuazione per le richieste DSR in Microsoft Flow](gdpr-dsr-discovery.md)
+1. Scopri: usare gli strumenti di ricerca e individuazione per trovare più facilmente i dati dei clienti che possono essere soggetti a un DSR. Una volta raccolti i documenti potenzialmente reattivi, è possibile eseguire una o più delle azioni DSR descritte nei passaggi seguenti per rispondere alla richiesta. In alternativa, è possibile determinare che la richiesta non soddisfa le linee guida della propria organizzazione per rispondere a DSRs. [Documentazione di individuazione di Microsoft Flow DSR](gdpr-dsr-discovery.md)
 
-1. Accesso: recuperare i dati personali che risiedono nel cloud di Microsoft e, se richiesto, crearne una copia che può essere resa disponibile al soggetto dei dati.
+1. Accesso: recuperare i dati personali che risiedono nel cloud Microsoft e, se richiesto, effettuarne una copia che può essere disponibile per l'oggetto dati.
 
-1. Rettifica: apportare modifiche o implementare altre azioni richieste sui dati personali, se applicabile.
+1. Rettifica: apportare modifiche o implementare altre azioni richieste sui dati personali, ove applicabile.
 
-    Se un soggetto dei dati richiede la rettifica dei dati personali che si trovano all'interno dell'organizzazione, l'amministratore e l'organizzazione devono determinare se è appropriato soddisfare la richiesta.  La rettifica dei dati può includere l'esecuzione di azioni, come la modifica, la revisione o la rimozione dei dati personali.
+    Se un soggetto interessato chiede di rettificare i dati personali che risiedono nell'organizzazione, l'utente e l'organizzazione devono determinare se è opportuno rispettare la richiesta.  La rettifica dei dati può includere l'esecuzione di azioni come la modifica, relazioni o la rimozione dei dati personali.
 
-    È possibile usare Azure Active Directory per gestire le identità degli utenti di Microsoft Flow. I clienti aziendali possono gestire le richieste di rettifica DSR, incluse funzionalità di modifica limitate, in base alla natura di un determinato servizio Microsoft.  In quanto responsabile del trattamento dei dati, Microsoft non offre la possibilità di correggere i log generati dal sistema, in quanto questi log riflettono attività concrete e costituiscono un record cronologico degli eventi all'interno di servizi Microsoft.  [Altre informazioni sulle richieste DSR](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-azure).
+    È possibile usare Azure Active Directory per gestire le identità di Microsoft Flow degli utenti. I clienti aziendali possono gestire le richieste di rettifica del DSR, incluse le funzionalità di modifica limitate, in base alla natura di un determinato servizio Microsoft.  In qualità di Elaboratore di dati, Microsoft non offre la possibilità di correggere i log generati dal sistema, perché questi log riflettono le attività effettive e costituiscono un record cronologico di eventi all'interno dei servizi Microsoft.  [Altre informazioni su DSR](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-azure).
 
-1. Limitazione: limitare l'elaborazione dei dati personali, rimuovendo le licenze per vari servizi online o disattivando i servizi desiderati, se possibile. È anche possibile rimuovere i dati dal cloud di Microsoft e conservarli in locale o in un'altra posizione.
+1. Limitazione: limitare l'elaborazione dei dati personali, rimuovendo le licenze per vari Servizi online o spegnendo laddove possibile i servizi desiderati. È anche possibile rimuovere i dati dal cloud Microsoft e conservarli in locale o in un'altra posizione.
 
-    I soggetti dei dati possono richiedere la limitazione dell'elaborazione dei dati personali.  Microsoft offre API (Application Programming Interface) e interfacce utente a questo scopo.  Queste interfacce consentono all'amministratore tenant del cliente aziendale di gestire queste richieste DSR tramite una combinazione di esportazione dei dati ed eliminazione dei dati. Un cliente potrebbe (1) esportare una copia in formato elettronico dei dati personali dell'utente, tra cui account, log generati dal sistema e log associati, e in seguito (2) eliminare l'account e i dati associati che risiedono all'interno di sistemi Microsoft.
+    Gli oggetti dati possono richiedere di limitare l'elaborazione dei dati personali.  Microsoft fornisce API (Application Programming Interface) e interfacce utente (UI) a questo scopo.  Queste interfacce consentono all'amministratore tenant del cliente aziendale di gestire tali DSRs tramite una combinazione di esportazione dei dati e eliminazione dei dati. Un cliente può (1) esportare una copia elettronica dei dati personali dell'utente, inclusi gli account, i log generati dal sistema e i log associati, seguiti con (2) l'eliminazione dell'account e i dati associati che risiedono all'interno dei sistemi Microsoft.
 
-1. Eliminazione: rimuovere in modo permanente i dati personali che risiedono nel cloud di Microsoft. [Altre informazioni sull'eliminazione dei dati personali](gdpr-dsr-delete.md).
+1. Elimina: rimuovere in modo permanente i dati personali che risiedono nel cloud di Microsoft. [Altre informazioni sull'eliminazione dei dati personali](gdpr-dsr-delete.md).
 
-1. Esportazione: consegnare una copia elettronica (in un formato leggibile al computer) dei dati personali al soggetto dei dati. In ogni sezione di questo articolo vengono descritte le procedure tecniche che un'organizzazione titolare del trattamento dei dati può adottare per rispondere a una richiesta DSR per dati personali nel cloud di Microsoft. [Altre informazioni sull'esportazione dei dati personali](gdpr-dsr-export.md).
+1. Export: fornire una copia elettronica (in un formato leggibile dal computer) dei dati personali al soggetto interessato. In ogni sezione di questo articolo vengono descritte le procedure tecniche che un'organizzazione del controller dei dati può intraprendere per rispondere a un DSR per i dati personali nel cloud Microsoft. [Altre informazioni sull'esportazione dei dati personali](gdpr-dsr-export.md).
 
 ## <a name="system-generated-logs"></a>Log generati dal sistema
 
-Fare riferimento a questa [guida](https://docs.microsoft.com/powerapps/administrator/powerapps-gdpr-dsr-guide-systemlogs) per altre informazioni sui log generati dal sistema per Microsoft Flow.
+Per ulteriori informazioni sui log generati dal sistema per Microsoft Flow, fare riferimento a questa [Guida](https://docs.microsoft.com/powerapps/administrator/powerapps-gdpr-dsr-guide-systemlogs) .

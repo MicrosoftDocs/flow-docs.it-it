@@ -1,6 +1,6 @@
 ---
 title: Informazioni su come gestire i gateway dati locali | Microsoft Docs
-description: Visualizzare e installare un gateway dati locale in Microsoft Flow
+description: Visualizzare e installare un gateway dati locale in Microsoft Flow.
 services: ''
 suite: flow
 documentationcenter: na
@@ -13,31 +13,32 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 02/05/2018
+ms.date: 10/16/2019
 ms.author: deonhe
 search.app:
 - Flow
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: b8b14f720736a60b04cbd9ae23dec5c0524ff03c
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: 3991e739178f86bbea3ae1b68b9d3337c42b4727
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "65054065"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73547658"
 ---
 # <a name="manage-an-on-premises-data-gateway-in-microsoft-flow"></a>Gestire un gateway dati locale in Microsoft Flow
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
-Installare e gestire un gateway dati locale per integrare in modo sicuro un'ampia gamma di app basate su cloud con i dati e le app locali attraverso Microsoft Flow.
+Installare e gestire un gateway dati locale per integrare in modo sicuro un'ampia gamma di app basate su cloud con i dati e le app locali tramite Microsoft Flow.
 
-Con un gateway è possibile connettersi ai dati locali attraverso le connessioni seguenti:
+Con un gateway è possibile connettersi ai dati locali tramite le connessioni seguenti:
 
 * Apache Impala
-* Connettori personalizzati creati dall'utente
+* Connettori personalizzati creati
 * DB2
-* File system
-* HTTP con Azure AD
+* File System
+* Http con Azure AD
 * Informix
 * MySQL
 * Oracle Database
@@ -47,55 +48,49 @@ Con un gateway è possibile connettersi ai dati locali attraverso le connessioni
 * Teradata (anteprima)
 
 > [!IMPORTANT]
-> I gateway di dati di Microsoft SharePoint ora supportano il traffico sia HTTP che HTTPS.
+> I gateway di dati di Microsoft SharePoint supportano ora sia il traffico HTTP che HTTPS.
 
 ## <a name="prerequisites"></a>Prerequisiti
 
-* Il nome utente e la password usati per [iscriversi](sign-up-sign-in.md) a Microsoft Flow.
+* Nome utente e password usati per [iscriversi](sign-up-sign-in.md) a Microsoft Flow.
 * Autorizzazioni amministrative per un gateway.
 
-  Queste autorizzazioni sono disponibili per impostazione predefinita per ogni gateway installato. Inoltre, un amministratore di un altro gateway può concedere queste autorizzazioni per tale gateway.
-* Una licenza che supporti i gateway. Per ulteriori informazioni, vedere la sezione "Connectivity" (Connettività) della [pagina dei prezzi](https://flow.microsoft.com/pricing/).
+  Queste autorizzazioni sono disponibili per impostazione predefinita per ogni gateway installato. Inoltre, un amministratore di un altro gateway può concedere queste autorizzazioni per il gateway.
+* Una licenza che supporta i gateway. Per ulteriori informazioni, vedere la sezione "connettività" della [pagina dei prezzi](https://flow.microsoft.com/pricing/).
 
 > [!NOTE]
-> È possibile creare un gateway e una connessione locale solo nell'[ambiente predefinito](environments-overview-maker.md).
+> È possibile creare un gateway e una connessione locale solo nell' [ambiente predefinito](environments-overview-maker.md).
 
 ## <a name="install-a-gateway"></a>Installare un gateway
 
-1. Scaricare l'[installazione guidata del gateway](https://go.microsoft.com/fwlink/?LinkID=820580&clcid=0x409).
-
-1. Eseguire questa procedura guidata e specificare le stesse credenziali usate per accedere a Microsoft Flow.
-
-    Dopo aver registrato e configurato correttamente il gateway, questo viene visualizzato nell'elenco **Gateway** in Microsoft Flow.
+Per installare un gateway, seguire la procedura descritta in [installare un gateway dati locale](/data-integration/gateway/service-gateway-install). Installare il gateway in modalità standard perché il _gateway dati locale (modalità personale)_ è disponibile solo per Power bi.
 
 ## <a name="view-your-gateways"></a>Visualizzare i gateway
 
-Nell'angolo in alto a destra del [sito Web di Microsoft Flow](https://flow.microsoft.com) selezionare l'icona a forma di ingranaggio e quindi selezionare **Gateway**.
+Nell'angolo in alto a destra del [sito web Microsoft Flow](https://flow.microsoft.com)selezionare l'icona a forma di ingranaggio e quindi selezionare **gateway**.
 
-![Gateway in gestione][1]
+![Gateway gestito][1]
 
 > [!NOTE]
-> Se si è l'autore di un gateway in PowerApps o si è autorizzati ad accedervi, tale gateway viene visualizzato nell'elenco **Gateway personali** in Microsoft Flow.
+> Se è stato creato o è stato concesso l'accesso a un gateway in PowerApps, tale gateway viene visualizzato nell'elenco **gateway personali** in Microsoft Flow.
 
+## <a name="cluster-your-gateways"></a>Raggruppare i gateway
 
-## <a name="cluster-your-gateways"></a>I gateway del cluster
+È possibile creare [cluster a disponibilità elevata di installazioni di gateway dati locali](/data-integration/gateway/service-gateway-high-availability-clusters) per evitare singoli punti di errore durante l'accesso alle risorse dati locali.
 
-È possibile creare *cluster a disponibilità elevata di installazioni del gateway dati locale* per evitare singoli punti di errore nell'accesso alle risorse dati locali. 
+Per impostazione predefinita, Microsoft Flow usa il gateway primario nel cluster. Se il gateway primario non è disponibile, il servizio passa al gateway successivo nel cluster e così via.
 
-Per impostazione predefinita, Microsoft Flow Usa il gateway primario nel cluster. Se il gateway primario non è disponibile, il servizio passa al gateway successivo del cluster, e così via.
+Dopo aver configurato un cluster di gateway, è possibile consentire la distribuzione del traffico tra tutti i gateway del cluster.
 
-Dopo aver configurato un cluster di gateway, è possibile consentire il traffico deve essere distribuito tra tutti i gateway nel cluster. 
+Per distribuire il traffico tra i gateway, seguire questa procedura:
 
-Seguire questi passaggi per distribuire il traffico tra i gateway:
-
-1. Selezionare **dati** sulla barra di spostamento a sinistra.
+1. Selezionare **dati** sulla barra di spostamento sul lato sinistro.
 1. Selezionare **gateway**.
 1. Selezionare uno dei gateway.
-1. Selezionare **distribuire le richieste tra tutti i gateway attivi in questo cluster**.
+1. Selezionare **Distribuisci le richieste tra tutti i gateway attivi in questo cluster**.
 1. Selezionare **applica** per salvare le modifiche.
 
-
-Per altre informazioni, vedere [Informazioni sui gateway](gateway-reference.md).
+Per altre informazioni, vedere informazioni sui [gateway](gateway-reference.md).
 
 <!-- Image references -->
 [1]: ./media/manage-gateway/view-gateways.png

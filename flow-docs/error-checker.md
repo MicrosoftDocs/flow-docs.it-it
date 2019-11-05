@@ -1,6 +1,6 @@
 ---
-title: Trovare e correggere gli errori con il controllo di Microsoft Flow | Microsoft Docs
-description: Individuare e risolvere rapidamente gli errori con il controllo di Microsoft Flow.
+title: Trovare e correggere gli errori con il controllo Microsoft Flow | Microsoft Docs
+description: Individuare e correggere rapidamente gli errori con il controllo Microsoft Flow.
 services: ''
 suite: flow
 documentationcenter: na
@@ -20,39 +20,40 @@ search.app:
 - Powerplatform
 search.audienceType:
 - flowmaker
-ms.openlocfilehash: a6a7acd464131cebaa692d72a9a0a44a572b2470
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: 2751b914c9f1afcab9cc5eee8c55e3b85ea07716
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "65060860"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73547908"
 ---
-# <a name="the-microsoft-flow-checker"></a>Il controllo di Microsoft Flow
+# <a name="the-microsoft-flow-checker"></a>Controllo Microsoft Flow
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
-Il controllo di Microsoft Flow Alza di livello superiore qualità flussi assicurandosi di seguono le procedure consigliate durante la progettazione di flussi. Quando si esegue lo strumento di verifica, ottenere informazioni dettagliate sulle domande come "quali aree dell'implementazione del flusso di rappresentano un rischio per le prestazioni o affidabilità?"
+Il controllo Microsoft Flow promuove flussi di qualità superiore garantendo di seguire le procedure consigliate durante la progettazione dei flussi. Quando si esegue il controllo, si ottengono informazioni approfondite sulle domande, ad esempio "quali aree dell'implementazione del flusso costituiscono un rischio per le prestazioni o l'affidabilità?"
 
-Per ogni problema lo strumento di verifica identifica, i punti di controllo per le occorrenze specifiche all'interno del flusso in cui è consigliabile apportare miglioramenti. E, informazioni su come implementare questi miglioramenti, seguire le istruzioni dettagliate.
+Per ogni problema identificato dal controllo, il controllo punta a occorrenze specifiche all'interno del flusso in cui è consigliabile apportare miglioramenti. Si apprenderà come implementare questi miglioramenti seguendo le istruzioni dettagliate.
 
-Il controllo è sempre attivo e visualizzati nella barra dei comandi nella finestra di progettazione. Il grafico mostra un punto rosso quando rileva uno o più errori o potenziali errori nel flusso.
+Il controllo è sempre attivo e viene visualizzato nella barra dei comandi nella finestra di progettazione. Il controllo Mostra un punto rosso quando trova uno o più errori o potenziali errori nel flusso.
 
 ![Checker](media/checker/checker-in-designer.png "Checker")
 
 
-## <a name="view-errors-in-the-checker"></a>Visualizzare gli errori in verifica
+## <a name="view-errors-in-the-checker"></a>Visualizzazione degli errori nel controllo
 
-Durante la progettazione del flusso, è possibile selezionare il pulsante di controllo di flusso per aprire il grafico per visualizzare gli errori e avvisi. 
+Durante la progettazione del flusso, è possibile selezionare il pulsante controllo del flusso per aprire il controllo per visualizzare gli errori e gli avvisi. 
 
-Il controllo viene aperto automaticamente anche quando si salva il flusso se sono presenti errori o avvisi.  Quando si apre il controllo, Mostra tutti gli errori e avvisi nel flusso. In ogni sezione, il controllo chiama le azioni in cui si verifica l'errore o avviso. 
+Il controllo viene inoltre aperto automaticamente quando si salva il flusso se sono presenti errori o avvisi.  Una volta aperto il controllo, vengono visualizzati tutti gli errori e gli avvisi nel flusso. In ogni sezione, il controllo chiama le azioni in cui si verifica l'errore o l'avviso. 
 
-## <a name="learn-to-fix-errors-and-warnings"></a>Informazioni su come correggere gli errori e avvisi
+## <a name="learn-to-fix-errors-and-warnings"></a>Informazioni su come correggere gli errori e gli avvisi
 
 Espandere ogni sezione per altre informazioni su come correggere un errore.
 
-![Controllo dei dettagli](media/checker/checker-detail.png "controllo dettagli")
+![Dettagli controllo](media/checker/checker-detail.png "Dettagli controllo")
 
-## <a name="learn-more"></a>Altre informazioni
+## <a name="learn-more"></a>Ulteriori informazioni
 
-[Introduzione a Microsoft Flow](getting-started.md)
+[Inizia a usare Microsoft Flow](getting-started.md)
 
 
 

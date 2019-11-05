@@ -1,11 +1,11 @@
 ---
 title: Integrare Microsoft Flow con siti Web e app | Microsoft Docs
-description: Incorporare le esperienze di Microsoft Flow in un sito Web o un'app.
+description: Incorporare le esperienze di Microsoft Flow nel sito Web o nell'app.
 services: ''
 suite: flow
 documentationcenter: na
-author: bbarath
-manager: erikre
+author: MSFTMAN
+manager: KVivek
 editor: ''
 tags: ''
 ms.service: flow
@@ -14,138 +14,140 @@ ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 01/31/2019
-ms.author: barathb
+ms.author: Deonhe
 search.app:
 - Flow
 search.audienceType:
 - developer
-ms.openlocfilehash: 47d44b2c97275add492153d85138b7d11b554530
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: cf2f14826670cf221411fa2204ee9b2c5581222e
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "64457263"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73547720"
 ---
-# <a name="integrate-microsoft-flow-with-websites-and-apps"></a>Integrare Microsoft Flow con siti Web e app
+# <a name="integrate-microsoft-flow-with-websites-and-apps"></a>Integra Microsoft Flow con siti Web e app
+[!INCLUDE [view-pending-approvals](../includes/cc-rebrand.md)]
 
-Incorporare Microsoft Flow nell'app o nel sito Web usando *widget di Flow* per offrire agli utenti un modo semplice per automatizzare le attività personali o professionali.
+Incorporare Microsoft Flow nell'app o nel sito Web usando i *widget Flow* per offrire agli utenti un modo semplice per automatizzare le attività personali o professionali.
 
-I widget di Flow sono iframe che si trovano in un documento host. Questo documento punta a una pagina nella finestra di progettazione di Microsoft Flow. Questi widget integrano la funzionalità specifica di Microsoft Flow nell'applicazione di terze parti.
+I widget Flow sono iframe che si trovano in un documento host. Questo documento fa riferimento a una pagina nella finestra di progettazione Microsoft Flow. Questi widget integrano funzionalità di Microsoft Flow specifiche nell'applicazione di terze parti.
 
-I widget possono essere semplici. Ad esempio, un widget che esegue il rendering di un elenco di modelli senza alcuna comunicazione tra host e iframe. I widget possono essere anche complessi. Ad esempio, un widget che effettua il provisioning di un flusso da un modello e quindi attiva il flusso tramite una comunicazione bidirezionale tra host e widget.
+I widget possono essere semplici. Ad esempio, un widget che esegue il rendering di un elenco di modelli senza comunicazione tra l'host e iframe. I widget possono anche essere complessi. Ad esempio, un widget che effettua il provisioning di un flusso da un modello e quindi attiva il flusso tramite la comunicazione bidirezionale tra l'host e il widget.
 
 ## <a name="prerequisites"></a>Prerequisiti
 
-- Un **account Microsoft** oppure
-- Un account aziendale o dell'istituto di istruzione
+- Un **account Microsoft** o
+- Un account aziendale o dell'Istituto di istruzione
 
 ## <a name="use-the-unauthenticated-widget"></a>Usare il widget non autenticato
-Per usare un modello non autenticato, incorporarlo direttamente nell'applicazione host in un iframe. Non è necessario un SDK JS o un token di accesso. 
+Per usare il widget modelli non autenticati, incorporarlo direttamente nell'applicazione host usando un iframe. Non è necessario JS SDK o un token di accesso. 
 
-### <a name="show-templates-for-your-scenarios"></a>Visualizzare i modelli per gli scenari
+### <a name="show-templates-for-your-scenarios"></a>Mostra i modelli per gli scenari
 Per iniziare, aggiungere il codice seguente per visualizzare i modelli di Microsoft Flow nel sito Web:
 
 ```html
 <iframe src="https://flow.microsoft.com/{locale}/widgets/templates/?q={search term}
-&pagesize={number of templates}&destination={destination}"></iframe>
+&pagesize={number of templates}&destination={destination}&category={category}"></iframe>
 ```
 
 | Parametro | Descrizione |
 | --- | --- |
-| locale |Codice lingua e area geografica di quattro lettere per la visualizzazione del modello. Ad esempio, `en-us` rappresenta l'inglese americano e `de-de` rappresenta il tedesco. |
-| search term |Il termine di ricerca per i modelli da includere nella visualizzazione. Ad esempio, cercare `wunderlist` per visualizzare i modelli per Wunderlist. |
-| number of templates |Il numero di modelli da includere nella visualizzazione. |
-| destination |La pagina visualizzata quando l'utente seleziona il modello. Immettere `details` per visualizzare i dettagli sul modello oppure immettere `new` per aprire la finestra di progettazione di Microsoft Flow. |
-| parameters.{name} |Contesto aggiuntivo da passare al flusso. |
-| templateCategory | Filtri per la categoria del modello specificato                     | 
+| locale |Il codice della lingua e dell'area di quattro lettere per la visualizzazione modello. Ad esempio, `en-us` rappresenta l'inglese americano e `de-de` rappresenta il tedesco. |
+| termine di ricerca |Termine di ricerca per i modelli che si desidera visualizzare nella visualizzazione. Ad esempio, cercare `wunderlist` per visualizzare i modelli per Wunderlist. |
+| numero di modelli |Il numero di modelli che si desidera visualizzare nella visualizzazione. |
+| Destinazione |Pagina che viene visualizzata quando gli utenti selezionano il modello. Immettere `details` per visualizzare i dettagli sul modello oppure immettere `new` per aprire la finestra di progettazione Microsoft Flow. |
+| Categoria |Filtra alla categoria del modello specificata. | 
+| parametri. nome |Contesto aggiuntivo da passare al flusso. |
 
-Se il parametro di destinazione è `new`, la finestra di progettazione di Microsoft Flow viene aperta quando gli utenti selezionano un modello. Gli utenti possono quindi creare un flusso nella finestra di progettazione. Per l'esperienza completa del widget, vedere la sezione successiva.
+
+Se il parametro di destinazione è `new`, viene visualizzata la finestra di progettazione Microsoft Flow quando gli utenti selezionano un modello. Gli utenti possono quindi creare un flusso nella finestra di progettazione. Vedere la sezione successiva se si vuole avere un'esperienza completa dal widget.
 
 ### <a name="passing-additional-parameters-to-the-flow-template"></a>Passaggio di parametri aggiuntivi al modello di flusso
 
-Se l'utente è in un contesto specifico nel sito Web o nell'app, è possibile passare il contesto al flusso. Ad esempio, un utente può aprire un modello per ricevere *una notifica quando un elemento viene aggiunto a un elenco* durante la ricerca in un determinato elenco di Wunderlist. Per passare l'ID elenco come *parametro* al flusso, seguire questa procedura:
+Se l'utente si trova in un contesto specifico nel sito Web o nell'app, potrebbe essere necessario passare il contesto al flusso. Ad esempio, un utente potrebbe aprire un modello per ricevere una *notifica quando un elemento viene aggiunto a un elenco* osservando un determinato elenco in Wunderlist. Seguire questa procedura per passare l'ID elenco come *parametro* al flusso:
 
-1. Definire il parametro nel modello di flusso prima della pubblicazione. Un parametro è simile a `@{parameters('parameter_name')}`.
-1. Passare il parametro nell'attributo iframe src. Ad esempio, aggiungere `&parameters.listName={the name of the list}` se si ha un parametro denominato **listName**.
+1. Definire il parametro nel modello di flusso prima di pubblicarlo. Un parametro ha un aspetto simile a `@{parameters('parameter_name')}`.
+1. Passare il parametro nella stringa di query dell'iframe src. Ad esempio, aggiungere `&parameters.listName={the name of the list}` se si dispone di un parametro denominato **listname**.
 
 ### <a name="full-sample"></a>Esempio completo
 
-Per visualizzare i primi quattro modelli Wunderlist in tedesco e per consentire all'utente di iniziare a usare **myCoolList**, usare questo codice:
+Per visualizzare i primi quattro modelli di Wunderlist in tedesco e per avviare l'utente con l'oggetto **Filecooling**, usare il codice seguente:
 
 ```html
 <iframe src="https://flow.microsoft.com/de-de/widgets/templates/?q=wunderlist
 &pagesize=4&destination=details&parameters.listName=myCoolList"></iframe>
 ```
 
-## <a name="use-the-authenticated-flow-widgets"></a>Usare i widget di Flow autenticati
+## <a name="use-the-authenticated-flow-widgets"></a>Usare i widget di flusso autenticato
 
-La tabella seguente mostra l'elenco dei widget di Microsoft Flow che supportano l'esperienza completa all'interno del widget tramite il token di accesso dell'autenticazione utente. Sarà necessario usare il Software Developer Kit Javascript (SDK JS) di Microsoft Flow per incorporare i widget e fornire il token di accesso utente necessario.
+La tabella seguente mostra l'elenco dei widget di Microsoft Flow che supportano l'esperienza completa all'interno del widget usando il token di accesso per l'autenticazione utente. Per incorporare i widget e fornire il token di accesso utente necessario, è necessario usare Microsoft Flow JavaScript Software Developer Kit (JS SDK).
 
 | Tipo di widget    | Funzionalità supportata                                                                                                                  | 
 |----------------|------------------------------------------------------------------------------------------------------------------------------------| 
-| Flussi          | Visualizza un elenco dei flussi in una scheda per i flussi personali e condivisi. Modificare un flusso esistente o creare un nuovo flusso basato su un modello o vuoto. | 
-| Creazione flussi   | Crea un flusso basato su un ID modello fornito dall'applicazione host.                                                                | 
-| Runtime        | Attiva un flusso manuale o ibrido fornito dall'applicazione host.                                                        | 
-| Centro approvazioni | Incorpora le richieste di approvazione e le approvazioni inviate.                                                                                        | 
-| Modelli      | Visualizza un elenco di modelli. L'utente sceglie un modello per creare un nuovo flusso.                                                                         | 
+| Flussi          | Mostra un elenco di flussi in una scheda per i flussi personali e condivisi. Modificare un flusso esistente o creare un nuovo flusso da un modello o da un campo vuoto. | 
+| flowCreation   | Crea un flusso da un ID modello fornito dall'applicazione host.                                                                | 
+| Runtime        | Attiva un flusso di trigger manuale o ibrido fornito dall'applicazione host.                                                        | 
+| approvalCenter | Incorpora le richieste di approvazione e le approvazioni inviate.                                                                                        | 
+| Modelli      | Mostra un elenco di modelli. L'utente sceglie uno per creare un nuovo flusso.                                                                         | 
 
-Usare l'SDK di Flow autenticato per consentire agli utenti di creare e gestire flussi direttamente dal sito Web o dall'app senza passare a Microsoft Flow. Per usare l'SDK autenticato, l'utente dovrà accedere con l'account Microsoft o Azure Active Directory.
+Usare Authenticated Flow SDK per consentire agli utenti di creare e gestire i flussi direttamente dal sito Web o dall'app, anziché passare a Microsoft Flow. È necessario accedere all'utente con il proprio account Microsoft o Azure Active Directory per usare l'SDK autenticato.
 
 > [!NOTE]
-> Non è possibile nascondere il branding di Microsoft Flow quando si usano i widget.
+> Non è possibile nascondere la personalizzazione del Microsoft Flow quando si usano i widget.
 
-## <a name="widget-architecture"></a>Architettura dei widget
+## <a name="widget-architecture"></a>architettura widget
 
-I widget di Microsoft Flow incorporano un iframe che fa riferimento a Microsoft Flow in un'applicazione host. L'host fornisce il token di accesso richiesto dal widget di Microsoft Flow. L'SDK JS di Microsoft Flow consente all'applicazione host di inizializzare e gestire il ciclo di vita del widget.
+Microsoft Flow widget funzionano incorporando un iframe che fa riferimento a Microsoft Flow in un'applicazione host. L'host fornisce il token di accesso richiesto dal widget Microsoft Flow. Microsoft Flow JS SDK consente all'applicazione host di inizializzare e gestire il ciclo di vita dei widget.
 
-![architettura del widget](../media/embed-flow-dev/Architecture.png)
+![architettura widget](../media/embed-flow-dev/Architecture.png)
 
-### <a name="js-sdk-details"></a>Dettagli dell'SDK JS
+### <a name="js-sdk-details"></a>Dettagli SDK JS
 
-Il team di Microsoft Flow fornisce l'SDK JS per facilitare l'integrazione dei widget di Flow nelle applicazioni di terze parti. L'SDK JS di Flow è disponibile come collegamento pubblico nel servizio Flow e consente all'applicazione host di gestire gli eventi dal widget e di interagire con l'applicazione Flow inviando azioni al widget. Gli eventi e le azioni dei widget sono specifiche del tipo di widget.
+Il team di Microsoft Flow fornisce JS SDK per semplificare l'integrazione di widget di Flow in applicazioni di terze parti. Flow JS SDK è disponibile come collegamento pubblico nel servizio Microsoft Flow e consente all'applicazione host di gestire gli eventi dal widget e interagire con l'applicazione Microsoft Flow inviando azioni al widget. Gli eventi e le azioni del widget sono specifici del tipo di widget.
 
-### <a name="widget-initialization"></a>Inizializzazione dei widget
+### <a name="widget-initialization"></a>Inizializzazione widget
 
-Prima di inizializzare il widget è necessario aggiungere il riferimento all'SDK JS di Flow all'applicazione host.
+Il riferimento a Flow JS SDK deve essere aggiunto all'applicazione host prima di inizializzare il widget.
 
 ```html
 <script src="https://flow.microsoft.com/Content/msflowsdk-1.1.js"></script>
 ```
 
-Creare un'istanza dell'SDK JS passando il nome host facoltativo e i valori delle impostazioni locali in un oggetto JSON.
+Creare un'istanza di JS SDK passando i valori del nome host e delle impostazioni locali facoltativi in un oggetto JSON.
 
 ```javascript
 var sdk = new MsFlowSdk({
     hostName:'https://flow.microsoft.com',
-    locale:'en-US',
+    locale:'en-US'
 }); 
 ```
 
-| Nome     | Obbligatorio/Facoltativo | Descrizione                                                    | 
+| Nome     | Obbligatorio/facoltativo | Descrizione                                                    | 
 |----------|-------------------|----------------------------------------------------------------| 
-| `hostName` | Facoltativo          | Nome host di Microsoft Flow, ad esempio https://flow.microsoft.com        | 
-| `locale`   | Facoltativo          | Impostazioni locali del client per il widget (se il valore non viene passato, viene usato il valore predefinito `en-Us`) | 
+| `hostName` | Opzionale          | Microsoft Flow nome host, ad esempio https://flow.microsoft.com        | 
+| `locale`   | Opzionale          | Impostazioni locali del client per il widget (il valore predefinito è `en-Us` se non è specificato) | 
 
 
-Dopo aver creato l'istanza dell'SDK JS è possibile inizializzare e incorporare un widget di Microsoft Flow in un elemento padre nell'applicazione host. Per eseguire queste operazioni, aggiungere un tag div HTML:
+Una volta creata l'istanza di JS SDK, è possibile inizializzare e incorporare un Microsoft Flow widget in un elemento padre nell'applicazione host. A tale scopo, aggiungere un elemento div HTML:
 
 ```html
 <div id="flowDiv" class="flowContainer"></div>
 ```
 
-Quindi inizializzare il widget di Microsoft Flow con il metodo renderWidget() dell'SDK JS. Assicurarsi di specificare il tipo di widget e le impostazioni corrispondenti.
+Quindi, inizializzare il widget Microsoft Flow con il metodo `renderWidget()` JS SDK. Assicurarsi di specificare il tipo di widget e le impostazioni corrispondenti.
 
 ```javascript
 var widget = sdk.renderWidget('<widgettype>', {
-        container: 'flow-div',
+        container: 'flowDiv',
         flowsSettings: {},
         templatesSettings: {},
         approvalSettings: {},
-        widgetStyleSettings: {},
+        widgetStyleSettings: {}
 });
 ```
 
-Di seguito è riportato uno stile di esempio per il contenitore che è possibile modificare per adattarlo alle dimensioni dell'applicazione host.
+Ecco uno stile di esempio per il contenitore che è possibile modificare per trovare la corrispondenza con le dimensioni dell'applicazione host.
 
 ```html
 <head>
@@ -160,19 +162,19 @@ Di seguito è riportato uno stile di esempio per il contenitore che è possibile
 </head>
 ```
 
-Di seguito sono elencati i parametri per `renderWidget()`: 
+Questi sono i parametri per `renderWidget()`: 
 
-| Parametro        | Obbligatorio/Facoltativo | Descrizione                                                                                 | 
+| Parametro        | Obbligatorio/facoltativo | Descrizione                                                                                 | 
 |------------------|-------------------|---------------------------------------------------------------------------------------------| 
-| `container`        | Obbligatorio          | ID di un elemento DIV nella pagina host in cui verrà incorporato il widget                      | 
-| `environmentId`    | Facoltativo          | I widget richiedono un ID ambiente. Se non si specifica un ID, viene usato un ambiente predefinito. | 
-| `flowsSettings`    | Facoltativo          | Oggetto delle impostazioni di Microsoft Flow                                                                        | 
-| `templateSettings` | Facoltativo          | Oggetto delle impostazioni del modello                                                                    | 
-| `approvalSettings` | Facoltativo          | Oggetto delle impostazioni dell'approvazione                                                                    | 
+| `container`        | Obbligatorio          | ID di un elemento DIV nella pagina host in cui verrà incorporato il widget.                   | 
+| `environmentId`    | Opzionale          | I widget richiedono un ID ambiente. Se non si specifica un ID, viene usato un ambiente predefinito. | 
+| `flowsSettings`    | Opzionale          | Oggetto impostazioni Microsoft Flow                                                                        | 
+| `templateSettings` | Opzionale          | Oggetto impostazioni modello                                                                    | 
+| `approvalSettings` | Opzionale          | Oggetto impostazioni di approvazione                                                                    | 
 
 ### <a name="access-tokens"></a>Token di accesso
 
-Dopo l'esecuzione di `renderWidget()` dell'SDK JS, l'SDK JS inizializza un iframe che punta all'URL del widget di Microsoft Flow. Questo URL contiene tutte le impostazioni nei parametri della stringa di query. L'applicazione host deve ricevere un token di accesso di Microsoft Flow per l'utente (token JWT di Azure Active Directory con destinatari https://service.flow.microsoft.com) prima di inizializzare il widget. Il widget genera un evento `GET_ACCESS_TOKEN` per richiedere un token di accesso proveniente dall'host. L'host deve gestire l'evento e passare il token al widget:
+Dopo l'esecuzione del `renderWidget()` JS SDK, JS SDK Inizializza un iframe che punta all'URL del widget Microsoft Flow. Questo URL contiene tutte le impostazioni nei parametri della stringa di query. L'applicazione host deve ottenere un token di accesso Microsoft Flow per l'utente (Azure Active Directory token JWT con audience https://service.flow.microsoft.com) prima di inizializzare il widget. Il widget genera un evento `GET_ACCESS_TOKEN` per richiedere un token di accesso dall'host. L'host deve gestire l'evento e passare il token al widget:
 
 ```javascript
 widget.listen("GET_ACCESS_TOKEN", function(requestParam, widgetDoneCallback) {
@@ -182,11 +184,11 @@ widget.listen("GET_ACCESS_TOKEN", function(requestParam, widgetDoneCallback) {
 });
 ```
 
-L'applicazione host è responsabile della gestione del token e del passaggio del token con una data di scadenza valida al widget quando necessario. Se il widget è aperto per lunghi periodi, l'host deve verificare se il token è scaduto e, se necessario, aggiornare il token prima di passarlo al widget.
+L'applicazione host è responsabile della gestione del token e del passaggio con una data di scadenza valida al widget quando richiesto. Se il widget è aperto per periodi più lunghi, l'host deve verificare se il token è scaduto e aggiornare il token se necessario prima di passarlo al widget.
 
-### <a name="detecting-if-the-widget-is-ready"></a>Rilevare se il widget è pronto
+### <a name="detecting-if-the-widget-is-ready"></a>Rilevamento se il widget è pronto
 
-Dopo l'inizializzazione, il widget genera un evento per notificare che il widget è pronto. L'host può rimanere in ascolto dell'evento `WIDGET_READY` ed eseguire qualsiasi codice host aggiuntivo.
+Una volta completata l'inizializzazione, il widget genera un evento per notificare che il widget è pronto. L'host può restare in ascolto dell'evento `WIDGET_READY` ed eseguire qualsiasi altro codice host.
 
 ```javascript
 widget.listen("WIDGET_READY", function() {
@@ -195,11 +197,11 @@ widget.listen("WIDGET_READY", function() {
 });
  ```
 
-## <a name="widget-settings"></a>Impostazioni del widget
+## <a name="widget-settings"></a>Impostazioni widget
 
 ### <a name="flowssettings"></a>FlowsSettings 
 
-FlowsSettings consente di personalizzare la funzionalità del widget di Microsoft Flow.
+FlowsSettings può essere usato per personalizzare le funzionalità del widget Microsoft Flow.
 
 ```javascript
 flowsSettings?: {
@@ -209,15 +211,15 @@ flowsSettings?: {
 };
  ```
 
-| Parametro | Obbligatorio/Facoltativo | Descrizione | 
+| Parametro | Obbligatorio/facoltativo | Descrizione | 
 |-----------|-------------------|-------------| 
-| `createFromBlankTemplateId` | Obbligatorio | Usare il GUID del modello quando l'utente seleziona il pulsante **Crea da zero** nel widget di Flow | 
-| `flowsFilter` | Facoltativo | Il widget di Microsoft Flow applica il filtro specificato per la visualizzazione dei flussi. È possibile ad esempio visualizzare i flussi che fanno riferimento a un sito di SharePoint specifico. <br /> ```flowFilter: "operations/any(operation: operation/sharepoint.site eq 'https://microsoft.sharepoint.com/teams/ProcessSimple' )"   ``` |                 
-| `tab` | Facoltativo | Imposta la scheda attiva predefinita visualizzata nel widget di Microsoft Flow. <br /> Ad esempio, <br /> ```tab:'sharedFlows' ``` visualizza la scheda Team<br /> e ``` tab:'myFlows' ``` visualizza la scheda Flussi personali. |   
+| `createFromBlankTemplateId` | Obbligatorio | Usare il GUID del modello quando l'utente seleziona il pulsante **Crea da zero** nel widget Flow | 
+| `flowsFilter` | Opzionale | Il widget Microsoft Flow applica il filtro fornito quando si elencano i flussi. Ad esempio, Mostra flussi che fanno riferimento a un sito di SharePoint specifico. <br /> ```flowFilter: "operations/any(operation: operation/sharepoint.site eq 'https://microsoft.sharepoint.com/teams/ProcessSimple' )"   ``` |                 
+| `tab` | Opzionale | Imposta come predefinito la scheda attiva da visualizzare nel widget Microsoft Flow. <br /> Per esempio <br /> ```tab:'sharedFlows' ``` Visualizza la scheda Team<br /> e ``` tab:'myFlows' ``` Visualizza la scheda flussi personali. |   
 
 ### <a name="templatessettings"></a>TemplatesSettings 
 
-Questa impostazione si applica a tutti i widget che consentono di creare flussi basati su un modello, inclusi i widget dei flussi, di creazione flussi e dei modelli.
+Questo vale per tutti i widget che consentono di creare flussi da un modello, inclusi i widget Flows, FlowCreation e Templates.
 
 ```javascript
 templatesSettings?: {
@@ -231,17 +233,17 @@ templatesSettings?: {
 };
  ```
 
-| Parametro |Obbligatorio/Facoltativo | Descrizione                                                                        
+| Parametro |Obbligatorio/facoltativo | Descrizione                                                                        
 |-----------|-------------------|-----------------| 
-|`defaultParams` | Facoltativo          | Parametri della fase di progettazione da usare durante la creazione di un flusso basato su un modello, ad esempio: <br /> ``` defaultParams: {'parameters.sharepoint.site': 'https://microsoft.sharepoint.com/teams/ProcessSimple', 'parameters.sharepoint.list': 'b3a5baa8-fe94-44ca-a6f0-270d9f821668'   } ```| 
-| `destination` | Facoltativo          | I valori validi sono 'new' o 'details'. Quando il parametro è impostato su 'details', viene visualizzata una pagina dei dettagli durante la creazione di un flusso basato su un modello.     |
-| `pageSize` | Facoltativo          | Numero di modelli da visualizzare. Dimensione predefinita = 6 | 
-| `searchTerm` | Facoltativo          | Visualizzare i modelli corrispondenti al termine di ricerca specificato| 
-| `templateCategory` | Facoltativo          | Visualizzare i modelli di una categoria specifica| 
+|`defaultParams` | Opzionale          | Parametri della fase di progettazione da usare durante la creazione di un flusso da un modello, ad esempio: <br /> ``` defaultParams: {'parameters.sharepoint.site': 'https://microsoft.sharepoint.com/teams/ProcessSimple', 'parameters.sharepoint.list': 'b3a5baa8-fe94-44ca-a6f0-270d9f821668'   } ```| 
+| `destination` | Opzionale          | I valori validi sono ' New ' o ' details '. Quando è impostato su' details ', viene visualizzata una pagina di dettaglio durante la creazione di un flusso da un modello.     |
+| `pageSize` | Opzionale          | Numero di modelli da visualizzare. Dimensioni predefinite = 6 | 
+| `searchTerm` | Opzionale          | Visualizza i modelli che corrispondono al termine di ricerca specificato| 
+| `templateCategory` | Opzionale          | Visualizzare i modelli in una categoria specifica| 
  
 ### <a name="approvalcentersettings"></a>ApprovalCenterSettings
 
-Si applica ai widget del centro approvazioni.
+Si applica ai widget ApprovalCenter.
 
  ```javascript
  approvalCenterSettings?: {
@@ -252,22 +254,22 @@ Si applica ai widget del centro approvazioni.
     hideLink?: boolean
 };
  ```
-| Parametro | Obbligatorio/Facoltativo | Descrizione | 
+| Parametro | Obbligatorio/facoltativo | Descrizione | 
 |------------|-------------------|--------------| 
-| `hideLink`| Facoltativo | Quando il parametro è impostato su `true`, il widget nasconde i collegamenti delle approvazioni ricevute e inviate | 
-| `autoNavigateToDetails`| Facoltativo | Quando il parametro è impostato su `true`, il widget visualizza automaticamente i dettagli dell'approvazione quando è presente una sola approvazione | 
-| `approvalsFilter`| Facoltativo | Il widget di approvazione applica il filtro di approvazione specificato durante la visualizzazione delle approvazioni, ad esempio:    Il widget di approvazione applica il filtro di approvazione specificato durante la visualizzazione delle approvazioni, ad esempio: <br/> ``` approvalsFilter: 'properties/itemlink eq \'https://microsoft.sharepoint.com/teams/ProcessSimple/_layouts/15/listform.aspx?PageType=4&ListId=737e30a6-5bc4-4e9c-bcdc-d34c5c57d938&ID=3&ContentTypeID=0x010010B708969A9C16408696FD23801531C6\'' ```  <br/> <br/>``` approvalsFilter: 'properties/itemlinkencoded eq \'{Your base64 encoded item link url} \'' ```|
-| `tab`| Facoltativo | Scheda attiva predefinita da visualizzare nel widget di Flow. <br/> Valori validi: 'receivedApprovals', 'sentApprovals' | 
-| `showSimpleEmptyPage`| Facoltativo | Visualizza una pagina vuota quando non sono presenti approvazioni | 
-| `hideInfoPaneCloseButton` | Facoltativo | Nasconde il pulsante Chiudi del riquadro informazioni (oppure nell'host è già presente un pulsante Chiudi) | 
+| `hideLink`| Opzionale | Quando è impostato su `true`, il widget nasconde i collegamenti ricevuti e di approvazione inviati | 
+| `autoNavigateToDetails`| Opzionale | Quando è impostato su `true`, il widget apre automaticamente i dettagli di approvazione quando esiste una sola approvazione | 
+| `approvalsFilter`| Opzionale | Il widget di approvazione applicherà il filtro di approvazione specificato quando si elencano le approvazioni, ad esempio: il widget di approvazione applicherà il filtro di approvazione specificato quando si elencano le approvazioni, ad esempio: <br/> ``` approvalsFilter: 'properties/itemlink eq \'https://microsoft.sharepoint.com/teams/ProcessSimple/_layouts/15/listform.aspx?PageType=4&ListId=737e30a6-5bc4-4e9c-bcdc-d34c5c57d938&ID=3&ContentTypeID=0x010010B708969A9C16408696FD23801531C6\'' ```  <br/> <br/>``` approvalsFilter: 'properties/itemlinkencoded eq \'{Your base64 encoded item link url} \'' ```|
+| `tab`| Opzionale | Scheda attiva predefinita da visualizzare nel widget Flow. <br/> Valori validi:' receivedApprovals ',' sentApprovals ' | 
+| `showSimpleEmptyPage`| Opzionale | Mostra una pagina vuota se non sono presenti approvazioni | 
+| `hideInfoPaneCloseButton` | Opzionale | Nasconde il pulsante di chiusura del riquadro informazioni (o l'host ha già un pulsante Chiudi) | 
 
 <!-- why isn't this: hideInfoPaneCloseButton listed in the approvalCenterSettings? call since other optionals are there -->
 
-## <a name="widget-events"></a>Eventi del widget
+## <a name="widget-events"></a>Eventi widget
 
-Il widget di Microsoft Flow supporta gli eventi che consentono all'host di essere in ascolto degli eventi del ciclo di vita del widget. Il widget di Microsoft Flow supporta due tipi di eventi: eventi di notifica unidirezionale (ad esempio, Widget\_Ready) ed eventi generati dal widget per recuperare i dati dall'host (Get\_Access\_Token). L'host deve usare il metodo widget.listen() per essere in ascolto di determinati eventi generati dal widget.
+Il widget Microsoft Flow supporta gli eventi che consentono all'host di restare in ascolto degli eventi del ciclo di vita dei widget. Il widget Microsoft Flow supporta due tipi di eventi: eventi di notifica unidirezionali (ad esempio, widget\_Ready) ed eventi generati dal widget per recuperare i dati dall'host (Get\_Access\_token). L'host deve usare il metodo widget. Listen () per ascoltare eventi specifici generati dal widget.
 
-### <a name="usage"></a>Uso
+### <a name="usage"></a>Utilizzo
 
 ```javascript
 widget.listen("<WIDGET_EVENT>", function() {
@@ -275,55 +277,55 @@ widget.listen("<WIDGET_EVENT>", function() {
 });
 ```
 
-### <a name="supported-events-by-widget-type"></a>Eventi supportati dal tipo di widget
+### <a name="supported-events-by-widget-type"></a>Eventi supportati per tipo di widget
 
-| Evento del widget      | Dettagli                                                         | 
+| Evento widget      | Dettagli                                                         | 
 |-------------------|-----------------------------------------------------------------| 
-| `WIDGET_READY`      | Il caricamento del widget è stato completato                                      | 
-| `WIDGET_RENDERED`   | Il widget è stato caricato e il rendering dell'interfaccia utente è stato completato                      | 
-| `GET_ACCESS_TOKEN`  | Richiesta del widget di un token di accesso utente incorporato                      | 
+| `WIDGET_READY`      | Caricamento del widget completato                                      | 
+| `WIDGET_RENDERED`   | Widget caricato e rendering dell'interfaccia utente completato                      | 
+| `GET_ACCESS_TOKEN`  | Richiesta widget per incorporare il token di accesso utente                      | 
 | `GET_STRINGS`       | Consente all'host di eseguire l'override di un set di stringhe dell'interfaccia utente visualizzate nel widget | 
 
 ### <a name="runtime-widget"></a>Widget di runtime
 
-| Evento del widget                    | Dettagli                                     | Dati                                              | 
+| Evento widget                    | Dettagli                                     | Dati                                              | 
 |---------------------------------|---------------------------------------------|-----------| 
-| `RUN_FLOW_STARTED`                | Attivato ed è stata avviata l'esecuzione del flusso      |           | 
+| `RUN_FLOW_STARTED`                | Attivata e l'esecuzione del flusso è stata avviata      |           | 
 | `RUN_FLOW_COMPLETED`              | L'esecuzione del flusso è stata attivata             |           | 
-| `RUN_FLOW_DONE_BUTTON_CLICKED`    | L'utente ha selezionato il pulsante Fine nell'esecuzione del flusso       |           | 
-| `RUN_FLOW_CANCEL_BUTTON_CLICKED`  | L'utente ha selezionato il pulsante Annulla nell'esecuzione del flusso     |           | 
-| `FLOW_CREATION_SUCCEEDED`         | Il flusso è stato creato           |`{ flowUrl: string, flowId: string, fromTemplate: string } `|
-| `WIDGET_CLOSE`                    | Attivato quando l'host deve chiudere il widget |       | 
+| `RUN_FLOW_DONE_BUTTON_CLICKED`    | Pulsante operazione selezionata dall'utente nell'esecuzione del flusso       |           | 
+| `RUN_FLOW_CANCEL_BUTTON_CLICKED`  | Pulsante Annulla selezionato dall'utente nell'esecuzione del flusso     |           | 
+| `FLOW_CREATION_SUCCEEDED`         | Il flusso è stato creato correttamente           |`{ flowUrl: string, flowId: string, fromTemplate: string } `|
+| `WIDGET_CLOSE`                    | Generato quando l'host chiude il widget |       | 
 
-### <a name="flow-creation-widget"></a>Widget di creazione flussi
+### <a name="flow-creation-widget"></a>Widget per la creazione di flussi
 
-| Evento del widget             | Dettagli                                  | Dati  | 
+| Evento widget             | Dettagli                                  | Dati  | 
 |--------------------------|------------------------------------------|-------| 
-| `FLOW_CREATION_FAILED`     | La creazione del flusso non è riuscita                     |       | 
-| `WIDGET_CLOSE`             | Attivato quando l'host deve chiudere il widget  |       | 
+| `FLOW_CREATION_FAILED`     | Creazione del flusso non riuscita                     |       | 
+| `WIDGET_CLOSE`             | Generato quando l'host chiude il widget  |       | 
 | `TEMPLATE_LOAD_FAILED`     | Non è stato possibile caricare il modello              |       | 
-| `FLOW_CREATION_SUCCEEDED`  | Il flusso è stato creato        |` { flowUrl: string, flowId: string,fromTemplate?: string } `| 
+| `FLOW_CREATION_SUCCEEDED`  | Il flusso è stato creato correttamente        |` { flowUrl: string, flowId: string,fromTemplate?: string } `| 
 
-### <a name="approval-widget"></a>Widget di approvazione
+### <a name="approval-widget"></a>Widget approvazione
 
-| Evento del widget                      | Dettagli                             | 
+| Evento widget                      | Dettagli                             | 
 |-----------------------------------|-------------------------------------| 
-| `RECEIVED_APPROVAL_STATUS_CHANGED`  | Stato di approvazione ricevuta modificato  | 
-| `SENT_APPROVAL_STATUS_CHANGED`      | Stato di approvazione inviata modificato      | 
+| `RECEIVED_APPROVAL_STATUS_CHANGED`  | Stato approvazione ricevuta modificato  | 
+| `SENT_APPROVAL_STATUS_CHANGED`      | Stato di approvazione inviato modificato      | 
 
-L'evento **GET\_STRINGS** consente di personalizzare il testo per alcuni elementi dell'interfaccia utente visualizzati nel widget. È possibile personalizzare le stringhe seguenti:
+L'evento **GET\_Strings** consente di personalizzare il testo per alcuni degli elementi dell'interfaccia utente mostrati nel widget. È possibile personalizzare le stringhe seguenti:
 
-| Chiave della stringa                     | Uso nel widget                                                                                                                  | 
+| Chiave di stringa                     | Usare nel widget                                                                                                                  | 
 |--------------------------------|------------------------------------------------------------------------------------------------------------------------------------| 
-| `FLOW_CREATION_CREATE_BUTTON`    | Testo visualizzato sul pulsante Crea flusso nel widget di creazione flussi e nel widget di runtime                                                | 
-| `FLOW_CREATION_CUSTOM_FLOW_NAME` | Il valore iniziale da usare per il nome del flusso nel widget di creazione del flusso. Usata solo quando è abilitata l'impostazione allowCustomFlowName. | 
-| `FLOW_CREATION_HEADER`           | Intestazione da usare durante la creazione di un flusso nel widget di creazione flussi e nel widget di runtime                                                    | 
+| `FLOW_CREATION_CREATE_BUTTON`    | Testo visualizzato sul pulsante Crea flusso in entrambi i widget di creazione del flusso e Runtime                                                | 
+| `FLOW_CREATION_CUSTOM_FLOW_NAME` | Valore iniziale da usare per il nome del flusso nel widget per la creazione del flusso. Usato solo quando è abilitata l'impostazione allowCustomFlowName. | 
+| `FLOW_CREATION_HEADER`           | Intestazione da usare quando si crea un flusso sia nella creazione del flusso che nel widget di runtime                                                    | 
 | `INVOKE_FLOW_HEADER`             | Intestazione da usare quando si richiama un flusso nel widget di runtime                                                                           | 
-| `INVOKE_FLOW_RUN_FLOW_BUTTON`    | Testo visualizzato sul pulsante usato per richiamare o eseguire un flusso nel widget di runtime                                                       | 
+| `INVOKE_FLOW_RUN_FLOW_BUTTON`    | Testo visualizzato sul pulsante usato per richiamare/eseguire un flusso nel widget di runtime                                                       | 
 
 ### <a name="example"></a>Esempio
 
-Chiamare `widgetDoneCallback` passando un oggetto JSON con coppie chiave-valore della chiave della stringa e un testo per sostituire il valore predefinito.
+Chiamare `widgetDoneCallback` passando un oggetto JSON con coppie chiave-valore della chiave di stringa e del testo per eseguire l'override del valore predefinito.
 
 ```javascript
 widget.listen("GET_STRINGS", function(requestParam, widgetDoneCallback) {
@@ -334,11 +336,11 @@ widget.listen("GET_STRINGS", function(requestParam, widgetDoneCallback) {
 });
 ```
 
-## <a name="widget-actions"></a>Azioni del widget
+## <a name="widget-actions"></a>Azioni widget
 
-L'host usa le azioni del widget per inviare un'azione o un messaggio specifico al widget. L'SDK JS del widget fornisce il metodo `notify()` per inviare un messaggio o un payload JSON al widget. Ogni azione del widget supporta una firma di payload specifica.
+L'host usa le azioni widget per inviare un'azione o un messaggio specifico al widget. Widget JS SDK fornisce il metodo `notify()` per inviare un messaggio o un payload JSON al widget. Ogni azione widget supporta una firma del payload specifica.
 
-### <a name="usage"></a>Uso
+### <a name="usage"></a>Utilizzo
 
 ```javascript
 widget.notify('<WIDGET_ACTION>', parameterMatchingParameterInterface)
@@ -356,145 +358,144 @@ widget.notify('triggerFlow', { flowName: flowName, implicitData:implicitData });
 
 ### <a name="runtime-widget"></a>Widget di runtime
 
-| Azione del widget                               | Dettagli                                                      | Interfaccia del parametro  | 
+| Azione widget                               | Dettagli                                                      | Interfaccia parametro  | 
 |---------------------------------------------|--------------------------------------------------------------|----------------------| 
-| `triggerFlow`                                 | Attiva l'esecuzione di un flusso                                          | `{ flowName: string, implicitData?: string } `| 
-| `triggerFlowByTemplate`                       | Attiva l'esecuzione di un flusso in base al modello                              | `{ templateId: string, implicitData?: string, designTimeParameters?: Record<string, any> }` |
-| `getTriggerSchema`                            | Ottiene lo schema di trigger di un flusso                               | `{   flowName: string, }` | 
-| `closeWidget`                                 | Annulla le attività in sospeso e genera un evento WIDGET_CLOSE |                      | 
+| `triggerFlow`                                 | Attiva un'esecuzione del flusso                                          | `{ flowName: string, implicitData?: string } `| 
+| `triggerFlowByTemplate`                       | Attiva un'esecuzione del flusso in base al modello                              | `{ templateId: string, implicitData?: string, designTimeParameters?: Record<string, any> }` |
+| `getTriggerSchema`                            | Ottiene lo schema del trigger per un flusso                               | `{   flowName: string, }` | 
+| `closeWidget`                                 | Annulla tutte le attività in sospeso e genera un evento WIDGET_CLOSE |                      | 
 
-### <a name="flow-creation-widget"></a>Widget di creazione flussi
+### <a name="flow-creation-widget"></a>Widget per la creazione di flussi
 
-| Azione del widget                               | Dettagli                                                      | Interfaccia del parametro  | 
+| Azione widget                               | Dettagli                                                      | Interfaccia parametro  | 
 |---------------------------------------------|--------------------------------------------------------------|----------------------| 
 | `createFlowFromTemplate`                      | Crea un flusso per il modello selezionato                     | `{ templateName: string, designTimeParameters?: Record<string, any> }`| 
 | `createFlowFromTemplateDefinition`            | Crea un flusso per la definizione di modello selezionata          | `{ templateDefinition: string }` | 
-| `closeWidget`                                 | Annulla le attività in sospeso e genera un evento WIDGET_CLOSE |                      | 
+| `closeWidget`                                 | Annulla tutte le attività in sospeso e genera un evento WIDGET_CLOSE |                      | 
 
-### <a name="approval-widget"></a>Widget di approvazione
+### <a name="approval-widget"></a>Widget approvazione
 
-| Azione del widget  | Dettagli                                           | Interfaccia del parametro  | 
+| Azione widget  | Dettagli                                           | Interfaccia parametro  | 
 |----------------|---------------------------------------------------|----------------------| 
-| `closeInfoPane`  | Chiude il riquadro informazioni in cui sono visualizzati i dettagli dell'approvazione  | N/D                  | 
+| `closeInfoPane`  | Chiude il riquadro informazioni che Visualizza i dettagli dell'approvazione  | N/A                  | 
 
 ## <a name="configuring-your-client-application"></a>Configurazione dell'applicazione client
 
-È necessario configurare l'applicazione client con gli ambiti di servizio di Flow (autorizzazioni delegate). Se l'app di Azure Active Directory (AAD) usata per l'integrazione del widget usa un flusso di autorizzazione 'concessione del codice', l'app AAD deve essere preconfigurata con le autorizzazioni delegate supportate da Microsoft Flow. In questo modo vengono concesse le autorizzazioni delegate che consentono all'applicazione di:
+Sarà necessario configurare l'applicazione client con gli ambiti del servizio Flow (autorizzazioni delegate). Se l'app Azure Active Directory (AAD) usata per l'integrazione del widget usa un flusso di autorizzazione di concessione del codice, l'app AAD deve essere preconfigurata con autorizzazioni delegate supportate da Microsoft Flow. Fornisce le autorizzazioni delegate che consentono all'applicazione:
 
--   Gestire le approvazioni
--   Leggere le approvazioni
--   Leggere le attività
--   Gestire i flussi
--   Leggere i flussi
+-   Gestisci approvazioni
+-   Leggi approvazioni
+-   Attività di lettura
+-   Gestisci flussi
+-   Lettura flussi
 
-Per selezionare una o più autorizzazioni delegate, seguire questa procedura:
+Per selezionare una o più autorizzazioni delegate, attenersi alla procedura seguente:
 
-1.  Passare a https://portal.azure.com 
+1.  Vai a https://portal.azure.com 
 2.  Selezionare **Azure Active Directory**.
-3.  Selezionare **Registrazioni app** in **Gestisci**.
-4.  Specificare l'applicazione di terze parti da configurare per gli ambiti di servizio di Flow.
+3.  Selezionare **registrazioni app** in **Gestisci**.
+4.  Immettere l'applicazione di terze parti da configurare per gli ambiti del servizio Flow.
 5.  Selezionare **Impostazioni**.
-      ![architettura del widget](../media/embed-flow-dev/AAD-App-Settings.png)
-6. Selezionare **Autorizzazioni necessarie** in **Accesso all'API**/
+      architettura del widget ![](../media/embed-flow-dev/AAD-App-Settings.png)
+6. Selezionare le **autorizzazioni necessarie** in **accesso all'API**/
 7. Selezionare **Aggiungi**.
-8. Scegliere **Selezionare un'API**.
-      ![architettura del widget](../media/embed-flow-dev/AAD-App-Select-an-API.png)
-9. Cercare **Servizio Microsoft Flow** e selezionarla. Nota: per poter visualizzare Servizio Microsoft Flow, è necessario che il tenant abbia almeno un utente AAD che ha eseguito l'accesso al portale di Flow (<https://flow.microsoft.com>)
-10. Scegliere gli ambiti di Flow necessari per l'applicazione e quindi selezionare **Salva**.
-      ![architettura del widget](../media/embed-flow-dev/AAD-App-DelegatedPermissions.png)
+8. Scegliere **selezionare un'API**.
+      architettura del widget ![](../media/embed-flow-dev/AAD-App-Select-an-API.png)
+9. Cercare **Microsoft Flow servizio** e selezionarlo. Nota: prima di poter visualizzare Microsoft Flow servizio, il tenant deve avere almeno un utente AAD connesso al portale di Flow (<https://flow.microsoft.com>)
+10. Scegliere gli ambiti di flusso necessari per l'applicazione e quindi selezionare **Salva**.
+      architettura del widget ![](../media/embed-flow-dev/AAD-App-DelegatedPermissions.png)
 
-L'applicazione otterrà un token del servizio Flow che contiene le autorizzazioni delegate nell'attestazione \'scp' nel token JWT.
+L'applicazione otterrà ora un token del servizio Flow che contiene autorizzazioni delegate nell'attestazione \'SCP ' nel token JWT.
 
-## <a name="sample-application-embedding-flow-widgets"></a>Applicazione di esempio con incorporamento di widget di Flow 
+## <a name="sample-application-embedding-flow-widgets"></a>Widget di flusso di incorporamento dell'applicazione di esempio 
 
-Nella sezione delle risorse è disponibile un'applicazione a pagina singola JavaScript di esempio che è possibile usare per provare a incorporare widget di Flow in una pagina host. Per usare l'applicazione di esempio è necessario registrare un'applicazione AAD con il flusso di concessione implicita abilitato.
+Nella sezione risorse è disponibile un'applicazione a pagina singola JavaScript di esempio, che consente di provare a incorporare i widget di Flow in una pagina host. Per usare l'applicazione di esempio, è necessario registrare un'applicazione AAD con il flusso di concessione implicito abilitato.
 
 ### <a name="registering-an-aad-app"></a>Registrazione di un'app AAD
 
 1.  Accedere al [portale di Azure](https://portal.azure.com/).
-2.  Nel riquadro di spostamento a sinistra selezionare **Azure Active Directory**, quindi **Registrazioni app** (anteprima) \> Nuova registrazione.
-3.  Quando viene visualizzata la pagina **Registra un'applicazione**, immettere un nome per l'applicazione.
-4.  In **Tipi di account supportati** selezionare **Account** in una directory dell'organizzazione.
-5.  Nella sezione **URL di reindirizzamento** selezionare la piattaforma Web e impostare il valore sull'URL dell'applicazione in base al server Web.  Impostare questo valore su http://localhost:30662/ per eseguire l'app di esempio.
-6.  Selezionare **Registra**.
+2.  Nel riquadro di spostamento a sinistra selezionare **Azure Active Directory**, quindi selezionare **registrazioni app** (anteprima) \> nuova registrazione.
+3.  Quando viene visualizzata la pagina **registra un'applicazione** , immettere un nome per l'applicazione.
+4.  In **tipi di account supportati**selezionare **account** in qualsiasi directory dell'organizzazione.
+5.  Nella sezione **URL di reindirizzamento** selezionare la piattaforma Web e impostare il valore sull'URL dell'applicazione\'s basato sul server Web.  Configurare questo valore per http://localhost:30662/ per eseguire l'app di esempio.
+6.  Selezionare **registra**.
 7.  Nella pagina **Panoramica** dell'app prendere nota del valore di ID applicazione (client).
-8.  Per l'esempio è necessario abilitare il [flusso di concessione implicita](https://docs.microsoft.com/azure/active-directory/develop/v2-oauth2-implicit-grant-flow). Nel riquadro di spostamento di sinistra dell'applicazione registrata selezionare **Autenticazione**.
-9.  In **Impostazioni avanzate** in **Concessione implicita** selezionare le caselle di controllo **Token ID** e **Token di accesso**. Token ID e token di accesso devono essere specificati poiché l'app esegue l'accesso degli utenti e chiama l'API di Flow.
+8.  Per l'esempio è necessario che sia abilitato il [flusso di concessione implicito](https://docs.microsoft.com/azure/active-directory/develop/v2-oauth2-implicit-grant-flow) . Nel riquadro di spostamento a sinistra dell'applicazione registrata selezionare **Authentication (autenticazione**).
+9.  In **Impostazioni avanzate**, in **concessione implicita**, abilitare le caselle di controllo **token ID** e **token di accesso** . I token ID e i token di accesso sono necessari perché questa app deve eseguire l'accesso agli utenti e all'API del flusso di chiamate.
 10. Selezionare **Salva**.
 
 ### <a name="running-the-sample"></a>Esecuzione dell'esempio
 <!-- todo where should I download from? -->
-<!-- todo is this a misspelling: applicaionConfig -->
-1.  Scaricare l'esempio e copiarlo in una cartella locale nel dispositivo.
-2.  Aprire il file index.htmlnella cartella FlowSDKSample e modificare `applicaionConfig` per aggiornare `clientID` all'ID applicazione registrato in precedenza.
-    ![architettura del widget](../media/embed-flow-dev/SampleApp-ApplicationConfig.png)
-3.  L'app di esempio è configurata per l'uso degli ambiti di Flow **Flows.Read.All** e **Flow.Manage.All.** È possibile configurare altri ambiti aggiornando la proprietà **flowScopes** nell'oggetto **applicationConfig**.
+1.  Scaricare l'esempio e copiarlo in una cartella locale del dispositivo.
+2.  Aprire il file index. html nella cartella FlowSDKSample e modificare il `applicationConfig` per aggiornare l'`clientID` all'ID applicazione registrato in precedenza.
+    architettura del widget ![](../media/embed-flow-dev/SampleApp-ApplicationConfig.png)
+3.  L'app di esempio è configurata per usare gli ambiti di flusso Flows **. Read. All** e **Flow. Manage. all.** È possibile configurare gli ambiti aggiuntivi aggiornando la proprietà **flowScopes** nell'oggetto **applicationConfig** .
 4.  Eseguire questi comandi per installare la dipendenza ed eseguire l'app di esempio:
-    > \> npm install \> node server.js
-5. Aprire il browser e immettere http://localhost:30662
-6. Selezionare il pulsante **Accedi** per eseguire l'autenticazione in AAD e acquisire un token di accesso del flusso.
-7. La casella di testo **Token di accesso** contiene il token di accesso.
-    ![architettura del widget](../media/embed-flow-dev/SampleApp-AccessToken.png)
-8. Selezionare il **widget di caricamento flussi** o il **widget di caricamento modelli** per incorporare i widget corrispondenti.
-    ![architettura del widget](../media/embed-flow-dev/SampleApp-TemplatesWidget.png)
+    > \> NPM install \> node server. js
+5. Aprire il browser e quindi immettere http://localhost:30662
+6. Selezionare il pulsante **Sign in (accedi** ) per eseguire l'autenticazione ad Aad e acquisire un token di accesso Flow.
+7. La casella di testo **token di accesso** contiene il token di accesso.
+    architettura del widget ![](../media/embed-flow-dev/SampleApp-AccessToken.png)
+8. Selezionare il widget **Load Flows** o **Load templates widget** per incorporare i widget corrispondenti.
+    architettura del widget ![](../media/embed-flow-dev/SampleApp-TemplatesWidget.png)
 
-[Collegamento per il download](https://procsi.blob.core.windows.net/docs/FlowWidgetSampleApp.zip) dell'applicazione di esempio.
+Collegamento di [download](https://procsi.blob.core.windows.net/docs/FlowWidgetSampleApp.zip)dell'applicazione di esempio.
 
 ## <a name="resources"></a>Risorse
 
-### <a name="widget-test-pages"></a>Pagine di test dei widget
+### <a name="widget-test-pages"></a>Pagine di test del widget
 
-Sono disponibili altre informazioni sull'integrazione e sulle impostazioni dei widget:
+Altre informazioni sull'integrazione e le impostazioni dei widget:
 
-- Widget di modelli: <[https://flow.microsoft.com/en-us/test/templateswidget/](https://flow.microsoft.com/en-us/test/templateswidget/)>
-- Widget di creazione flussi: <[https://flow.microsoft.com/en-us/test/flowcreationwidget/](https://flow.microsoft.com/en-us/test/flowcreationwidget/)>
-- Widget di runtime: <[https://flow.microsoft.com/en-us/test/runtimewidget/](https://flow.microsoft.com/en-us/test/runtimewidget/)>
-- Widget del centro approvazioni: <[https://flow.microsoft.com/en-us/test/approvalcenterwidget/](https://flow.microsoft.com/en-us/test/approvalcenterwidget/)>
-- Widget dei flussi: <[https://flow.microsoft.com/en-us/test/managewidget/](https://flow.microsoft.com/en-us/test/managewidget/)>
+- Widget modelli: <[https://flow.microsoft.com/test/templateswidget/](https://flow.microsoft.com/test/templateswidget/)>
+- Widget FlowCreation: <[https://flow.microsoft.com/test/flowcreationwidget/](https://flow.microsoft.com/test/flowcreationwidget/)>
+- Widget di runtime: <[https://flow.microsoft.com/test/runtimewidget/](https://flow.microsoft.com/test/runtimewidget/)>
+- Widget del Centro approvazioni: <[https://flow.microsoft.com/test/approvalcenterwidget/](https://flow.microsoft.com/test/approvalcenterwidget/)>
+- Widget Flows: <[https://flow.microsoft.com/test/managewidget/](https://flow.microsoft.com/test/managewidget/)>
 
-### <a name="supported-widget-locales"></a>Impostazioni locali dei widget supportate
+### <a name="supported-widget-locales"></a>Impostazioni locali widget supportate
 
-Se le impostazioni locali inizializzate non sono elencate, Flow usa per impostazione predefinita le impostazioni locali supportate più vicine.
+Se le impostazioni locali inizializzate non sono elencate, il flusso utilizzerà per impostazione predefinita le impostazioni locali più vicine supportate.
 
-| Impostazioni locali     | Lingua                   | 
+| locale     | linguaggio                   | 
 |------------|----------------------------| 
-| bg-bg      | Bulgaro (Bulgaria)       | 
+| BG-BG      | Bulgaro (Bulgaria)       | 
 | ca-es      | Catalano (Spagna)            | 
-| cs-cz      | Ceco (Repubblica Ceca)     | 
+| CS-CZ      | Ceco (Repubblica Ceca)     | 
 | da-dk      | Danese (Danimarca)           | 
-| de-de      | Tedesco (Germania)           | 
-| el-gr      | Greco (Grecia)             | 
-| en-Us      | Inglese (Stati Uniti)    | 
-| es-es      | Spagnolo (castigliano)        | 
-| et-ee      | Estone (Estonia)         | 
+| De-de      | Tedesco (Germania)           | 
+| El-gr      | Greco (Grecia)             | 
+| it-it      | Inglese (Stati Uniti)    | 
+| Es-es      | Spagnolo (castigliano)        | 
+| EE      | Estone (Estonia)         | 
 | eu-es      | Basco (Spagna)             | 
-| fi-fi      | Finlandese (Finlandia)          | 
-| fr-fr      | Francese (Francia)            | 
-| gl-es      | Galiziano (Spagna)           | 
-| hi-HU      | Ungherese (Ungheria)        | 
-| hi-in      | Hindi (India)              | 
-| hr-hr      | Croato (Croazia)         | 
-| id-Id      | Indonesiano (Indonesia)     | 
-| it-It      | Italiano (Italia)            | 
-| jp-Jp      | Giapponese (Giappone)           | 
-| kk-kz      | Kazako (Kazakhstan)        | 
-| ko-kr      | Coreano (Corea)             | 
+| Fi-Fi      | Finlandese (Finlandia)          | 
+| Fr-FR      | Francese (Francia)            | 
+| GL-ES      | Galiziano (Spagna)           | 
+| Salve-HU      | Ungherese (Ungheria)        | 
+| Hi-in      | Hindi (India)              | 
+| HR-HR      | Croato (Croazia)         | 
+| ID ID      | Indonesiano (Indonesia)     | 
+| it      | Italiano (Italia)            | 
+| jp-jp      | Giapponese (Giappone)           | 
+| kk-KZ      | Kazako (Kazakistan)        | 
+| Ko-KR      | Coreano (Corea)             | 
 | lt-LT      | Lituano (Lituania)     | 
-| lv-lv      | Lettone (Lettonia)           | 
-| ms-my      | Malese (Malaysia)           | 
-| nb-no      | Norvegese (Bokmål)         | 
+| LV-LV      | Lettone (Lettonia)           | 
+| MS-My      | Malese (Malaysia)           | 
+| NB-No      | Norvegese (Bokmål)         | 
 | nl-nl      | Olandese (Paesi Bassi)        | 
-| pl-pl      | Polacco (Polonia)            | 
-| pt-br      | Portoghese (Brasile)        | 
-| pt-pt      | Portoghese (Portogallo)      | 
+| Pl-pl      | Polacco (Polonia)            | 
+| PT-BR      | Portoghese (Brasile)        | 
+| PT-PT      | Portoghese (Portogallo)      | 
 | ro-ro      | Rumeno (Romania)         | 
-| ru-ru      | Russo (Russia)           | 
-| sk-sk      | Slovacco (Slovacchia)          | 
-| sl-si      | Sloveno (Slovenia)       | 
-| sr-cyrl-rs | Serbo (alfabeto cirillico, Serbia) | 
-| sr-latn-rs | Serbo (alfabeto latino, Serbia)    | 
-| sv-se      | Svedese (Svezia)           | 
-| th-th      | Thai (Thailandia)            | 
-| tr-tr      | Turco (Turchia)           | 
-| uk-ua      | Ucraino (Ucraina)        | 
-| vi-vn      | Vietnamita (Vietnam)      |
+| Ru-ur      | Russo (Russia)           | 
+| SK-SK      | Slovacco (Slovacchia)          | 
+| SL-si      | Sloveno (Slovenia)       | 
+| Sr-Cyrl-RS | Serbo (alfabeto cirillico, Serbia) | 
+| Sr-Latn-RS | Serbo (alfabeto latino, Serbia)    | 
+| SV-se      | Svedese (Svezia)           | 
+| th-TH      | Thai (Tailandia)            | 
+| TR-TR      | Turco (Turchia)           | 
+| Regno Unito-ua      | Ucraino (Ucraina)        | 
+| vi-VN      | Vietnamita (Vietnam)      |

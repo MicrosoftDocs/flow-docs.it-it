@@ -1,6 +1,6 @@
 ---
 title: Gestire i flussi dal telefono | Microsoft Docs
-description: Visualizzare un elenco dei flussi, abilitarli o disabilitarli e visualizzare eventi, azioni e cronologia di esecuzione di ogni flusso
+description: Visualizzare un elenco dei flussi, abilitarli o disabilitarli e visualizzare gli eventi, le azioni e la cronologia di esecuzione di ogni flusso
 services: ''
 suite: flow
 documentationcenter: na
@@ -20,50 +20,51 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 4a35166ec57e81b957f7659e0e670e80bbf510ca
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: 6f452f52d654d6f03a3262de8888c68cb2480704
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "64467652"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73548626"
 ---
-# <a name="manage-flows-in-microsoft-flow-from-your-phone"></a>Gestire i flussi dal telefono in Microsoft Flow dal telefono
-Visualizzare un elenco di tutti i flussi che sono stati creati e, per ogni flusso, visualizzare i relativi eventi e le azioni, abilitarlo o disabilitarlo ed esaminare la cronologia di esecuzione.
+# <a name="manage-flows-in-microsoft-flow-from-your-phone"></a>Gestire i flussi in Microsoft Flow dal telefono
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+Visualizzare un elenco di tutti i flussi creati e, per ogni flusso, visualizzarne gli eventi e le azioni, abilitarli o disabilitarli ed esplorarne la cronologia di esecuzione.
 
 **Prerequisiti**
 
-* Installare l'app per dispositivi mobili Microsoft Flow per [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios) o [Windows Phone](https://aka.ms/flowmobilewindows) in un [dispositivo supportato](getting-started.md#use-the-mobile-app). Le immagini in questo argomento riflettono la versione dell'app per iPhone, ma sono simili a quelle per Android e Windows Phone.
-* Se non si ha già un flusso, crearne uno nel [sito Web per Microsoft Flow](https://flow.microsoft.com/). Per semplificare il test, usarne uno che sia possibile attivare manualmente anziché attendere un evento esterno.
+* Installare l'app per dispositivi mobili Microsoft Flow per [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios)o [Windows Phone](https://aka.ms/flowmobilewindows) su un [dispositivo supportato](getting-started.md#use-the-mobile-app). Le immagini in questo argomento riflettono la versione dell'app per iPhone, ma la grafica in Android e Windows Phone aspetto simile.
+* Se non si dispone già di un flusso, crearne uno nel [sito Web per Microsoft Flow](https://flow.microsoft.com/). Per un test più semplice, è possibile utilizzarne uno che si può attivare autonomamente anziché attendere un evento esterno.
 
 Il flusso in questa esercitazione viene eseguito quando si riceve posta da un indirizzo specifico:
 
-![Attivare il flusso alla ricezione di posta dall'indirizzo specifico](./media/mobile-manage-flows/create-trigger.png)
+![Attivare il flusso alla ricezione della posta da un indirizzo specifico](./media/mobile-manage-flows/create-trigger.png)
 
-È possibile configurare un flusso di questo tipo con l'indirizzo di posta elettronica personale per il test e un indirizzo diverso (ad esempio, quello del responsabile) quando il flusso è pronto per l'uso reale.
+È possibile configurare un flusso di questo tipo con l'indirizzo di posta elettronica personale per il test e un indirizzo diverso (ad esempio, il Manager) quando il flusso è pronto per l'uso reale.
 
-Quando viene eseguito il flusso, invia una notifica push personalizzata, con questa sintassi, al telefono:
+Quando il flusso viene eseguito, invia una notifica push personalizzata, con questa sintassi, al telefono:
 
-![Inviare messaggi a Slack](./media/mobile-manage-flows/create-event.png)
+![Invia messaggio a slack](./media/mobile-manage-flows/create-event.png)
 
-**Nota**: È anche possibile [monitorare l'attività del flusso](mobile-monitor-activity.md) dall'app per dispositivi mobili.
+**Nota**: è anche possibile [monitorare l'attività del flusso](mobile-monitor-activity.md) dall'app per dispositivi mobili.
 
 ## <a name="manage-a-flow"></a>Gestire un flusso
-1. Aprire l'app per dispositivi mobili e quindi toccare **Flussi personali** nella parte inferiore della schermata per elencare tutti i flussi.
+1. Aprire l'app per dispositivi mobili e quindi toccare **flussi personali** nella parte inferiore della schermata per elencare tutti i flussi.
    
-    Ogni voce indica il nome del flusso, le icone per i relativi eventi e azioni, la data/ora dell'ultima esecuzione e un'icona che indica se l'ultima esecuzione è stata completata.
+    Ogni voce Mostra il nome del flusso, le icone per gli eventi e le azioni, l'ora in cui è stata eseguita più di recente e un'icona che indica se l'esecuzione più recente è riuscita.
    
-    ![Elenco di flussi](./media/mobile-manage-flows/flow-list.png)
-2. Toccare un flusso per visualizzare le opzioni per la sua gestione.
+    ![Elenco dei flussi](./media/mobile-manage-flows/flow-list.png)
+2. Toccare un flusso per visualizzare le opzioni per la relativa gestione.
    
-    ![Opzioni per gestire un flusso](./media/mobile-manage-flows/flow-details.png)
-3. Toccare **Abilita flusso** per abilitare o disabilitare il flusso.
-4. Toccare **Vedi flusso** per mostrare gli eventi e le azioni relativi a tale flusso, toccare ogni evento o azione per espanderli e quindi toccare **Indietro**.
+    ![Opzioni per la gestione di un flusso](./media/mobile-manage-flows/flow-details.png)
+3. Toccare l'interruttore **Abilita flusso** per abilitare o disabilitare il flusso.
+4. Toccare **See Flow** per visualizzare gli eventi e le azioni per quel flusso, toccare ogni evento o un'azione per espanderlo, quindi toccare **indietro**.
    
     ![Eventi e azioni per un flusso](./media/mobile-manage-flows/flow-event-action.png)
-5. Toccare **Cronologia esecuzioni** per mostrare operazioni riuscite, errori o entrambi per il flusso.
+5. Toccare **cronologia di esecuzione** per visualizzare i successi, gli errori o entrambi i flussi.
    
     ![Elenco di esecuzioni](./media/mobile-manage-flows/history-mixed.png)
-6. Toccare un'esecuzione per mostrare se ogni evento e azione sono riusciti e, in tal caso, quanto tempo (in secondi) è stato impiegato.
+6. Toccare un'esecuzione per mostrare se ogni evento e azione ha avuto esito positivo e, in caso affermativo, il tempo richiesto (in secondi).
    
-    ![Dettagli dell'esecuzione](./media/mobile-manage-flows/flow-run.png)
+    ![Dettagli esecuzione](./media/mobile-manage-flows/flow-run.png)
 

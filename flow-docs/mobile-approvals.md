@@ -1,5 +1,5 @@
 ---
-title: Approvare le richieste in un dispositivo mobile | Microsoft Docs
+title: Approva le richieste in un dispositivo mobile | Microsoft Docs
 description: Usare un dispositivo mobile per approvare le richieste create in Microsoft Flow.
 services: ''
 suite: flow
@@ -20,66 +20,67 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: b41397d74c7396081154526ad2e248cb293e2460
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: a71d1e53199f0dacfc2086812cc3cd2fd9585f4d
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "64468118"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73548681"
 ---
-# <a name="approve-requests-on-your-mobile-device-by-using-microsoft-flow"></a>Approvare le richieste nel dispositivo mobile tramite Microsoft Flow
-Se un flusso identifica l'utente come responsabile approvazione ed è stata installata l'app per dispositivi mobili per Microsoft Flow, l'utente riceverà una notifica push ogni volta che viene richiesta la sua approvazione.
+# <a name="approve-requests-on-your-mobile-device-by-using-microsoft-flow"></a>Approvare le richieste sul dispositivo mobile usando Microsoft Flow
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+Se un flusso identifica l'utente come responsabile approvazione ed è stata installata l'app per dispositivi mobili per Microsoft Flow, si riceverà una notifica push ogni volta che viene richiesta l'approvazione.
 
-Questo articolo illustra in modo dettagliato alcuni scenari comuni che possono verificarsi durante la gestione di richieste di approvazione nell'app per dispositivi mobili per Microsoft Flow.
+Questo articolo illustra alcuni scenari comuni che è probabile che si verifichino quando si gestiscono le richieste di approvazione nell'app per dispositivi mobili per Microsoft Flow.
 
 > [!NOTE]
-> Le immagini in questo argomento sono relative a un dispositivo Android, ma l'esperienza in iOS è simile.
+> Le immagini in questo argomento sono da un dispositivo Android; Tuttavia, l'esperienza su iOS è simile.
 > 
 > 
 
 ## <a name="prerequisites"></a>Prerequisiti
-Per completare questa procedura dettagliata, è necessario quanto segue:
+Per completare questa procedura dettagliata, è necessario:
 
 * Un dispositivo [Android](https://aka.ms/flowmobiledocsandroid) o [iOS](https://aka.ms/flowmobiledocsios) che esegue l'app per dispositivi mobili per Microsoft Flow.
-* Essere designati come responsabile approvazione in un flusso di approvazione.
-* Richieste in attesa di approvazione.
+* Da designare come responsabile approvazione in un flusso di approvazione.
+* Richieste di approvazione in sospeso.
 
-## <a name="view-pending-requests"></a>Visualizzare le richieste in sospeso
+## <a name="view-pending-requests"></a>Visualizza richieste in sospeso
 1. Aprire l'app per dispositivi mobili per Microsoft Flow.
    
-    ![Avviare l'app per dispositivi mobili](./media/mobile-approvals/open-app.png)
-2. Selezionare **APPROVAZIONI** nell'angolo superiore destro.
+    ![avviare l'app per dispositivi mobili](./media/mobile-approvals/open-app.png)
+2. Selezionare **approvazioni** nell'angolo superiore destro.
    
     ![Selezionare le approvazioni](./media/mobile-approvals/select-approvals.png)
-3. Visualizzare tutte le approvazioni in sospeso:
+3. Visualizza tutte le approvazioni in sospeso:
    
-    ![Visualizzare le richieste di approvazione in sospeso](./media/mobile-approvals/show-pending-approval-requests.png)
+    ![vedere le richieste di approvazione in sospeso](./media/mobile-approvals/show-pending-approval-requests.png)
 
-Se non sono presenti richieste di approvazione in sospeso, creare un [flusso di approvazione](modern-approvals.md), impostare se stessi come responsabile approvazione e quindi attivare il flusso. Le richieste di approvazione vengono visualizzate nel Centro approvazioni pochi secondi dopo l'attivazione del flusso e l'invio di una richiesta per l'approvazione.
+Se non sono presenti richieste di approvazione in sospeso, creare un [flusso di approvazione](modern-approvals.md), impostare se stessi come responsabile approvazione, quindi attivare il flusso. Le richieste di approvazione vengono visualizzate nel centro di approvazione pochi secondi dopo il trigger del flusso e inviano una richiesta di approvazione.
 
-## <a name="approve-requests-and-leave-an-optional-comment"></a>Approvare le richieste e inserire un commento facoltativo
-1. Se non è già stato fatto, seguire la procedura precedente per [visualizzare le richieste in sospeso](mobile-approvals.md#view-pending-requests).
-2. Selezionare **APPROVA** nella richiesta da approvare.
+## <a name="approve-requests-and-leave-an-optional-comment"></a>Approva le richieste e lascia un commento facoltativo
+1. Se non è ancora stato fatto, seguire i passaggi precedenti per [visualizzare le richieste in sospeso](mobile-approvals.md#view-pending-requests).
+2. Selezionare **approva** nella richiesta che si desidera approvare.
    
-    ![Selezionare Approva](./media/mobile-approvals/select-approve.png)
-3. (Facoltativo) Selezionare **Aggiungi un commento (facoltativo)**.
+    ![Selezionare approva](./media/mobile-approvals/select-approve.png)
+3. (Facoltativo) selezionare **Aggiungi commento (facoltativo)** .
    
     ![Selezionare Aggiungi un commento](./media/mobile-approvals/select-add-comment.png)
    
-    Immettere un commento nella schermata **Aggiungi un commento**.
+    Immettere un commento nella schermata **Aggiungi commento** .
    
     ![Immettere il commento](./media/mobile-approvals/enter-comment-for-approval.png)
-4. Selezionare **CONFERMA** nell'angolo superiore destro.
+4. Selezionare **conferma** nell'angolo superiore destro.
    
-    ![Confermare che le operazioni sono state completate](./media/mobile-approvals/tap-confirm-button.png)
+    ![confermare il completamento](./media/mobile-approvals/tap-confirm-button.png)
    
-    La schermata relativa all'esito positivo dell'operazione viene visualizzata dopo la registrazione della decisione da parte del flusso.
+    Quando il flusso registra la decisione, viene visualizzata la schermata operazione completata.
    
-    ![Schermata relativa all'esito positivo dell'operazione](./media/mobile-approvals/approved.png)
+    ![schermata operazione completata](./media/mobile-approvals/approved.png)
 
-## <a name="reject-requests-and-leave-an-optional-comment"></a>Rifiutare le richieste e inserire un commento facoltativo
-Seguire la [procedura per l'approvazione di una richiesta](mobile-approvals.md#approve-requests-and-leave-an-optional-comment), ma selezionare **RIFIUTA** nel secondo passaggio.
+## <a name="reject-requests-and-leave-an-optional-comment"></a>Rifiuta le richieste e lascia un commento facoltativo
+Seguire i [passaggi per approvare una richiesta](mobile-approvals.md#approve-requests-and-leave-an-optional-comment), ma selezionare **rifiuta** nel secondo passaggio.
 
-## <a name="learn-more"></a>Altre informazioni
+## <a name="learn-more"></a>Ulteriori informazioni
 [Creare flussi di approvazione moderni](modern-approvals.md).
 

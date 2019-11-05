@@ -20,47 +20,48 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: dd30051425906fdc305be536342eeb7e1762d1eb
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: 269239bd3fbb07c78bf316f9e58003690c63d878
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "65019857"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73548967"
 ---
-# <a name="manage-sequential-approvals-with-microsoft-flow"></a>Gestire le approvazioni sequenziali con Microsoft Flow
-Alcuni flussi di lavoro richiedono l'approvazione preliminare prima che il responsabile approvazione finale debba disconnettersi. Ad esempio, una società potrebbe avere un criterio di approvazione sequenziale che richieda l'approvazione preliminare per le fatture di importo superiore a €1.000 prima che siano approvate dal reparto finanziario.
+# <a name="manage-sequential-approvals-with-microsoft-flow"></a>Gestione delle approvazioni sequenziali con Microsoft Flow
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+Alcuni flussi di lavoro richiedono la pre-approvazione prima che il responsabile approvazione finale debba disconnettersi. Ad esempio, un'azienda può disporre di un criterio di approvazione sequenziale che richiede la pre-approvazione per le fatture su $1000,00 prima che siano approvate dal reparto finanziario.
 
-In questa procedura dettagliata viene creato un flusso di lavoro di approvazione sequenziale che gestisce le richieste di ferie dei dipendenti.
+In questa procedura dettagliata viene creato un flusso di approvazione sequenziale che gestisce le richieste di ferie dei dipendenti.
 
 > [!NOTE]
-> SharePoint viene utilizzato solo come un esempio; non è necessario per creare flussi di approvazione. È possibile usare uno dei più di 200 servizi con cui si integra Microsoft Flow per drive dei flussi.
+> SharePoint viene usato solo come esempio. non è necessario creare flussi di approvazione. È possibile usare uno dei più di 200 servizi con cui Microsoft Flow si integra per guidare i flussi.
 
 
-## <a name="detailed-steps-in-the-flow"></a>Procedura dettagliata nel flusso
+## <a name="detailed-steps-in-the-flow"></a>Passaggi dettagliati nel flusso
 Il flusso:
 
-1. Inizia quando un dipendente crea una richiesta di ferie in un [elenco di SharePoint Online](https://support.office.com/article/Introduction-to-lists-0a1c3ace-def0-44af-b225-cfa8d92c52d7).
-2. Aggiunge la richiesta di ferie al Centro approvazioni, quindi invia tramite posta elettronica la richiesta al responsabile approvazione preliminare.
+1. Viene avviato quando un dipendente crea una richiesta di ferie in un [elenco di SharePoint Online](https://support.office.com/article/Introduction-to-lists-0a1c3ace-def0-44af-b225-cfa8d92c52d7).
+2. Aggiunge la richiesta di ferie al Centro approvazioni, quindi invia tramite posta elettronica la richiesta al responsabile approvazione.
 3. Invia tramite posta elettronica la decisione di approvazione preliminare al dipendente.
-4. Aggiorna l'elenco di SharePoint Online con la decisione e i commenti del responsabile approvazione preliminare.
+4. Aggiorna l'elenco di SharePoint Online con la decisione e i commenti del responsabile approvazione.
    
-   Nota: Se la richiesta viene preapprovata, il flusso procede con questi passaggi:
+   Nota: se la richiesta è già stata approvata, il flusso continua con i passaggi seguenti:
 5. Invia la richiesta al responsabile approvazione finale.
 6. Invia tramite posta elettronica la decisione finale al dipendente.
 7. Aggiorna l'elenco di SharePoint con la decisione finale.
 
 Questa immagine riepiloga i passaggi precedenti:
 
-   ![diagramma visio del flusso](./media/sequential-modern-approvals/visio-overview.png)
+   ![diagramma di Visio del flusso](./media/sequential-modern-approvals/visio-overview.png)
 
 ## <a name="prerequisites"></a>Prerequisiti
 [!INCLUDE [prerequisites-for-modern-approvals](includes/prerequisites-for-modern-approvals.md)]
 
 Ai fini di questa procedura dettagliata, l'elenco di SharePoint Online creato deve includere le colonne seguenti:
 
-   ![Colonne elenco di SharePoint](./media/sequential-modern-approvals/sharepoint-columns.png)
+   ![Colonne elenco SharePoint](./media/sequential-modern-approvals/sharepoint-columns.png)
 
-Annotare il nome e l'URL dell'elenco di SharePoint Online. Questi elementi verranno usati in un secondo momento per configurare il trigger **SharePoint - Quando viene creato un nuovo elemento**.
+Prendere nota del nome e dell'URL dell'elenco di SharePoint Online. Questi elementi vengono usati in un secondo momento quando si configura il trigger **SharePoint-quando viene creato un nuovo elemento** .
 
 ## <a name="create-your-flow-from-the-blank-template"></a>Creare il flusso dal modello vuoto
 [!INCLUDE [sign-in-and-create-flow-from-blank-template](includes/sign-in-and-create-flow-from-blank-template.md)]
@@ -68,130 +69,130 @@ Annotare il nome e l'URL dell'elenco di SharePoint Online. Questi elementi verra
 ## <a name="add-a-trigger"></a>Aggiungere un trigger
 [!INCLUDE [add-trigger-when-sharepoint-item-created](includes/add-trigger-when-sharepoint-item-created.md)]
 
-   ![informazioni di SharePoint](./media/sequential-modern-approvals/select-sharepoint-site-info.png)
+   ![informazioni su SharePoint](./media/sequential-modern-approvals/select-sharepoint-site-info.png)
 
-## <a name="get-the-manager-for-the-person-who-created-the-vacation-request"></a>Recuperare il responsabile per la persona che ha creato la richiesta di ferie
+## <a name="get-the-manager-for-the-person-who-created-the-vacation-request"></a>Chiedere al responsabile della persona che ha creato la richiesta di ferie
 [!INCLUDE [add-get-manager-action](includes/add-get-manager-action.md)]
 
-1. Specificare un nome per il flusso e selezionare **Crea flusso** per salvare il lavoro svolto finora.
+1. Specificare un nome per il flusso e quindi selezionare **Crea flusso** per salvare il lavoro svolto finora.
    
-    ![salvare flusso](./media/sequential-modern-approvals/save.png)
+    ![Salva flusso](./media/sequential-modern-approvals/save.png)
    
    > [!NOTE]
-   > Selezionare periodicamente **Aggiorna flusso** nella parte superiore dello schermo per salvare le modifiche apportate al flusso.
+   > Selezionare periodicamente **Aggiorna flusso** dalla parte superiore dello schermo per salvare le modifiche apportate al flusso.
    > 
    > 
    
-    ![selezionare azione di aggiornamento](./media/sequential-modern-approvals/update.png)
+    ![Selezionare l'azione di aggiornamento](./media/sequential-modern-approvals/update.png)
 
-Dopo ogni operazione di salvataggio, selezionare **Modifica flusso** nella parte superiore dello schermo e quindi continuare ad apportare modifiche.
+Dopo ogni operazione di salvataggio, selezionare **Modifica flusso** nella parte superiore dello schermo e quindi continuare a apportare modifiche.
 
 ## <a name="add-an-approval-action-for-pre-approvals"></a>Aggiungere un'azione di approvazione per le approvazioni preliminari
 [!INCLUDE [add-an-approval-action](includes/add-an-approval-action.md)]
 
-Nota: Questa azione Invia la richiesta di approvazione preliminare all'indirizzo di posta elettronica nel **assegnato a** casella.
+Nota: questa azione Invia la richiesta di approvazione preliminare all'indirizzo di posta elettronica nella casella di **assegnato a** .
 
 ## <a name="add-a-condition"></a>Aggiungere una condizione
 [!INCLUDE [add-approval-condition-response](includes/add-approval-condition-response.md)]
 
 > [!NOTE]
-> Questa condizione controlla la risposta dell'azione **Avviare un'approvazione**.
+> Questa condizione controlla la risposta dall'azione **Avvia un'approvazione** .
 > 
 > 
 
 ## <a name="add-an-email-action-for-pre-approvals"></a>Aggiungere un'azione di posta elettronica per le approvazioni preliminari
 [!INCLUDE [add-action-to-send-email-when-vacation-approved](includes/add-action-to-send-email-when-vacation-approved.md)]
 
-   ![configurare il modello di posta elettronica preapprovato](./media/sequential-modern-approvals/yes-email-config.png)
+   ![configurare il modello di posta elettronica pre-approvato](./media/sequential-modern-approvals/yes-email-config.png)
 
-## <a name="add-an-update-action-for-pre-approved-requests"></a>Aggiungere un'azione di aggiornamento per le richieste preapprovate
+## <a name="add-an-update-action-for-pre-approved-requests"></a>Aggiungere un'azione di aggiornamento per le richieste pre-approvate
 [!INCLUDE [add-action-to-update-sharepoint-with-approval](includes/add-action-to-update-sharepoint-with-approval.md)]
 
-   ![aggiornare la configurazione dell'elemento](./media/sequential-modern-approvals/configure-update-item.png)
+   ![Aggiorna configurazione elemento](./media/sequential-modern-approvals/configure-update-item.png)
 
-## <a name="get-the-pre-approvers-manager"></a>Recuperare il responsabile del responsabile approvazione
-1. Seguire la procedura [Recupera il responsabile per la persona che ha creato la richiesta di ferie](sequential-modern-approvals.md#get-the-manager-for-the-person-who-created-the-vacation-request) eseguita in precedenza per aggiungere e quindi configurare un'altra azione **Recupera il responsabile**. Stavolta, si recupererà il responsabile del responsabile approvazione.
-2. Al termine, la scheda **Recupera il responsabile 2** dovrebbe avere il seguente aspetto. Assicurarsi di usare il token **Posta elettronica** dalla categoria **Recupera il responsabile** nella scheda **Aggiunge il contenuto dinamico dalle app e dai servizi usati in questo flusso**.
+## <a name="get-the-pre-approvers-manager"></a>Ottenere il responsabile del responsabile approvazione
+1. Usare il [Get the Manager per la persona che ha creato la richiesta di ferie](sequential-modern-approvals.md#get-the-manager-for-the-person-who-created-the-vacation-request) descritta in precedenza per aggiungere e quindi configurare un'altra azione **Get Manager** . Questa volta si ottiene il responsabile del pre-responsabile approvazione.
+2. Al termine, la scheda **Get Manager 2 dovrebbe essere** simile a questa immagine. Assicurarsi di usare il token di **posta elettronica** della categoria **Get Manager** nel **aggiungere il contenuto dinamico dalle app e dai servizi usati in questa scheda di flusso** .
    
-   ![recuperare il responsabile del responsabile approvazione](includes/media/modern-approvals/get-pre-approver-manager.png)
+   ![ottenere il responsabile del responsabile approvazione](includes/media/modern-approvals/get-pre-approver-manager.png)
 
 ## <a name="add-the-final-approval-action"></a>Aggiungere l'azione di approvazione finale
-1. Seguire la procedura per [aggiungere un'azione di approvazione per le approvazioni preliminari](sequential-modern-approvals.md#add-an-approval-action-for-pre-approvals) eseguita in precedenza per aggiungere e quindi configurare un'altra azione **Avviare un'approvazione**. Questa azione invia una richiesta di posta elettronica per l'approvazione finale.
-2. Al termine, la scheda dovrebbe avere il seguente aspetto:
+1. Usare l' [azione Aggiungi un'approvazione per le procedure preliminari approvate](sequential-modern-approvals.md#add-an-approval-action-for-pre-approvals) in precedenza per aggiungere e quindi configurare un'altra azione **Avvia un'approvazione** . Questa azione Invia una richiesta di posta elettronica per l'approvazione finale.
+2. Al termine, la scheda sarà simile a questa immagine:
    
     ![configurare l'approvazione](./media/sequential-modern-approvals/provide-approval-config-info.png)
 
 ## <a name="add-the-final-approval-condition"></a>Aggiungere la condizione di approvazione finale
-1. Ripetere i passaggi da [aggiungere una condizione](sequential-modern-approvals.md#add-a-condition) per aggiungere e quindi configurare un **Condizione** che controlla la decisione del responsabile approvazione finale.
+1. Ripetere i passaggi da [aggiungere una condizione](sequential-modern-approvals.md#add-a-condition) da aggiungere e quindi configurare una **condizione** che controlla la decisione del responsabile approvazione finale.
 
-## <a name="send-email-with-final-approval"></a>Inviare posta elettronica con l'approvazione finale
-1. Seguire la procedura in [Aggiungere un'azione di posta elettronica per le approvazioni preliminari](sequential-modern-approvals.md#add-an-email-action-for-pre-approvals) per aggiungere e quindi configurare un'azione che invii un messaggio di posta elettronica quando vengono approvate le richieste di ferie.
-2. Al termine, la scheda sarà simile all'immagine seguente:
+## <a name="send-email-with-final-approval"></a>Inviare un messaggio di posta elettronica con l'approvazione finale
+1. Usare la procedura descritta in [aggiungere un'azione di posta elettronica per le approvazioni preliminari](sequential-modern-approvals.md#add-an-email-action-for-pre-approvals) da aggiungere e quindi configurare un'azione che invii un messaggio di posta elettronica quando vengono approvate le richieste di ferie.
+2. Al termine, la scheda sarà simile a questa immagine:
    
    ![modello di posta elettronica di approvazione finale](./media/sequential-modern-approvals/vacatioin-request-approved-email-template.png)
 
 ## <a name="update-sharepoint-with-approval"></a>Aggiornare SharePoint con approvazione
-1. Seguire la procedura in [Aggiungere un'azione di aggiornamento per le richieste preapprovate](sequential-modern-approvals.md#add-an-update-action-for-pre-approved-requests) per aggiungere e quindi configurare un'azione che aggiorni SharePoint quando la richiesta di ferie viene approvata.
-2. Al termine, la scheda sarà simile all'immagine seguente:
+1. Usare la procedura descritta in [aggiungere un'azione di aggiornamento per le richieste pre-approvate](sequential-modern-approvals.md#add-an-update-action-for-pre-approved-requests) da aggiungere e quindi configurare un'azione che aggiorni SharePoint quando la richiesta di ferie viene approvata.
+2. Al termine, la scheda sarà simile a questa immagine:
    
-    ![aggiornare la configurazione dell'elemento](./media/sequential-modern-approvals/configure-update-item-approved.png)
+    ![Aggiorna configurazione elemento](./media/sequential-modern-approvals/configure-update-item-approved.png)
 
-## <a name="send-email-with-pre-approval-rejection"></a>Inviare posta elettronica con rifiuto dell'approvazione preliminare
+## <a name="send-email-with-pre-approval-rejection"></a>Inviare un messaggio di posta elettronica con rifiuto dell'approvazione preliminare
 [!INCLUDE [add-action-to-send-email-when-vacation-rejected](includes/add-action-to-send-email-when-vacation-rejected.md)]
 
-   ![configurazione delle richieste rifiutate](./media/sequential-modern-approvals/configure-rejected-email.png)
+   ![configurazione per le richieste rifiutate](./media/sequential-modern-approvals/configure-rejected-email.png)
 
-Nota: Questa azione deve essere aggiunto al **se NO, non fare nulla** ramo sotto il **condizione** carta.
+Nota: questa azione deve essere aggiunta al ramo **se no, non fare nulla** sotto la scheda **condizione** .
 
 ## <a name="update-sharepoint-with-pre-approval-rejection"></a>Aggiornare SharePoint con rifiuto dell'approvazione preliminare
 [!INCLUDE [add-action-to-update-sharepoint-with-rejection](includes/add-action-to-update-sharepoint-with-rejection.md)]
 
-   ![aggiornare sharepoint per le richieste rifiutate](./media/sequential-modern-approvals/update-sharepoint-with-rejection.png)
+   ![aggiornare SharePoint per le richieste rifiutate](./media/sequential-modern-approvals/update-sharepoint-with-rejection.png)
 
-## <a name="send-email-with-final-rejection"></a>Inviare posta elettronica con il rifiuto finale
-1. Seguire la procedura in [Inviare posta elettronica con rifiuto dell'approvazione preliminare](sequential-modern-approvals.md#send-email-with-pre-approval-rejection) per aggiungere e quindi configurare un'azione che invii un messaggio di posta elettronica quando la richiesta di ferie viene rifiutata dal responsabile approvazione finale.
+## <a name="send-email-with-final-rejection"></a>Inviare un messaggio di posta elettronica con rifiuto finale
+1. Usare la procedura descritta in [inviare un messaggio di posta elettronica con rifiuto dell'approvazione preliminare](sequential-modern-approvals.md#send-email-with-pre-approval-rejection) per aggiungere e quindi configurare un'azione che invii un messaggio di posta elettronica quando la richiesta di ferie viene rifiutata dal responsabile approvazione finale.
    
-    Nota: Questa azione deve essere aggiunto al **se NO, non fare nulla** ramo sotto il **condizione 2** carta.
-2. Al termine, la scheda sarà simile all'immagine seguente:
+    Nota: questa azione deve essere aggiunta al ramo **se no, non fare nulla** sotto la scheda **condizione 2** .
+2. Al termine, la scheda sarà simile a questa immagine:
    
-   ![configurazione delle richieste rifiutate](./media/sequential-modern-approvals/final-rejection-email-card.png)
+   ![configurazione per le richieste rifiutate](./media/sequential-modern-approvals/final-rejection-email-card.png)
 
 ## <a name="update-sharepoint-with-final-rejection"></a>Aggiornare SharePoint con rifiuto finale
-1. Seguire la procedura in [Aggiornare SharePoint con rifiuto dell'approvazione preliminare](sequential-modern-approvals.md#update-sharepoint-with-pre-approval-rejection) per aggiungere e quindi configurare un'azione che aggiorni SharePoint se il responsabile approvazione finale rifiuta la richiesta di ferie.
-2. Al termine, la scheda sarà simile all'immagine seguente:
+1. Usare la procedura descritta in [aggiornare SharePoint con il rifiuto di approvazione preliminare](sequential-modern-approvals.md#update-sharepoint-with-pre-approval-rejection) per aggiungere e quindi configurare un'azione che aggiorni SharePoint se il responsabile approvazione finale rifiuta la richiesta di ferie.
+2. Al termine, la scheda sarà simile a questa immagine:
    
-   ![aggiornare scheda elemento](./media/sequential-modern-approvals/final-rejection-update-sharepoint.png)
+   ![Aggiorna scheda elemento](./media/sequential-modern-approvals/final-rejection-update-sharepoint.png)
 3. Selezionare **Aggiorna flusso** per salvare il lavoro svolto.
    
-   ![selezionare azione di aggiornamento](./media/sequential-modern-approvals/update.png)
+   ![Selezionare l'azione di aggiornamento](./media/sequential-modern-approvals/update.png)
 
-Se tutti i passaggi sono stati eseguiti correttamente, il flusso sarà simile all'immagine seguente:
+Se è stata seguita, il flusso dovrebbe essere simile all'immagine seguente:
 
-![panoramica del flusso](./media/sequential-modern-approvals/completed-flow.png)
+![Panoramica di Flow](./media/sequential-modern-approvals/completed-flow.png)
 
-Dopo aver creato il flusso, è opportuno vederlo in azione.
+Ora che è stato creato il flusso, è possibile vederlo in azione.
 
-## <a name="request-an-approval"></a>Richiedere un'approvazione
+## <a name="request-an-approval"></a>Richiedi approvazione
 [!INCLUDE [request-vacation-approval](includes/request-vacation-approval.md)]
 
-La richiesta deve essere simile all'immagine seguente:
+La richiesta dovrebbe essere simile a questa immagine:
 
 ![richiesta di ferie](./media/sequential-modern-approvals/vacation-request.png)
 
-## <a name="view-pending-approval-requests"></a>Visualizzare le richieste di approvazione in sospeso
+## <a name="view-pending-approval-requests"></a>Visualizza le richieste di approvazione in sospeso
 [!INCLUDE [view-pending-approvals](includes/view-pending-approvals.md)]
 
-## <a name="pre-approve-a-request"></a>Preapprovare una richiesta
+## <a name="pre-approve-a-request"></a>Pre-approva una richiesta
 [!INCLUDE [approve-request-from-different-locations](includes/approve-request-from-different-locations.md)]
 
-## <a name="approve-the-request"></a>Approvare la richiesta
-La procedura per approvare una richiesta è identica a quella necessaria per [preapprovare una richiesta](sequential-modern-approvals.md#pre-approve-a-request)
+## <a name="approve-the-request"></a>Approva la richiesta
+I passaggi per approvare una richiesta sono identici ai passaggi per la [pre-approvazione di una richiesta](sequential-modern-approvals.md#pre-approve-a-request)
 
-Nota: Il responsabile approvazione finale riceve la richiesta di ferie solo dopo che la richiesta è stata preapprovata.
+Nota: il responsabile approvazione finale ottiene la richiesta di ferie solo dopo che la richiesta è stata pre-approvata.
 
 ## <a name="reject-a-request"></a>Rifiutare una richiesta
 [!INCLUDE [reject-a-request](includes/reject-a-request.md)]
 
-## <a name="more-information"></a>Altre informazioni
-[Procedura dettagliata di approvazioni moderne di un unico responsabile approvazione](modern-approvals.md)
+## <a name="more-information"></a>Ulteriori informazioni
+[Procedura dettagliata per le approvazioni moderne](modern-approvals.md)
 

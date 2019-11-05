@@ -1,6 +1,6 @@
 ---
-title: Informazioni su come creare flussi che registra le schede adattive per Microsoft Teams | Microsoft Docs
-description: Informazioni su come creare flussi che pubblica il contenuto con formattazione complessa con le schede adattive a Microsoft Teams.
+title: Scopri come creare flussi che inviano schede adattive a Microsoft Teams | Microsoft Docs
+description: Scopri come creare flussi che postano contenuti formattati in modo completo con schede adattive a Microsoft teams.
 services: ''
 suite: flow
 documentationcenter: na
@@ -15,49 +15,50 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 04/29/2019
 ms.author: deonhe
-ms.openlocfilehash: d6bb4bb55fe876db1d8b64c157d3b4967e5d067f
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: 0aa5b4727bea569732fe5b76f717a87d8d7ddb02
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "65061573"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73546509"
 ---
 <!--from editor: I notice that adaptive cards is capitalized on the page opened by the link in the first paragraph. But the screenshots in this file don't show it being capitalized. So I'm unsure if it should change.-->
 
 
-# <a name="use-adaptive-cards-in-microsoft-teams"></a>Usare le schede adattive in Microsoft Teams
+# <a name="use-adaptive-cards-in-microsoft-teams"></a>Usare schede adattive in Microsoft Teams
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
-È possibile creare un flusso che invii [le schede adattive](https://adaptivecards.io) a un canale Microsoft Teams. Con le schede adattive, è possibile usare la formattazione RTF per rendere i post più chiari, interattivi e accattivanti. Le schede adattive possono contenere i componenti, ad esempio immagini, grafici, testo in formato RTF e altro ancora.
+È possibile creare un flusso che invii [schede adattive](https://adaptivecards.io) a un canale di Microsoft teams. Con le schede adattive è possibile utilizzare la formattazione avanzata per rendere i post più chiari, interattivi e accattivanti. Le schede adattive possono contenere componenti quali immagini, grafici, testo formattato in modo RTF e altro ancora.
 
-## <a name="create-a-flow-that-posts-adaptive-cards-to-a-team"></a>Creare un flusso che invii le schede adattive a un team
+## <a name="create-a-flow-that-posts-adaptive-cards-to-a-team"></a>Creare un flusso che invii schede adattive a un team
 
-Seguire questi passaggi per creare un flusso che inserisce una scheda adattiva al canale generale del team di strategia e pianificazione. Il flusso viene creato usa il **registrare il proprio scheda adattiva come al bot di flusso di un canale (anteprima)** azione per inviare il contenuto della scheda adattiva al canale del team ogni settimana.
+Seguire questa procedura per creare un flusso che invii una scheda adattiva al canale generale nel team di strategia e pianificazione. Il flusso creato usa l'azione **Invia la tua scheda adattiva come bot di flusso a un canale (anteprima)** per pubblicare il contenuto della scheda adattiva sul canale settimanale del team.
 
-1. Eseguire l'accesso a Microsoft Teams.
-1. Selezionare il **Teams** icona nel riquadro di spostamento a sinistra e quindi selezionare la **strategia e pianificazione** team.
+1. Accedere a Microsoft teams.
+1. Selezionare l'icona **Teams (team** ) nella barra di spostamento a sinistra e quindi selezionare la **strategia e** il team di pianificazione.
 
-    ![Selezionare i team](media/create-adaptive-cards-teams/select-teams-team.png)
+    ![Selezione team](media/create-adaptive-cards-teams/select-teams-team.png)
 
-1. Selezionare il **Flow** scheda nella parte superiore della schermata.
-1. Selezionare il **+** icona (Crea da zero).
-1. Cercare **ricorrenza**, quindi selezionare la **ricorrenza** trigger.
+1. Selezionare la scheda **flusso** nella parte superiore della schermata.
+1. Selezionare l'icona **+** (Crea da zero).
+1. Cercare **ricorrenza**, quindi selezionare il trigger **ricorrenza** .
 
-    ![Scheda di ricorrenza](media/create-adaptive-cards-teams/select-recurrence.png)
+    ![Scheda ricorrenza](media/create-adaptive-cards-teams/select-recurrence.png)
 
-1. Impostare la pianificazione come indicato di seguito per ripetere ogni settimana, un'ora e fuso orario di propria scelta:
+1. Impostare la pianificazione come indicato di seguito per ripetere ogni settimana, per un fuso orario e un fuso orario di propria scelta:
     
-    ![Scheda di ricorrenza](media/create-adaptive-cards-teams/recurrence-card.png)
+    ![Scheda ricorrenza](media/create-adaptive-cards-teams/recurrence-card.png)
     
-1. Selezionare **Nuovo passaggio**.
-1. Cercare **adattivo**, selezionare **Microsoft Teams**e quindi selezionare il **registrare il proprio scheda adattiva come al bot di flusso di un canale (anteprima)** azione.
+1. Selezionare **nuovo passaggio**.
+1. Cercare **adattivo**, selezionare **Microsoft teams**e quindi selezionare l'azione **Invia la tua scheda adattiva come bot a un canale (anteprima)** .
 
    ![Scheda adattiva](media/create-adaptive-cards-teams/select-adaptive-post-message-action.png)
 
-1. Fornire una **Team**, **canale**, e **messaggio** nel **registrare il proprio scheda adattiva come al bot di flusso di un canale (anteprima)** carta per indicare il team e il canale a cui la scheda adattiva **messaggio** verrà pubblicato.
+1. Fornire un **Team**, un **canale**e un **messaggio** sulla scheda **Invia il proprio dispositivo adattivo come bot a un canale (anteprima)** per indicare il team e il canale a cui verrà inviato il **messaggio** della scheda adattiva.
 
    ![Scheda adattiva](media/create-adaptive-cards-teams/adaptive-card-message.png)
 
-   È possibile usare il contenuto JSON di esempio per la **messaggio**:
+   È possibile usare questo contenuto JSON di esempio per il **messaggio**:
 
     ````
         {
@@ -134,14 +135,14 @@ Seguire questi passaggi per creare un flusso che inserisce una scheda adattiva a
 
 ## <a name="run-the-flow"></a>Eseguire il flusso
 
-Si noti che, trascorso il tempo di ricorrenza, il flusso invia il contenuto della scheda adattiva al canale di team definito.
+Si noti che, dopo la scadenza del tempo di ricorrenza, il flusso invia il contenuto della scheda adattivo al canale del team definito.
 
 ![Eseguire il flusso](media/create-adaptive-cards-teams/flow-run-result.png)
 
-## <a name="learn-more"></a>Altre informazioni
+## <a name="learn-more"></a>Ulteriori informazioni
 
-- Introduzione [esempi di scheda adattiva](https://adaptivecards.io/samples/).
-- Creare [contenuto scheda adattiva](https://adaptivecards.io) il modo più semplice.
+- Introduzione agli [esempi di schede adattive](https://adaptivecards.io/samples/).
+- Il modo più semplice per creare [contenuti di schede adattive](https://adaptivecards.io) .
 
 
 

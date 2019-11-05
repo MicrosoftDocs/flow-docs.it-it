@@ -1,6 +1,6 @@
 ---
-title: Usare l'azione Applica a ogni per riprodurre a ciclo una matrice di elementi. | Microsoft Docs
-description: Usare Microsoft Flow per riprodurre a ciclo una matrice di elementi con cui verificare più condizioni e intraprendere azioni in base alle stesse.
+title: Usare l'azione applica a ogni per eseguire il ciclo di una matrice di elementi. | Microsoft Docs
+description: Usare Microsoft Flow per eseguire il ciclo di una matrice di elementi per verificare più condizioni ed eseguire azioni in base a tali condizioni.
 services: ''
 suite: flow
 documentationcenter: na
@@ -20,161 +20,162 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 914fe6d84bb63e1f3e184794d34fbfd58ad30963
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: e2852de959f62d5c0ee76fabc9841e3fc9663f73
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "64459616"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73545989"
 ---
-# <a name="use-the-apply-to-each-action-in-microsoft-flow-to-process-a-list-of-items-periodically"></a>Usare l'azione Applica a ogni in Microsoft Flow per elaborare periodicamente un elenco di elementi
-Molti trigger possono avviare immediatamente un flusso in base a un evento, ad esempio quando si riceve un nuovo messaggio di posta elettronica nella posta in arrivo. Questi trigger sono molto utili, ma a volte si vuole eseguire un flusso che interroghi un'origine dati secondo una pianificazione predefinita, eseguendo determinate azioni sulla base delle proprietà degli elementi nell'origine dati. A tale scopo, il flusso può essere avviato secondo una pianificazione (ad esempio, una volta al giorno) e si può usare un'azione di ciclo, ad esempio **Applica a ogni**, per elaborare un elenco di elementi. È possibile, ad esempio, usare **Applica a ogni** per aggiornare i record da un database o un elenco di elementi da Microsoft SharePoint.
+# <a name="use-the-apply-to-each-action-in-microsoft-flow-to-process-a-list-of-items-periodically"></a>Usare l'azione applica a ogni in Microsoft Flow per elaborare periodicamente un elenco di elementi
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+Molti trigger possono avviare immediatamente un flusso in base a un evento, ad esempio quando arriva un nuovo messaggio di posta elettronica nella posta in arrivo. Questi trigger sono molto interessanti, ma a volte si vuole eseguire un flusso che esegue una query su un'origine dati in base a una pianificazione predefinita, eseguendo determinate azioni in base alle proprietà degli elementi nell'origine dati. A tale scopo, il flusso può essere avviato in base a una pianificazione (ad esempio una volta al giorno) e usare un'azione di ciclo, ad esempio **applica a ogni** per elaborare un elenco di elementi. È ad esempio possibile utilizzare **applica a ogni** per aggiornare record da un database o da un elenco di elementi di Microsoft SharePoint.
 
-In questa procedura dettagliata, verrà creato un flusso che viene eseguito ogni 15 minuti ed esegue le operazioni seguenti:
+In questa procedura dettagliata verrà creato un flusso che viene eseguito ogni 15 minuti ed esegue le operazioni seguenti:
 
-1. Ottiene gli ultimi 10 messaggi non letti nella posta in arrivo di Outlook Office 365.
-2. Controlla ciascuno dei 10 messaggi per verificare se contengono **riunione immediata** nell'oggetto.
-3. Controlla se il messaggio proviene dal proprio capo o se è stato inviato con priorità alta.
-4. Invia una notifica push e contrassegna come letto qualsiasi messaggio di posta elettronica con **riunione immediata** nell'oggetto e che proviene dal proprio capo o è stato inviato con priorità alta.
+1. Ottiene gli ultimi 10 messaggi non letti nella posta in arrivo di Office 365 Outlook.
+2. Verifica ognuno dei 10 messaggi per verificare se un oggetto è **ora** presente nell'oggetto.
+3. Controlla se il messaggio di posta elettronica viene inviato dal responsabile o è stato inviato con priorità alta.
+4. Invia una notifica push e contrassegna come letto tutti i messaggi di posta elettronica che hanno **subito il contatto** nell'oggetto ed è stato inviato con priorità alta.
 
-Questo diagramma mostra i dettagli del flusso che si creerà in questa procedura dettagliata:
+Questo diagramma mostra i dettagli del flusso che verrà creato in questa procedura dettagliata:
 
-![panoramica del flusso in corso di creazione](./media/apply-to-each/foreach-flow-visio.png)
+![Panoramica del flusso in fase di compilazione](./media/apply-to-each/foreach-flow-visio.png)
 
 ## <a name="prerequisites"></a>Prerequisiti
 Ecco i requisiti per eseguire correttamente i passaggi in questa procedura dettagliata:
 
-* Un account registrato per l'uso di [Microsoft Flow](https://flow.microsoft.com).
-* Un account di Office 365 Outlook.
-* L'app per dispositivi mobili Microsoft Flow per [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios) o [Windows Phone](https://aka.ms/flowmobilewindows).
+* Un account registrato per utilizzare [Microsoft Flow](https://flow.microsoft.com).
+* Un account Office 365 Outlook.
+* App per dispositivi mobili Microsoft Flow per [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios)o [Windows Phone](https://aka.ms/flowmobilewindows).
 * Connessioni a Office 365 Outlook e al servizio di notifica push.
 
 ## <a name="create-a-flow"></a>Creare un flusso
-1. Accedere a [Microsoft Flow](https://flow.microsoft.com):
-2. Selezionare la scheda **Flussi personali** e quindi creare un flusso da zero:
+1. Accedi [Microsoft Flow](https://flow.microsoft.com):
+2. Selezionare la scheda **flussi personali** e quindi creare un flusso da uno spazio vuoto:
    
-    ![crea da zero](./media/apply-to-each/foreach-1.png)
-3. Immettere "pianificazione" nella casella di ricerca per cercare tutti i servizi e i trigger relativi alla pianificazione.
-4. Selezionare il trigger **Pianificazione - Ricorrenza** per indicare che il flusso verrà eseguito secondo una pianificazione che si sceglierà in seguito:
+    ![Crea da zero](./media/apply-to-each/foreach-1.png)
+3. Immettere "Schedule" nella casella di ricerca per cercare tutti i servizi e i trigger correlati alla pianificazione.
+4. Selezionare il trigger **pianificazione-ricorrenza** per indicare che il flusso verrà eseguito in base a una pianificazione da fornire successivamente:
    
-    ![azione pianificazione ricorrenza](./media/apply-to-each/foreach-2.png)
-5. Impostare la frequenza di esecuzione della pianificazione ogni 15 minuti:
+    ![azione di ricorrenza pianificata](./media/apply-to-each/foreach-2.png)
+5. Impostare la pianificazione per l'esecuzione ogni 15 minuti:
    
-    ![esecuzioni pianificazione](./media/apply-to-each/foreach-3.png)
-6. Selezionare **+ Nuovo passaggio**, **Aggiungi un'azione** e quindi digitare **outlook** nella casella di ricerca per cercare tutte le azioni relative a Microsoft Outlook.
-7. Selezionare l'azione **Office 365 Outlook - Ottieni messaggi di posta elettronica**:
+    ![Pianifica esecuzioni](./media/apply-to-each/foreach-3.png)
+6. Selezionare **+ nuovo passaggio**, **Aggiungi un'azione**e quindi digitare **Outlook** nella casella di ricerca per cercare tutte le azioni correlate a Microsoft Outlook.
+7. Selezionare l'azione **Office 365 Outlook-ricevi messaggi di posta elettronica** :
    
-    ![selezionare l'azione ottieni messaggi di posta elettronica](./media/apply-to-each/foreach-4.png)
-8. Verrà aperta la scheda **Ottieni messaggi di posta elettronica**. Configurare la scheda **Ottieni messaggi di posta elettronica** selezionando i primi 10 messaggi non letti nella cartella Posta in arrivo. Non includere allegati perché non verranno usati nel flusso:
+    ![Selezionare l'azione Ricevi messaggi di posta elettronica](./media/apply-to-each/foreach-4.png)
+8. Verrà visualizzata la scheda **Ottieni messaggi di posta elettronica** . Configurare la scheda **Ottieni messaggi di posta elettronica** per selezionare i primi 10 messaggi di posta elettronica non letti dalla cartella della posta in arrivo. Non includere allegati perché non verranno usati nel flusso:
    
-    ![configurare scheda messaggi di posta elettronica](./media/apply-to-each/foreach-5.png)
+    ![Configura scheda e-mail](./media/apply-to-each/foreach-5.png)
    
    > [!NOTE]
-   > Finora è stato creato un flusso semplice che ottiene alcuni messaggi di posta elettronica dalla posta in arrivo. Questi messaggi verranno restituiti in una matrice, cioè esattamente l'obiettivo dell'azione **Applica a ogni**.
+   > Fino a questo punto, è stato creato un flusso semplice che riceve alcuni messaggi di posta elettronica dalla posta in arrivo. Questi messaggi di posta elettronica verranno restituiti in una matrice; **per ogni** azione è necessaria una matrice, quindi questo è esattamente ciò che è necessario.
    > 
    > 
 
 ## <a name="add-actions-and-conditions"></a>Aggiungere azioni e condizioni
-1. Selezionare **+ Nuovo passaggio**, **Altro** e quindi l'azione **Aggiungi Apply to each**:
+1. Selezionare **+ nuovo passaggio**e **quindi** **Aggiungi un'azione applica a ogni** :
    
-    ![selezionare applica a ogni](./media/apply-to-each/foreach-6.png)
-2. Inserire il token **Corpo** nella casella **Selezionare un output dai passaggi precedenti** della scheda **Applica a ogni**. In tal modo, verrà estratto il corpo dei messaggi da usare nell'azione **Applica a ogni**:
+    ![Selezionare applica a ogni](./media/apply-to-each/foreach-6.png)
+2. Inserire il token del **corpo** nella casella **selezionare un output dai passaggi precedenti** nella casella **applica a ogni** scheda. Questa operazione estrae il corpo dei messaggi di posta elettronica da usare nell'azione **applica a ogni** :
    
-    ![aggiungere token corpo](./media/apply-to-each/foreach-7.png)
+    ![Aggiungi token corpo](./media/apply-to-each/foreach-7.png)
 3. Selezionare **Aggiungi una condizione**:
    
-    ![aggiungi una condizione](./media/apply-to-each/foreach-8.png)
-4. Configurare la scheda **Condizione** in modo da cercare nell'oggetto di ogni messaggio le parole "riunione immediata":
+    ![Aggiungi condizione](./media/apply-to-each/foreach-8.png)
+4. Configurare la scheda **condizione** per cercare le parole "Meet Now" nel soggetto di ogni messaggio di posta elettronica:
    
-   * Inserire il token **Oggetto** nella casella **Nome oggetto**.
-   * Selezionare **contiene** nell'elenco **Relazione**.
-   * Immettere **riunione immediata** nella casella **Valore**.
+   * Inserire il **token dell'oggetto nella** casella **nome oggetto** .
+   * Selezionare **Contains** nell'elenco **relazione** .
+   * Immettere **Meet Now** nella casella **valore** .
      
-     ![configurare condizione](./media/apply-to-each/foreach-subject-condition.png)
-5. Selezionare **Altro**, quindi selezionare **Aggiungi una condizione** dal ramo **SE SÌ, NON FARE NULLA**. Verrà visualizzata la scheda **Condizione 2**, da configurare come segue:
+     ![Configura condizione](./media/apply-to-each/foreach-subject-condition.png)
+5. Selezionare **altro**e quindi selezionare **Aggiungi una condizione** dal ramo **se sì, non fare nulla** . Verrà visualizzata la scheda **condizione 2** ; configurare la scheda come segue:
    
-   * Inserire il token **Priorità** nella casella **Nome oggetto**.
-   * Selezionare **è uguale a** nell'elenco **Relazione**.
-   * Immettere **Alta** nella casella **Valore**.
+   * Inserire il token di **importanza** nella casella **nome oggetto** .
+   * Select **è uguale a** nell'elenco **relazione** .
+   * Immettere **High** nella casella **valore** .
      
-     ![aggiungi una condizione](./media/apply-to-each/foreach-importance-condition.png)
-6. Selezionare **Aggiungi un'azione** nella sezione **SE SÌ, NON FARE NULLA**. Verrà aperta la scheda**Scegliere un'azione**, in cui definire cosa dovrebbe accadere se la condizione di ricerca (il messaggio **riunione immediata** è stato inviato con priorità elevata) è true:
+     ![Aggiungi condizione](./media/apply-to-each/foreach-importance-condition.png)
+6. Selezionare **Aggiungi un'azione** nella sezione **se sì, non fare nulla** . Verrà visualizzata la scheda **scegliere un'azione** , in cui è possibile definire cosa dovrebbe accadere se la condizione di ricerca (l'indirizzo di posta elettronica **Meet Now** è stata inviata con priorità alta) è true:
    
-    ![aggiungi un'azione](./media/apply-to-each/foreach-9.png)
-7. Cercare **notifica**, quindi selezionare l'azione **Notifications - Send me a mobile notification** (Notifiche - Inviami una notifica mobile).
+    ![Aggiungi azione](./media/apply-to-each/foreach-9.png)
+7. Cercare **notifica**, quindi selezionare l'azione **notifiche-invia una notifica per dispositivi mobili** :
    
-    ![cercare e selezionare notifica](./media/apply-to-each/foreach-10.png)
-8. Nella scheda **Send me a mobile notification** inserire i dettagli per la notifica push che verrà inviata se l'oggetto del messaggio contiene "riunione immediata", quindi selezionare **Aggiungi un'azione**:
+    ![Cerca e Seleziona notifica](./media/apply-to-each/foreach-10.png)
+8. Nella scheda **Invia una notifica per dispositivi mobili** specificare i dettagli per la notifica push che verrà inviata se l'oggetto di un messaggio di posta elettronica contiene "Meet Now" e quindi selezionare **Aggiungi un'azione**:
    
-    ![configurare la notifica](./media/apply-to-each/foreach-11.png)
-9. Immettere **letto** come termine di ricerca, quindi selezionare l'azione **Office 365 Outlook -Segna come già letto**. Ogni messaggio verrà in questo modo contrassegnato come letto dopo l'invio della notifica push:
+    ![Configura notifica](./media/apply-to-each/foreach-11.png)
+9. Immettere **Read** come termine di ricerca, quindi selezionare l'azione **Office 365 Outlook-Mark as Read** . Ogni messaggio di posta elettronica verrà contrassegnato come letto dopo l'invio della notifica push:
    
-    ![Aggiungere azione segna come già letto](./media/apply-to-each/foreach-12.png)
-10. Aggiungere il token **ID messaggio** alla casella **ID messaggio** della scheda **Segna come già letto**. Potrebbe essere necessario selezionare **Vedi altri** per trovare il token **ID messaggio**. Ciò indica l'ID del messaggio che verrà contrassegnato come letto:
+    ![Aggiungi Contrassegno come azione di lettura](./media/apply-to-each/foreach-12.png)
+10. Aggiungere il token **ID messaggio** alla casella **ID messaggio** della scheda **Contrassegna come letto** . Potrebbe essere necessario selezionare **Visualizza altro** per trovare il token **ID del messaggio** . Indica l'ID del messaggio che verrà contrassegnato come letto:
     
-     ![aggiungere l'id del messaggio](./media/apply-to-each/foreach-13.png)
-11. Tornando alla scheda **Condizione 2**, nel ramo **SE NO, NON FARE NULLA**:
+     ![Aggiungi ID messaggio](./media/apply-to-each/foreach-13.png)
+11. Tornando alla scheda **condizione 2** , sul ramo **if no, non eseguire alcuna operazione** :
     
-    * Selezionare **Aggiungi un'azione**, quindi digitare **recupera il responsabile** nella casella di ricerca.
-    * Selezionare l'azione **Utenti di Office 365 - Recupera il responsabile** dall'elenco dei risultati di ricerca.
-    * Immettere l'indirizzo di posta elettronica *completo* nella casella **Utente** della scheda **Recupera il responsabile**.
+    * Selezionare **Aggiungi un'azione**, quindi digitare **Get Manager** nella casella di ricerca.
+    * Selezionare l'azione **Office 365 users-get Manager** dall'elenco dei risultati della ricerca.
+    * Immettere l'indirizzo di posta elettronica *completo* nella casella **utente** della scheda **Ottieni responsabile** .
       
-      ![aggiungere e configurare l'azione recupera il responsabile](./media/apply-to-each/foreach-get-manager.png)
-12. Selezionare **Altro**, quindi selezionare **Aggiungi una condizione** dal ramo **SE NO**. Verrà visualizzata la scheda **Condizione 3**. Configurarla in modo da verificare se l'indirizzo di posta elettronica del mittente del messaggio di posta elettronica (il token Da) sia lo stesso indirizzo di posta elettronica del proprio capo (token Posta elettronica):
+      ![aggiungere e configurare l'azione Ottieni gestione](./media/apply-to-each/foreach-get-manager.png)
+12. Selezionare **altro**e quindi selezionare **Aggiungi una condizione** dal ramo **if no** . Verrà visualizzata la scheda **condizione 3** . configurare la scheda per verificare se l'indirizzo di posta elettronica del mittente del messaggio di posta elettronica (il token da) è lo stesso dell'indirizzo di posta elettronica del Capo (il token di posta elettronica):
     
-    * Inserire il token **Da** nella casella **Nome oggetto**.
-    * Selezionare **contiene** nell'elenco **Relazione**.
-    * Immettere **Posta elettronica** nella casella **Valore**.
+    * Inserire il token **from** nella casella **nome oggetto** .
+    * Selezionare **Contains** nell'elenco **relazione** .
+    * Immettere il token di **posta elettronica** nella casella **valore** .
       
-      ![configurare condizione di ricerca](./media/apply-to-each/foreach-condition3-card.png)
-13. Selezionare **Aggiungi un'azione** nella sezione **SE SÌ, NON FARE NULLA** della scheda **Condizione 3**. Verrà aperta la scheda**SE SÌ**, in cui definire cosa dovrebbe accadere se la condizione di ricerca (il messaggio è stato inviato dal capo) è true:
+      ![configurare la condizione di ricerca](./media/apply-to-each/foreach-condition3-card.png)
+13. Selezionare **Aggiungi un'azione** nella sezione **se sì, non fare nulla** della scheda **condizione 3** . Verrà visualizzata la scheda **If Yes (se sì** ), in cui verrà definito cosa dovrebbe accadere se la condizione di ricerca (il messaggio di posta elettronica inviato dal capo) è true:
     
-     ![configurare condizione](./media/apply-to-each/foreah-condition3-add-action.png)
-14. Cercare **notifica**, quindi selezionare l'azione **Notifications - Send me a mobile notification** (Notifiche - Inviami una notifica mobile).
+     ![Configura condizione](./media/apply-to-each/foreah-condition3-add-action.png)
+14. Cercare **notifica**, quindi selezionare l'azione **notifiche-invia una notifica per dispositivi mobili** :
     
-     ![cercare l'azione di notifica](./media/apply-to-each/foreach-10.png)
-15. Nella scheda **Send me a mobile notification 2** inserire i dettagli per la notifica push che verrà inviata se il messaggio è stato inviato dal capo, quindi selezionare **Aggiungi un'azione**:
+     ![Cerca azione di notifica](./media/apply-to-each/foreach-10.png)
+15. Nella scheda **Invia una notifica per dispositivi mobili 2** specificare i dettagli per la notifica push che verrà inviata se il messaggio di posta elettronica viene inviato dal responsabile e quindi selezionare **Aggiungi un'azione**:
     
-     ![configurare la scheda di notifica](./media/apply-to-each/foreach-boss-notification.png)
-16. Aggiungere l'azione **Office 365 Outlook - Segna come già letto**. Ogni messaggio verrà in questo modo contrassegnato come letto dopo l'invio della notifica push:
+     ![Configura scheda di notifica](./media/apply-to-each/foreach-boss-notification.png)
+16. Aggiungere l'azione **Office 365 Outlook-Mark come Read** . Ogni messaggio di posta elettronica verrà contrassegnato come letto dopo l'invio della notifica push:
     
-     ![Aggiungere azione segna come già letto](./media/apply-to-each/foreach-12.png)
-17. Aggiungere il token **ID messaggio** alla scheda **Segna come già letto 2**. Potrebbe essere necessario selezionare **Vedi altri** per trovare il token **ID messaggio**. Ciò indica l'ID del messaggio che verrà contrassegnato come letto:
+     ![Aggiungi Contrassegno come azione di lettura](./media/apply-to-each/foreach-12.png)
+17. Aggiungere il token **ID messaggio** alla scheda **Contrassegno come letto 2** . Potrebbe essere necessario selezionare **Visualizza altro** per trovare il token **ID del messaggio** . Indica l'ID del messaggio che verrà contrassegnato come letto:
     
-     ![configurazione azione segna come già letto](./media/apply-to-each/foreach-mark-as-read2.png)
-18. Assegnare un nome al flusso, quindi crearlo:
+     ![Configura Contrassegno come azione di lettura](./media/apply-to-each/foreach-mark-as-read2.png)
+18. Assegnare un nome al flusso e quindi crearlo:
     
      ![assegnare un nome al flusso e salvarlo](./media/apply-to-each/foreach-14.png)
 
-Se la procedura è stata seguita correttamente, il flusso dovrebbe essere simile al seguente:
+Se è stata seguita, il flusso dovrebbe essere simile al diagramma seguente:
 
-![panoramica del flusso creato](./media/apply-to-each/foreach-flow-finished.png)
+![Panoramica del flusso creato](./media/apply-to-each/foreach-flow-finished.png)
 
 ## <a name="run-the-flow"></a>Eseguire il flusso
-1. Inviare a se stessi un messaggio di posta elettronica ad alta priorità che includa le parole **riunione immediata** nell'oggetto (o chiedere a un utente nell'organizzazione di inviarlo).
-2. Verificare che il messaggio di posta elettronica sia nella posta in arrivo e che non sia letto.
-3. Accedere a Microsoft Flow, selezionare **Flussi personali** e quindi **Esegui ora**:
+1. Inviare a se stessi un messaggio di posta elettronica di importanza elevata che includa **ora** in oggetto (o che un utente dell'organizzazione invii un messaggio di posta elettronica di questo tipo).
+2. Confermare che il messaggio di posta elettronica si trova nella posta in arrivo e non è stato letto.
+3. Accedere Microsoft Flow, selezionare **flussi personali**e quindi selezionare **Esegui ora**:
    
-    ![esegui ora](./media/apply-to-each/foreach-run-1.png)
-4. Selezionare **Esegui ora** per confermare che si vuole eseguire il flusso:
+    ![Esegui adesso](./media/apply-to-each/foreach-run-1.png)
+4. Selezionare **Esegui flusso** per confermare che si vuole effettivamente eseguire il flusso:
    
-    ![confermare esecuzione](./media/apply-to-each/foreach-run-2.png)
-5. Dopo qualche istante verranno visualizzati i risultati dell'esecuzione:
+    ![conferma esecuzione](./media/apply-to-each/foreach-run-2.png)
+5. Dopo alcuni istanti verranno visualizzati i risultati dell'esecuzione riuscita:
    
-    ![risultati dell'esecuzione](./media/apply-to-each/foreach-run-3.png)
+    ![Risultati esecuzione](./media/apply-to-each/foreach-run-3.png)
 
 ## <a name="view-results-of-the-run"></a>Visualizzare i risultati dell'esecuzione
-Ora che il flusso è stato eseguito correttamente, si dovrebbe ricevere la notifica push sul dispositivo mobile.
+Ora che il flusso è stato eseguito correttamente, è necessario ricevere la notifica push nel dispositivo mobile.
 
-1. Aprire l'app Microsoft Flow sul proprio dispositivo mobile e quindi selezionare la scheda **Attività**. Verrà visualizzata la notifica push riguardante la riunione:
+1. Aprire l'app Microsoft Flow nel dispositivo mobile, quindi selezionare la scheda **attività** . Verrà visualizzata la notifica push relativa alla riunione:
    
-    ![selezionare la scheda attività](./media/apply-to-each/foreach-notification-1.png)
-2. Per visualizzare l'intero contenuto della notifica, è necessario selezionarla. Verrà visualizzata la notifica completa, simile alla seguente:
+    ![Selezionare la scheda attività](./media/apply-to-each/foreach-notification-1.png)
+2. Per visualizzare il contenuto completo della notifica, potrebbe essere necessario selezionare la notifica. Verrà visualizzata la notifica completa, simile alla seguente:
    
-    ![dettagli della notifica](./media/apply-to-each/foreach-notification-2.png)
+    ![Dettagli notifica](./media/apply-to-each/foreach-notification-2.png)
    
    > [!NOTE]
-   > Se si non riceve la notifica push, verificare che il dispositivo mobile abbia una connessione dati funzionante.
+   > Se non si riceve la notifica push, verificare che il dispositivo mobile disponga di una connessione dati funzionante.
    > 
    > 
 

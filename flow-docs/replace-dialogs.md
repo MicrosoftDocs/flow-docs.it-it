@@ -1,12 +1,12 @@
 ---
-title: Sostituire le interazioni con processi aziendali o app canvas | MicrosoftDocs
+title: Sostituire le finestre di dialogo con i flussi del processo di business o le app Canvas | MicrosoftDocs
 ms.custom: ''
 ms.date: 08/02/2018
 ms.reviewer: ''
 ms.service: flow
 ms.suite: ''
 ms.tgt_pltfrm: ''
-ms.topic: get-started-article
+ms.topic: conceptual
 applies_to:
 - Dynamics 365 (online)
 - Dynamics 365 Version 9.x
@@ -21,111 +21,112 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 498efb98a4c89ca6c2a01e345f5593beae4dbcca
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: a7e8bac3c33fa5bb8cfb0501b981af65115036ea
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "64464603"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73548807"
 ---
-# <a name="replace-dialogs-with-business-process-flows-or-canvas-apps"></a>Sostituire le interazioni con processi aziendali o app canvas
+# <a name="replace-dialogs-with-business-process-flows-or-canvas-apps"></a>Sostituisci finestre di dialogo con flussi di processi aziendali o app Canvas
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
-[Le interazioni sono deprecate](https://docs.microsoft.com/dynamics365/get-started/whats-new/customer-engagement/important-changes-coming#dialogs-are-deprecated) e devono essere sostituite da processi aziendali o app canvas. In questo argomento vengono descritte varie funzionalità e situazioni in cui è possibile usare un processo aziendale o un'app canvas incorporati in un modulo attivato da modello per sostituire un'interazione esistente.
+Le [finestre di dialogo sono deprecate](https://docs.microsoft.com/dynamics365/get-started/whats-new/customer-engagement/important-changes-coming#dialogs-are-deprecated)e devono essere sostituite dai flussi del processo aziendale o dalle app Canvas. Questo argomento descrive le diverse funzionalità di queste opzioni, nonché le situazioni in cui è possibile usare un flusso del processo aziendale o un'app Canvas incorporata in un form basato su modello per sostituire una finestra di dialogo esistente.
 
-## <a name="feature-capability-comparison"></a>Confronto tra funzionalità
+## <a name="feature-capability-comparison"></a>Confronto funzionalità funzionalità
 
-La tabella seguente elenca le funzionalità dell'interazione e le funzionalità equivalenti dei processi aziendali e delle app canvas.
+Questa tabella elenca il set di funzionalità della finestra di dialogo e le funzionalità equivalenti nei flussi del processo di business e nelle app Canvas.
 
 
-|Funzionalità dell'interazione  | Funzionalità presente in processi aziendali?  | Funzionalità presente in app canvas?  |
+|Funzionalità finestra di dialogo  | Funzionalità nei flussi del processo di business  | Funzionalità nelle app Canvas  |
 |---------|---------|---------|
-|Pagina     | Sì <br/> (fase del processo aziendale)    | Sì <br/> (schermata dell'app)        |
-|Solo prompt   |  No    |  Sì <br/> (etichette)        |
-|Prompt e risposta     |  Sì <br/> (solo attributi di entità)    | Sì <br/> (etichette e campi di input)    |
-|Argomenti di input     |  Limitati <br/> (fasi del processo aziendale)    | Sì <br/> (parametri della stringa di query)     |
+|Pagina     | Sì <br/> (fase del processo di business)    | Sì <br/> (schermata app)        |
+|Solo prompt   |  No    |  Sì <br/> etichette        |
+|Messaggio di richiesta e risposta     |  Sì <br/> (solo attributi di entità)    | Sì <br/> (etichette e campi di input)    |
+|Argomenti di input     |  Limitato <br/> (passaggi nella fase del processo di business)    | Sì <br/> (parametri della stringa di query)     |
 |Variabili   |  No     |  Sì       |
 |Variabili di query    |  No     |  Sì     |
-|Logica di diramazione condizionale    |  Sì     | Sì <br/>  (spostarsi nelle schermate dell'app)    |
-|Riutilizzo <br/> (avviare come interazione figlio)   |  No     | Sì <br/> (spostarsi nelle schermate dell'app, avviare un'altra app in una nuova finestra)     |
-|Eseguire i flussi di lavoro su inizio/fine    |   Sì      |  No <br/> (usare un flusso)  |
-|Eseguire flussi di lavoro di input    | Sì    | No <br/> (usare un flusso)   |
-|Eseguire i flussi di lavoro nella transizione di pagina   |  Sì       | No <br/> (usare un flusso)    |
-|Iniziare a usare un URL  |   No      |  Sì     |
-|Registrazione delle sessioni    |  Sì       |  No     |
+|Logica di diramazione condizionale    |  Sì     | Sì <br/>  (passare a qualsiasi schermata all'interno dell'app)    |
+|Riutilizzare <br/> (avvia come finestra di dialogo figlio)   |  No     | Sì <br/> (passare a una schermata all'interno dell'app, avviare un'altra app in una nuova finestra)     |
+|Esegui flussi di lavoro all'inizio/fine    |   Sì      |  No <br/> (usare invece un flusso)  |
+|Esegui flussi di lavoro nell'input    | Sì    | No <br/> (usare invece un flusso)   |
+|Esegui flussi di lavoro nella transizione di pagina   |  Sì       | No <br/> (usare invece un flusso)    |
+|Inizia a usare un URL  |   No      |  Sì     |
+|Registrazione sessione    |  Sì       |  No     |
 |Supporto SDK   |  Sì     |  Sì     |
 
-### <a name="additional-capabilities-with-business-process-flows"></a>Funzionalità aggiuntive con i processi aziendali
-- Analisi dei processi (viste, grafici e tempo trascorso in una fase)
+### <a name="additional-capabilities-with-business-process-flows"></a>Funzionalità aggiuntive con i flussi del processo di business
+- Analisi del processo (Visualizzazioni, grafici e tempo trascorso in una fase)
 - Controlli personalizzati
 
-### <a name="additional-capabilities-with-canvas-apps"></a>Funzionalità aggiuntive con app canvas
-- Analisi dell'app (uso e prestazioni dell'app)
-- Composizione di pagine a più entità
-- Eseguire i flussi
-- Connettori di dati (standard e personalizzati)
-- Avviare come app autonoma
+### <a name="additional-capabilities-with-canvas-apps"></a>Funzionalità aggiuntive con le app Canvas
+- Analisi delle app (utilizzo delle app &)
+- Composizione di pagine con più entità
+- Flussi di esecuzione
+- Connettori dati (standard e personalizzato)
+- Avvia come app autonoma
 - Layout configurabile
 
-## <a name="choosing-between-a-business-process-flow-or-canvas-app"></a>Scelta tra processo aziendale o app canvas
-Quando si sceglie la sostituzione dell'interazione, è importante tenere conto dell'esperienza utente che si vuole offrire. Tenere presente anche che quasi tutte le interazioni possono essere modellate usando un'app canvas.
+## <a name="choosing-between-a-business-process-flow-or-canvas-app"></a>Scelta tra un flusso del processo di business o un'app Canvas
+Quando si sceglie la sostituzione della finestra di dialogo, è importante tenere conto dell'esperienza utente che si desidera distribuire. Tenere inoltre presente che quasi tutte le finestre di dialogo possono essere modellate tramite un'app Canvas.
 
-I processi aziendali sono ideali per sostituire le interazioni che modellano i processi che offrono una guida attraverso una sequenza di lavoro comprensiva che richiede la collaborazione tra gruppi di utenti singoli e un contesto di esecuzione delle app Dynamics 365. Ad esempio, la revisione e l'invio delle offerte. 
+I flussi del processo di business sono più adatti per sostituire i dialoghi che i processi del modello forniscono materiale sussidiario per un workstream globale che richiede la collaborazione tra gruppi di singoli utenti e il contesto dell'app Dynamics 365. Ad esempio, la revisione delle virgolette e il routing. 
 
-In alternativa, le app canvas possono essere usate per sostituire le interazioni che modellano le attività prescrittive come ad esempio la ricerca di clienti potenziali o per semplificare l'esperienza utente per altre attività, come l'aggiornamento di un'opportunità. Si noti che scenari di questo tipo possono anche trarre vantaggio dall'avere un'app canvas autonoma. 
+In alternativa, è possibile usare le app Canvas per sostituire i dialoghi che modellano le attività descrittive, ad esempio uno script di chiamata per la prospezione dei lead o per semplificare l'esperienza utente per altre attività, ad esempio l'aggiornamento di un'opportunità. Si noti che questi scenari possono anche trarre vantaggio dalla presenza di un'app Canvas autonoma. 
 
-## <a name="dialog-replacement-using-business-process-flow-scenario"></a>Sostituzione dell'interazione con uno scenario di processo aziendale
-Si supponga di avere un'interazione che nell'arco di alcune pagine richiede all'utente informazioni chiave, genera un'offerta, invia un messaggio di posta elettronica ai revisori che devono accettare o rifiutare l'offerta prima di inviarla mediante posta elettronica al cliente. Questo tipo di processo viene modellato in modo più efficace usando un processo aziendale. 
+## <a name="dialog-replacement-using-business-process-flow-scenario"></a>Sostituzione della finestra di dialogo mediante il flusso del processo di business
+Si supponga di disporre di una finestra di dialogo che, in una serie di pagine, richiede informazioni chiave dall'utente, genera un preventivo, invia un messaggio di posta elettronica ai revisori per accettare o rifiutare l'offerta, prima di inviare un messaggio di posta elettronica al cliente. Questo tipo di processo è modellato in modo più efficace utilizzando un flusso del processo di business. 
 
-Per sostituire l'interazione, iniziare identificando le fasi principali del processo. Ciò può includere una fase di *preparazione dei contenuti* per verificare che tutti i prodotti siano elencati e che vengano applicati sconti, una fase di *generazione dell'offerta* per creare l'offerta e verificarne l'accuratezza del formato, una fase di *revisione principale* per inviare l'offerta per la revisione e l'approvazione, una fase di *revisione secondaria* per esaminare l'offerta in determinate circostanze e, infine, una fase di *invio dell'offerta* per inviare l'offerta al cliente.
+Per sostituire la finestra di dialogo, è necessario innanzitutto identificare le fasi principali del processo. Questi possono includere una fase di *preparazione del contenuto* per verificare che tutti i prodotti siano elencati e che vengano applicati gli sconti, una fase di *generazione delle virgolette* per creare le virgolette ed esaminarle per verificarne l'accuratezza del formato, una fase di *revisione principale* per cui inviare l'offerta Revisione e approvazione, una fase di *revisione secondaria* per esaminare le virgolette in determinate circostanze e infine una fase di *offerta* per inviare le virgolette al cliente.
 
-In seguito, identificare i passaggi principali che gli utenti devono seguire nel processo. Ad esempio, la fase di *preparazione dei contenuti* potrebbe contenere un semplice passaggio vero o falso in modo che l'utente verifichi i prodotti per cui fare l'offerta, un passaggio di controllo obbligatorio per selezionare un listino prezzi e una fase numerica per immettere uno sconto prima di passare alla fase successiva. La fase di *generazione dell'offerta* potrebbe includere un [passaggio di azione](create-business-process-flow.md#add-an-on-demand-action-to-a-business-process-flow) per creare un'offerta in base a tutte le informazioni acquisite in precedenza nella fase di *preparazione dei contenuti* e nel record Dynamics 365 correlato. Le fasi di *revisione principale* e la *revisione secondaria* potrebbero avere diversi passaggi vero o falso per guidare la revisione dell'offerta, nonché un passaggio obbligatorio per acquisire lo stato di approvazione e verificare che il processo possa passare solo alla fase successiva una volta ricevuta l'approvazione. In questo passaggio configurare la [sicurezza a livello di campo](/customer-engagement/admin/field-level-security) per assicurarsi che solo i revisori autorizzati possano approvare l'offerta.  È anche possibile aggiungere un flusso di lavoro alle fasi di *revisione principale* e *revisione secondaria*, come ad esempio l'invio di un messaggio di posta elettronica di notifica a tutti i revisori al momento dell'accesso. 
+Successivamente, identificare i passaggi chiave che gli utenti devono seguire nel processo. Ad esempio, la fase di *preparazione del contenuto* potrebbe contenere un semplice passaggio true o false per consentire all'utente di controllare i prodotti in modo da essere racchiusi tra virgolette, un passaggio di ricerca obbligatorio per selezionare un elenco prezzi e un passaggio numerico per immettere uno sconto prima di passare alla fase successiva. La fase di *generazione delle virgolette* potrebbe avere un [passaggio dell'azione](create-business-process-flow.md#add-an-on-demand-action-to-a-business-process-flow) per creare un'offerta basata su tutte le informazioni acquisite in precedenza nella fase di *preparazione del contenuto* e nel record Dynamics 365 correlato. Le fasi di revisione *primaria* e di *revisione secondaria* possono avere diversi passaggi true o false per guidare la revisione delle virgolette, insieme a un passaggio necessario per acquisire lo stato di approvazione e assicurarsi che il processo possa essere spostato solo nella fase successiva dopo l'approvazione ricevuto. Configurare la [sicurezza a livello di campo](/customer-engagement/admin/field-level-security) in questo passaggio per assicurarsi che solo i revisori autorizzati possano fornire l'approvazione per l'offerta.  Inoltre, è possibile aggiungere un flusso di lavoro alle fasi di revisione *primaria* e di *revisione secondaria* , in modo che all'immissione venga inviata una notifica tramite posta elettronica a tutti i revisori. 
 
-Infine, configurare le fasi del processo aziendale e i passaggi e la logica condizionale per guidare il processo. Per questo esempio, è possibile aggiungere una [diramazione condizionale](enhance-business-process-flows-branching.md) successiva alla fase di *revisione principale* in modo che, se un passaggio indica la necessità di un secondo livello di revisione, la fase successiva del processo sia la *revisione secondaria* o, in caso contrario, sia la fase di *invio dell'offerta*.
+Infine, configurare le fasi e i passaggi del flusso del processo di business, insieme alla logica condizionale per guidare il flusso del processo. Per questo esempio, è possibile aggiungere un [ramo condizionale](enhance-business-process-flows-branching.md) dopo la fase di *revisione principale* , in modo che, se un passaggio indica la necessità di un secondo livello di revisione, la fase successiva del processo è la fase di *revisione secondaria* , in caso contrario, è il  *Distribuire* una fase di virgoletta.
 
-Per rendere questo processo aziendale disponibile agli utenti, assicurarsi che gli utenti idonei abbiano i privilegi di accesso al processo aziendale prima di attivarlo.
+Per rendere il flusso del processo di business disponibile per gli utenti, assicurarsi che gli utenti corretti dispongano dei privilegi per il flusso del processo di business e quindi lo attivino.
 
-Per altre informazioni su come creare un processo aziendale, vedere [Esercitazione: Creare un processo aziendale per la standardizzazione dei processi](create-business-process-flow.md).
+Per ulteriori informazioni su come creare un flusso del processo di business, vedere [esercitazione: creare un flusso del processo di business per standardizzare i processi](create-business-process-flow.md).
 
-## <a name="dialog-replacement-using-canvas-app-scenario"></a>Sostituzione dell'interazione con uno scenario di app canvas
+## <a name="dialog-replacement-using-canvas-app-scenario"></a>Sostituzione della finestra di dialogo con lo scenario di app Canvas
 
-Si supponga di avere un'interazione che segue uno script di chiamata che guida i rappresentanti nell'approccio diretto con i clienti potenziali. Questo processo può essere acquisito con facilità usando un'app canvas.
+Si supponga di disporre di una finestra di dialogo che segue uno script di chiamata che guida i rappresentanti delle vendite tramite Lead di chiamata a freddo. Questo processo può essere facilmente acquisito usando un'app Canvas.
 
-Iniziare con la connessione alle origini dati necessarie per leggere e scrivere dati. In questo esempio viene usata una [connessione a Dynamics 365](/powerapps/maker/canvas-apps/connections/connection-dynamics-crmonline) per le informazioni su clienti potenziali, account e contatti.
+Iniziare a connettersi alle origini dati necessarie per la lettura e la scrittura dei dati. In questo esempio viene usata una [connessione a Dynamics 365](/powerapps/maker/canvas-apps/connections/connection-dynamics-crmonline) per le informazioni relative a lead, account e contatti.
 
-Iniziare identificando il numero di schermate necessario. Per questo esempio, è possibile decidere di avere cinque schermate. 
--   Schermata 1. Per selezionare un cliente potenziale da un elenco da chiamare.
--   Schermata 2. Per presentazioni, verifica della disponibilità a una conversazione e per pianificare una nuova chiamata in una data successiva. 
--   Schermata 3. Per determinare il BANT (budget, autorità, necessità e sequenza temporale). 
--   Schermata 4. Per acquisire i passaggi successivi e pianificare le chiamate di follow-up. 
--   Schermata 5. Per ringraziare il cliente potenziale per il tempo dedicato alla fine della chiamata.
+Per iniziare, identificare il numero di schermate necessarie. Per questo esempio, è possibile decidere di disporre di cinque schermate. 
+-   Schermata 1. Per selezionare un lead da un elenco da chiamare.
+-   Schermata 2. Per introduzioni, verifica della disponibilità di una conversazione e pianificazione di un callback in un secondo momento. 
+-   Schermata 3. Per determinare BANT (budget, autorità, necessità e sequenza temporale). 
+-   Schermata 4. Per acquisire i passaggi successivi e pianificare le chiamate di completamento. 
+-   Schermata 5. Ringraziamo il lead per il loro tempo alla fine della chiamata.
 
-Successivamente, compilare ogni schermata. Nella prima schermata [compilare una raccolta](/powerapps/maker/canvas-apps/customize-layout-sharepoint) di clienti potenziali da chiamare. Nella seconda schermata usare le etichette per dare un titolo alla schermata e specificare lo script di chiamata, usando oggetti visivi come i pulsanti di opzione per stabilire se per la persona chiamata è un buon momento per parlare. Se lo è, usare la logica condizionale per abilitare un pulsante per passare alla schermata successiva. In caso contrario, visualizzare uno script nella stessa schermata per tentare di pianificare una nuova chiamata con il cliente. Analogamente, definire lo script di chiamata in più schermate.
+Compilare quindi ogni schermata. Nella prima schermata, [compilare una raccolta](/powerapps/maker/canvas-apps/customize-layout-sharepoint) di lead che devono essere chiamati. Nel secondo caso, usare le etichette per assegnare un titolo alla schermata e fornire lo script di chiamata, usando i controlli come i pulsanti di opzione per acquisire la possibilità che la persona comunichi. In caso contrario, usare la logica condizionale per abilitare un pulsante per passare alla schermata successiva e, in caso contrario, rivelare uno script nella stessa schermata per tentare di pianificare una chiamata con il cliente. Analogamente, definire lo script di chiamata nelle schermate successive.
 
-Infine, [definire la navigazione tra schermate](/powerapps/maker/canvas-apps/functions/function-navigate). In questo esempio oltre a spostarsi tra le schermate in sequenza, si potrebbe voler far passare l'utente dalla seconda schermata all'ultima (la fine dello script in cui si ringrazia il cliente potenziale per il tempo dedicato) se il cliente potenziale non è interessato ad avere una conversazione.
+Infine, [definire la navigazione tra le schermate](/powerapps/maker/canvas-apps/functions/function-navigate). In questo esempio, oltre a spostarsi in sequenza tra le schermate, è possibile passare all'utente dalla seconda schermata all'ultima schermata (la fine dello script che ringrazia il lead per il loro tempo) se il lead non è interessato a una conversazione.
 
-Per rendere questa app disponibile agli utenti, è necessario pubblicarla. Si consideri come tale scenario potrebbe venire trasformato dalla disponibilità di un'app autonoma che specifica script di chiamata e supporta l'inserimento rapido dei dati.
+Per rendere disponibile l'app agli utenti, pubblicare l'app. Considerare il modo in cui tale scenario può essere trasformato tramite la disponibilità di un'app autonoma che fornisce script di chiamata e supporta l'immissione di dati rapidi.
 
-Si supponga di voler incorporare l'esperienza in Dynamics 365 for Sales. A tale scopo, iniziare con la creazione di un iframe in un modulo di Dynamics 365 for Sales. Passare quindi alla sezione **Applicazioni** del menu di PowerApps, selezionare l'app appena pubblicata, copiare il collegamento Web dalla scheda **Dettagli** e incollarlo come URL per l'iframe. 
+Si supponga di voler incorporare questa esperienza in Dynamics 365 Sales. Per eseguire questa operazione, iniziare con la creazione di un iframe in un modulo Sales di Dynamics 365. Passare quindi alla sezione **app** dal menu PowerApps, selezionare l'app appena pubblicata, copiare il collegamento Web nella scheda **Dettagli** e incollarlo come URL per l'iframe. 
 
-Andando oltre, si supponga di voler rendere l'app disponibile direttamente nel modulo principale dei clienti potenziali e in contesto con il cliente potenziale, in modo che non richieda all'utente di selezionare un cliente potenziale nella prima schermata. Per passare informazioni rilevanti all'app, è sufficiente modificare l'URL dell'iframe per accodare una stringa di query che contiene queste informazioni, ad esempio gli ID del cliente potenziale o dell'account, usando JavaScript che viene eseguito in un determinato evento, ad esempio il caricamento del modulo. Successivamente, aggiornare l'app per rimuovere la prima schermata (per la selezione del cliente potenziale) e accedere invece ai valori passati all'app tramite la stringa di query usando la [funzione Param](/powerapps/maker/canvas-apps/functions/function-param).
+A questo punto, si supponga di voler rendere disponibile l'app direttamente all'interno del modulo principale principale e di trovarsi nel contesto del lead, in modo che l'app non richieda all'utente di selezionare un lead nella prima schermata. Per passare le informazioni rilevanti all'app, è sufficiente modificare l'URL di iframe per aggiungere una stringa di query che contiene queste informazioni, ad esempio ID di lead o account, usando JavaScript che viene eseguito in un determinato evento, ad esempio il caricamento del modulo. Aggiornare quindi l'app per rimuovere la prima schermata (per la selezione del lead) e accedere invece ai valori passati all'app tramite la stringa di query usando la [funzione param](/powerapps/maker/canvas-apps/functions/function-param).
 
-## <a name="dialog-replacement-faq"></a>Domande frequenti sulla sostituzione delle interazioni
+## <a name="dialog-replacement-faq"></a>Domande frequenti sulla sostituzione di finestre
 
-È necessario tenere traccia delle dipendenze delle app canvas? 
-- Viene tenuta traccia delle dipendenze delle app canvas come per quelle di Dynamics 365 Customer Engagement.
+Sono state rilevate dipendenze dalle app Canvas? 
+- Le dipendenze dalle app Canvas vengono rilevate nello stesso modo delle dipendenze nelle app Dynamics 365.
 
-È possibile avviare un'app canvas come una finestra popup da un pulsante nella barra dei comandi?
-- Sì. A tale scopo, è sufficiente impostare l'URL di destinazione su quello dell'app canvas, ottenuto dalla sezione **Dettagli** dell'app, come descritto in precedenza.
+È possibile avviare un'app Canvas come popup da un pulsante della barra dei comandi?
+- Sì. A tale scopo, è sufficiente impostare l'URL di destinazione su quello dell'app Canvas, ottenuto dalla sezione dei **Dettagli** dell'app, come descritto in precedenza.
 
-I flussi di lavoro possono essere chiamati da un'app canvas?
-- Questa funzione non è supportata. È consigliabile usare invece un flusso. Altre informazioni: [Introduzione ai flussi di un pulsante con input dell'utente](button-flow-with-user-input-tokens.md)
+I flussi di lavoro possono essere chiamati da un'app Canvas?
+- Questa operazione non è supportata. Si consiglia invece di usare un flusso. Altre informazioni: [Introduzione ai flussi di un pulsante con l'input dell'utente](button-flow-with-user-input-tokens.md)
 
-È possibile convertire automaticamente le interazioni in processi aziendali o app canvas?
-- Non è possibile convertire automaticamente le interazioni in processi aziendali o app canvas.
+È possibile convertire automaticamente I dialoghi nei flussi di processi aziendali o nelle app Canvas?
+- Non esiste un metodo automatico per convertire i dialoghi nei flussi di processi aziendali o nelle app Canvas.
 
 
 ## <a name="see-also"></a>Vedere anche
-[Esercitazione: Creare un processo aziendale per la standardizzazione dei processi](create-business-process-flow.md) </br>
-[Che cosa sono le app canvas in PowerApps?](/powerapps/maker/canvas-apps/getting-started)
+[Esercitazione: creare un flusso del processo di business per standardizzare i processi](create-business-process-flow.md) </br>
+[Cosa sono le app Canvas in PowerApps?](/powerapps/maker/canvas-apps/getting-started)
 
 

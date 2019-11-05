@@ -1,9 +1,10 @@
 ---
-title: Panoramica dei processi aziendali | MicrosoftDocs
+title: Cenni preliminari sui flussi del processo di business | MicrosoftDocs
 ms.custom: ''
 ms.date: 06/27/2018
 ms.reviewer: ''
 ms.service: flow
+author: MSFTMAN
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -13,171 +14,172 @@ applies_to:
 - PowerApps
 ms.assetid: 4469877e-bb95-481a-bc52-c9746f937ce5
 caps.latest.revision: 16
-ms.author: matp
+ms.author: DEONHE
 manager: kvivek
 search.app:
 - Flow
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: b1e23a3ddfd4302c4a5429029ea4fb47f0ab9808
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: 230c35947c4e499c5e26fc37bb87828ec787a469
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "64465010"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73545510"
 ---
-# <a name="business-process-flows-overview"></a>Panoramica dei processi aziendali
+# <a name="business-process-flows-overview"></a>Panoramica sui flussi del processo di business
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
-La creazione di un processo aziendale consente di garantire che i dati immessi siano coerenti e che sia sempre applicata la stessa procedura quando si lavora con un cliente. Ad esempio, si supponga di voler creare un processo aziendale per gestire le richieste di servizio di un cliente nello stesso modo oppure per ottenere l'approvazione di una fattura prima di inviare un ordine. I processi aziendali si basano sulla stessa tecnologia di altri processi, ma offrono funzionalità molto diverse rispetto a quelle usate dai processi. Per informazioni su come creare o modificare un processo aziendale, vedere [Creare un processo aziendale](create-business-process-flow.md).  
+È possibile garantire che gli utenti immettano i dati in modo coerente e seguano la stessa procedura ogni volta che lavorano con un cliente creando un flusso del processo di business. È possibile, ad esempio, creare un flusso del processo di business in modo che tutti gli utenti gestiscano le richieste del servizio clienti allo stesso modo o per richiedere che gli utenti ottengano l'approvazione di una fattura prima di inviare un ordine. I flussi del processo di business utilizzano la stessa tecnologia sottostante di altri processi, ma le funzionalità che forniscono sono molto diverse dalle altre funzionalità che utilizzano i processi. Per informazioni su come creare o modificare un flusso del processo di business, vedere [creare un flusso del processo di business](create-business-process-flow.md).  
   
- [Breve video (4:49) sui processi aziendali.](https://go.microsoft.com/fwlink/p/?linkid=842226)  
+ [Guarda un breve video (4:49) sui flussi del processo di business.](https://go.microsoft.com/fwlink/p/?linkid=842226)  
   
 <a name="BKMK_Why"></a>   
-## <a name="why-use-business-process-flows"></a>Perché usare i processi aziendali  
-I processi aziendali consentono agli utenti di portare a termine un lavoro. Offrono un'esperienza utente semplificata che rappresenta i processi definiti dall'organizzazione con i quali gli utenti devono interagire per completare qualsiasi tipo di attività. L'esperienza utente può essere adattata ai diversi ruoli di sicurezza affinché gli utenti possano lavorare nel miglior modo possibile.  
+## <a name="why-use-business-process-flows"></a>Perché usare i flussi del processo di business?  
+I flussi del processo di business forniscono una guida che consente agli utenti di svolgere il proprio lavoro. Forniscono un'esperienza utente semplificata che conduce le persone attraverso i processi definiti dall'organizzazione per le interazioni che devono essere avanzate a una conclusione di qualche tipo. Questa esperienza utente può essere personalizzata in modo che gli utenti con ruoli di sicurezza diversi possano avere un'esperienza ottimale per il lavoro svolto.  
   
- È possibile usare i processi aziendali per definire una serie di passaggi da seguire per ottenere il risultato desiderato. Questi passaggi sono un indicatore visivo che comunica agli utenti il punto in cui si trovano nel processo aziendale. I processi aziendali riducono la necessità di formazione degli utenti che non devono familiarizzare con le entità che useranno. Sarà il processo stesso ad accompagnarli. È possibile configurare processi aziendali per supportare metodologie di vendita comuni che consentono a gruppi vendite di raggiungere risultati migliori. Per i gruppi dei servizi, i processi aziendali consentono al personale nuovo di essere più veloce e di evitare eventuali errori che potrebbero non soddisfare i clienti.  
+ Usare i flussi del processo di business per definire una serie di passaggi che gli utenti devono seguire per portarli a un risultato desiderato. Questi passaggi forniscono un indicatore visivo che indica agli utenti dove si trovano nel processo di business. I flussi del processo di business riducono la necessità di training perché i nuovi utenti non devono concentrarsi sull'entità da usare. Possono consentire al processo di guidarli. È possibile configurare i flussi del processo di business per supportare le metodologie di vendita comuni che consentono ai gruppi di vendite di ottenere risultati migliori. Per i gruppi di servizi, i flussi del processo di business possono aiutare i nuovi dipendenti ad accelerare la velocità ed evitare errori che potrebbero comportare l'insoddisfazione dei clienti.  
   
 <a name="BKMK_What"></a>   
-## <a name="what-can-business-process-flows-do"></a>Operazioni possibili con i processi aziendali  
- Con i processi aziendali, si definisce una serie di *fasi* e di *passaggi* che vengono poi visualizzati in un controllo nella parte superiore del modulo.  
+## <a name="what-can-business-process-flows-do"></a>Che cosa possono fare i flussi del processo aziendale?  
+ Con i flussi del processo di business, si definisce un set di *fasi* e *passaggi* che vengono quindi visualizzati in un controllo nella parte superiore del form.  
   
- ![Processo aziendale con fasi](media/business-process-stages.png "Processo aziendale con fasi")  
+ ![Processo di business con fasi](media/business-process-stages.png "Processo di business con fasi")  
   
- Ogni fase contiene un gruppo di passaggi. Ogni passaggio rappresenta un campo in cui è possibile immettere i dati. Si può passare alla fase successiva selezionando il pulsante **Fase successiva**. È possibile creare un passaggio obbligatorio se si vuole che nel campo corrispondente siano immessi i dati prima di poter passare alla fase successiva. Questo passaggio è comunemente detto "controllo di accesso alla fase".  
+ Ogni fase contiene un gruppo di passaggi. Ogni passaggio rappresenta un campo in cui è possibile immettere i dati. Le persone avanzano alla fase successiva usando il pulsante **fase successiva** . È possibile eseguire un passaggio necessario in modo che gli utenti debbano immettere i dati per il campo corrispondente prima di poter procedere alla fase successiva. Questo metodo è comunemente denominato "Stage-Gate".  
   
- I processi aziendali appaiano relativamente semplici rispetto ad altri tipi di processi perché non si basano su nessun tipo di logica di business condizionale o di automazione, ma contribuiscono a semplificare le operazioni di immissione e di controllo dei dati nelle fasi. Tuttavia, se usati in combinazione con altri processi e personalizzazioni, possono essere molto importanti perché consentono agli utenti di risparmiare tempo, ridurre i costi di formazione e facilitare l'adozione da parte degli utenti.  
+ I flussi del processo di business sono relativamente semplici rispetto ad altri tipi di processi, in quanto non forniscono logica di business condizionale o automazione oltre a offrire un'esperienza semplificata per l'immissione di dati e il controllo delle fasi. Tuttavia, quando si combinano con altri processi e personalizzazioni, questi possono svolgere un ruolo importante nel salvare i tempi, ridurre i costi di formazione e aumentare l'adozione dell'utente.  
 
 <a name="BKMK_BPFwithOtherCustomizations"></a>   
-### <a name="business-process-flows-integrated-with-other-customizations"></a>Processi aziendali integrati con le altre personalizzazioni  
- Quando i dati vengono immessi usando i processi aziendali, le modifiche ai dati vengono applicate anche ai campi del modulo. In questo modo, l'automazione delle regole di business o degli script del modulo può essere immediatamente applicata. È possibile aggiungere passaggi per impostare valori in campi che non sono presenti nel modulo. Questi campi verranno aggiunti al modello a oggetti `Xrm.Page` usato per gli script del modulo. Tutti i flussi di lavoro avviati dalle modifiche apportate ai campi inclusi in un processo aziendale saranno applicati al salvataggio dei dati nel modulo. Se l'automazione è applicata da un flusso di lavoro in tempo reale, le modifiche saranno immediatamente visibili nel momento in cui i dati nel modulo vengono aggiornati dopo aver salvato il record.  
+### <a name="business-process-flows-integrated-with-other-customizations"></a>Flussi del processo di business integrati con altre personalizzazioni  
+ Quando l'utente o l'utente immette dati mediante flussi del processo di business, le modifiche ai dati vengono applicate anche ai campi del modulo in modo che sia possibile applicare immediatamente qualsiasi automazione fornita dalle regole business o dagli script del modulo. È possibile aggiungere i passaggi che impostano i valori per i campi che non sono presenti nel form e questi campi verranno aggiunti al modello a oggetti di `Xrm.Page` usato per gli script del modulo. Tutti i flussi di lavoro avviati dalle modifiche ai campi inclusi in un flusso del processo di business verranno applicati quando vengono salvati i dati nel form. Se l'automazione viene applicata da un flusso di lavoro in tempo reale, le modifiche saranno immediatamente visibili all'utente quando i dati nel modulo vengono aggiornati dopo il salvataggio del record.  
   
- Anche se il controllo del processo aziendale nel modulo non offre una programmazione lato client diretta, le modifiche applicate dalle regole di business o dagli script del modulo vengono applicate automaticamente ai controlli del processo aziendale. Se un campo è nascosto in un modulo, lo sarà anche nel controllo del processo aziendale. Se si imposta un valore usando regole di business, tale valore sarà impostato nel processo aziendale.  
+ Sebbene il controllo di flusso del processo di business nel form non fornisca alcuna programmabilità diretta sul lato client, le modifiche applicate dalle regole di business o dagli script del modulo vengono applicate automaticamente ai controlli di flusso del processo di business. Se si nasconde un campo in un form, il campo sarà anche nascosto nel controllo di flusso del processo di business. Se si imposta un valore utilizzando regole business o script del modulo, tale valore verrà impostato all'interno del flusso del processo di business.  
   
-### <a name="concurrent-process-flows"></a>Processi simultanei  
- I processi aziendali simultanei consentono di personalizzare la configurazione di più processi aziendali e di associarli allo stesso record iniziale. Gli utenti possono passare tra più processi aziendali in esecuzione simultaneamente e riprendere il lavoro nella fase del processo in cui sono rimasti.  
+### <a name="concurrent-process-flows"></a>Flussi di processi simultanei  
+ I flussi di processi aziendali simultanei consentono ai personalizzatori di configurare più processi aziendali e di associarli allo stesso record iniziale. Gli utenti possono passare tra più processi di business in esecuzione contemporaneamente e riprendere il lavoro in fase di esecuzione nel processo in cui si trovavano.  
   
 <a name="BKMK_SystemBPF"></a>   
-### <a name="system-business-process-flows"></a>Processi aziendali di sistema  
- Sono inclusi i processi aziendali seguenti. Per informazioni sul funzionamento dei processi aziendali, rivedere questi processi aziendali di sistema:  
+### <a name="system-business-process-flows"></a>Flussi del processo di business di sistema  
+ Sono inclusi i seguenti flussi del processo di business. Per comprendere il funzionamento del flusso del processo di business, esaminare i flussi dei processi di business del sistema seguenti:  
   
--   Processo di vendita lead - opportunità  
+-   Lead to Opportunity Sales process  
   
--   Processo di vendita opportunità  
+-   Processo vendite opportunità  
   
--   Processo telefono - caso  
+-   Da telefono a caso processo  
   
 <a name="BKMK_multipleEntities"></a>   
-## <a name="multiple-entities-in-business-process-flows"></a>Più entità nei processi aziendali  
- È possibile usare un processo aziendale per una singola entità oppure contemplare più entità. Ad esempio, un processo potrebbe iniziare con un'opportunità, continuare con un'offerta, un ordine e infine una fattura, prima di tornare alla chiusura dell'opportunità.  
+## <a name="multiple-entities-in-business-process-flows"></a>Più entità nei flussi del processo di business  
+ È possibile utilizzare un flusso del processo di business per una singola entità o per più entità. Ad esempio, è possibile che si disponga di un processo che inizia con un'opportunità, quindi continua con una virgoletta, un ordine e quindi una fattura, prima di restituire infine per chiudere l'opportunità.  
   
- È possibile progettare processi aziendali che raggruppano i record di un massimo di cinque diverse entità in un unico processo, in modo che gli utenti che usano l'app possano concentrarsi sul flusso del processo anziché sulle entità all'interno del processo. È quindi più semplice spostarsi tra i record di entità correlate.  
+ È possibile progettare flussi del processo di business che uniscono i record per un massimo di cinque entità diverse in un unico processo, in modo che le persone che usano l'app possano concentrarsi sul flusso del processo anziché sull'entità in cui lavorano. Possono spostarsi più facilmente tra i record di entità correlati.  
   
 <a name="BKMK_MultipleBPF"></a>   
-## <a name="multiple-business-process-flows-are-available-per-entity"></a>Più processi aziendali disponibili per ogni entità  
- Può succedere che non tutti gli utenti di un'organizzazione debbano seguire lo stesso processo e che alcune condizioni richiedano l'applicazione di un processo diverso. Per garantire processi appropriati a varie condizioni, è possibile attivare fino a 10 processi aziendali per ogni entità.  
+## <a name="multiple-business-process-flows-are-available-per-entity"></a>Sono disponibili più flussi del processo di business per entità  
+ Non tutti gli utenti di un'organizzazione possono seguire lo stesso processo e condizioni diverse possono richiedere l'applicazione di un processo diverso. È possibile disporre di un massimo di 10 flussi di processi aziendali attivi per entità per fornire processi appropriati per situazioni diverse.  
   
 <a name="BPF_controlsWhichBPF"></a>   
-### <a name="control-which-business-process-flow-will-be-applied"></a>Controllo del processo aziendale da applicare  
- È possibile associare i processi aziendali ai ruoli di sicurezza in modo che solo gli utenti con tali ruoli di sicurezza possano visualizzare o usare i processi. È anche possibile impostare l'ordine dei processi aziendali per definire quale sarà il processo aziendale predefinito. Funziona esattamente nello stesso modo in cui si definiscono più moduli per un'entità.  
+### <a name="control-which-business-process-flow-will-be-applied"></a>Controllare il flusso del processo di business che verrà applicato  
+ È possibile associare i flussi del processo di business ai ruoli di sicurezza in modo che solo gli utenti con tali ruoli di sicurezza possano visualizzarli o usarli. È inoltre possibile impostare l'ordine dei flussi del processo di business in modo da poter controllare quale flusso del processo di business verrà impostato per impostazione predefinita. Questa operazione funziona nello stesso modo in cui vengono definiti più moduli per un'entità.  
   
- Quando si crea un nuovo record di entità, l'elenco dei processi aziendali attivi disponibili viene filtrato in base al ruolo di sicurezza dell'utente. Per impostazione predefinita, viene applicata la prima definizione del processo aziendale attivo disponibile per il ruolo di sicurezza dell'utente in base all'elenco dell'ordine dei processi. Se sono disponibili più definizioni di un processo aziendale attivo, è possibile caricarne un altro dalla finestra di dialogo "Cambia processo". Ogni volta che si cambia processo, il processo di cui viene attualmente eseguito il rendering passa in background e viene sostituito dal processo selezionato. Mantiene comunque lo stato e può essere nuovamente selezionato. A ogni record è possibile associare più istanze di processo, una per ogni diversa definizione del processo aziendale, per un massimo di 10 totali. Al caricamento del modulo, è possibile eseguire il rendering solo di un processo aziendale. Quando un utente applica un processo diverso, per impostazione predefinita tale processo può essere caricato solo per l'utente specifico.  
+ Quando un utente crea un nuovo record di entità, l'elenco della definizione di processo di business attivo disponibile viene filtrato in base al ruolo di sicurezza dell'utente. La prima definizione di processo di business attivata disponibile per il ruolo di sicurezza dell'utente in base all'elenco di ordini di elaborazione è quella applicata per impostazione predefinita. Se è disponibile più di una definizione di processo di business attivo, gli utenti possono caricarne un'altra dalla finestra di dialogo Cambia processo. Ogni volta che vengono scambiati processi, quello attualmente sottoposto a rendering passa allo sfondo e viene sostituito da quello selezionato, ma mantiene lo stato e può essere cambiato. A ogni record possono essere associate più istanze di processo, ciascuna per una definizione di flusso del processo di business diversa, fino a un totale di 10. Al caricamento del form viene eseguito il rendering di un solo flusso del processo di business. Quando un utente applica un processo diverso, il processo può essere caricato per impostazione predefinita solo per tale utente specifico.  
   
- Per garantire che un processo aziendale venga caricato per impostazione predefinita per tutti gli utenti, vale a dire sia associato, è possibile aggiungere uno script dell'API Client personalizzato (risorsa Web) al caricamento del modulo in cui si specifica di caricare un'istanza del processo aziendale esistente in base all'ID definizione del processo aziendale. 
+ Per assicurarsi che un processo di business venga caricato per impostazione predefinita per tutti gli utenti (comportamento equivalente a "blocco" del processo), è possibile aggiungere uno script API client personalizzato (risorsa Web) al caricamento del modulo che carica in modo specifico un'istanza del processo di business esistente basata sull'azienda ID definizione del processo. 
  
   
 <a name="BKMK_Considerations"></a>   
-## <a name="business-process-flow-considerations"></a>Considerazioni sui processi aziendali  
- I processi aziendali possono essere definiti solo per le entità che li supportano. È anche necessario sapere che esistono dei limiti relativamente al numero di processi, fasi e passaggi che possono essere aggiunti.  
+## <a name="business-process-flow-considerations"></a>Considerazioni sui flussi del processo di business  
+ È possibile definire i flussi del processo di business solo per le entità che le supportano. È anche necessario tenere presente i limiti per il numero di processi, fasi e passaggi che è possibile aggiungere.  
   
-### <a name="business-process-flows-that-call-a-workflow"></a>Processi aziendali che chiamano un flusso di lavoro  
- È possibile chiamare flussi di lavoro su richiesta dall'interno di un processo aziendale. È possibile eseguire questa configurazione dalla nuova finestra di progettazione del processo aziendale. Trascinare il componente del flusso di lavoro in una fase del processo o nella sezione dei flussi di lavoro globali. Per altre informazioni sull'uso dei flussi di lavoro nei processi aziendali, vedere [Blog: Business process flow automation in Dynamics 365](https://blogs.msdn.microsoft.com/crm/2017/03/28/business-process-flow-automation-in-dynamics-365/) (Blog: Automazione dei processi aziendali in Dynamics 365).  
+### <a name="business-process-flows-that-call-a-workflow"></a>Flussi del processo di business che chiamano un flusso di lavoro  
+ È possibile chiamare i flussi di lavoro su richiesta dall'interno di un flusso del processo di business. È possibile configurare questa impostazione dalla nuova finestra di progettazione del flusso del processo di business trascinando un componente del flusso di lavoro in una fase di elaborazione o nella sezione flussi di lavoro globali. Per ulteriori informazioni sull'utilizzo dei flussi di lavoro nei flussi del processo di business, vedere il Blog relativo all' [automazione del flusso dei processi di business in Dynamics 365](https://blogs.msdn.microsoft.com/crm/2017/03/28/business-process-flow-automation-in-dynamics-365/).  
   
- Quando si include un flusso di lavoro che deve essere avviato nella fase Uscita fase del processo aziendale, e tale fase è l'ultima del processo, nella finestra di progettazione sembra che il flusso di lavoro sarà attivato al completamento della fase. In realtà, il flusso di lavoro non verrà attivato poiché non è stata eseguita una transizione di fase. Non si riceverà né un avviso né un errore che impedisce di includere il flusso di lavoro nella fase. Quando un utente interagisce con il processo aziendale, il completamento o l'abbandono del processo non determina una transizione di fase e pertanto il flusso di lavoro non viene attivato. Si considerino gli esempi seguenti:  
+ Quando si include un flusso di lavoro che si vuole attivare alla chiusura della fase di una fase nel flusso del processo di business e tale fase è l'ultima fase del flusso, la finestra di progettazione dà l'impressione che il flusso di lavoro venga attivato al termine della fase. Tuttavia, il flusso di lavoro non verrà attivato perché non viene eseguita una transizione della fase. Non verrà visualizzato alcun avviso o errore che impedisce di includere il flusso di lavoro nella fase. Quando un utente interagisce con il flusso del processo di business, il completamento o l'abbandono del processo non comporta una transizione di fase e pertanto il flusso di lavoro non viene attivato. Si considerino gli esempi seguenti:  
   
--   Si crea un processo aziendale con due fasi, la fase S1 si connette alla fase S2, con un flusso di lavoro nella fase S2, e si imposta il trigger su **Uscita fase**.  
+-   Si crea un flusso del processo di business con due fasi, S1 si connette a S2, con un flusso di lavoro nella fase S2 e imposta il trigger per la **fase di uscita**.  
   
--   Si crea un processo aziendale con tre fasi, la fase S1 si connette alla fase S2, quindi la fase S2 crea un ramo per la fase S3. Si include un flusso di lavoro nella fase S2 e si imposta il trigger su **Uscita fase**.  
+-   Si crea un flusso del processo di business con tre fasi, S1 si connette a S2, quindi i rami S2 a S3. Si include un flusso di lavoro in S2 e si imposta il trigger per la **fase di chiusura**.  
   
- In nessuno dei casi il flusso di lavoro verrà attivato. Per risolvere questo problema, è possibile aggiungere un flusso di lavoro globale e aggiungere il flusso di lavoro che si vuole attivare. In questo modo il flusso di lavoro viene attivato per il processo aziendale e non per una fase del processo. È possibile impostare il trigger di un flusso di lavoro globale su Processo abbandonato o Processo completato in modo che il flusso di lavoro sia attivato quando un utente abbandona o completa il processo aziendale.  
+ Il flusso di lavoro non viene attivato in entrambi i casi. Per ovviare a questo problema, è possibile aggiungere un flusso di lavoro globale e aggiungere il flusso di lavoro che si desidera attivare, in modo che il flusso di lavoro venga attivato per il processo di business anziché una fase del processo. È possibile impostare il trigger per un flusso di lavoro globale su elaborazione abbandonata o processo completato per fare in modo che il flusso di lavoro venga attivato quando un utente abbandona o completa il processo di business.  
   
 <a name="BKMK_Entities"></a>   
-### <a name="entities-that-can-use-business-process-flows"></a>Entità che possono usare i processi aziendali  
- Tutte le entità personalizzate possono usare i processi aziendali. Anche le entità standard seguenti possono usare i processi aziendali:  
+### <a name="entities-that-can-use-business-process-flows"></a>Entità che possono usare i flussi del processo di business  
+ Tutte le entità personalizzate possono usare i flussi del processo di business. Le entità standard seguenti possono inoltre utilizzare i flussi del processo di business:  
   
 -   Account  
 -   Appuntamento  
 -   Campagna  
 -   Attività campagna  
--   Risposta campagna  
+-   Risposta alla campagna  
 -   Concorrente  
--   Contatto  
--   Indirizzo di posta elettronica  
--   Diritto  
+-   Contattare  
+-   Posta elettronica  
+-   Diritti  
 -   Fax  
--   Maiuscole/minuscole  
+-   Caso  
 -   Fattura  
--   Cliente potenziale  
+-   Lead  
 -   Lettera  
 -   Elenco marketing  
 -   Opportunità  
--   Chiamata telefonica  
+-   Telefonata  
 -   Prodotto  
--   Voce di listino  
--   Offerta  
+-   Elemento elenco prezzi  
+-   Citazione  
 -   Appuntamento ricorrente  
--   Documentazione di vendita  
--   Impegno social  
+-   Letteratura sulle vendite  
+-   Attività social  
 -   Ordine  
 -   Utente  
 -   Attività  
 -   Team  
   
- Per abilitare un'entità personalizzata per i processi aziendali, selezionare la casella di controllo **Processi aziendali (verranno creati i campi)** nella definizione dell'entità. Si noti che questa azione non può essere annullata.  
+ Per abilitare un'entità personalizzata per i flussi del processo di business, selezionare la casella di controllo **flussi del processo di business (campi che verranno creati)** nella definizione dell'entità. Si noti che non è possibile annullare questa azione.  
   
 > [!NOTE]
->  Se si passa alla fase del processo aziendale che contiene l'entità `Social Activity` e si seleziona il pulsante **Fase successiva**, verrà visualizzata l'opzione **Crea**. Scegliendo **Crea**, viene caricato il modulo **Impegno social**. Tuttavia, poiché `Social Activity` non è un'entità valida per `Create` dall'interfaccia utente dell'app non sarà possibile salvare il modulo e verrà visualizzato il messaggio di errore: "Errore imprevisto".  
+>  Se si passa alla fase di flusso del processo di business che contiene l'entità `Social Activity` e si sceglie il pulsante **fase successiva** , verrà visualizzata l'opzione **Crea** . Quando si sceglie **Crea**, viene caricato il modulo di **attività social** . Tuttavia, poiché `Social Activity` non è valido per `Create` dall'interfaccia utente dell'app, non sarà possibile salvare il modulo e verrà visualizzato il messaggio di errore "errore imprevisto".  
   
 <a name="BPF_MaxNumbers"></a>   
 ### <a name="maximum-number-of-processes-stages-and-steps"></a>Numero massimo di processi, fasi e passaggi  
- Per garantire prestazioni accettabili e poter usare l'interfaccia utente, esistono alcune limitazioni da tenere presente quando si prevede di usare i processi aziendali:  
+ Per garantire prestazioni accettabili e l'usabilità dell'interfaccia utente, è necessario tenere presenti alcune limitazioni quando si prevede di utilizzare i flussi del processo di business:  
   
--   Per ogni entità non è possibile attivare più di 10 processi aziendali.  
+-   Non possono essere presenti più di 10 processi di flusso del processo di business attivati per entità.  
   
 -   Ogni processo non può contenere più di 30 fasi.  
   
 -   I processi a più entità non possono contenere più di cinque entità.
   
-## <a name="business-process-flow-entity-customization-support"></a>Supporto per la personalizzazione delle entità del processo aziendale 
+## <a name="business-process-flow-entity-customization-support"></a>Supporto per la personalizzazione dell'entità flusso del processo di business 
 
-A partire dall'aggiornamento di Dynamics 365 versione 9.0 (online), le entità del processo aziendale vengono visualizzate nel sistema in modo che i record di dati delle entità siano disponibili in griglie, visualizzazioni, grafici e dashboard. 
+Introdotta nell'aggiornamento di Dynamics 365 (online), versione 9,0, le entità del flusso del processo di business possono essere visualizzate nel sistema in modo che i dati dei record di entità possano essere resi disponibili in griglie, visualizzazioni, grafici e dashboard. 
 
-### <a name="use-business-process-flow-entity-records-with-grids-views-charts-and-dashboards"></a>Usare record di entità del processo aziendale con griglie, visualizzazioni, grafici e dashboard
+### <a name="use-business-process-flow-entity-records-with-grids-views-charts-and-dashboards"></a>Usare i record di entità del flusso del processo di business con griglie, visualizzazioni, grafici e dashboard
 
-Essendo i processi aziendali disponibili come entità, ora è possibile usare ricerche avanzate, visualizzazioni, grafici e dashboard originati dai dati dei processi aziendali per una specifica entità, ad esempio un lead o un'opportunità. Gli amministratore di sistema e gli addetti alla personalizzazione possono creare per i processi aziendali griglie, visualizzazioni e dashboard personalizzati, simili a quelli creati con qualsiasi altra entità.
+Con i flussi dei processi di business disponibili come entità, è ora possibile usare reperti, viste, grafici e Dashboard avanzati originati da dati del flusso del processo di business per un'entità specifica, ad esempio un lead o un'opportunità. Gli amministratori di sistema e i personalizzatori possono creare griglie, visualizzazioni, grafici e dashboard del flusso di processi di business personalizzati simili a quelli creati con qualsiasi altra entità.
 
-I processi aziendali, ad esempio **Processo di vendita lead - opportunità** vengono visualizzati in Esplora soluzioni come entità personalizzabile.
+I flussi del processo di business, ad esempio **lead to Opportunity Sales process**, vengono visualizzati come entità personalizzabile in Esplora soluzioni.
 
-![Esplora soluzioni con l'entità Processo lead - opportunità](media/bpf-lead-solution-explorer.png)
+![Esplora soluzioni con l'entità di processo lead-to-Opportunity](media/bpf-lead-solution-explorer.png)
 
-Per accedere alla visualizzazione del processo aziendale predefinito, aprire Esplora soluzioni, espandere **Entità** >, espandere il processo necessario, ad esempio **Processo di vendita lead - opportunità**, selezionare **Visualizzazioni**, quindi scegliere la visualizzazione che si preferisce.
+Per accedere a una visualizzazione del flusso del processo di business predefinita, aprire Esplora soluzioni, espandere **entità** > espandere il processo desiderato, ad esempio **lead to Opportunity Sales process**, selezionare **views**, quindi selezionare la visualizzazione desiderata.
 
-Sono disponibili diverse visualizzazioni predefinite che possono essere visualizzate come grafico, ad esempio la visualizzazione **Active Opportunity Sales Process** (Processo di vendita opportunità attivo). 
+Sono disponibili diverse visualizzazioni predefinite che è possibile visualizzare come grafico, ad esempio la visualizzazione del **processo vendite di opportunità attive** . 
 
-![Visualizzazione del processo di vendita dell'opportunità attivo](media/bpf-default-view.png)
+![Visualizzazione processo delle vendite di opportunità attive](media/bpf-default-view.png)
 
-### <a name="interact-with-the-business-process-flow-entity-from-a-workflow"></a>Interagire con l'entità del processo aziendale da un flusso di lavoro
-È possibile interagire con le entità del processo aziendale da un flusso di lavoro. Ad esempio, è possibile creare un flusso di lavoro per il record di entità Processo aziendale se si vuole modificare la fase attiva quando viene aggiornato un campo nel record di entità Opportunità. Per altre informazioni su come eseguire questa operazione, vedere [Automate business process flow stages using workflows](https://blogs.msdn.microsoft.com/crminthefield/2017/12/18/automate-business-process-flow-stages-using-workflows) (Automatizzare le fasi del processo aziendale usando i flussi di lavoro).
+### <a name="interact-with-the-business-process-flow-entity-from-a-workflow"></a>Interagire con l'entità del flusso del processo di business da un flusso di lavoro
+È anche possibile interagire con le entità del flusso del processo di business da un flusso di lavoro. È ad esempio possibile creare un flusso di lavoro per il record dell'entità flusso del processo di business per modificare la fase attiva quando viene aggiornato un campo nel record dell'entità opportunity. Per ulteriori informazioni su come eseguire questa operazione, vedere [automatizzare le fasi del flusso del processo di business mediante i flussi di lavoro](https://blogs.msdn.microsoft.com/crminthefield/2017/12/18/automate-business-process-flow-stages-using-workflows).
 
 
-### <a name="limitations-of-using-business-process-flow-entities"></a>Limitazioni nell'uso delle entità del processo aziendale
+### <a name="limitations-of-using-business-process-flow-entities"></a>Limitazioni dell'utilizzo delle entità del flusso del processo di business
 
-- Attualmente non è possibile creare moduli personalizzati per le entità che si basano su un processo aziendale.
-- Se una soluzione include un'entità del processo aziendale, tale entità deve essere aggiunta manualmente alla soluzione prima dell'esportazione. In caso contrario, l'entità del processo aziendale non sarà inclusa nel pacchetto della soluzione. Altre informazioni: [Add solution components](/powerapps/maker/model-driven-apps/create-solution#add-solution-components) (Aggiungere componenti di soluzione)
+- Attualmente, non è possibile creare moduli personalizzati per le entità in base a un flusso del processo di business.
+- Se una soluzione include un'entità del flusso del processo di business, è necessario aggiungere manualmente l'entità del flusso del processo di business alla soluzione prima di esportarla. In caso contrario, l'entità del flusso del processo di business non verrà inclusa nel pacchetto della soluzione. Altre informazioni: [aggiungere componenti della soluzione](/powerapps/maker/model-driven-apps/create-solution#add-solution-components)
 
 ### <a name="next-steps"></a>Passaggi successivi  
- [Breve video (4:49) sui processi aziendali](https://go.microsoft.com/fwlink/p/?linkid=842226)   
- [Creare un processo aziendale](create-business-process-flow.md)   
- [Migliorare i processi aziendali con la creazione dei rami](enhance-business-process-flows-branching.md) <br/>
- [White paper: Process Enablement with Dynamics 365](http://download.microsoft.com/download/C/3/B/C3B46E35-9445-43B9-800B-474E022EE352/Process%20Enablement%20with%20Microsoft%20Dynamics%20CRM%202013.pdf) (White paper: Abilitazione del processo con Dynamics 365)</br>
+ [Guarda un breve video (4:49) sui flussi di processi aziendali](https://go.microsoft.com/fwlink/p/?linkid=842226)   
+ [Creare un flusso del processo di business](create-business-process-flow.md)   
+ [Migliorare i flussi di processi aziendali con la diramazione](enhance-business-process-flows-branching.md) <br/>
+ [White paper: abilitazione del processo con Dynamics 365](https://download.microsoft.com/download/C/3/B/C3B46E35-9445-43B9-800B-474E022EE352/Process%20Enablement%20with%20Microsoft%20Dynamics%20CRM%202013.pdf)</br>

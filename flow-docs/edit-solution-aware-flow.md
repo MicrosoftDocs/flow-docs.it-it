@@ -1,6 +1,6 @@
 ---
-title: Panoramica dei flussi con riconoscimento della soluzione | Microsoft Docs
-description: Informazioni sui vantaggi della creazione di flussi nelle soluzioni.
+title: Panoramica dei flussi compatibili con la soluzione | Microsoft Docs
+description: Scopri i vantaggi della creazione di flussi nelle soluzioni.
 services: ''
 suite: flow
 documentationcenter: na
@@ -20,37 +20,38 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: cee250718b65deaa5d8472eb4eb90965a555674b
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: 3722c0702d21799f63098cb3d8fac619f933aff4
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "64456269"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73544414"
 ---
-# <a name="edit-a-solution-aware-flow"></a>Modificare un flusso con riconoscimento della soluzione
+# <a name="edit-a-solution-aware-flow"></a>Modificare un flusso in grado di riconoscere la soluzione
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
-Seguire questi passaggi per modificare un flusso con riconoscimento della soluzione.
+Per modificare un flusso in grado di riconoscere la soluzione, seguire questa procedura.
 
 > [!IMPORTANT]
-> Arrestare il flusso prima di iniziare a modificarlo. In caso contrario, si potrebbero perdere le modifiche.
+> Arrestare il flusso prima di iniziare la modifica oppure si potrebbero perdere le modifiche.
 
-1. Accedere a Microsoft Flow e quindi selezionare **Soluzioni** dalla barra di spostamento.
-1. Selezionare la soluzione che contiene il flusso da modificare.
+1. Accedere a Microsoft Flow e quindi selezionare **soluzioni** dalla barra di spostamento.
+1. Selezionare la soluzione che contiene il flusso che si desidera modificare.
 
    ![](./media/edit-solution-aware-flow/new-flow-inside-solution.png)
 
-1. Selezionare **...** (Altri comandi) per il flusso e quindi selezionare **Disattiva**.
-1. Selezionare **...** (Altri comandi) per il flusso e quindi selezionare **Modifica**.
+1. Selezionare **...** (altri comandi) per il flusso e quindi selezionare **Disattiva**.
+1. Selezionare **...** (altri comandi) per il flusso, quindi selezionare **modifica**.
 
    ![](./media/edit-solution-aware-flow/edit-flow.png)
    
-1. Apportare le modifiche nella finestra di progettazione di Microsoft Flow, testare le modifiche e quindi salvare il flusso.
-1. Attivare il flusso, se si desidera venga eseguito.
+1. Apportare le modifiche nella finestra di progettazione Microsoft Flow, testare le modifiche e quindi salvare il flusso.
+1. Attivare il flusso se si vuole che venga eseguito.
 
-## <a name="learn-more"></a>Altre informazioni
+## <a name="learn-more"></a>Ulteriori informazioni
 
 * [Creare una soluzione](./overview-solution-flows.md)
 * [Creare un flusso in una soluzione](./create-flow-solution.md)
 * [Esportare una soluzione](./export-flow-solution.md)
 * [Importare una soluzione](./import-flow-solution.md)
-* [Rimuovere un flusso con riconoscimento della soluzione](./remove-solution-aware-flow.md)
+* [Rimuovere un flusso in grado di riconoscere la soluzione](./remove-solution-aware-flow.md)

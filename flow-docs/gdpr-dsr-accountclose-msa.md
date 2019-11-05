@@ -1,11 +1,12 @@
 ---
-title: Richieste di chiusura dell'account del soggetto dei dati GDPR in Microsoft Flow per account del servizio gestito Microsoft (MSA) | Microsoft Docs
-description: Informazioni su come usare Microsoft Flow per rispondere alle richieste di chiusura dell'account del soggetto dei dati GPDR per gli account Microsoft.
+title: Microsoft Flow GDPR richieste di chiusura dell'account oggetto dati per gli account Microsoft (MSA) | Microsoft Docs
+description: Informazioni su come usare Microsoft Flow per rispondere alle richieste di chiusura dell'account del soggetto dei dati alle GPDR per gli account Microsoft.
 services: ''
 suite: flow
 documentationcenter: na
-author: KentWeareMSFT
-manager: KFile
+author: MSFTMAN
+manager: KVIVEK
+ms.author: Deonhe
 editor: ''
 tags: ''
 ms.service: flow
@@ -14,56 +15,56 @@ ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 5/25/2018
-ms.author: keweare
 search.app:
 - Flow
 - Powerplatform
 search.audienceType:
 - admin
-ms.openlocfilehash: 6480fe6a7e6ca26a7dbad3952b6608a9e0a880ae
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: 8665148baf4d752f1f384670b296a66bbfca6163
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "65035058"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73548015"
 ---
 # <a name="responding-to-gdpr-data-subject-account-close-requests-for-microsoft-flow"></a>Risposta alle richieste di chiusura dell'account del soggetto dei dati GDPR per Microsoft Flow
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
-Il **diritto alla cancellazione** dei dati personali è una protezione chiave nel regolamento GDPR. Questo diritto include la rimozione di tutti i dati personali tranne le informazioni del log di controllo. Quando gli utenti decidono di chiudere i loro Account Microsoft (MSA), viene eliminati anche i dati dell'utente sottostante.
+Il **diritto di** cancellare i dati personali è una protezione chiave nella GDPR. Questo diritto include la rimozione di tutti i dati personali eccetto le informazioni sul log di controllo. Quando gli utenti decidono di chiudere il proprio account Microsoft (MSA), vengono eliminati anche i dati sottostanti dell'utente.
 
-Le seguenti risorse contengono dati personali che vengono eliminati automaticamente quando un utente chiude un account del servizio gestito Microsoft (MSA):
+Queste risorse contengono dati personali che vengono eliminati automaticamente quando un utente chiude un MSA:
 
 |Risorse contenenti dati personali|
 |------|
-|Attività con prodotti e servizi|
-|Cronologia di esecuzione|
+|Attività del prodotto e del servizio|
+|cronologia di esecuzione|
 |Flussi|
 |Feed attività|
 |Dettagli utente|
 |Connessioni|
 
-## <a name="account-close-requests"></a>Richieste di chiusura account
+## <a name="account-close-requests"></a>Richieste di chiusura dell'account
 
-La procedura self-service seguente descrive come gestire le richieste di chiusura account per il regolamento GDPR.
+Questi passaggi descrivono come gestire in modo autonomo le richieste di chiusura dell'account per GDPR.
 
-1. Accedere alla sezione [Chiudi l'account](http://go.microsoft.com/fwlink/?LinkId=523898) del portale Microsoft con l'account Microsoft e selezionare **Avanti**.
+1. Accedere al [portale di chiusura dell'account Microsoft](https://go.microsoft.com/fwlink/?LinkId=523898) usando il proprio account Microsoft e quindi fare clic su **Avanti**.
 
     > [!NOTE]
-    > Un messaggio ricorda di eliminare le sottoscrizioni esistenti o di esportare i dati dai servizi esistenti ai quali è stata effettuata la sottoscrizione.
+    > Si ricorda di annullare le sottoscrizioni esistenti o di esportare i dati dai servizi esistenti a cui è stata effettuata la sottoscrizione.
     >
     >
 
-    ![Annullare le sottoscrizioni](./media/gdpr-dsr-delete-msa/accountclose.png)
+    ![Annulla sottoscrizioni](./media/gdpr-dsr-delete-msa/accountclose.png)
 
-1. Confermare di aver compreso gli effetti della chiusura dell'account e selezionare **Contrassegna l'account per la chiusura**.
+1. Confermare di aver compreso l'effetto della chiusura di MSA, quindi selezionare **Mark account per la chiusura**.
 
-    Una notifica indica che l'account verrà chiuso tra 30 giorni. È possibile riaprire l'account in qualsiasi momento durante questo periodo di 30 giorni.
+    Viene visualizzata una notifica che indica che l'account verrà chiuso entro 30 giorni. È possibile riaprire l'account in qualsiasi momento durante questo periodo di 30 giorni.
 
     ![Account chiuso](./media/gdpr-dsr-delete-msa/accountclosed.png)
 
-    Al termine di questo periodo di 30 giorni inizia il processo di eliminazione di tutte le risorse Microsoft Flow per questo account del servizio gestito Microsoft (MSA).
+    Alla fine di questo intervallo di 30 giorni, inizia il processo di eliminazione di tutte le risorse Microsoft Flow per questo MSA.
 
-## <a name="learn-more"></a>Altre informazioni
+## <a name="learn-more"></a>Ulteriori informazioni
 
-* Attività iniziali con [Microsoft Flow](getting-started.md)
-* Informazioni sulle [novità](release-notes.md) di Microsoft Flow
+* Inizia a usare [Microsoft Flow](getting-started.md)
+* Scopri le [novità](release-notes.md) di Microsoft Flow

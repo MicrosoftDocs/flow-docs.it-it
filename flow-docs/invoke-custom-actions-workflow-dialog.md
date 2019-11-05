@@ -22,52 +22,53 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 938410cf4484f8bed6509beee1d36c8cb3718e6f
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: 9ed3c2114bfb167eb8d4d6a5670ccec8050ee9d0
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "64461322"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73547426"
 ---
 # <a name="invoke-custom-actions-from-a-workflow"></a>Richiamare azioni personalizzate da un flusso di lavoro
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
-I flussi di lavoro includono numerose funzionalità che supportano scenari aziendali. La chiamata di azioni per operazioni sui dati di base per un record, ad esempio Crea, Aggiorna ed Elimina, dall'interno di un flusso di lavoro risolve alcuni scenari aziendali. Tuttavia, se si usano in combinazione le funzionalità dei flussi di lavoro e le azioni personalizzate richiamate direttamente dall'interno di un flusso di lavoro si aggiungono numerosi nuovi scenari aziendali all'applicazione senza la necessità di scrivere codice.  
+I flussi di lavoro hanno numerose funzionalità che supportano scenari aziendali. La chiamata di operazioni di base sui dati per un record, ad esempio creazione, aggiornamento ed eliminazione, dall'interno di un flusso di lavoro risolve alcuni scenari aziendali. Tuttavia, se si abbinano le funzionalità dei flussi di lavoro con la potenza delle azioni personalizzate richiamate direttamente dall'interno di un flusso di lavoro, si aggiunge un'intera nuova gamma di scenari aziendali all'applicazione senza dover scrivere codice.  
   
- Si osservi lo scenario in cui un'azione personalizzata viene richiamata da un flusso di lavoro. Verrà richiamata un'azione personalizzata per richiedere l'approvazione del manager quando lo sconto per una determinata opportunità supera il 20%.  
+ Verrà ora esaminato lo scenario in cui un'azione personalizzata viene richiamata da un flusso di lavoro. Verrà richiamata un'azione personalizzata per richiedere l'approvazione del responsabile quando uno sconto per una determinata opportunità supera il 20%.  
   
 <a name="action"></a>   
-## <a name="dynamics-365-customer-engagement-example-create-a-custom-action-using-the-opportunity-entity"></a>Esempio di Dynamics 365 Customer Engagement: Creare un'azione personalizzata usando l'entità opportunità
+## <a name="example-create-a-custom-action-using-the-opportunity-entity"></a>Esempio: creare un'azione personalizzata usando l'entità opportunity
   
-1. In [Esplora soluzioni](/powerapps/maker/model-driven-apps/advanced-navigation#solution-explorer) selezionare **Processi**.  
+1. In [Esplora soluzioni](/powerapps/maker/model-driven-apps/advanced-navigation#solution-explorer) selezionare **processi**.  
   
-2.  Nella barra di spostamento scegliere **Nuovo**. Assegnare un nome al processo e scegliere la categoria **Azione**.  
+2.  Sulla barra di navigazione scegliere **nuovo**. Assegnare un nome al processo e scegliere la categoria **azione** .  
   
- Per richiedere un'approvazione per lo sconto, viene usata un'azione personalizzata denominata **Approval Process** (Processo approvazione). È stato aggiunto un parametro di input, **SpecialNotes** (Note speciali) e un passaggio **Send email** (Invio messaggio di posta elettronica) per creare un nuovo messaggio e inviare una richiesta per l'approvazione del manager, come illustrato di seguito.  
+ Per richiedere un'approvazione per lo sconto, viene usata un'azione personalizzata denominata **processo di approvazione**. Sono stati aggiunti un parametro di input, **SpecialNotes**, e un passaggio Invia messaggio di **posta elettronica** per creare un nuovo messaggio e inviare una richiesta per l'approvazione del responsabile, come illustrato di seguito.  
   
- ![Aggiungere un passaggio &#45; send email (invio messaggio di posta elettronica)](media/enable-custom-action-approval-proces-sadd-email.png "Aggiungere un passaggio - send email (invio messaggio di posta elettronica)")  
+ ![Aggiungi un passaggio &#45; inviare un messaggio di posta elettronica](media/enable-custom-action-approval-proces-sadd-email.png "Aggiungere un passaggio-inviare un messaggio di posta elettronica")  
   
- Per configurare il messaggio di posta elettronica, scegliere **Imposta proprietà**. All'apertura del modulo, usare **Informazioni e selezione rapida** per aggiungere note speciali e altre informazioni al messaggio di posta elettronica, come illustrato nello screenshot. Per aggiungere note speciali, posizionare il cursore nella posizione in cui si vuole visualizzarle nel messaggio e quindi in **Informazioni e selezione rapida** in **Cerca** scegliere **Argomenti** nel primo elenco a discesa e scegliere **SpecialNotes** (Note speciali) nel secondo elenco a discesa e quindi scegliere **OK**.  
+ Per configurare il messaggio di posta elettronica, scegliere **Imposta proprietà**. Quando il modulo viene aperto, usare **Assistente moduli** per aggiungere note speciali e altre informazioni al messaggio di posta elettronica, come evidenziato nella schermata. Per aggiungere le note speciali, posizionare il cursore nel punto in cui si desidera che vengano visualizzate nel messaggio e quindi in **Assistente form**, in **Cerca**, scegliere gli **argomenti** nel primo elenco a discesa e scegliere **SpecialNotes** nel secondo elenco a discesa, quindi scegliere **OK**.  
   
  ![Configurare la posta elettronica](media/enable-custom-action-approval-process-setup-email.png "Configurare la posta elettronica")  
   
- Per poter richiamare l'azione da un flusso di lavoro, è necessario prima attivarla. Dopo aver attivato l'azione, è possibile visualizzarne le proprietà scegliendo **Visualizza proprietà**.  
+ Prima di poter richiamare l'azione da un flusso di lavoro, è necessario attivarla. Dopo aver attivato l'azione, è possibile visualizzarne le proprietà scegliendo **Visualizza proprietà**.  
   
- ![Attivare l'azione personalizzata &#45; approval process (processo approvazione)](media/enable-custom-action-approval-process-activate-action.png "Attivare l'azione personalizzata - approval process (processo approvazione)")  
+ ![Attivare il processo &#45; di approvazione dell'azione personalizzata](media/enable-custom-action-approval-process-activate-action.png "Attivare il processo di approvazione dell'azione personalizzata")  
   
 <a name="workflow"></a>   
 ## <a name="invoke-a-custom-action-from-a-workflow"></a>Richiamare un'azione personalizzata da un flusso di lavoro  
   
-1. In [Esplora soluzioni](/powerapps/maker/model-driven-apps/advanced-navigation#solution-explorer) selezionare **Processi**.   
+1. In [Esplora soluzioni](/powerapps/maker/model-driven-apps/advanced-navigation#solution-explorer) selezionare **processi**.   
   
-2.  Nella barra di spostamento scegliere **Nuovo**. Assegnare un nome al processo e scegliere la categoria **Flusso di lavoro**.  
+2.  Sulla barra di navigazione scegliere **nuovo**. Assegnare un nome al processo e scegliere la categoria del **flusso di lavoro** .  
   
- È stato creato un flusso di lavoro che richiama l'azione personalizzata **Approval Process** (Processo approvazione) ogni volta che è richiesta l'approvazione del manager per uno sconto superiore al 20% per un'opportunità.  
+ È stato creato un flusso di lavoro che richiama l'azione personalizzata del **processo di approvazione** ogni volta che è necessaria l'approvazione del responsabile per uno sconto oltre il 20%.  
   
  ![Impostare le proprietà dell'azione dal flusso di lavoro](media/enable-custom-action-from-workflow.png "Impostare le proprietà dell'azione dal flusso di lavoro")  
   
- È possibile impostare le proprietà di input dell'azione scegliendo **Imposta proprietà**. È stato aggiunto un nome dell'account correlato all'opportunità nelle note speciali. In **Informazioni e selezione rapida** in **Cerca** scegliere **Account** nel primo elenco a discesa, scegliere **Account Name** (Nome account) nel secondo elenco a discesa e quindi scegliere **OK**. La proprietà **Destinazione** è obbligatoria e viene popolata dal sistema. **{Opportunity(Opportunity)}** nella proprietà **Destinazione** corrisponde all'opportunità in cui viene eseguito il flusso di lavoro che effettua la chiamata. In alternativa, è possibile scegliere un'opportunità specifica per la proprietà di destinazione usando la ricerca.  
+ È possibile impostare le proprietà di input dell'azione scegliendo **Imposta proprietà**. È stato aggiunto un nome dell'account correlato all'opportunità nelle note speciali. In **form Assistant**, in **Cerca**, scegliere **account** nel primo elenco a discesa, scegliere **nome account** nel secondo elenco a discesa, quindi scegliere **OK**. La proprietà di **destinazione** è obbligatoria e viene popolata dal sistema. Il **{opportunity (opportunity)}** nella proprietà di **destinazione** è la stessa opportunità di esecuzione del flusso di lavoro chiamante. In alternativa, è possibile scegliere un'opportunità specifica per la proprietà di destinazione usando Lookup.  
   
- ![Impostare i parametri di input per l'azione ApprovalProcess (Processo approvazione)](media/enable-customaction-workflow-set-properties.png "Impostare i parametri di input per l'azione ApprovalProcess (Processo approvazione)")  
+ ![Imposta i parametri di input per l'azione ApprovalProcess](media/enable-customaction-workflow-set-properties.png "Imposta i parametri di input per l'azione ApprovalProcess")  
   
 
 

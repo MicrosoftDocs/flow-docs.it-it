@@ -1,6 +1,6 @@
 ---
 title: Risoluzione dei problemi relativi a un flusso | Microsoft Docs
-description: Risolvere alcuni dei motivi più comuni per cui i flussi non riescono
+description: Risolvere alcuni dei motivi più comuni per cui i flussi hanno esito negativo
 services: ''
 suite: flow
 documentationcenter: na
@@ -20,86 +20,87 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 0e151f3c5cd69fe07263e5fa36d46eb3b8be19f5
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: 2981c125d722cb766a1cc840f404d84dfa57ac96
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "64992651"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73547868"
 ---
 # <a name="troubleshooting-a-flow"></a>Risoluzione dei problemi relativi a un flusso
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
-## <a name="repair-tips-in-email"></a>Suggerimenti di correzione nel messaggio di posta elettronica
+## <a name="repair-tips-in-email"></a>Suggerimenti per la riparazione nel messaggio di posta elettronica
 
-Suggerimenti di correzione vengono inviate ai proprietari del flusso tramite posta elettronica ogni volta che un flusso ha esito negativo. Questi messaggi di posta elettronica suggerimenti di correzione contengono commenti e suggerimenti specifici e pratici su determinati errori. Ad esempio, un errore comune è la configurazione di un flusso che tenta di ottenere un responsabile di Office 365, ma non esiste alcun gestore configurato in Azure Active Directory (Azure AD). Se questo o altre condizioni che il flusso esito negativo, si riceve un messaggio di suggerimenti di riparazione simile al seguente:
+I suggerimenti per la riparazione vengono inviati ai proprietari dei flussi tramite posta elettronica ogni volta che un flusso non riesce. I messaggi di posta elettronica con suggerimenti per la riparazione contengono commenti specifici e utilizzabili per determinati errori. Ad esempio, un errore comune è la configurazione di un flusso che tenta di ottenere il responsabile di un utente in Office 365, ma non è configurato alcun gestore in Azure Active Directory (Azure AD). Se questa o più condizioni provocano un errore nel flusso, si riceve un messaggio di posta elettronica con suggerimenti di ripristino simile al seguente:
 
-![Suggerimenti di correzione](media/fix-flow-failures/repair-tips-email.png)
+![Suggerimenti per la riparazione](media/fix-flow-failures/repair-tips-email.png)
 
-Il messaggio di posta elettronica di riparazione suggerimenti contiene le sezioni seguenti:
+Il messaggio di posta elettronica suggerimenti per la riparazione contiene le sezioni seguenti:
 
 Nome|Descrizione
 ---|---
-Ora|Visualizza il tempo prima di tutto il flusso non è riuscito.
+Tempo|Visualizza l'ora in cui il flusso non è riuscito.
 Cos'è successo|Fornisce una descrizione del problema che ha causato l'errore nel flusso.
-Come risolvere|Vengono forniti suggerimenti per la risoluzione del problema che causa l'errore nel flusso.
-Risoluzione dei problemi di suggerimenti|Fornisce informazioni dettagliate, incluso il numero di volte in cui il flusso non è riuscito e un collegamento per ripetere il flusso con gli stessi dati di input.
+Correzione Ricerca per categorie|Fornisce suggerimenti per la risoluzione del problema che causa l'errore nel flusso.
+Suggerimenti per la risoluzione dei problemi|Fornisce dettagli che includono il numero di volte in cui il flusso non è riuscito e un collegamento per ritentare il flusso con gli stessi dati di input.
 
-Per correggere gli errori segnalati, selezionare **Correggi il flusso** e seguire le istruzioni nel messaggio di suggerimenti di correzione.
+Per correggere gli errori segnalati, selezionare **Correggi il flusso** e seguire i passaggi nel messaggio di posta elettronica suggerimenti per la riparazione.
 
-Messaggi di posta elettronica di riparazione suggerimenti sono facoltativi. Se non si desidera riceverli, disattivarli semplicemente dal menu di proprietà per il flusso specifico.
+I suggerimenti per la riparazione sono facoltativi. Se non si vuole riceverli, è sufficiente disattivarli dal menu proprietà per il flusso specifico.
 
-Se il flusso non riesce, è possibile anche correggere tale errore direttamente in Microsoft Flow.  Ecco alcuni scenari di errore comuni e suggerimenti su come risolverli.
+Se il flusso ha esito negativo, è anche possibile risolverlo direttamente in Microsoft Flow.  Ecco alcuni scenari comuni di errore e suggerimenti su come risolverli.
 
 ## <a name="identify-the-error"></a>Identificare l'errore
-Prima di poter risolvere un flusso, è necessario identificare il motivo per cui non è riuscito. fare clic su o toccare l'icona delle notifiche nella parte superiore del portale Web (oppure aprire la scheda **Attività** nell'app per dispositivi mobili) e quindi fare clic su o toccare il flusso nell'elenco visualizzato.
+Prima di poter correggere un flusso, è necessario identificare il motivo per cui non è riuscito. Toccare o fare clic sull'icona notifiche nella parte superiore del portale Web (oppure aprire la scheda **attività** nell'app per dispositivi mobili) e quindi toccare o fare clic sul flusso nell'elenco visualizzato.
 
 ![Notifiche](./media/fix-flow-failures/notifications-toolbar.png)
 
-Vengono visualizzate informazioni relative al flusso e almeno un passaggio mostra un'icona di punto esclamativo rosso. Aprire tale passaggio ed esaminare il messaggio di errore.
+Vengono visualizzati i dettagli relativi al flusso e almeno un passaggio Mostra un'icona di punto esclamativo rosso. Aprire il passaggio ed esaminare il messaggio di errore.
 
 ![Messaggio di errore](./media/fix-flow-failures/flow-run-failure.png)
 
 
 ## <a name="authentication-failures"></a>Errori di autenticazione
-In molti casi, i flussi non riescono a causa di un errore di autenticazione. Se si riscontra questo tipo di errore, il messaggio di errore contiene **Non autorizzato** o viene visualizzato un codice di errore **401** o **403**. In genere, è possibile risolvere un errore di autenticazione aggiornando la connessione:
+In molti casi, i flussi hanno esito negativo a causa di un errore di autenticazione. Se si dispone di questo tipo di errore, il messaggio di **errore contiene un** codice di errore **401** o **403** . È in genere possibile correggere un errore di autenticazione aggiornando la connessione:
 
-1. Nella parte superiore del portale web, fare clic o toccare l'icona a forma di ingranaggio per aprire la **le impostazioni** menu, quindi fare clic o toccare **connessioni**.
-2. Scorrere fino alla connessione a cui si riferisce il messaggio di errore **Non autorizzato**.
-3. Accanto alla connessione, fare clic su o toccare il collegamento **Verifica password** nel messaggio sulla connessione non autenticata.
-4. Verificare le credenziali seguendo le istruzioni visualizzate, tornare all'errore di esecuzione del flusso, quindi fare clic su o toccare **Invia di nuovo**.
+1. Nella parte superiore del portale Web toccare o fare clic sull'icona a forma di ingranaggio per aprire il menu **Impostazioni** e quindi toccare o fare clic su **connessioni**.
+2. Scorrere fino alla connessione per la quale è stato visualizzato il messaggio di errore **non autorizzato** .
+3. Accanto alla connessione, toccare o fare clic sul collegamento **Verifica password** nel messaggio sulla connessione non autenticata.
+4. Verificare le credenziali seguendo le istruzioni visualizzate, tornare all'errore di esecuzione del flusso e quindi fare clic o toccare **Invia**di più.
    
-    A questo punto il flusso dovrebbe essere eseguito come previsto.
+    Il flusso dovrebbe ora funzionare come previsto.
 
 ## <a name="action-configuration"></a>Configurazione dell'azione
-Flussi non riescono neanche se un'impostazione in un'azione del flusso non funziona come previsto. In questo caso, il messaggio di errore contiene **Richiesta non valida** o **Non trovato** oppure viene visualizzato un codice di errore **400** o **404**.
+I flussi hanno esito negativo anche se un'impostazione in un'azione del flusso non funziona come previsto. In questo caso, il messaggio di errore contiene una richiesta **non** **valida** o non è stato trovato oppure viene visualizzato un codice di errore **400** o **404** .
 
-Il messaggio di errore deve specificare come correggere l'errore. Sarà necessario fare clic su o toccare il pulsante **Modifica** e quindi correggere il problema all'interno della definizione di flusso. Salvare il flusso aggiornato, e quindi fare clic su o toccare **Invia di nuovo** per ripetere l'esecuzione con la configurazione aggiornata.
+Il messaggio di errore deve specificare come correggere l'errore. È necessario toccare o fare clic sul pulsante **modifica** e quindi correggere il problema all'interno della definizione del flusso. Salvare il flusso aggiornato e quindi fare clic o toccare **Invia** di nuovo per provare a eseguire nuovamente con la configurazione aggiornata.
 
 ## <a name="other-failures"></a>Altri errori
-Se viene visualizzato il codice di errore **500** o **502**, l'errore è temporaneo. Fare clic su o toccare **Invia di nuovo** per ripetere l'esecuzione del flusso.
+Se viene visualizzato il codice di errore **500** o **502** , l'errore è temporaneo o temporaneo. Toccare o fare clic su **Invia** di nuovo per provare a eseguire nuovamente il flusso.
 
 ## <a name="getting-help-from-support-or-the-community"></a>Ottenere assistenza dal supporto tecnico o dalla community
 
-Quando è necessaria assistenza, è possibile usare la **aiutare Self** opzioni oppure è possibile **chiedere aiuto** dagli altri.
+Per ottenere assistenza, è possibile usare le opzioni di **supporto self-service** oppure è possibile **richiedere assistenza** ad altri utenti.
 
-### <a name="self-help"></a>Supporto Self-help 
+### <a name="self-help"></a>Guida automatica 
 
-1. Andare alla [sito del supporto tecnico](https://flow.microsoft.com/support/).
-1. Andare alla **Self Guida** categoria e selezionare una delle opzioni di supporto autonomo.
+1. Visitare il [sito del supporto tecnico](https://flow.microsoft.com/support/).
+1. Passare alla categoria **self help** e selezionare una delle opzioni self-help.
 
-    ![Richiedere la sezione della Guida. Contattare il supporto tecnico.](media/fix-flow-failures/self-help-section.png)
-### <a name="ask-for-help-from-others"></a>Chiedi aiuto da altri utenti
+    ![Consultare la sezione della guida. Contattare il supporto tecnico.](media/fix-flow-failures/self-help-section.png)
+### <a name="ask-for-help-from-others"></a>Richiedi assistenza da altri utenti
 
-1. Andare alla [sito del supporto tecnico](https://flow.microsoft.com/support/).
-1. Selezionare **contattare il supporto tecnico** nel **chiedere aiuto** sezione.
+1. Visitare il [sito del supporto tecnico](https://flow.microsoft.com/support/).
+1. Selezionare **contattare il supporto tecnico** nella sezione **Richiedi assistenza** .
     
-    ![Richiedere la sezione della Guida. Contattare il supporto tecnico.](media/fix-flow-failures/ask-for-help.png)
+    ![Consultare la sezione della guida. Contattare il supporto tecnico.](media/fix-flow-failures/ask-for-help.png)
 
-1. Completare la **tipo di problema**, **categoria**e il **Comunicaci cosa occorre assistenza** campi e quindi selezionare **soluzioni**. 
+1. Completare il **tipo di problema**, la **categoria**e la pagina **indicare le informazioni necessarie per** i campi e quindi selezionare **Visualizza soluzioni**. 
 
-1. Si noti che il **Solutions** sezione sono visualizzate dopo aver selezionato **soluzioni**. Contiene un elenco di risultati che è possibile usare per risolvere il problema che specifico da risolvere. 
+1. Si noti che la sezione **Solutions** viene visualizzata dopo aver selezionato **Visualizza soluzioni**. Contiene un elenco di risultati che è possibile usare per risolvere il problema che si sta affrontando. 
 
-    ![Dettagli di supporto integrata](media/fix-flow-failures/integrated-helper-details.png)
+    ![Dettagli Helper integrati](media/fix-flow-failures/integrated-helper-details.png)
 
-Se occorre assistenza con il problema, la Guida è disponibile dal nostro [community](https://go.microsoft.com/fwlink/?LinkID=787467) e Microsoft. 
+Se è necessario assistenza per un problema, la guida è disponibile dalla nostra [community](https://go.microsoft.com/fwlink/?LinkID=787467) e da Microsoft. 
 

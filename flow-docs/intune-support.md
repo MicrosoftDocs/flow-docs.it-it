@@ -1,6 +1,6 @@
 ---
-title: App per dispositivi mobili Microsoft Flow supporta ora MAM di Microsoft Intune. | Microsoft Docs
-description: App per dispositivi mobili Microsoft Flow supporta ora MAM di Microsoft Intune.
+title: Microsoft Flow app per dispositivi mobili supporta ora la gestione delle applicazioni mobili di Microsoft Intune. | Microsoft Docs
+description: Microsoft Flow app per dispositivi mobili supporta ora la gestione delle applicazioni mobili di Microsoft Intune.
 services: ''
 suite: flow
 documentationcenter: na
@@ -15,60 +15,61 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 04/29/2019
 ms.author: deonhe
-ms.openlocfilehash: 7cc2b37eb27ed0e2107eeaada02afb072d9a0098
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: d5709d7f98c3f4cc1dcf7d0da8fc5c9501adb84c
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "65060492"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73547388"
 ---
-# <a name="microsoft-flow-mobile-app-supports-microsoft-intune"></a>App per dispositivi mobili Microsoft Flow supporta Microsoft Intune
+# <a name="microsoft-flow-mobile-app-supports-microsoft-intune"></a>Microsoft Flow app per dispositivi mobili supporta Microsoft Intune
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
-L'app per dispositivi mobili Microsoft Flow per iOS e Android supporta Mobile Application Management (MAM di Intune) senza registrazione del dispositivo. Con MAM consente agli amministratori IT di creare e applicare i criteri di dati per dispositivi mobili per proteggere i dati dell'organizzazione.
+Il Microsoft Flow app per dispositivi mobili per iOS e Android supporta la gestione di applicazioni mobili (MAM) di Intune senza registrazione del dispositivo. L'uso di MAM consente agli amministratori IT di creare e applicare criteri di dati per dispositivi mobili per salvaguardare i dati dell'organizzazione.
 
-## <a name="why-intune-support-is-important"></a>Perché è importante il supporto di Intune
+## <a name="why-intune-support-is-important"></a>Motivi per cui il supporto di Intune è importante
 
-Le organizzazioni cercano maggiore controllo sui dati che risiedono sui dispositivi mobili dei dipendenti. Le organizzazioni potrebbero voler limitare tali spostamento dei dati con il dispositivo e verificare che i dati vengono rimossi, dovrebbe il dipendente lascia l'organizzazione.
+Le organizzazioni cercano un maggiore controllo sui dati che si trovano sui dispositivi mobili dei dipendenti. Le organizzazioni potrebbero voler limitare il modo in cui i dati vengono spostati nel dispositivo e assicurarsi che i dati vengano rimossi, qualora il dipendente lasci l'organizzazione.
 
-## <a name="what-is-microsoft-application-management-mam"></a>Che cos'è gestione (MAM) di Microsoft Application
+## <a name="what-is-microsoft-application-management-mam"></a>Che cos'è Microsoft Application Management (MAM)
 
-MAM consente alle organizzazioni di creare criteri che determinano come le app vengono usate all'interno di un tenant. Ciò include l'applicazione della crittografia dei dati di app, limitando la possibilità di copiare o estrarre i dati soltanto applicazioni approvati o applicare un PIN in un dispositivo.
+MAM consente alle organizzazioni di creare criteri che regolano il modo in cui le app vengono usate in un tenant. Questo include l'applicazione della crittografia dei dati dell'app, limitando la possibilità di copiare o estrarre i dati solo nelle applicazioni approvate o di applicare un PIN in un dispositivo.
 
 ### <a name="prerequisites"></a>Prerequisiti
 
-- Una di Intune [criteri di protezione delle app](https://docs.microsoft.com/intune/app-protection-policies).
-- Un gruppo di Azure Active Directory (Azure AD).
-- Portale aziendale. Uno dei principali vantaggi dell'uso di MAM è che i dispositivi non devono essere registrati in MAM di Intune. Tutto ciò che ha richiesto è il portale aziendale di cui è disponibile da Google Play store e l'App Store.
-- Versione 2.31.0 dell'app per dispositivi mobili Microsoft Flow per iOS, Android o Windows Phone.
+- Criteri di [protezione delle app](https://docs.microsoft.com/intune/app-protection-policies)di Intune.
+- Un gruppo Azure Active Directory (Azure AD).
+- Portale aziendale. Un vantaggio fondamentale dell'uso di MAM è che i dispositivi non devono essere registrati in MAM di Intune. È necessario solo il Portale aziendale, disponibile dall'App Store e dall'archivio Google Play.
+- Versione 2.31.0 dell'app Microsoft Flow mobile per iOS, Android o Windows Phone.
 
-## <a name="create-an-app-protection-policy-assign-apps-to-the-policy-define-settings-and-add-users-to-an-azure-ad-group"></a>Creare un criterio di protezione delle app, assegnare App ai criteri, definire le impostazioni e aggiungere utenti a un gruppo di Azure AD
+## <a name="create-an-app-protection-policy-assign-apps-to-the-policy-define-settings-and-add-users-to-an-azure-ad-group"></a>Creare un criterio di protezione delle app, assegnare le app al criterio, definire le impostazioni e aggiungere gli utenti a un gruppo di Azure AD
 
-Per l'app per dispositivi mobili Microsoft Flow da gestire, è necessario:
+Per la gestione dell'app Microsoft Flow per dispositivi mobili, è necessario:
 
 1. Creare un criterio di protezione delle app.
-1. Assegnare l'app per dispositivi mobili Microsoft Flow per i criteri di protezione delle app.
-1. Assegnare le impostazioni dei criteri. Ad esempio, è possibile assegnare i criteri per richiedere un PIN accedere al dispositivo mobile che esegue l'app per dispositivi mobili Microsoft Flow.
-1. Applicare i criteri di protezione delle app a uno specifico gruppo di Azure AD.
-1. Aggiungere tutti gli utenti a cui si applica i criteri di protezione delle app al gruppo di Azure AD.
+1. Assegnare l'app per dispositivi mobili Microsoft Flow ai criteri di protezione delle app.
+1. Assegnare le impostazioni dei criteri. Ad esempio, è possibile assegnare il criterio per richiedere un PIN per accedere al dispositivo mobile che esegue l'app per dispositivi mobili Microsoft Flow.
+1. Applicare i criteri di protezione delle app a un gruppo di Azure AD specifico.
+1. Aggiungere tutti gli utenti a cui si applicano i criteri di protezione delle app al gruppo di Azure AD.
 
-Seguire questi passaggi per creare un [criteri di protezione delle app](https://docs.microsoft.com/intune/app-protection-policies) che richiede agli utenti di app per dispositivi mobili Microsoft Flow immettere un PIN prima di poter accedere all'app. 
+Seguire questa procedura per creare un [criterio di protezione delle app](https://docs.microsoft.com/intune/app-protection-policies) che richiede agli utenti di Microsoft Flow app per dispositivi mobili di immettere un PIN prima di poter accedere all'app. 
 
 
 ## <a name="test-the-app-protection-policy"></a>Testare i criteri di protezione delle app
 
-Dopo aver creato i criteri di protezione delle app e utenti assegnati al gruppo di Azure AD, è possibile usare l'app per dispositivi mobili Microsoft Flow e verificare il funzionamento dei criteri.
+Dopo aver creato i criteri di protezione delle app e gli utenti assegnati al gruppo di Azure AD, è possibile usare l'app Microsoft Flow per dispositivi mobili e verificare il funzionamento del criterio.
 
-Per verificare il funzionamento dei criteri, seguire questa procedura:
+Per verificare il funzionamento del criterio, attenersi alla procedura seguente:
 
-1. Installare l'app per dispositivi mobili Microsoft Flow in un dispositivo cui piattaforma corrisponde a una delle piattaforme che è definito nei criteri di protezione delle app.
-1. Accedere all'app per dispositivi mobili con un account che si trova in gruppo di Azure AD che limita l'uso dell'app per dispositivi mobili per gli utenti che dispongono di un PIN.
+1. Installare l'app per dispositivi mobili Microsoft Flow in un dispositivo con piattaforma corrispondente a una delle piattaforme definite nei criteri di protezione delle app.
+1. Accedere all'app per dispositivi mobili con un account che si trova nel gruppo Azure AD che limita l'uso dell'app per dispositivi mobili agli utenti che hanno un PIN.
 
-Verrà quindi chiesto:
-1. Installare l'App portale aziendale.
-1. Se si ha già un PIN che soddisfa i criteri di criteri di protezione app, impostare il PIN.
+Verrà quindi richiesto di:
+1. Installare il Portale aziendale.
+1. Impostare il PIN se non si ha già un PIN che soddisfi i criteri del criterio di protezione delle app.
 
 
-## <a name="learn-more"></a>Altre informazioni
+## <a name="learn-more"></a>Ulteriori informazioni
 
-Informazioni su come creare un [criteri di protezione delle app](https://docs.microsoft.com/intune/app-protection-policies).
+Informazioni su come creare un [criterio di protezione delle app](https://docs.microsoft.com/intune/app-protection-policies).
 

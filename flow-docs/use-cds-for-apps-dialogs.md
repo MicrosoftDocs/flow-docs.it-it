@@ -1,10 +1,11 @@
 ---
-title: Usare le interazioni di Common Data Service per le procedure guidate (deprecato) | MicrosoftDocs
-description: Le interazioni sono i processi sincroni o interattivi che raccolgono ed elaborano le informazioni usando script dettagliati per indirizzare gli utenti in un processo
+title: Usare Common Data Service finestre di dialogo per i processi guidati (deprecato) | MicrosoftDocs
+description: I dialoghi sono i processi sincroni o interattivi che raccolgono ed elaborano le informazioni usando script step-by-Step per indirizzare gli utenti attraverso un processo
 ms.custom: ''
 ms.date: 10/31/2017
 ms.reviewer: ''
 ms.topic: article
+ms.service: flow
 ms.assetid: d17f8ae2-854b-4f67-a115-5a03d4f0b8ce
 caps.latest.revision: 25
 author: msftman
@@ -15,30 +16,31 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 90bdbc0ecf9b778ec6da3e4cac2b32b44e361fb0
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: 05f0b9b72f2f9e2d7f02356ec40eeb520214a0cb
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "64463645"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73548751"
 ---
-# <a name="use-common-data-service-dialogs-for-guided-processes-deprecated"></a>Usare le interazioni di Common Data Service per le procedure guidate (deprecato)
+# <a name="use-common-data-service-dialogs-for-guided-processes-deprecated"></a>Usare Common Data Service finestre di dialogo per i processi guidati (deprecato)
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
-[Le interazioni sono deprecate](/dynamics365/get-started/whats-new/customer-engagement/important-changes-coming#dialogs-are-deprecated). Sostituire le interazioni con processi aziendali o app canvas. Altre informazioni: [Sostituire le interazioni con processi aziendali o app canvas](replace-dialogs.md) 
+Le [finestre di dialogo sono deprecate](/dynamics365/get-started/whats-new/customer-engagement/important-changes-coming#dialogs-are-deprecated). È necessario sostituire i dialoghi con i flussi del processo di business o le app Canvas. Altre informazioni: [sostituire i dialoghi con i flussi del processo di business o le app Canvas](replace-dialogs.md) 
 
-Le interazioni sono i processi sincroni o interattivi di Common Data Service che raccolgono ed elaborano le informazioni usando script dettagliati per indirizzare gli utenti in un processo. Ad esempio, è possibile creare interazioni da usare come guida per i rappresentanti del servizio clienti per la risoluzione e la riassegnazione dei casi. Analogamente, è possibile creare interazioni per standardizzare i processi di vendita, ad esempio per la qualifica opportunità e il punteggio lead. Per altre informazioni, vedere [Use dialogs for guided processes](/dynamics365/customer-engagement/developer/use-dialogs-guided-processes) (Usare le interazioni per le procedure guidate) in Dynamics 365 Customer Engagement Developer Guide (Guida per sviluppatori di Dynamics 365 Customer Engagement).
+I dialoghi sono processi sincroni o interattivi in Common Data Service che raccolgono ed elaborano le informazioni tramite script step-by-Step per indirizzare gli utenti attraverso un processo. È ad esempio possibile creare finestre di dialogo che fungano da guida per i rappresentanti del servizio per la risoluzione dei casi e l'escalation dei case. Analogamente, è possibile creare finestre di dialogo per la standardizzazione dei processi di vendita, come la qualificazione dell'opportunità e l'assegnazione di punteggi.
 
-## <a name="differences-between-workflows-and-dialogs"></a>Differenze tra flussi di lavoro e interazioni
+## <a name="differences-between-workflows-and-dialogs"></a>Differenze tra flussi di lavoro e finestre di dialogo
 
-La tabella seguente offre informazioni sulle differenze tra i flussi di lavoro e le interazioni di Common Data Service.  
+Nella tabella seguente vengono fornite informazioni sulle differenze tra Common Data Service flussi di lavoro e le finestre di dialogo.  
 
 
-| Flussi di lavoro     |    Interazioni      |
+| flussi     |    Finestre      |
 |---------------|--------------|
-|                                                                                                  Possono essere avviati da un utente o possono essere automatizzati.                                                                                                   |                                                                                          Devono essere avviati da un utente.                                                                                          |
-|                                  Sono processi asincroni o in tempo reale e non richiedono l'input dell'utente per completare l'esecuzione. I processi asincroni vengono eseguiti in background mentre i processi in tempo reale vengono eseguiti immediatamente.                                   | Sono processi in tempo reale che richiedono l'input dell'utente per completare l'esecuzione. Quando vengono eseguiti questi processi, viene visualizzata un'interfaccia simile a una procedura guidata che consente di effettuare le selezioni appropriate per eseguire i processi. |
-|                                                    Per la memorizzazione dei dettagli di un flusso di lavoro asincrono in esecuzione viene usata l'entità `AsyncOperation`, mentre per un flusso di lavoro in tempo reale viene usata `Process`.                                                     |                                                       Per la memorizzazione delle informazioni generate da un'interazione in esecuzione viene usata l'entità `ProcessSession`.                                                       |
-|                  I trigger sono supportati per i flussi di lavoro. Per un elenco dei trigger supportati, vedere [Supported Types, Triggers, and Entities for Processes](/dynamics365/customer-engagement/developer/supported-types-triggers-entities-actions-processes) (Tipi, trigger ed entità supportati per i processi).                   |                                                                                   I trigger non sono supportati per le interazioni.                                                                                    |
+|                                                                                                  Può essere avviato da un utente o può essere automatizzato.                                                                                                   |                                                                                          Deve essere avviato da un utente.                                                                                          |
+|                                  Sono processi asincroni o in tempo reale e non richiedono l'esecuzione dell'input utente fino al completamento. I processi asincroni vengono eseguiti in background, mentre i processi in tempo reale vengono eseguiti immediatamente.                                   | Sono processi in tempo reale che richiedono l'esecuzione dell'input utente fino al completamento. Quando si eseguono questi processi, viene visualizzata un'interfaccia simile a una procedura guidata, in modo da poter effettuare le selezioni appropriate per eseguire i processi. |
+|                                                    L'entità che archivia i dettagli relativi a un flusso di lavoro asincrono in esecuzione viene `AsyncOperation` mentre viene utilizzata una `Process` per un flusso di lavoro in tempo reale.                                                     |                                                       L'entità che archivia le informazioni generate da una finestra di dialogo in esecuzione è l'entità `ProcessSession`.                                                       |
+|                  I trigger sono supportati per i flussi di lavoro. Per un elenco dei trigger supportati, vedere [tipi, trigger ed entità supportati per i processi](/dynamics365/customer-engagement/developer/supported-types-triggers-entities-actions-processes).                   |                                                                                   I trigger non sono supportati per le finestre di dialogo.                                                                                    |
   
 ### <a name="see-also"></a>Vedere anche
-[Sostituire le interazioni con processi aziendali o app canvas](replace-dialogs.md)
+[Sostituisci finestre di dialogo con flussi di processi aziendali o app Canvas](replace-dialogs.md)

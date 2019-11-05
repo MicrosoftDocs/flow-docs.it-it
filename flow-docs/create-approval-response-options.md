@@ -1,6 +1,6 @@
 ---
 title: Creare flussi di approvazione con risposte personalizzate | Microsoft Docs
-description: Creare flussi di approvazione con risposte personalizzate
+description: Creare flussi di approvazione con risposte personalizzate.
 services: ''
 suite: flow
 documentationcenter: na
@@ -20,90 +20,91 @@ search.app:
 - Powerplatform
 search.audienceType:
 - maker
-ms.openlocfilehash: d1f4b6d6dad3138bf935947076be4fe75661e36e
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: eaaa87f9213c5ed04aee65e37ee642436e49dfca
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "65061711"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73547216"
 ---
 # <a name="create-custom-response-options-for-approval-flows"></a>Creare opzioni di risposta personalizzate per i flussi di approvazione
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
-Si supponga di voler inviare una richiesta di approvazione ogni volta che un dipendente carica una nota spese in SharePoint e quindi consentire al responsabile approvazione di rispondere con una di queste tre opzioni: Accept (Accetta), Need more info (Richiesta di maggiori informazioni) o Reject (Rifiuta).
+Si vuole inviare una richiesta di approvazione ogni volta che un dipendente carica una nota spese in SharePoint e quindi consente al responsabile approvazione di rispondere con una delle tre opzioni seguenti: Accept, Need more info o Reject.
 
 
 ## <a name="prerequisites"></a>Prerequisiti
 
-- Un account Microsoft Flow con una licenza Piano 2 (Piano 2 è necessario per usare le funzionalità Premium. Approvazioni è una funzionalità Premium).
-- Un elenco di SharePoint per i dipendenti per immettere le note spese.
+- Un account Microsoft Flow.
+- Elenco di SharePoint che consente ai dipendenti di immettere le note spese.
 
-## <a name="create-approval-flow"></a>Creare un flusso di approvazione
-1. Eseguire l'accesso a [Microsoft Flow](https://flow.microsoft.com).
-1. Selezionare **Flussi personali** nella barra di spostamento a sinistra.
-1. Selezionare **Nuovo** > **Crea da zero**.
+## <a name="create-approval-flow"></a>Crea flusso di approvazione
+1. Accedere a [Microsoft Flow](https://flow.microsoft.com).
+1. Selezionare **flussi personali** nella barra di spostamento a sinistra.
+1. Selezionare **nuovo** > **Crea da zero**.
 
-    ![Opzione Crea da zero](media/create-approval-response-options/create-approval-response-options.png)
+    ![Crea da opzione vuota](media/create-approval-response-options/create-approval-response-options.png)
 
-1. Nella schermata che si apre selezionare **Crea da zero**. 
+1. Nella schermata visualizzata selezionare **Crea da zero**. 
 
     ![Selezionare Crea da zero](media/create-approval-response-options/create-from-blank.png)
 
-1. Cercare **sharepoint** e quindi selezionare **Quando viene creato un elemento** dall'elenco dei trigger. 
+1. Cercare **SharePoint** e quindi selezionare **quando viene creato un elemento** dall'elenco dei trigger. 
 
-1. Specificare l'**Indirizzo del sito** e il **Nome lista** di SharePoint. 
+1. Specificare l' **indirizzo del sito** di SharePoint e il **nome dell'elenco**. 
 
-1. Selezionare **Nuovo passaggio**, cercare **Approvazioni** e quindi selezionare **Avvio e attesa per l'approvazione (V2)**.
+1. Selezionare **nuovo passaggio**, cercare **approvazione**, quindi selezionare **Avvia e attendere un'approvazione (v2)** .
 
-1. Nella scheda **Avvio e attesa per l'approvazione (V2)** selezionare l'elenco **Tipo di approvazione**.
+1. Nella scheda **Avvia e attendi un'approvazione (v2)** selezionare l'elenco **tipo di approvazione** .
 
     ![Tipo di approvazione](media/create-approval-response-options/select-approval-type.png)
 
-1. Selezionare **Risposte personalizzate - Attendere una risposta (Premium)**.
+1. Selezionare **risposte personalizzate: attendere una risposta (Premium)** .
 
     ![Risposte personalizzate](media/create-approval-response-options/select-custom-responses.png)
 
-    Verranno quindi create le risposte personalizzate che i responsabili approvazione useranno quando rispondono a una richiesta di approvazione per la nota spese di un dipendente.
+    Si creeranno quindi le risposte personalizzate che i responsabili approvazione utilizzeranno per rispondere a una richiesta di approvazione per la spesa di un dipendente.
 
 
-1. Nella casella **Opzioni di risposta Elemento - 1** immettere **Accept** (Accetta) e quindi selezionare **Aggiungi nuovo elemento**. 
+1. Nella casella **elemento Opzioni di risposta-1** immettere **Accept** , quindi selezionare **Aggiungi nuovo elemento**. 
 
     ![Risposta personalizzata 1](media/create-approval-response-options/enter-response-1.png)
 
-1. Nella casella **Opzioni di risposta Elemento - 2** immettere **Reject** (Rifiuta) e quindi selezionare **Aggiungi nuovo elemento**.
+1. Nella casella **Opzioni di risposta-2** immettere **Reject** , quindi selezionare **Aggiungi nuovo elemento**.
 
     ![Risposta personalizzata 2](media/create-approval-response-options/enter-response-2.png)
 
-1. Nella casella **Opzioni di risposta Elemento - 3** immettere **Need more info** (Richiesta di maggiori informazioni).
+1. Nella casella **Opzioni di risposta-3** immettere **need more info (altre informazioni**).
 
     ![Risposta personalizzata 3](media/create-approval-response-options/enter-response-3.png)   
     
 
-1. Immettere le informazioni richieste per **Titolo**, **Assegnata a** (indirizzo e-mail del responsabile approvazione) e **Dettagli** (dettagli da inserire nella richiesta di approvazione).
+1. Immettere un **titolo**, **assegnato a** (messaggio di posta elettronica per il responsabile approvazione) e **Dettagli** (i dettagli da contenere nella richiesta di approvazione).
 
-    Ecco un esempio di quello che si può includere per l'organizzazione.
+    Di seguito è riportato un esempio di ciò che è possibile includere per la propria organizzazione.
 
-    ![Dettagli delle risposte personalizzate](media/create-approval-response-options/enter-title-assigned-to-details.png)
-
-
-Ora che sono state create le risposte personalizzate, è possibile eseguire operazioni diverse nel flusso, a seconda della risposta del responsabile approvazione.
+    ![Dettagli risposte personalizzate](media/create-approval-response-options/enter-title-assigned-to-details.png)
 
 
-## <a name="use-approval-responses"></a>Usare le risposte di approvazione 
+Ora che sono state create le risposte personalizzate, potrebbe essere necessario eseguire diverse operazioni nel flusso, a seconda della risposta del responsabile approvazione.
 
-Se la risposta alla richiesta è **Accept** (Accetta), si potrebbe voler inviare un messaggio e-mail al reparto contabilità per chiedere il rimborso delle spese per il dipendente. 
 
-Se la risposta è **Reject** (Rifiuta), si potrebbe voler inviare un messaggio e-mail al dipendente per informarlo che la richiesta è stata rifiutata.
+## <a name="use-approval-responses"></a>USA risposte di approvazione 
 
-Se infine la risposta del responsabile approvazione è **Need more info** (Richiesta di maggiori informazioni), si potrebbe voler inviare un messaggio e-mail al dipendente per chiedere di fornire altre informazioni.
+Se la risposta alla richiesta è **Accept**, potrebbe essere necessario inviare un messaggio di posta elettronica al reparto contabilità, chiedendo loro di rimborsare il dipendente per la spesa. 
 
-Per eseguire una di queste operazioni nel flusso, aggiungere una [**Condizione**](add-condition.md) o un'azione **Switch** al flusso e quindi selezionare il campo **Risultato** della richiesta di approvazione dalla selezione del contenuto dinamico. Assicurarsi di confermare se il valore è Accept (Accetta), Need more info (Richiesta di maggiori informazioni) o Reject (Rifiuta).
+Se la risposta è **rifiutata**, potrebbe essere necessario inviare un messaggio di posta elettronica al dipendente, per informare che la richiesta è stata rifiutata.
+
+Infine, se per la risposta del responsabile approvazione sono **necessarie altre informazioni**, è possibile inviare un messaggio di posta elettronica al dipendente, richiedendo al dipendente di fornire ulteriori informazioni.
+
+Per eseguire una di queste operazioni nel flusso, aggiungere una [**condizione**](add-condition.md) o un'azione di **commutazione** al flusso, quindi selezionare il campo **risultato** della richiesta di approvazione dalla selezione contenuto dinamico. Verificare che il valore sia Accept, Need more info o Reject.
 
 ## <a name="respond-to-approval-requests-with-a-custom-response"></a>Rispondere alle richieste di approvazione con una risposta personalizzata
 
-I responsabili approvazione ricevono le richieste di approvazione tramite e-mail. Le richieste vengono visualizzate anche nel Centro approvazioni in Microsoft Flow. 
+Gli approvatori ricevono richieste di approvazione tramite posta elettronica. Le richieste vengono visualizzate anche nel centro approvazioni in Microsoft Flow. 
 
-![Messaggio e-mail con una richiesta di approvazione](media/create-approval-response-options/approval-request-email.png)
+![Messaggio di richiesta di approvazione](media/create-approval-response-options/approval-request-email.png)
 
-## <a name="learn-more"></a>Altre informazioni
-- Creare [flussi di approvazioni singole](modern-approvals.md)
-- Creare [flussi di approvazione sequenziali](sequential-modern-approvals.md)
+## <a name="learn-more"></a>Ulteriori informazioni
+- Creare [flussi di approvazione singoli](modern-approvals.md)
+- Creare [flussi di approvazione sequenziale](sequential-modern-approvals.md)

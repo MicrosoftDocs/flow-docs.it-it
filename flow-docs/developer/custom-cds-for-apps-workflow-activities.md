@@ -1,10 +1,11 @@
 ---
-title: Attività personalizzate dei flussi di lavoro di Common Data Service (assembly dei flussi di lavoro)| MicrosoftDocs
-description: Informazioni sulla registrazione e l'esecuzione delle attività personalizzate dei flussi di lavoro di Common Data Service in aggiunta alle attività predefinite incluse in Windows Workflow Foundation.
+title: Attività del flusso di lavoro di Common Data Service personalizzate (assembly del flusso di lavoro) | MicrosoftDocs
+description: Informazioni sulla registrazione e l'esecuzione di attività del flusso di lavoro Common Data Service personalizzate, oltre alle attività predefinite fornite da Windows Workflow Foundation.
 ms.custom: ''
 ms.date: 08/08/2018
 ms.reviewer: ''
 ms.topic: article
+ms.service: flow
 ms.assetid: 3ef415ed-d815-45de-8a7c-398b80d23cbd
 caps.latest.revision: 51
 author: msftman
@@ -14,25 +15,26 @@ search.app:
 - Flow
 search.audienceType:
 - developer
-ms.openlocfilehash: 1cda3fb99dac66bcb675db031573be682c6e85ba
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: 888dbc4748116191c566b4220c829700944806cc
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "64455842"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73547813"
 ---
-# <a name="custom-common-data-service-workflow-activities-workflow-assemblies"></a>Attività personalizzate dei flussi di lavoro di Common Data Service (assembly dei flussi di lavoro)
+# <a name="custom-common-data-service-workflow-activities-workflow-assemblies"></a>Attività del flusso di lavoro Common Data Service personalizzate (assembly del flusso di lavoro)
+[!INCLUDE [view-pending-approvals](../includes/cc-rebrand.md)]
 
-Common Data Service supporta la registrazione e l'esecuzione delle attività personalizzate dei flussi di lavoro in aggiunta alle attività predefinite incluse in [Windows Workflow Foundation](https://docs.microsoft.com/dotnet/framework/windows-workflow-foundation/). 
+Common Data Service supporta la registrazione e l'esecuzione di attività del flusso di lavoro personalizzate, oltre alle attività predefinite fornite da [Windows Workflow Foundation](https://docs.microsoft.com/dotnet/framework/windows-workflow-foundation/). 
 
-Windows Workflow Foundation include una libreria di attività che offre le attività per il flusso di controllo, l'invio e la ricezione dei messaggi, l'esecuzione di lavoro in parallelo e molto altro ancora. Tuttavia, per compilare applicazioni che soddisfano le proprie esigenze aziendali, potrebbero essere necessarie attività che eseguono operazioni specifiche per l'applicazione. A tale scopo, Windows Workflow Foundation supporta la creazione di attività del flusso di lavoro personalizzate.
+Windows Workflow Foundation include una libreria di attività che fornisce attività per il flusso di controllo, l'invio e la ricezione di messaggi, il lavoro in parallelo e altro ancora. Tuttavia, per creare applicazioni che soddisfino le esigenze aziendali, potrebbero essere necessarie attività che eseguono attività specifiche dell'applicazione. Per ottenere questo possibile, Windows Workflow Foundation supporta la creazione di attività del flusso di lavoro personalizzate.
 
-Altre informazioni: [Creare un'estensione del flusso di lavoro](/powerapps/developer/common-data-service/apply-business-logic-with-code) 
+Altre informazioni: [creare un'estensione del flusso di lavoro](/powerapps/developer/common-data-service/apply-business-logic-with-code) 
   
 ## <a name="related-topics"></a>Argomenti correlati
 
-[Panoramica per gli sviluppatori di Common Data Service](/powerapps/developer/common-data-service/overview)
+[Panoramica dello sviluppatore Common Data Service](/powerapps/developer/common-data-service/overview)
   
-[Creare un plug-in](/powerapps/developer/common-data-service/apply-business-logic-with-code#create-a-plug-in) 
+[Creazione di un plug-in](/powerapps/developer/common-data-service/apply-business-logic-with-code#create-a-plug-in) 
   
 

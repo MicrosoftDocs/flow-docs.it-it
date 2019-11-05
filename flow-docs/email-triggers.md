@@ -1,6 +1,6 @@
 ---
-title: Eseguire i flussi in base alle proprietà del messaggio posta elettronica | Microsoft Docs
-description: Avviare un flusso in base a proprietà come l'oggetto, l'indirizzo del mittente o del destinatario di un messaggio di posta elettronica.
+title: Eseguire i flussi in base alle proprietà della posta elettronica | Microsoft Docs
+description: Avviare un flusso in base a proprietà quali l'oggetto, l'indirizzo del mittente o l'indirizzo del destinatario di un messaggio di posta elettronica.
 services: ''
 suite: flow
 documentationcenter: na
@@ -20,120 +20,121 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 94af3389301f40aa5caaa46eda98c8b1c9be0228
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: b1dcb98d5bb99c9eaf2843ec75a8bdfaf03fa913
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "64459154"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73544945"
 ---
-# <a name="trigger-a-flow-based-on-email-properties"></a>Attivare un flusso in base alle proprietà del messaggio di posta elettronica
-Usare il trigger **All'arrivo di un nuovo messaggio di posta elettronica** per creare un flusso che venga eseguito quando una o più proprietà seguenti del messaggio di posta elettronica corrispondono ai criteri forniti:
+# <a name="trigger-a-flow-based-on-email-properties"></a>Attivare un flusso in base alle proprietà di posta elettronica
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+Usare il trigger **quando arriva un nuovo messaggio di posta elettronica** per creare un flusso che viene eseguito quando una o più delle seguenti proprietà di posta elettronica corrispondono ai criteri forniti:
 
-| Proprietà | Quando usarla |
+| Proprietà | Quando usare |
 | --- | --- |
-| Cartella |Attivare un flusso ogni volta che si ricevono messaggi di posta elettronica in una cartella specifica. Questa proprietà può essere utile se ci sono regole che indirizzano i messaggi di posta elettronica a cartelle diverse. |
-| A |Attivare un flusso in base all'indirizzo a cui è stato inviato un messaggio di posta elettronica. Questa proprietà può essere utile se si riceve posta elettronica che è stata inviata a diversi indirizzi di posta elettronica nella stessa cartella Posta in arrivo. |
-| Da |Attivare un flusso in base all'indirizzo e-mail del mittente. |
-| Priorità |Attivare un flusso in base alla priorità con cui sono stati inviati i messaggi di posta elettronica. I messaggi di posta elettronica possono essere inviati con priorità alta, normale o bassa. |
+| Cartella |Attivare un flusso ogni volta che i messaggi di posta elettronica arrivano in una cartella specifica. Questa proprietà può essere utile se si dispone di regole che instradano i messaggi di posta elettronica a cartelle diverse. |
+| A |Attivare un flusso in base all'indirizzo a cui è stato inviato un messaggio di posta elettronica. Questa proprietà può essere utile se si riceve un messaggio di posta elettronica inviato a diversi indirizzi di posta elettronica nella stessa posta in arrivo. |
+| Da |Attivare un flusso in base all'indirizzo di posta elettronica del mittente. |
+| Importanza |Attivare un flusso in base alla priorità con cui sono stati inviati i messaggi di posta elettronica. È possibile inviare messaggi di posta elettronica con priorità alta, normale o bassa. |
 | Con allegato |Attivare un flusso in base alla presenza di allegati nei messaggi di posta elettronica in arrivo. |
-| Filtro oggetto |Cercare la presenza di parole specifiche nell'oggetto di un messaggio di posta elettronica. Il flusso esegue quindi le *azioni* in base ai risultati della ricerca. |
+| Filtro oggetto |Ricercare la presenza di parole specifiche nell'oggetto di un messaggio di posta elettronica. Il flusso esegue quindi *azioni* basate sui risultati della ricerca. |
 
 > [!IMPORTANT]
-> Ogni [piano di Microsoft Flow](https://flow.microsoft.com/pricing/) include una quota di esecuzione. Controllare sempre le proprietà nel trigger del flusso, quando possibile. In questo modo si eviterà di usare inutilmente la quota di esecuzione. Se si seleziona una proprietà in una condizione, ogni esecuzione viene conteggiata nella quota di esecuzione del piano, anche se non viene soddisfatta la condizione di filtro definita. 
+> Ogni [piano di Microsoft Flow](https://flow.microsoft.com/pricing/) include una quota di esecuzione. Controllare sempre le proprietà nel trigger del flusso, quando possibile. In questo modo si evita di usare inutilmente la quota di esecuzione. Se si seleziona una proprietà in una condizione, ogni esecuzione viene conteggiata in base alla quota di esecuzione del piano, anche se non viene soddisfatta la condizione di filtro definita. 
 
-Ad esempio, se si seleziona l'indirizzo *da* di un messaggio di posta elettronica in una condizione, ogni esecuzione concorre alla quota di esecuzione del piano, anche se non *proviene* dall'indirizzo del mittente desiderato.
+Ad esempio, se si seleziona un indirizzo di posta elettronica in una condizione, ogni esecuzione viene conteggiata in base alla quota di esecuzione del piano, anche se non è *dall'* indirizzo a cui *si è interessati* .
 > 
 > 
 
-Nella procedure dettagliate seguenti si selezionano tutte le proprietà nel trigger **All'arrivo di un nuovo messaggio di posta elettronica**. Per altre informazioni, visitare le pagine dedicate alle [domande frequenti sulla fatturazione ](billing-questions.md#what-counts-as-a-run) e ai [prezzi](https://ms.flow.microsoft.com/pricing/).
+Nelle procedure dettagliate seguenti si controllano tutte le proprietà nel trigger all' **arrivo di un nuovo messaggio di posta elettronica** . Per altre informazioni, visita le [domande frequenti sulla fatturazione](billing-questions.md#what-counts-as-a-run) e la pagina dei [prezzi](https://ms.flow.microsoft.com/pricing/) .
 
 ## <a name="prerequisites"></a>Prerequisiti
 * Un account con accesso a [Microsoft Flow](https://flow.microsoft.com)
 * Un account Office 365 Outlook
-* L'app per dispositivi mobili Microsoft Flow per [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios) o [Windows Phone](https://aka.ms/flowmobilewindows)
+* App per dispositivi mobili Microsoft Flow per [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios)o [Windows Phone](https://aka.ms/flowmobilewindows)
 * Connessioni a Office, Outlook e al servizio di notifica push
 
 ## <a name="trigger-a-flow-based-on-an-emails-subject"></a>Attivare un flusso in base all'oggetto di un messaggio di posta elettronica
-In questa procedura dettagliata, viene creato un flusso che invia una notifica push al telefono cellulare se l'oggetto di qualsiasi nuovo messaggio di posta elettronica contiene la parola "lotteria". Il flusso contrassegna quindi qualsiasi messaggio simile come *letto*.
+In questa procedura dettagliata viene creato un flusso che invia una notifica push al telefono cellulare se l'oggetto di un nuovo messaggio di posta elettronica contiene la parola "lotteria". Il flusso contrassegna quindi il messaggio di posta elettronica come *letto*.
 
 >[!NOTE]
->Anche se questa procedura dettagliata invia una notifica push, è possibile usare qualsiasi altra azione adatta alle esigenze del flusso di lavoro. Ad esempio, è possibile archiviare il contenuto di posta elettronica in un altro archivio, ad esempio Fogli di Google o un file di Microsoft Excel archiviato in Dropbox.
+>Mentre questa procedura dettagliata invia una notifica push, è possibile usare qualsiasi altra azione che soddisfi le esigenze del flusso di lavoro. Ad esempio, è possibile archiviare il contenuto di posta elettronica in un altro repository, ad esempio fogli Google o un file di Microsoft Excel archiviato in Dropbox.
 
-Ora si può iniziare:
+Ok, inizia subito:
 
 [!INCLUDE [sign-in-use-blank-select-email-trigger-and-inbox-folder](includes/sign-in-use-blank-select-email-trigger-and-inbox-folder.md)]
 
-1. Nella casella **Filtro oggetto** immettere il testo che il flusso usa per filtrare i messaggi in arrivo.
+1. Nella casella **filtro oggetto** immettere il testo usato dal flusso per filtrare i messaggi di posta elettronica in arrivo.
    
-     In questo esempio verranno presi in considerazione i messaggi contenenti la parola "lottery" nell'oggetto.
+     In questo esempio si è interessati a tutti i messaggi di posta elettronica con la parola "lotteria" nell'argomento.
    
     ![Opzioni avanzate](./media/email-triggers/email-triggers-subject-text.png)
 
     [!INCLUDE [add-mobile-notification-action](includes/add-mobile-notification-action.md)]
 
-1. Immettere i dettagli per la notifica per dispositivi mobili che si vuole ricevere quando si riceve un messaggio di posta elettronica corrispondente al **Filtro oggetto** specificato in precedenza.
+1. Immettere i dettagli per la notifica mobile che si vuole ricevere quando si riceve un messaggio di posta elettronica che corrisponde al **filtro oggetto** specificato in precedenza.
    
-    ![Dettagli della notifica](./media/email-triggers/email-triggers-4.png)
+    ![Dettagli notifica](./media/email-triggers/email-triggers-4.png)
 
     [!INCLUDE [add-mark-as-read-action](includes/add-mark-as-read-action.md)]
 
-1. Assegnare un nome al flusso. Salvare quindi il flusso selezionando **Crea flusso** nella parte superiore della pagina.
+1. Assegnare un nome al flusso. Quindi salvarlo selezionando **Crea flusso** nella parte superiore della pagina.
    
-    ![Salvare il flusso](./media/email-triggers/email-triggers-subject-notification.png)
+    ![Salva flusso](./media/email-triggers/email-triggers-subject-notification.png)
 
-Congratulazioni. Si riceverà ora una notifica push ogni volta che si riceve un messaggio di posta elettronica il cui oggetto contiene la parola "lottery".
+Congratulazioni! È ora possibile ricevere una notifica push ogni volta che si riceve un messaggio di posta elettronica contenente la parola "lotteria" nell'oggetto.
 
 ## <a name="trigger-a-flow-based-on-an-emails-sender"></a>Attivare un flusso in base al mittente di un messaggio di posta elettronica
-In questa procedura dettagliata, viene creato un flusso che invia una notifica push al telefono cellulare se si riceve un nuovo messaggio di posta elettronica da un mittente (indirizzo e-mail) specifico. Il flusso contrassegna anche qualsiasi messaggio simile come *letto*.
+In questa procedura dettagliata viene creato un flusso che invia una notifica push al telefono cellulare se un nuovo messaggio di posta elettronica proviene da un mittente specifico (indirizzo di posta elettronica). Il flusso contrassegna anche il messaggio di posta elettronica come *letto*.
 
 [!INCLUDE [sign-in-use-blank-select-email-trigger-and-inbox-folder](includes/sign-in-use-blank-select-email-trigger-and-inbox-folder.md)]
 
-1. Nella casella **Da** immettere l'indirizzo di posta elettronica del mittente. 
+1. Nella casella **da** immettere l'indirizzo di posta elettronica del mittente. 
    
-     Il flusso interviene su eventuali messaggi di posta elettronica inviati da questo indirizzo.
+     Il flusso esegue azioni su tutti i messaggi di posta elettronica inviati da questo indirizzo.
    
-    ![Proprietà messaggio di posta elettronica](./media/email-triggers/email-triggers-from.png)
+    ![Proprietà posta elettronica](./media/email-triggers/email-triggers-from.png)
 
     [!INCLUDE [add-mobile-notification-action](includes/add-mobile-notification-action.md)]
 
-1. Immettere i dettagli per la notifica per dispositivi mobili che si vuole ricevere ogni volta che si riceve un messaggio di posta elettronica inviato dall'indirizzo di posta elettronica specificato in precedenza.
+1. Immettere i dettagli per la notifica mobile che si vuole ricevere ogni volta che un messaggio arriva dall'indirizzo di posta elettronica immesso in precedenza.
    
-    ![Dettagli della notifica](./media/email-triggers/email-triggers-sender-notification.png)
+    ![Dettagli notifica](./media/email-triggers/email-triggers-sender-notification.png)
 
     [!INCLUDE [add-mark-as-read-action](includes/add-mark-as-read-action.md)]
 
 1. Assegnare un nome al flusso e quindi salvarlo selezionando **Crea flusso** nella parte superiore della pagina.
    
-    ![Salvare il flusso](./media/email-triggers/email-triggers-sender-5.png)
+    ![Salva flusso](./media/email-triggers/email-triggers-sender-5.png)
 
-## <a name="trigger-a-flow-when-emails-arrive-in-a-specific-folder"></a>Attivare un flusso quando si ricevono messaggi di posta elettronica in una cartella specifica
-Se esistono regole che indirizzano la posta elettronica in cartelle diverse in base a determinate proprietà, ad esempio l'indirizzo, è consigliabile questo tipo di flusso.
+## <a name="trigger-a-flow-when-emails-arrive-in-a-specific-folder"></a>Attiva un flusso quando i messaggi di posta elettronica arrivano in una cartella specifica
+Se si dispone di regole che instradano la posta elettronica a cartelle diverse in base a determinate proprietà, ad esempio l'indirizzo, è possibile che si desideri questo tipo di flusso.
 
-Ora si può iniziare:
+Iniziamo:
 
 > [!NOTE]
-> Se non è già presente una regola che indirizza i messaggi di posta elettronica a una cartella diversa dalla cartella Posta in arrivo, creare tale regola e verificarne il funzionamento inviando un messaggio di posta elettronica di test.
+> Se non si ha già una regola che instrada la posta elettronica a una cartella diversa dalla posta in arrivo, creare una regola di questo tipo e confermarne il funzionamento inviando un messaggio di posta elettronica di prova.
 > 
 > 
 
 [!INCLUDE [sign-in-use-blank-select-email-trigger-and-specific-folder](includes/sign-in-use-blank-select-email-trigger-and-specific-folder.md)]
 
-1. Selezionare la cartella a cui vengono indirizzati messaggi di posta elettronica specifica. Per visualizzare tutte le cartelle di posta elettronica, selezionare prima l'icona **Mostra selezione**, che si trova sul lato destro della casella **Cartella** nella scheda **All'arrivo di un nuovo messaggio di posta elettronica**.
+1. Selezionare la cartella a cui si desidera indirizzare i messaggi di posta elettronica specifici. Per visualizzare tutte le cartelle di posta elettronica, selezionare prima di tutto l'icona **Mostra selezione** , che si trova sul lato destro della casella **cartella** nella scheda all' **arrivo di un nuovo messaggio di posta elettronica** .
    
-    ![Selezionare una cartella](./media/email-triggers/email-triggers-2.png)
+    ![Seleziona cartella](./media/email-triggers/email-triggers-2.png)
 
     [!INCLUDE [add-mobile-notification-action](includes/add-mobile-notification-action.md)]
 
-1. Immettere i dettagli per la notifica per dispositivi mobili che si vuole ricevere quando si riceve un messaggio di posta elettronica nella cartella selezionata in precedenza. Se non è già stato fatto, immettere le credenziali per il servizio di notifica.
+1. Immettere i dettagli per la notifica mobile che si vuole ricevere all'arrivo di un messaggio di posta elettronica nella cartella selezionata in precedenza. Se non è già stato fatto, immettere le credenziali per il servizio di notifica.
    
-    ![Dettagli della notifica](./media/email-triggers/email-triggers-folder-notification.png)
+    ![Dettagli notifica](./media/email-triggers/email-triggers-folder-notification.png)
 
     [!INCLUDE [add-mark-as-read-action](includes/add-mark-as-read-action.md)]
 
 1. Assegnare un nome al flusso e quindi salvarlo selezionando **Crea flusso** nella parte superiore della pagina.
    
-    ![Salvare il flusso](./media/email-triggers/email-triggers-7.png)
+    ![Salva flusso](./media/email-triggers/email-triggers-7.png)
 
-Testare il flusso inviando un messaggio di posta elettronica che verrà indirizzato alla cartella selezionata in precedenza in questa procedura dettagliata.
+Testare il flusso inviando un messaggio di posta elettronica che viene indirizzato alla cartella selezionata in precedenza in questa procedura dettagliata.
 
