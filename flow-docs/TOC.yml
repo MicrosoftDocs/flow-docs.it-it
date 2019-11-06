@@ -66,6 +66,28 @@
       href: enhance-business-process-flows-branching.md
     - name: Procedure consigliate per gli attributi del flusso dei processi aziendali
       href: best-practices-entity-attributes.md
+- name: Flussi di interfaccia utente (anteprima)
+  items:
+    - name: Introduzione a flussi di interfaccia utente
+      href: ./ui-flows/overview.md
+    - name: Configurare flussi di interfaccia utente
+      href: ./ui-flows/setup.md
+    - name: Creare e testare flussi di interfaccia utente desktop
+      href: ./ui-flows/create-desktop.md
+    - name: Modificare flussi di interfaccia utente desktop
+      href: ./ui-flows/edit-desktop.md
+    - name: Usare input e output in flussi di interfaccia utente desktop
+      href: ./ui-flows/inputs-outputs-desktop.md
+    - name: Creare e testare flussi di interfaccia utente Web
+      href: ./ui-flows/create-web.md
+    - name: Modificare flussi di interfaccia utente Web
+      href: ./ui-flows/edit-web.md
+    - name: Usare input e output in flussi di interfaccia utente Web
+      href: ./ui-flows/inputs-outputs-web.md
+    - name: Eseguire flussi di interfaccia utente
+      href: ./ui-flows/run-ui-flow.md
+    - name: Gestire flussi di interfaccia utente
+      href: ./ui-flows/manage.md
 - name: Soluzioni
   items:
     - name: Panoramica
