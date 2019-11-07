@@ -138,7 +138,7 @@
           href: replace-dialogs.md
 - name: Generatore di intelligenza artificiale
   items:
-    - name: Uso del Generatore di intelligenza artificiale in Microsoft Flow
+    - name: Usare AI Builder in Power Automate
       href: use-ai-builder.md
 - name: Procedura
   items:
@@ -251,7 +251,7 @@
           href: gdpr-dsr-delete-msa.md
         - name: Richieste di chiusura
           href: gdpr-dsr-accountclose-msa.md
-    - name: Microsoft Flow US Government
+    - name: Power Automate US Government
       href: us-govt.md
 - name: Informazioni di riferimento
   items:
@@ -261,7 +261,7 @@
       href: limits-and-config.md
     - name: Note sulla versione
       href: release-notes.md
-    - name: API Web Microsoft Flow
+    - name: API Web di Power Automate
       href: web-api.md
     - name: Domande frequenti
       href: frequently-asked-questions.md
